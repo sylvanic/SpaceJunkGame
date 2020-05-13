@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
 
     void Shoot()
     {
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("1"))
         {
             Projectile newProjectile = Instantiate(projectile, shootingPont.position, shootingPont.rotation) as Projectile;
         }

@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class Pickable : MonoBehaviour
 {
-    public AudioClip triggerSoundPickUp;
-    AudioSource audiosource;
+
     void Start()
     {
-        audiosource = GetComponent<AudioSource>();
-        audiosource.clip = triggerSoundPickUp;
+
     }
 
     void Update()
@@ -21,11 +19,15 @@ public class Pickable : MonoBehaviour
     {
         if (other.GetComponent<PlayerStats>().payload < other.GetComponent<PlayerStats>().maxPayload && other.tag == "Player")
         {
-            Debug.Log("vnjs");
-            audiosource.Play();
+
             other.GetComponent<PlayerStats>().payload++;
             Destroy(gameObject);
         }
+
+        // if (other.tag == "Projectile")
+        //{
+        //  Destroy(gameObject);
+        //}
 
     }
 }
