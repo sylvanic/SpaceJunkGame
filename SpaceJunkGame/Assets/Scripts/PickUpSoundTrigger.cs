@@ -2,30 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pickable : MonoBehaviour
+public class PickUpSoundTrigger : MonoBehaviour
 {
     public AudioClip triggerSoundPickUp;
     AudioSource audiosource;
+    
     void Start()
     {
         audiosource = GetComponent<AudioSource>();
-        audiosource.clip = triggerSoundPickUp;
     }
 
+    
     void Update()
     {
-
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<PlayerStats>().payload < other.GetComponent<PlayerStats>().maxPayload && other.tag == "Player")
+        if (triggerSoundPickUp!=null)
         {
-            Debug.Log("vnjs");
+            audiosource.clip = triggerSoundPickUp;
             audiosource.Play();
-            other.GetComponent<PlayerStats>().payload++;
-            Destroy(gameObject);
         }
-
     }
 }
