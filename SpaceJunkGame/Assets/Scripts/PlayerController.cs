@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     [SerializeField] float movementSpeed = 50f;
     [SerializeField] float turnSpeed = 60f;
+
+    public Transform shootingPont;
+    public Projectile projectile;
 
     Transform myT;
 
@@ -17,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Turn();
         Thrust();
+        Shoot();
     }
 
     void Thrust()
@@ -31,4 +35,12 @@ public class PlayerMovement : MonoBehaviour
         myT.Rotate(0, yaw, 0);
     }
 
+    void Shoot()
+    {
+        if (Input.GetKeyDown("space"))
+        {
+            Projectile newProjectile = Instantiate(projectile, shootingPont.position, shootingPont.rotation) as Projectile;
+        }
+
+    }
 }
