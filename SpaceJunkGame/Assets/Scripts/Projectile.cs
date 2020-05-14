@@ -16,4 +16,12 @@ public class Projectile : MonoBehaviour
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
         Destroy(gameObject, 5);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        foreach (ContactPoint contact in collision.contacts)
+        {
+            Debug.Log("ree");
+        }
+    }
 }
