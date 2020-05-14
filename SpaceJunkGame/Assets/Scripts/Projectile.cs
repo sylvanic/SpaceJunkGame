@@ -19,9 +19,11 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        foreach (ContactPoint contact in collision.contacts)
+        if (collision.gameObject.tag == "Asteroid")
         {
-            Debug.Log("ree");
+            Debug.Log("asteroid hit with projectile");
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
     }
 }

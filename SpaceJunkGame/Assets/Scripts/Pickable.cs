@@ -17,10 +17,13 @@ public class Pickable : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<PlayerStats>().payload < other.GetComponent<PlayerStats>().maxPayload && other.tag == "Player")
+        if (other.tag == "Player")
         {
-            other.GetComponent<PlayerStats>().payload++;
-            Destroy(gameObject);
+            if (other.GetComponent<PlayerStats>().payload < other.GetComponent<PlayerStats>().maxPayload)
+            {
+                other.GetComponent<PlayerStats>().payload++;
+                Destroy(gameObject);
+            }
         }
     }
 }
