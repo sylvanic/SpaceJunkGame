@@ -26,10 +26,10 @@ public class PlayerHealth : MonoBehaviour
             health = 0;
 
         }
-        else if (obj.gameObject.tag == "Enemy")
-          {
+        else if (obj.gameObject.tag == "Asteroid")
+        {
             health = health - 10f;
-           }
         }
     }
+}
 

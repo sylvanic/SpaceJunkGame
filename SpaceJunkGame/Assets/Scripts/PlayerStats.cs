@@ -23,4 +23,6 @@ public class PlayerStats : MonoBehaviour
     {
         GUI.Label(new Rect(10, 10, 100, 20), "Payload: " + payload + "/" + maxPayload);
     }
+
+
 }
