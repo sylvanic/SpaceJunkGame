@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Pickable : MonoBehaviour
 {
+
     void Start()
     {
 
@@ -21,6 +22,5 @@ public class Pickable : MonoBehaviour
             other.GetComponent<PlayerStats>().payload++;
             Destroy(gameObject);
         }
-
     }
 }

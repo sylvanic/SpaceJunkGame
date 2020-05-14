@@ -21,6 +21,6 @@ public class PlayerStats : MonoBehaviour
 
     private void OnGUI()
     {
-        GUI.Label(new Rect(10, 10, 100, 20), "Payload: " + payload + "/10");
+        GUI.Label(new Rect(10, 10, 100, 20), "Payload: " + payload + "/" + maxPayload);
     }
 }
