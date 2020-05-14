@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneSequence : MonoBehaviour
 {
@@ -17,13 +18,18 @@ public class SceneSequence : MonoBehaviour
 
     IEnumerator TheSequence ()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(2);
         Cam2.SetActive(true);
         Cam1.SetActive(false);
 
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(2);
         Cam3.SetActive(true);
         Cam2.SetActive(false);
+
+        yield return new WaitForSeconds(2);
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
     }
 
    
