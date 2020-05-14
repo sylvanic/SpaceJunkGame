@@ -10,7 +10,7 @@ public class PlayerHealth : MonoBehaviour
     public Text text;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -21,7 +21,15 @@ public class PlayerHealth : MonoBehaviour
     }
     void OnCollisionEnter(Collision obj)
     {
-        if (obj.gameObject.tag == "Enemy")
+        if (health <= 0)
+        {
+            health = 0;
+
+        }
+        else if (obj.gameObject.tag == "Enemy")
+          {
             health = health - 10f;
+           }
+        }
     }
-}
+

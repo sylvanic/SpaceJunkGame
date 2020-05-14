@@ -20,9 +20,9 @@ public class PlayerCapacity : MonoBehaviour
         slider.value = capacity;
         text.text = "Capacity:" + capacity;
     }
-    void OnCollisionEnter(Collision obj)
+    void OnTriggerEnter(Collider other)
     {
-        if (obj.gameObject.tag == "Trash")
+        if (other.gameObject.tag == "Trash")
             capacity = capacity + 1f;
     }
 }
