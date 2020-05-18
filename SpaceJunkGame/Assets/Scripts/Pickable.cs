@@ -19,9 +19,9 @@ public class Pickable : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            if (other.GetComponent<PlayerStats>().payload < other.GetComponent<PlayerStats>().maxPayload)
+            if (other.GetComponent<PlayerStats>().capacity < other.GetComponent<PlayerStats>().maxCapacity)
             {
-                other.GetComponent<PlayerStats>().payload++;
+                other.GetComponent<PlayerStats>().capacity++;
                 Destroy(gameObject);
             }
         }

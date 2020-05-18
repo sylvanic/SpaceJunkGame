@@ -959,37 +959,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TrashCollectionLabel: {fileID: 1362924188}
-  payload: 0
-  maxPayload: 3
---- !u!114 &260490139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 260490132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47764453a31b7ee42bf0fc81f399c512, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  capacitySlider: {fileID: 1550890178}
+  capacityText: {fileID: 1390325143}
+  capacity: 0
+  maxCapacity: 3
   health: 100
-  slider: {fileID: 1568049550}
-  text: {fileID: 923608602}
---- !u!114 &260490140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  healthSlider: {fileID: 1568049550}
+  healthText: {fileID: 923608602}
+--- !u!4 &260490138 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2989844479439594065, guid: 17cb71a3e76714a4e87919cedaf8e636,
+    type: 3}
+  m_PrefabInstance: {fileID: 5267200435695030285}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 260490132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac952cc705c168543addaf7530ce0158, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 1550890178}
-  text: {fileID: 1390325143}
 --- !u!1 &280927634
 GameObject:
   m_ObjectHideFlags: 0
@@ -3378,10 +3360,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -3819,6 +3801,7 @@ GameObject:
   - component: {fileID: 1377688568}
   - component: {fileID: 1377688567}
   - component: {fileID: 1377688570}
+  - component: {fileID: 1377688571}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3859,8 +3842,8 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
-  orthographic: 1
+  field of view: 21
+  orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -3922,6 +3905,21 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1377688571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377688566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84ab544d1bbb05e47bf721cc57e12621, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 260490138}
+  smoothSpeed: 0.125
+  offset: {x: 0, y: 20, z: -19}
 --- !u!1 &1390325141
 GameObject:
   m_ObjectHideFlags: 0

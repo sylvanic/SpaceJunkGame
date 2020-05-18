@@ -26,8 +26,8 @@ public class JunkDump : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            junkDumped = other.GetComponent<PlayerStats>().payload;
-            other.GetComponent<PlayerStats>().payload = 0;
+            junkDumped = other.GetComponent<PlayerStats>().capacity;
+            other.GetComponent<PlayerStats>().capacity = 0;
 
         }
     }
