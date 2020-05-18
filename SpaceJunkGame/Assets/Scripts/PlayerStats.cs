@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
 
 public class PlayerStats : MonoBehaviour
 {
+
+    public TextMeshProUGUI TrashCollectionLabel;
 
     public int payload = 0;
     public int maxPayload = 3;
@@ -21,7 +25,8 @@ public class PlayerStats : MonoBehaviour
 
     private void OnGUI()
     {
-        GUI.Label(new Rect(10, 10, 100, 20), "Payload: " + payload + "/" + maxPayload);
+        // GUI.Label(new Rect(10, 10, 100, 20), "Payload: " + payload + "/" + maxPayload);
+        TrashCollectionLabel.SetText("Collect pieces of space junk: " + payload + "/" + maxPayload);
     }
 
 

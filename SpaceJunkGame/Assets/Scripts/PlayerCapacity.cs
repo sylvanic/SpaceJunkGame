@@ -5,24 +5,17 @@ using UnityEngine.UI;
 
 public class PlayerCapacity : MonoBehaviour
 {
-    public float capacity;
     public Slider slider;
     public Text text;
 
     void Start()
     {
-        
-    }
 
-    
+    }
     void Update()
     {
-        slider.value = capacity;
-        text.text = "Capacity:" + capacity;
+        slider.value = gameObject.GetComponent<PlayerStats>().payload;
+        text.text = "Capacity:" + gameObject.GetComponent<PlayerStats>().payload;
     }
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Trash")
-            capacity = capacity + 1f;
-    }
+
 }
