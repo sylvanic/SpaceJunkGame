@@ -12,14 +12,14 @@ public class PlayerStats : MonoBehaviour
     //Capacity UI and Stats
     public TextMeshProUGUI TrashCollectionLabel;
     public Slider capacitySlider;
-    public Text capacityText;
+    public TextMeshProUGUI capacityText;
     public int capacity = 0;
     public int maxCapacity = 3;
 
     //Health UI and Stats
     public int health;
     public Slider healthSlider;
-    public Text healthText;
+    public TextMeshProUGUI healthText;
 
     void Start()
     {
@@ -40,12 +40,14 @@ public class PlayerStats : MonoBehaviour
 
     private void CapacitySliderUpdate()
     {
+        capacity = Mathf.Clamp(capacity, 0, maxCapacity);
         capacitySlider.value = capacity;
         capacityText.text = "Capacity:" + capacity;
     }
 
     private void HealthSliderUpdate()
     {
+        health = Mathf.Clamp(health, 0, 100);
         healthSlider.value = health;
         healthText.text = "HP:" + health;
     }
@@ -59,6 +61,7 @@ public class PlayerStats : MonoBehaviour
         }
         else if (obj.gameObject.tag == "Asteroid")
         {
+            capacity--;
             health = health - 10;
         }
     }

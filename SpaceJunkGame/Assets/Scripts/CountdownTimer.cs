@@ -8,13 +8,13 @@ public class CountdownTimer : MonoBehaviour
 {
     // Start is called before the first frame update
     public float _currentCountdownValue;
-    private TextMeshProUGUI _timerSeconds;
+    public TextMeshProUGUI _timerSeconds;
 
     public string SceneName;
 
     void Start()
     {
-        _timerSeconds = GetComponent<TextMeshProUGUI>();
+        // _timerSeconds = GetComponent<TextMeshProUGUI>();
         StartCoroutine(StartCountDown());
     }
 
