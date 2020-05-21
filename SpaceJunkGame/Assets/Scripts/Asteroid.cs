@@ -9,8 +9,13 @@ public class Asteroid : MonoBehaviour
 
     [SerializeField] float rotationOffset = 100f;
 
+    [SerializeField] float minMovementSpeed = 0;
+    [SerializeField] float maxMovementSpeed = 0;
+    private float movementSpeed = 0;
+
     Transform myT;
     Vector3 randomRotation;
+    Rigidbody rb;
 
     void Awake()
     {
@@ -29,11 +34,28 @@ public class Asteroid : MonoBehaviour
         randomRotation.x = Random.Range(-rotationOffset, rotationOffset);
         randomRotation.y = Random.Range(-rotationOffset, rotationOffset);
         randomRotation.z = Random.Range(-rotationOffset, rotationOffset);
+
+        //random speed
+        movementSpeed = Random.Range(minMovementSpeed, maxMovementSpeed);
+
+
+        // rb = GetComponent<Rigidbody>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        //VECTOR APPROACH
         myT.Rotate(randomRotation * Time.deltaTime);
+        myT.position += myT.forward * movementSpeed * Time.deltaTime;
+
+
+
+
+        //RIGIDBODY APPROACH   
+        //rb.AddForce(Vector3.right * 5);
+        // rb.AddForce(Vector3.forward * 5);
+        // rb.velocity = new Vector2(Mathf.Clamp(rb.velocity.x, 5, 5), Mathf.Clamp(rb.velocity.y, -5, 5));
     }
 }

@@ -22,7 +22,7 @@ public class AsteroidManager : MonoBehaviour
             {
                 for (int z = 0; z < numberOfAsteroidsOnAxis; z++)
                 {
-                    InstantiateAsteroid(x, y, z);
+                    InstantiateAsteroid(x, 0, z);
                 }
             }
         }
@@ -31,7 +31,7 @@ public class AsteroidManager : MonoBehaviour
     void InstantiateAsteroid(int x, int y, int z)
     {
         Instantiate(asteroid, new Vector3(transform.position.x + (x * gridSpacing) + AsteroidOffset(),
-                                          transform.position.y + (y * gridSpacing) + AsteroidOffset(),
+                                          0,
                                           transform.position.z + (z * gridSpacing) + AsteroidOffset()),
                                           Quaternion.identity, transform);
     }

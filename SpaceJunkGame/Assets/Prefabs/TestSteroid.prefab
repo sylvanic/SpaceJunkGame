@@ -109,3 +109,5 @@ MonoBehaviour:
   minScale: 0.8
   maxScale: 1.2
   rotationOffset: 50
+  minMovementSpeed: 5
+  maxMovementSpeed: 10
