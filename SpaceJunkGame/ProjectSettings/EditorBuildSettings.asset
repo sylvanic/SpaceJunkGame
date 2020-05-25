@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TestScene.unity
     guid: 66eabe0b2110f9544b3d3a6d29c7cd07
+  - enabled: 1
+    path: Assets/Scenes/FamiliarityQuestion.unity
+    guid: 4a02e0b5574abb243a826de6451bfa05
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: cb6f70bc84d6cce428de3337f965120e
   m_configObjects: {}
