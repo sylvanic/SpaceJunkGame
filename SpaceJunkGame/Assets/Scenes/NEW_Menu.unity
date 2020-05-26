@@ -98,7 +98,11 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
+<<<<<<< HEAD
   m_UseShadowmask: 1
+=======
+  m_UseShadowmask: 0
+>>>>>>> Shauntae
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -253,7 +257,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+<<<<<<< HEAD
       - m_Target: {fileID: 0}
+=======
+      - m_Target: {fileID: 344955876}
+>>>>>>> Shauntae
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
@@ -302,6 +310,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13125784}
   m_CullTransparentMesh: 0
+<<<<<<< HEAD
 --- !u!1001 &39752704
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -386,6 +395,8 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: bab53dedf4fb94043b367760b0e04d70, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4, type: 3}
+=======
+>>>>>>> Shauntae
 --- !u!1 &70727721
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,6 +554,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 70727721}
   m_CullTransparentMesh: 0
+<<<<<<< HEAD
+=======
+--- !u!4 &96398813 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6035689892050537451, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+    type: 3}
+  m_PrefabInstance: {fileID: 782340493}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> Shauntae
 --- !u!1 &114348862
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,7 +815,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+<<<<<<< HEAD
       - m_Target: {fileID: 0}
+=======
+      - m_Target: {fileID: 344955876}
+>>>>>>> Shauntae
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
@@ -1274,6 +1298,137 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+=======
+--- !u!1 &344955874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 344955875}
+  - component: {fileID: 344955876}
+  m_Layer: 0
+  m_Name: Hint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &344955875
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344955874}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 96398813}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &344955876
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344955874}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 2165207600947680521, guid: 743b682e73a10de4cad4ca28fcdbc8d4,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: f17e4a36c055f7f4fb751f5ede080fcc, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+>>>>>>> Shauntae
 --- !u!1 &363612455
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,7 +1797,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+<<<<<<< HEAD
       - m_Target: {fileID: 0}
+=======
+      - m_Target: {fileID: 344955876}
+>>>>>>> Shauntae
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
@@ -2020,12 +2179,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486416953}
   m_CullTransparentMesh: 0
+<<<<<<< HEAD
 --- !u!82 &533296858 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 4945831962493675048, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
     type: 3}
   m_PrefabInstance: {fileID: 39752704}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> Shauntae
 --- !u!1 &558311319
 GameObject:
   m_ObjectHideFlags: 0
@@ -2860,7 +3022,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+<<<<<<< HEAD
       - m_Target: {fileID: 0}
+=======
+      - m_Target: {fileID: 344955876}
+>>>>>>> Shauntae
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
@@ -2924,6 +3090,161 @@ MonoBehaviour:
   m_EffectColor: {r: 1, g: 0, b: 0, a: 0.46666667}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
+<<<<<<< HEAD
+=======
+--- !u!1001 &782340493
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6035689891355873725, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_Name
+      value: SoundManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035689891355873726, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035689891355873726, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035689891355873726, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035689891355873726, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035689891355873726, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035689891355873726, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035689891355873726, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035689891355873726, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035689891355873726, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035689891355873726, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035689891355873726, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035689891723099368, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035689891723099368, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035689891723099368, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 2165207600947680521, guid: 743b682e73a10de4cad4ca28fcdbc8d4,
+        type: 2}
+    - target: {fileID: 6035689891723099368, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035689892041202263, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035689892041202263, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035689892041202263, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 2165207600947680521, guid: 743b682e73a10de4cad4ca28fcdbc8d4,
+        type: 2}
+    - target: {fileID: 6035689892041202263, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035689892158330781, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035689892158330781, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6035689892158330781, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 2165207600947680521, guid: 743b682e73a10de4cad4ca28fcdbc8d4,
+        type: 2}
+    - target: {fileID: 6035689892158330781, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291092222050660467, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291092222050660467, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6291092222050660467, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bab53dedf4fb94043b367760b0e04d70, type: 3}
+    - target: {fileID: 8293027687147398484, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4, type: 3}
+>>>>>>> Shauntae
 --- !u!1 &796381937
 GameObject:
   m_ObjectHideFlags: 0
@@ -3017,7 +3338,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+<<<<<<< HEAD
       - m_Target: {fileID: 0}
+=======
+      - m_Target: {fileID: 344955876}
+>>>>>>> Shauntae
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
@@ -3462,7 +3787,11 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+<<<<<<< HEAD
       - m_Target: {fileID: 0}
+=======
+      - m_Target: {fileID: 344955876}
+>>>>>>> Shauntae
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
@@ -4175,7 +4504,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+<<<<<<< HEAD
       - m_Target: {fileID: 0}
+=======
+      - m_Target: {fileID: 344955876}
+>>>>>>> Shauntae
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
@@ -4872,7 +5205,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+<<<<<<< HEAD
       - m_Target: {fileID: 0}
+=======
+      - m_Target: {fileID: 344955876}
+>>>>>>> Shauntae
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
@@ -5199,7 +5536,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+<<<<<<< HEAD
       - m_Target: {fileID: 0}
+=======
+      - m_Target: {fileID: 344955876}
+>>>>>>> Shauntae
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
@@ -5480,7 +5821,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a4abd65c47f0d4ca425cbd71946a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   mixer: {fileID: 0}
+=======
+  mixer: {fileID: 24100000, guid: 743b682e73a10de4cad4ca28fcdbc8d4, type: 2}
+>>>>>>> Shauntae
 --- !u!1 &1589579986
 GameObject:
   m_ObjectHideFlags: 0
@@ -5563,7 +5908,11 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+<<<<<<< HEAD
       - m_Target: {fileID: 0}
+=======
+      - m_Target: {fileID: 344955876}
+>>>>>>> Shauntae
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
@@ -6221,7 +6570,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a4abd65c47f0d4ca425cbd71946a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   mixer: {fileID: 0}
+=======
+  mixer: {fileID: 24100000, guid: 743b682e73a10de4cad4ca28fcdbc8d4, type: 2}
+>>>>>>> Shauntae
 --- !u!114 &1724441285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6687,7 +7040,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+<<<<<<< HEAD
       - m_Target: {fileID: 0}
+=======
+      - m_Target: {fileID: 344955876}
+>>>>>>> Shauntae
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
@@ -7012,7 +7369,11 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+<<<<<<< HEAD
       - m_Target: {fileID: 0}
+=======
+      - m_Target: {fileID: 344955876}
+>>>>>>> Shauntae
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
@@ -7647,7 +8008,11 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+<<<<<<< HEAD
       - m_Target: {fileID: 0}
+=======
+      - m_Target: {fileID: 344955876}
+>>>>>>> Shauntae
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
@@ -8823,7 +9188,11 @@ MonoBehaviour:
   PickUp: {fileID: 0}
   Drop: {fileID: 0}
   Shoot: {fileID: 0}
+<<<<<<< HEAD
   Hint: {fileID: 0}
+=======
+  Hint: {fileID: 344955876}
+>>>>>>> Shauntae
 --- !u!222 &1795101075480045633
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9165,7 +9534,11 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+<<<<<<< HEAD
       - m_Target: {fileID: 0}
+=======
+      - m_Target: {fileID: 344955876}
+>>>>>>> Shauntae
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
