@@ -5904,14 +5904,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asteroidPrefab: {fileID: 6210494670882218710, guid: fa9f2b1a72f652540bc7b81918faf6c7,
     type: 3}
-  asteroidDensity: 100
+  asteroidDensity: 50
   seed: 0
   innerRadius: 20
   outerRadius: 30
   height: 5
   rotatingClockwise: 1
   minOrbitSpeed: 1
-  maxOrbitSpeed: 5
+  maxOrbitSpeed: 10
   minRotationSpeed: 1
   maxRotationSpeed: 4
 --- !u!1 &2018457449
