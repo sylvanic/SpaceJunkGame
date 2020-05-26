@@ -8,5 +8,6 @@ public class SoundManager : MonoBehaviour
     public AudioSource PickUp;
     public AudioSource Drop;
     public AudioSource Shoot;
+    public AudioSource Hint;
 
 }
