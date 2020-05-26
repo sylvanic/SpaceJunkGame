@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -283,7 +283,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 752368731}
-        m_MethodName: ButtonSceneMove
+        m_MethodName: QuestionNo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -339,7 +339,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 752368726}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4d12fe6b0b66904fa8d941cbc1e443e, type: 3}
+  m_Script: {fileID: 11500000, guid: 07aa43ae2431daa4684f89e7bd2e8a93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &929296615
@@ -492,7 +492,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1061405869}
-        m_MethodName: ButtonSceneMove
+        m_MethodName: QuestionYes
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -548,7 +548,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1061405864}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa66efb2c2b749842b76018223731a28, type: 3}
+  m_Script: {fileID: 11500000, guid: 07aa43ae2431daa4684f89e7bd2e8a93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1136155687
