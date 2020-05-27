@@ -5,8 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Target
-  - Projectile
-  - Asteroid
+  - Enemy
   - Trash
   layers:
   - Default
@@ -17,7 +16,7 @@ TagManager:
   - UI
   - 
   - 
-  - Minimap
+  - 
   - 
   - 
   - 

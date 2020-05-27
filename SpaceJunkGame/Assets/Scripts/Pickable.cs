@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Pickable : MonoBehaviour
 {
-
+    public AudioClip triggerSoundPickUp;
+    AudioSource audiosource;
     void Start()
     {
-
+        audiosource = GetComponent<AudioSource>();
+        audiosource.clip = triggerSoundPickUp;
     }
 
     void Update()
@@ -17,13 +19,13 @@ public class Pickable : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.GetComponent<PlayerStats>().payload < other.GetComponent<PlayerStats>().maxPayload && other.tag == "Player")
         {
-            if (other.GetComponent<PlayerStats>().capacity < other.GetComponent<PlayerStats>().maxCapacity)
-            {
-                other.GetComponent<PlayerStats>().capacity++;
-                Destroy(gameObject);
-            }
+            Debug.Log("vnjs");
+            audiosource.Play();
+            other.GetComponent<PlayerStats>().payload++;
+            Destroy(gameObject);
         }
+
     }
 }
