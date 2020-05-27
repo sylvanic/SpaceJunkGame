@@ -8,6 +8,7 @@ TagManager:
   - Projectile
   - Asteroid
   - Trash
+  - SoundManager
   layers:
   - Default
   - TransparentFX
