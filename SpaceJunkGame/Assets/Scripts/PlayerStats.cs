@@ -30,13 +30,13 @@ public class PlayerStats : MonoBehaviour
 
     void Update()
     {
-        CapacitySliderUpdate();
+       // CapacitySliderUpdate();
     }
 
     private void OnGUI()
     {
         // GUI.Label(new Rect(10, 10, 100, 20), "Payload: " + payload + "/" + maxPayload);
-        TrashCollectionLabel.SetText("Collect pieces of space junk: " + capacity + "/" + maxCapacity);
+        //TrashCollectionLabel.SetText("Collect pieces of space junk: " + capacity + "/" + maxCapacity);
     }
 
     private void CapacitySliderUpdate()
