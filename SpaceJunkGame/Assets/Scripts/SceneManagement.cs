@@ -18,4 +18,9 @@ public class SceneManagement : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void FamiliarWithSpaceJunk()
+    {
+        SceneManager.LoadScene("Tutorial Final");
+    }
 }

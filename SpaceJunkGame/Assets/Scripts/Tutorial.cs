@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Tutorial : MonoBehaviour
 {
     public GameObject introduction;
@@ -18,6 +18,7 @@ public class Tutorial : MonoBehaviour
     public GameObject obj11;
     public GameObject nextLevel;
 
+
     private void Start()
     {
         StartCoroutine(ActivationRoutine0());
@@ -33,6 +34,13 @@ public class Tutorial : MonoBehaviour
         StartCoroutine(ActivationRoutine10());
         StartCoroutine(ActivationRoutine11());
         StartCoroutine(ActivationNextLevel());
+
+
+    }
+
+    public void SkipTutorial()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     private IEnumerator ActivationRoutine0()

@@ -32,8 +32,30 @@ public class SoundManager : MonoBehaviour
     public AudioSource LevelComplete;
     public AudioSource LevelFail;
 
-    public void Start()
+    private void Start()
     {
+        if (SceneManager.GetActiveScene().name == "NEW_Menu")
+        {
+            Menu.Play();
+        }
+        else if (SceneManager.GetActiveScene().name == "Intro")
+        {
+            Cutscene.Play();
+
+            Menu.Stop();
+        }
+        else if (SceneManager.GetActiveScene().name == "Tutorial Final")
+        {
+            Tutorial.Play();
+
+            Cutscene.Stop();
+        }
+        else if (SceneManager.GetActiveScene().name == "GameTest")
+        {
+            InGame.Play();
+
+            Tutorial.Stop();
+        }
     }
 
 }

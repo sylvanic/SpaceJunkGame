@@ -31,7 +31,6 @@ public class MainMenu : MonoBehaviour
 
     private void Awake()
     {
-        soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
     }
     public void PlayGame()
     {
@@ -43,8 +42,6 @@ public class MainMenu : MonoBehaviour
             (ageGroup == "child" || ageGroup == "teen" || ageGroup == "adult"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);   ///Plays next scene in game build
-            soundManager.Cutscene.Stop();
-            soundManager.InGame.Play();
         }
         else
         {
@@ -120,12 +117,8 @@ public class MainMenu : MonoBehaviour
         if (male == deselected && female == deselected && other == deselected)
         {
             gender = "";
-            selectedGenderButton.GetComponent<Outline>().enabled = true;
         }
-        else
-        {
-            selectedGenderButton.GetComponent<Outline>().enabled = false;
-        }
+       
 
        // Debug.Log(gender);
 

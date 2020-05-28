@@ -21,9 +21,11 @@ public class PlayerStats : MonoBehaviour
     public Slider healthSlider;
     public TextMeshProUGUI healthText;
 
+    private SoundManager soundManager;
+
     void Start()
     {
-
+        soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
     }
 
     void Update()
@@ -61,6 +63,7 @@ public class PlayerStats : MonoBehaviour
         }
         else if (obj.gameObject.tag == "Asteroid")
         {
+            soundManager.AsteroidCrash.Play();
             capacity--;
             health = health - 10;
         }
