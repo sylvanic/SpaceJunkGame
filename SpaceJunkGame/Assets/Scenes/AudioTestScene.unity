@@ -13962,27 +13962,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 18.271326, y: 8.653951, z: 20.831417}
   m_Center: {x: -0.032808475, y: -0.61715996, z: -0.41533372}
---- !u!1 &3710160167107098855 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1331315820173278444, guid: e53625122720e3340bade05d1776892b,
-    type: 3}
-  m_PrefabInstance: {fileID: 2379285629632627723}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3710160167107098856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3710160167107098855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57ac4faf34a995440861c99dc3e49759, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  junkDumped: 0
-  maxJunkDumped: 0
-  TrashDisposalLabel: {fileID: 0}
 --- !u!4 &6946474036864643676 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1474010786432944952, guid: 3899581b61a444d4da3123897dcf33be,
