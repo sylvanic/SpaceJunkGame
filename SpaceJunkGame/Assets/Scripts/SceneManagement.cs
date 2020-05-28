@@ -6,21 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagement : MonoBehaviour
 {
-    public Button mainMenu;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        mainMenu = mainMenu.GetComponent<Button>();
-    }
+   
 
-    public void GoBack()
+    public void ReturnToMainMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("NEW_Menu");
     }
 
     public void FamiliarWithSpaceJunk()
     {
-        SceneManager.LoadScene("Tutorial Final");
+        SceneManager.LoadScene("TutorialF");
     }
 }

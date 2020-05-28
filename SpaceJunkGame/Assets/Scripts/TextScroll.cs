@@ -34,7 +34,7 @@ public class TextScroll : MonoBehaviour
 
         if (cont >= 300)
         {
-            SceneManager.LoadScene("Tutorial Final");  ///Intro done, load tutorial
+            SceneManager.LoadScene("TutorialF");  ///Intro done, load tutorial
 
         }
     }

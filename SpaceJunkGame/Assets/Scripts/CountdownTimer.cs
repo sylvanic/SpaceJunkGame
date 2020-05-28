@@ -42,7 +42,7 @@ public class CountdownTimer : MonoBehaviour
         //CHANGE SCENE ONCE TIME IS UP
         Debug.Log("bruh moment #3");
         soundManager.TimerBuzzer.Play();
-        CutSceneOne();
+        SceneManager.LoadScene("Lvl1Cutscene");
 
     }
 }
