@@ -9,6 +9,7 @@ public class CountdownTimer : MonoBehaviour
     // Start is called before the first frame update
     public float _currentCountdownValue;
     public TextMeshProUGUI _timerSeconds;
+    private SoundManager soundManager;
 
     public string SceneName;
 
@@ -16,6 +17,8 @@ public class CountdownTimer : MonoBehaviour
     {
         // _timerSeconds = GetComponent<TextMeshProUGUI>();
         StartCoroutine(StartCountDown());
+        soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
+
     }
 
     private void Update()
@@ -38,7 +41,8 @@ public class CountdownTimer : MonoBehaviour
         }
         //CHANGE SCENE ONCE TIME IS UP
         Debug.Log("bruh moment #3");
-        CutSceneOne();
+        soundManager.TimerBuzzer.Play();
+        SceneManager.LoadScene("Lvl1Cutscene");
 
     }
 }

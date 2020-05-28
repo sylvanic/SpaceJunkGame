@@ -3,7 +3,29 @@ guid: 47332edbed392c84f89a6f93641cda0a
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
+<<<<<<< HEAD
   externalObjects: {}
+=======
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 5540076893581467440, guid: b87c34e77aed8f242a0441d74704fa42,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 4874126678125670354, guid: 06cc86cd790f59d41ac1a50581ee3589,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: -3846018093981099296, guid: 007e229066fd6a944bf389eab5925dd1,
+      type: 3}
+>>>>>>> Shauntae
   materials:
     materialImportMode: 1
     materialName: 0

@@ -17,6 +17,7 @@ public class MainMenu : MonoBehaviour
 
 
     public TMP_InputField playerNameInputField;
+    private SoundManager soundManager;
 
     Button selectedAgeButton;
     Button selectedGenderButton;
@@ -28,6 +29,9 @@ public class MainMenu : MonoBehaviour
     Color genderSelected = Color.blue;
     Color deselected = Color.white;
 
+    private void Awake()
+    {
+    }
     public void PlayGame()
     {
 
@@ -113,12 +117,8 @@ public class MainMenu : MonoBehaviour
         if (male == deselected && female == deselected && other == deselected)
         {
             gender = "";
-            selectedGenderButton.GetComponent<Outline>().enabled = true;
         }
-        else
-        {
-            selectedGenderButton.GetComponent<Outline>().enabled = false;
-        }
+       
 
        // Debug.Log(gender);
 

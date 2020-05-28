@@ -21,9 +21,11 @@ public class PlayerStats : MonoBehaviour
     public TextMeshProUGUI scoreText;
     [SerializeField]private int scoreMultiplier;
 
+    private SoundManager soundManager;
+
     void Start()
     {
-
+        soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
     }
 
     void Update()
@@ -55,6 +57,7 @@ public class PlayerStats : MonoBehaviour
     {
         if (obj.gameObject.tag == "Asteroid")
         {
+            soundManager.AsteroidCrash.Play();
             capacity--;
 
             Destroy(obj.gameObject,.2f);
