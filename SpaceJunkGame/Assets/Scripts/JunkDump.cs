@@ -19,7 +19,7 @@ public class JunkDump : MonoBehaviour
     void Update()
     {
         TrashDisposalLabel.SetText("Dump collected space junk: " + junkDumped + "/" + maxJunkDumped);
-        WinCondition();
+       // WinCondition();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -28,7 +28,8 @@ public class JunkDump : MonoBehaviour
         {
             junkDumped = other.GetComponent<PlayerStats>().capacity;
             other.GetComponent<PlayerStats>().capacity = 0;
-
+            other.GetComponent<PlayerStats>().UpdateScore();
+            Debug.Log(other.GetComponent<PlayerStats>().currentScore);
         }
     }
 
