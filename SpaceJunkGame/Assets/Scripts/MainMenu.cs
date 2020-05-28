@@ -17,6 +17,7 @@ public class MainMenu : MonoBehaviour
 
 
     public TMP_InputField playerNameInputField;
+    private SoundManager soundManager;
 
     Button selectedAgeButton;
     Button selectedGenderButton;
@@ -28,6 +29,10 @@ public class MainMenu : MonoBehaviour
     Color genderSelected = Color.blue;
     Color deselected = Color.white;
 
+    private void Awake()
+    {
+        soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
+    }
     public void PlayGame()
     {
 
@@ -38,6 +43,8 @@ public class MainMenu : MonoBehaviour
             (ageGroup == "child" || ageGroup == "teen" || ageGroup == "adult"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);   ///Plays next scene in game build
+            soundManager.Cutscene.Stop();
+            soundManager.InGame.Play();
         }
         else
         {

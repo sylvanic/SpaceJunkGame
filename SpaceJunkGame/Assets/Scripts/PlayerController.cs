@@ -9,12 +9,14 @@ public class PlayerController : MonoBehaviour
 
     public Transform shootingPont;
     public Projectile projectile;
+    private SoundManager soundManager;
 
     Transform myT;
 
     private void Awake()
     {
         myT = transform;
+        soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
     }
     private void Update()
     {
@@ -39,6 +41,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown("1"))
         {
+            soundManager.Shoot.Play();
             Projectile newProjectile = Instantiate(projectile, shootingPont.position, shootingPont.rotation) as Projectile;
         }
 
