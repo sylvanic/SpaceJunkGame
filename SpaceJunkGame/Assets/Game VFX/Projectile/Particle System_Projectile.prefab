@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8929203793481074258}
   - component: {fileID: 8929203793481074259}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: Particle System_Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -222,7 +222,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.28627455, g: 0.47984892, b: 1, a: 0.45490196}
+      maxColor: {r: 0.28627455, g: 0.47984892, b: 1, a: 0.6666667}
       maxGradient:
         serializedVersion: 2
         key0: {r: 0.5943396, g: 0.2999733, b: 0.2999733, a: 1}
@@ -4705,11 +4705,12 @@ ParticleSystemRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ffbfc4c208305bc46b5ba71a1fa748b8, type: 2}
-  - {fileID: 2100000, guid: ffbfc4c208305bc46b5ba71a1fa748b8, type: 2}
+  - {fileID: 2100000, guid: 18c82741695156c4e99a73d9c8bdb942, type: 2}
+  - {fileID: 2100000, guid: 18c82741695156c4e99a73d9c8bdb942, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4717,6 +4718,7 @@ ParticleSystemRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
