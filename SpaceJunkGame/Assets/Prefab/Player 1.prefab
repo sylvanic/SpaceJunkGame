@@ -228,7 +228,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1762321036879534844
 Transform:
   m_ObjectHideFlags: 0
@@ -394,9 +394,9 @@ MonoBehaviour:
   capacityText: {fileID: 0}
   capacity: 0
   maxCapacity: 3
-  health: 100
-  healthSlider: {fileID: 0}
-  healthText: {fileID: 0}
+  currentScore: 0
+  scoreText: {fileID: 0}
+  scoreMultiplier: 0
 --- !u!1001 &2920072552364113355
 PrefabInstance:
   m_ObjectHideFlags: 0

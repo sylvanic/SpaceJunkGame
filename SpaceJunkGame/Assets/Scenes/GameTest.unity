@@ -6436,6 +6436,11 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 1852322824}
+    - target: {fileID: 5675949625639241933, guid: bcc5044a71c17e243b4f5bfb23131300,
+        type: 3}
+      propertyPath: m_TagString
+      value: Projectile
+      objectReference: {fileID: 0}
     - target: {fileID: 7903911460986962389, guid: bcc5044a71c17e243b4f5bfb23131300,
         type: 3}
       propertyPath: m_Name
@@ -6494,6 +6499,11 @@ PrefabInstance:
     - target: {fileID: 8652489039110906448, guid: bcc5044a71c17e243b4f5bfb23131300,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9193311706160020119, guid: bcc5044a71c17e243b4f5bfb23131300,
+        type: 3}
+      propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

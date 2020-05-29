@@ -187,7 +187,7 @@ MonoBehaviour:
   UpgradeUnlocked: {fileID: 6431457598452198924}
   DropOffStation: {fileID: 6431457597940561747}
   Hint: {fileID: 6431457598712121562}
-  RocketEngine: {fileID: 8366376391240276344}
+  RocketEngine: {fileID: 0}
   MinimapRadar: {fileID: 6431457598025917863}
   TimerBuzzer: {fileID: 6431457598907712718}
   CapacityFull: {fileID: 6431457599106118966}
@@ -660,7 +660,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7261810374480267470}
-  - component: {fileID: 8366376391240276344}
+  - component: {fileID: 8315044633438420486}
   m_Layer: 0
   m_Name: RocketEngine
   m_TagString: Untagged
@@ -682,7 +682,7 @@ Transform:
   m_Father: {fileID: 4068224993297716206}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &8366376391240276344
+--- !u!82 &8315044633438420486
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -692,9 +692,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 008a9806a43b69a4599616f3d415e43b, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.326
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -768,7 +768,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.642
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
