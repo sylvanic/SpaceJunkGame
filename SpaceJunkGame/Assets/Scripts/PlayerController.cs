@@ -28,6 +28,12 @@ public class PlayerController : MonoBehaviour
     void Thrust()
     {
         myT.position += myT.forward * movementSpeed * Time.deltaTime * Input.GetAxis("Vertical");
+        if (Input.GetKey (KeyCode.W)) 
+        {
+            soundManager.RocketEngine.Play();
+         
+        }
+
     }
 
     void Turn()
@@ -35,6 +41,8 @@ public class PlayerController : MonoBehaviour
         float yaw = turnSpeed * Time.deltaTime * Input.GetAxis("Horizontal");
 
         myT.Rotate(0, yaw, 0);
+
+      
     }
 
     void Shoot()

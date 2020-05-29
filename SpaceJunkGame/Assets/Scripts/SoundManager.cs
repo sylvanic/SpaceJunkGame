@@ -21,7 +21,8 @@ public class SoundManager : MonoBehaviour
     public AudioSource UpgradeUnlocked;
     public AudioSource DropOffStation;
     public AudioSource Hint;
-   
+    public AudioSource RocketEngine;
+
     [Header("UI & HUD")]
     public AudioSource MinimapRadar;
     public AudioSource TimerBuzzer;
