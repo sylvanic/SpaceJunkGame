@@ -5677,13 +5677,13 @@ PrefabInstance:
     - target: {fileID: 8315044633438420486, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
         type: 3}
       propertyPath: m_Volume
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8315044633438420486, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 23d9bc2169edf0e43a0928c7b825950a, type: 3}
+      objectReference: {fileID: 8300000, guid: 08b22a712580357499c727e04d29a20c, type: 3}
     - target: {fileID: 8315044633438420486, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
         type: 3}
       propertyPath: DopplerLevel
@@ -5732,7 +5732,7 @@ PrefabInstance:
     - target: {fileID: 8315044633438420486, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
         type: 3}
       propertyPath: BypassReverbZones
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8315044633438420486, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
         type: 3}
@@ -5787,12 +5787,12 @@ PrefabInstance:
     - target: {fileID: 8315044633438420486, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
         type: 3}
       propertyPath: BypassListenerEffects
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8315044633438420486, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
         type: 3}
       propertyPath: BypassEffects
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8315044633438420486, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
         type: 3}

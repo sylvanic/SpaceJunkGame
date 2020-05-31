@@ -32,11 +32,17 @@ public class PlayerController : MonoBehaviour
     void Thrust()
     {
         myT.position += myT.forward * movementSpeed * Time.deltaTime * Input.GetAxis("Vertical");
-        if (Input.GetKey (KeyCode.W)) 
+        if (Input.GetKeyDown(KeyCode.W))
         {
             soundManager.RocketEngine.Play();
+            soundManager.RocketEngine.loop = true;
         }
 
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            soundManager.RocketEngine.Stop();
+
+        }
     }
 
     void Turn()
