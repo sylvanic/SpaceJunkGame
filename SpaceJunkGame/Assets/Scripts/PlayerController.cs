@@ -13,6 +13,9 @@ public class PlayerController : MonoBehaviour
 
     Transform myT;
 
+    public Material[] material;
+    Renderer rend;
+
     private void Awake()
     {
         myT = transform;
@@ -23,6 +26,7 @@ public class PlayerController : MonoBehaviour
         Turn();
         Thrust();
         Shoot();
+        
     }
 
     void Thrust()
@@ -52,5 +56,17 @@ public class PlayerController : MonoBehaviour
             Projectile newProjectile = Instantiate(projectile, shootingPont.position, shootingPont.rotation) as Projectile;
         }
 
+    }
+
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "Asteroid")
+        {
+            rend.sharedMaterial = material[1];
+        }
+        else
+        {
+            rend.sharedMaterial = material[2];
+        }
     }
 }
