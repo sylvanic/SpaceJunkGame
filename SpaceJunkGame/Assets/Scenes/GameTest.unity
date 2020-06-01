@@ -1119,6 +1119,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &213600188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7903911460986962389, guid: bcc5044a71c17e243b4f5bfb23131300,
+    type: 3}
+  m_PrefabInstance: {fileID: 1762321035679551500}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &213600193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213600188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b800c630282725a418552879f1928d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradedMovementSpeed: 8
+  boostersUpgraded: 0
+  upgradedCapacity: 5
+  capacityUpgraded: 0
 --- !u!1 &222036906 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 38113d2bb8a8e5b45a993b87530e9181,
@@ -5180,12 +5202,12 @@ MonoBehaviour:
     type: 3}
   asteroidDensity: 100
   seed: 0
-  innerRadius: 20
+  innerRadius: 10
   outerRadius: 30
-  height: 1
+  height: 0
   rotatingClockwise: 1
-  minOrbitSpeed: 1
-  maxOrbitSpeed: 5
+  minOrbitSpeed: 5
+  maxOrbitSpeed: 10
   minRotationSpeed: 1
   maxRotationSpeed: 4
 --- !u!1 &2015838069
@@ -10371,6 +10393,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 99656467281103303, guid: 0fd2180d0004d954584f533e7b5b82f0,
         type: 3}
+    - target: {fileID: 1762321035419849626, guid: bcc5044a71c17e243b4f5bfb23131300,
+        type: 3}
+      propertyPath: movementSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5675949625639241933, guid: bcc5044a71c17e243b4f5bfb23131300,
         type: 3}
       propertyPath: m_TagString
