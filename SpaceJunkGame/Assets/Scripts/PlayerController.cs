@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public Transform shootingPont;
     public Projectile projectile;
     private SoundManager soundManager;
+    
 
     Transform myT;
 
@@ -20,6 +21,8 @@ public class PlayerController : MonoBehaviour
     {
         myT = transform;
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
+
+        
     }
     private void Update()
     {
@@ -36,11 +39,15 @@ public class PlayerController : MonoBehaviour
         {
             soundManager.RocketEngine.Play();
             soundManager.RocketEngine.loop = true;
+           
+
         }
 
         if (Input.GetKeyUp(KeyCode.W))
         {
             soundManager.RocketEngine.Stop();
+            
+
 
         }
     }
@@ -62,17 +69,5 @@ public class PlayerController : MonoBehaviour
             Projectile newProjectile = Instantiate(projectile, shootingPont.position, shootingPont.rotation) as Projectile;
         }
 
-    }
-
-    void OnCollisionEnter(Collision col)
-    {
-        if (col.gameObject.tag == "Asteroid")
-        {
-            rend.sharedMaterial = material[1];
-        }
-        else
-        {
-            rend.sharedMaterial = material[2];
-        }
     }
 }
