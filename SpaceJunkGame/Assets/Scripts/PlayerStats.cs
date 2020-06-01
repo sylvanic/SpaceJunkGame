@@ -16,26 +16,27 @@ public class PlayerStats : MonoBehaviour
     public int capacity = 0;
     public int maxCapacity = 3;
 
-    //Health UI and Stats
-    public int health;
-    public Slider healthSlider;
-    public TextMeshProUGUI healthText;
+    //score
+    public int currentScore;
+    public TextMeshProUGUI scoreText;
+    [SerializeField]private int scoreMultiplier;
+
+    private SoundManager soundManager;
 
     void Start()
     {
-
+        soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
     }
 
     void Update()
     {
-        CapacitySliderUpdate();
-        HealthSliderUpdate();
+       // CapacitySliderUpdate();
     }
 
     private void OnGUI()
     {
         // GUI.Label(new Rect(10, 10, 100, 20), "Payload: " + payload + "/" + maxPayload);
-        TrashCollectionLabel.SetText("Collect pieces of space junk: " + capacity + "/" + maxCapacity);
+        //TrashCollectionLabel.SetText("Collect pieces of space junk: " + capacity + "/" + maxCapacity);
     }
 
     private void CapacitySliderUpdate()
@@ -43,26 +44,23 @@ public class PlayerStats : MonoBehaviour
         capacity = Mathf.Clamp(capacity, 0, maxCapacity);
         capacitySlider.value = capacity;
         capacityText.text = "Capacity:" + capacity;
+        currentScore = capacity;
     }
 
-    private void HealthSliderUpdate()
-    {
-        health = Mathf.Clamp(health, 0, 100);
-        healthSlider.value = health;
-        healthText.text = "HP:" + health;
+    public void UpdateScore(){
+        
+        currentScore *= scoreMultiplier;
+        scoreText.text = "Score:" + currentScore;
     }
 
     void OnCollisionEnter(Collision obj)
     {
-        if (health <= 0)
+        if (obj.gameObject.tag == "Asteroid")
         {
-            health = 0;
-            SceneManager.LoadScene("AudioTestScene");
-        }
-        else if (obj.gameObject.tag == "Asteroid")
-        {
+            soundManager.AsteroidCrash.Play();
             capacity--;
-            health = health - 10;
+
+            Destroy(obj.gameObject,.2f);
         }
     }
 

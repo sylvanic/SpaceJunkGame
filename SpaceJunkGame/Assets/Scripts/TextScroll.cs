@@ -1,19 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TextScroll : MonoBehaviour
 {
     float cont = 0;
     float scroll;
+
+    public GameObject IntroText;
+    private SoundManager soundManager;
+
+    private void Awake()
+    {
+        IntroText = GameObject.Find("Intro Text");
+    }
     void Update()
     {
-        if (Input.GetKey(KeyCode.Mouse0))
+    
+        if (Input.GetKey(KeyCode.Mouse0) && (IntroText.activeInHierarchy == true))
         {
             scroll = 50;
             transform.Translate(0, scroll * Time.deltaTime, 0);
             cont += scroll * Time.deltaTime;
-            print(cont);
 
         }
         else
@@ -21,14 +30,12 @@ public class TextScroll : MonoBehaviour
             scroll = 4;
             transform.Translate(0, scroll * Time.deltaTime, 0);
             cont += scroll * Time.deltaTime;
-            print(cont);
         }
 
         if (cont >= 300)
         {
-            cont = 0;
-            //PLACE NEXT SCENE HERE: LEVEL 1 SCENE
-            
+            SceneManager.LoadScene("TutorialF");  ///Intro done, load tutorial
+
         }
     }
 }
