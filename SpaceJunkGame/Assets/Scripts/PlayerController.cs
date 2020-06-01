@@ -14,8 +14,7 @@ public class PlayerController : MonoBehaviour
 
     Transform myT;
 
-    public Material[] material;
-    Renderer rend;
+  
 
     private void Awake()
     {
