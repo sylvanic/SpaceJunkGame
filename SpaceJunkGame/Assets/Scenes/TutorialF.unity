@@ -1758,7 +1758,7 @@ PrefabInstance:
     - target: {fileID: 8030347156330050139, guid: 6926b622e35a17e40a1e7075307d3654,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8030347156330050139, guid: 6926b622e35a17e40a1e7075307d3654,
         type: 3}
@@ -4495,7 +4495,7 @@ PrefabInstance:
     - target: {fileID: 4835060777369688028, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4835060777369688028, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -5692,6 +5692,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 818590823}
   m_CullTransparentMesh: 0
+--- !u!1 &842706676 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6425194013498277960, guid: 6926b622e35a17e40a1e7075307d3654,
+    type: 3}
+  m_PrefabInstance: {fileID: 211648392}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &842706679
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842706676}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1631756a8339fee4b88424050601911a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &853392074
 GameObject:
   m_ObjectHideFlags: 0
@@ -9146,7 +9171,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6a369f39c65ccd14e960ac720e95d55e, type: 3}
+    m_Font: {fileID: 12800000, guid: 5e0617ff69747d7449119afc0aed81bc, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -9158,7 +9183,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Achievements
+  m_Text: Challenges
 --- !u!222 &1373088094
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10447,8 +10472,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6a369f39c65ccd14e960ac720e95d55e, type: 3}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: 5e0617ff69747d7449119afc0aed81bc, type: 3}
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1

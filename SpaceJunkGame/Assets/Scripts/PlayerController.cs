@@ -13,6 +13,9 @@ public class PlayerController : MonoBehaviour
 
     Transform myT;
 
+    public Material[] material;
+    Renderer rend;
+
     private void Awake()
     {
         myT = transform;
@@ -23,16 +26,23 @@ public class PlayerController : MonoBehaviour
         Turn();
         Thrust();
         Shoot();
+        
     }
 
     void Thrust()
     {
         myT.position += myT.forward * movementSpeed * Time.deltaTime * Input.GetAxis("Vertical");
-        if (Input.GetKey (KeyCode.W)) 
+        if (Input.GetKeyDown(KeyCode.W))
         {
             soundManager.RocketEngine.Play();
+            soundManager.RocketEngine.loop = true;
         }
 
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            soundManager.RocketEngine.Stop();
+
+        }
     }
 
     void Turn()
@@ -52,5 +62,17 @@ public class PlayerController : MonoBehaviour
             Projectile newProjectile = Instantiate(projectile, shootingPont.position, shootingPont.rotation) as Projectile;
         }
 
+    }
+
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "Asteroid")
+        {
+            rend.sharedMaterial = material[1];
+        }
+        else
+        {
+            rend.sharedMaterial = material[2];
+        }
     }
 }
