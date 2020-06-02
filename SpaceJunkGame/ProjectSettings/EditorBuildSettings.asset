@@ -18,8 +18,14 @@ EditorBuildSettings:
     path: Assets/Scenes/GameTest.unity
     guid: 3ab62cb91b8e81648ba1a4833a6392d5
   - enabled: 1
+    path: Assets/Scenes/SHAUN_GAMETEST.unity
+    guid: 6c23b56a58f3507409dae598383577c2
+  - enabled: 1
     path: Assets/Scenes/Lvl1Cutscene.unity
     guid: 0e7b5be8d4bc4134c99dd625fed27b81
+  - enabled: 1
+    path: Assets/Scenes/Level_2.unity
+    guid: d9ac4f817a432b04f84c97ca678008fe
   - enabled: 0
     path: Assets/Scenes/AudioTestScene.unity
     guid: c07bb5d854e6b4e439c976cc69ea3ca3
