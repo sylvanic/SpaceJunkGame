@@ -5012,7 +5012,7 @@ MonoBehaviour:
   height: 1
   rotatingClockwise: 1
   minOrbitSpeed: 1
-  maxOrbitSpeed: 5
+  maxOrbitSpeed: 3
   minRotationSpeed: 1
   maxRotationSpeed: 4
 --- !u!1 &2018457449
