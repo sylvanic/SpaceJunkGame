@@ -20,7 +20,7 @@ public class SelectLevel : MonoBehaviour
     
     private void SelectLevel1()
     {
-        SceneManager.LoadScene("GameTest");
+        SceneManager.LoadScene("Intro");
     }
 
     private void SelectLevel2()
