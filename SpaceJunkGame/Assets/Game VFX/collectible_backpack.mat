@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: collectible
+  m_Name: collectible_backpack
   m_Shader: {fileID: -6465566751694194690, guid: 70c0c51cf98ef454fbfb15e38623666b,
     type: 3}
   m_ShaderKeywords: 
@@ -34,7 +34,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_2C35627E:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 87388595fac10e1429b30a9f3afc7aee, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_3B81E139:
@@ -42,15 +42,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_579BF28A:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 87388595fac10e1429b30a9f3afc7aee, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_98A141FD:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 87388595fac10e1429b30a9f3afc7aee, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
-    - Color_18E2207A: {r: 0, g: 2.1803923, b: 4, a: 0}
+    - Color_18E2207A: {r: 0, g: 1.0994763, b: 1.9999998, a: 0}
     - Color_41D5EF60: {r: 0, g: 0.6686826, b: 1, a: 0}
     - Color_42AF1A09: {r: 0, g: 0.24649279, b: 1.3116028, a: 0}
