@@ -23,7 +23,7 @@ Material:
   m_Name: Hologram
   m_Shader: {fileID: -6465566751694194690, guid: d44a18da019eca54898a69e370b099ee,
     type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -94,7 +94,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - Color_3608ACDA: {r: 0.09885502, g: 0, b: 1, a: 0}
-    - Color_8D2E4046: {r: 0, g: 0.8580704, b: 1, a: 0}
+    - Color_8D2E4046: {r: 0, g: 0.2607293, b: 1, a: 0}
     - Vector2_831685A6: {r: 1, g: 3, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
