@@ -43,6 +43,26 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 647410665831935174, guid: 946efc7a0da73fa429369aafd2a4cfd2,
+        type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 647410665831935174, guid: 946efc7a0da73fa429369aafd2a4cfd2,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 647410665831935174, guid: 946efc7a0da73fa429369aafd2a4cfd2,
+        type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 647410665831935174, guid: 946efc7a0da73fa429369aafd2a4cfd2,
+        type: 3}
+      propertyPath: m_Parameters.generateLightingData
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5586333105145219010, guid: 946efc7a0da73fa429369aafd2a4cfd2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -113,6 +133,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 16.496056
       objectReference: {fileID: 0}
+    - target: {fileID: 7197081546173137165, guid: 946efc7a0da73fa429369aafd2a4cfd2,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0d3a73f020b95b44498f09297fc4d0e7, type: 2}
     - target: {fileID: 8925568781619131857, guid: 946efc7a0da73fa429369aafd2a4cfd2,
         type: 3}
       propertyPath: m_Name
@@ -123,8 +148,7 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Asteroid
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7443510059167254710, guid: 946efc7a0da73fa429369aafd2a4cfd2, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 946efc7a0da73fa429369aafd2a4cfd2, type: 3}
 --- !u!4 &7858326230837607753 stripped
 Transform:
