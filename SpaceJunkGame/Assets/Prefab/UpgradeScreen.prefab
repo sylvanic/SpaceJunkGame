@@ -66,9 +66,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Score: 120 pnts'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cd539be7d4be1074091aa28fae8c24a2, type: 2}
-  m_sharedMaterial: {fileID: 1372525602729297807, guid: cd539be7d4be1074091aa28fae8c24a2,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1001,9 +1000,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: CHALLENGE COMPLETED!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ac31bfbb0516bd94faee4f899bb03262, type: 2}
-  m_sharedMaterial: {fileID: -2333592753970949966, guid: ac31bfbb0516bd94faee4f899bb03262,
-    type: 2}
+  m_fontAsset: {fileID: 0}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1109,7 +1107,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5387128358703116388
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1353,12 +1351,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkChallengedCompleted: 1
+  ScoreBoard: {fileID: 5387128358703116389}
   UpgradeBoard: {fileID: 5387128359713175179}
   boosterUpg: {r: 1, g: 1, b: 1, a: 1}
   weaponUpg: {r: 1, g: 1, b: 1, a: 1}
   capacityUpg: {r: 1, g: 1, b: 1, a: 1}
   shieldUpg: {r: 1, g: 1, b: 1, a: 1}
   upgrade: 
+  isLevelDone: 0
 --- !u!1 &5387128359410148903
 GameObject:
   m_ObjectHideFlags: 0
@@ -1629,9 +1629,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: NEXT
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ac31bfbb0516bd94faee4f899bb03262, type: 2}
-  m_sharedMaterial: {fileID: -2333592753970949966, guid: ac31bfbb0516bd94faee4f899bb03262,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1916,9 +1915,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: NEXT
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ac31bfbb0516bd94faee4f899bb03262, type: 2}
-  m_sharedMaterial: {fileID: -2333592753970949966, guid: ac31bfbb0516bd94faee4f899bb03262,
-    type: 2}
+  m_fontAsset: {fileID: 0}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2542,9 +2540,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Choose Upgrade!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cd539be7d4be1074091aa28fae8c24a2, type: 2}
-  m_sharedMaterial: {fileID: 1372525602729297807, guid: cd539be7d4be1074091aa28fae8c24a2,
-    type: 2}
+  m_fontAsset: {fileID: 0}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2646,7 +2643,7 @@ GameObject:
   - component: {fileID: 5387128359871677008}
   - component: {fileID: 5387128359871677009}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UpgradeScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2798,9 +2795,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: MISSION COMPLETED!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ac31bfbb0516bd94faee4f899bb03262, type: 2}
-  m_sharedMaterial: {fileID: -2333592753970949966, guid: ac31bfbb0516bd94faee4f899bb03262,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

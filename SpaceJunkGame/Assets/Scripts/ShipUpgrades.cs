@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class ShipUpgrades : MonoBehaviour
 {
     [SerializeField]
     private bool checkChallengedCompleted;
+    public GameObject ScoreBoard;
     public GameObject UpgradeBoard;
+    public TMP_Text Timertext;
 
     private Button selectedUpgradeBtn;
 
@@ -18,10 +21,30 @@ public class ShipUpgrades : MonoBehaviour
 
     public string upgrade;
 
-    private void Start()
-    {
+    [SerializeField]
+    public bool isLevelDone;
+    
 
+    /*
+    public void LevelDone()
+    {
+        if (Timertext.text == "70")
+        {
+            isLevelDone = true;
+            Debug.Log("wow nice");
+
+            if (isLevelDone)
+            {
+                ScoreBoard.SetActive(true);
+                Time.timeScale = 1;
+
+            }
+
+        }
+       
     }
+    */
+
 
     public void CheckChallengedCompleted()
     {
