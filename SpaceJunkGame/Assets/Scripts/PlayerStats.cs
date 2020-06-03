@@ -10,7 +10,6 @@ public class PlayerStats : MonoBehaviour
 {
 
     //Capacity UI and Stats
-    public TextMeshProUGUI TrashCollectionLabel;
     public Slider capacitySlider;
     public TextMeshProUGUI capacityText;
     public int capacity = 0;
@@ -26,11 +25,12 @@ public class PlayerStats : MonoBehaviour
     void Start()
     {
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
+        capacitySlider.maxValue = maxCapacity;
     }
 
     void Update()
     {
-       // CapacitySliderUpdate();
+       CapacitySliderUpdate();
     }
 
     private void OnGUI()
@@ -43,7 +43,7 @@ public class PlayerStats : MonoBehaviour
     {
         capacity = Mathf.Clamp(capacity, 0, maxCapacity);
         capacitySlider.value = capacity;
-        capacityText.text = "Capacity:" + capacity;
+        capacityText.text = capacity.ToString();
         currentScore = capacity;
     }
 
