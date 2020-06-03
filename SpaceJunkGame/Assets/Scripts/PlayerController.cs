@@ -10,7 +10,10 @@ public class PlayerController : MonoBehaviour
     public Transform shootingPont;
     public Projectile projectile;
     private SoundManager soundManager;
-    
+
+
+
+   
 
     Transform myT;
 
@@ -20,6 +23,9 @@ public class PlayerController : MonoBehaviour
     {
         myT = transform;
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
+
+
+        
 
         
     }
