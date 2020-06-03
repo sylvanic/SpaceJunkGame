@@ -9639,7 +9639,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TrashDisposalLabel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2002632553}
     - target: {fileID: 3646815781528860885, guid: 233004645cf16ab4ca8d5fbb0b7e6c25,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10035,6 +10035,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8715819, y: 0.52099925, z: 0.7987949}
   m_Center: {x: 0.00018692017, y: 0.043564774, z: -0.017344922}
+--- !u!114 &2002632553 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2465029693019426464, guid: 4014270d7aeede2468a46e07131c24fe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1375323668}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2011945141
 PrefabInstance:
   m_ObjectHideFlags: 0
