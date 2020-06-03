@@ -14,25 +14,20 @@ public class RateSystem : MonoBehaviour
     public GameObject nextRatePanel;
     public GameObject finishRate;
 
-    //public int remindRating; // open rating window at X game start
+    public int remindRating; // open rating window at X game start
 
     [HideInInspector] public int ratedApp;
-
-    void Start()
-    {
-        ratedApp = 5;
-    }
 
     public void Init(int rateCounter)
     {
         // get remind rating app value
-        //int remind = PlayerPrefs.GetInt("remindRating", remindRating);
+        int remind = PlayerPrefs.GetInt("remindRating", remindRating);
         // get is rated app value
         bool isRated = PlayerPrefs.GetInt("isAppRated", 0) == 1 ? true : false;
 
         //Debug.Log("Game open: " + rateCounter + ", remind rating: " + remind + ", is app rated: " + isRated);
 
-        if (rateCounter > 0 && !isRated)
+        if (remind <= rateCounter && !isRated)
         {     
             ratedApp = 0;
             RateApplication(0);
@@ -55,28 +50,25 @@ public class RateSystem : MonoBehaviour
     {
         ratedApp = rate;
 
-        // active rate button if use click some stars
         if (rate > 0)
         {
-            acceptButton.interactable = true;
+            acceptButton.GetComponent<Button>().interactable = true;
         }
 
-        // enable stars equal than user rated
         for (int i = 0; i < rate; i++)
         {
             foreach (Transform t in rateButton[i].transform)
             {
                 t.gameObject.SetActive(true);
-            }           
+            }
         }
 
-        // enable stars greater than user rated
         for (int i = rate; i < rateButton.Length; i++)
         {
             foreach (Transform t in rateButton[i].transform)
             {
                 t.gameObject.SetActive(false);
-            }           
+            }
         }
     }
 
@@ -127,7 +119,7 @@ public class RateSystem : MonoBehaviour
         finishRate.SetActive(true);
     }
 
-    /*public void RateLater()
+    public void RateLater()
     {
         // analytics action type
         AnalyticsManager.ReportRateType("Rate later");
@@ -135,7 +127,7 @@ public class RateSystem : MonoBehaviour
         PlayerPrefs.SetInt("remindRating", PlayerPrefs.GetInt("remindRating", remindRating) + remindRating);
         // close App Rating window
         gameObject.SetActive(false);
-    }*/
+    }
  
     public void CloseWindow(bool isRated)
     {

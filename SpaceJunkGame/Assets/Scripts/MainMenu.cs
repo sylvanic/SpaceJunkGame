@@ -17,6 +17,8 @@ public class MainMenu : MonoBehaviour
 
     public TMP_InputField playerNameInputField;
     private SoundManager soundManager;
+    public GameObject LevelMenuScreen;
+    public GameObject MainMenuScreen;
 
     Button selectedAgeButton;
     Button selectedGenderButton;
@@ -40,7 +42,10 @@ public class MainMenu : MonoBehaviour
             (gender == "male" || gender == "female" || gender == "other") && 
             (ageGroup == "child" || ageGroup == "teen" || ageGroup == "adult"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);   ///Plays next scene in game build
+            ///SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);   ///Plays next scene in game build
+            LevelMenuScreen.SetActive(true);
+            MainMenuScreen.SetActive(false);
+            
         }
         else
         {
@@ -68,15 +73,6 @@ public class MainMenu : MonoBehaviour
         {
             playerNameInputField.GetComponent<Outline>().enabled = false;
         }
-
-        //if (gender == "")
-        //{
-        //    selectedGenderButton.GetComponent<Outline>().enabled = true;
-        //}
-        //else
-        //{
-        //    selectedGenderButton.GetComponent<Outline>().enabled = false;
-        //}
     }
 
     public void GenderSelected(Button button)

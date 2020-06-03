@@ -4,35 +4,57 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float movementSpeed = 50f;
+    [SerializeField]public float movementSpeed = 50f;
     [SerializeField] float turnSpeed = 60f;
 
     public Transform shootingPont;
     public Projectile projectile;
     private SoundManager soundManager;
 
+
+
+   
+
     Transform myT;
+
+  
 
     private void Awake()
     {
         myT = transform;
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
+
+
+        
+
+        
     }
     private void Update()
     {
         Turn();
         Thrust();
         Shoot();
+        
     }
 
     void Thrust()
     {
         myT.position += myT.forward * movementSpeed * Time.deltaTime * Input.GetAxis("Vertical");
-        if (Input.GetKey (KeyCode.W)) 
+        if (Input.GetKeyDown(KeyCode.W))
         {
             soundManager.RocketEngine.Play();
+            soundManager.RocketEngine.loop = true;
+           
+
         }
 
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            soundManager.RocketEngine.Stop();
+            
+
+
+        }
     }
 
     void Turn()

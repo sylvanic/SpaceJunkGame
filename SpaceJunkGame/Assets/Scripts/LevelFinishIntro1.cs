@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelFinishIntro1: MonoBehaviour
+public class LevelFinishIntro1 : MonoBehaviour
 {
     public GameObject intro;
     public GameObject text1;
@@ -40,7 +40,7 @@ public class LevelFinishIntro1: MonoBehaviour
 
     private IEnumerator ActivationRoutineText2()
     {
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(9);
 
         text2.SetActive(true);
 
