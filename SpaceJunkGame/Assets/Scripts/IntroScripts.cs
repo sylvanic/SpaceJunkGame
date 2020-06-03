@@ -5,48 +5,34 @@ using UnityEngine.UI;
 
 public class IntroScripts : MonoBehaviour
 {
-    //First intro
     public GameObject intro1;
     public GameObject intro2;
     public GameObject intro3;
 
-    //Second intro
     public GameObject intro4;
     public GameObject intro5;
 
-    //Third intro
     public GameObject intro6;
     public GameObject intro7;
 
-    //Fourth intro
     public GameObject intro8;
     public GameObject intro9;
 
-    //Fifth intro
     public GameObject intro10;
     public GameObject intro11;
 
-    //Sixth intro
     public GameObject intro12;
     public GameObject intro13;
 
-    //Seventh intro intro
     public GameObject intro14;
     public GameObject intro15;
     public GameObject intro16;
 
-    //Blackscreen background
     public GameObject blackscreen;
-    //Astronaut Anim
+
     public GameObject astronautInteraction;
     public GameObject astronautAppear;
 
-    //public ThirdPersonController controller; //User Controller
-    //public GameObject cam; //Main camera of the player
-    //public TimerDisplay timer; //Timer of the game
-
-    //First three intro tabs click events
-    //Each tab is triggered once the button is pressed
     bool firstIntro = true;
     public void SkipIntro1()
     {
@@ -84,9 +70,6 @@ public class IntroScripts : MonoBehaviour
         }
     }
 
-    //-----------------------------------------------//
-
-    //Second two intro tabs click event
     bool fourthIntro = true;
     public void SkipIntro4()
     {
@@ -112,9 +95,6 @@ public class IntroScripts : MonoBehaviour
         }
     }
 
-    //--------------------------------------//
-
-    //Third two intro tabs click event
     bool sixthIntro = true;
     public void SkipIntro6()
     {
@@ -140,9 +120,6 @@ public class IntroScripts : MonoBehaviour
         }
     }
 
-    //------------------------------------------//
-
-    //Fourth two intro tabs click event
     bool eightthIntro = true;
     public void SkipIntro8()
     {
@@ -168,9 +145,6 @@ public class IntroScripts : MonoBehaviour
         }
     }
 
-    //------------------------------------------//
-
-    //Fifth two intro tabs click event
     bool tenthIntro = true;
     public void SkipIntro10()
     {
@@ -196,9 +170,6 @@ public class IntroScripts : MonoBehaviour
         }
     }
 
-    //--------------------------------------------//
-
-    //Sixth five intro tabs click event
     bool twelvethIntro = true;
     public void SkipIntro12()
     {
@@ -260,8 +231,6 @@ public class IntroScripts : MonoBehaviour
         }
     }
 
-    //--------------------------------------------//
-
     void Update()
     {
         ShowIntro();
@@ -270,7 +239,6 @@ public class IntroScripts : MonoBehaviour
         AsteroidCollide();
     }
 
-    //First tutorial intro tab
     private IEnumerator StartIntro1()
     {
         yield return new WaitForSeconds(1);
@@ -292,7 +260,6 @@ public class IntroScripts : MonoBehaviour
         astronautInteraction.SetActive(false);
     }
 
-    //Second tutorial intro tab
     private IEnumerator StartIntro2()
     {
         yield return new WaitForSeconds(1);
@@ -308,7 +275,6 @@ public class IntroScripts : MonoBehaviour
         intro5.SetActive(false);
     }
 
-    //Third tutorial intro tab
     private IEnumerator StartIntro3()
     {
         yield return new WaitForSeconds(1);
@@ -324,7 +290,6 @@ public class IntroScripts : MonoBehaviour
         intro7.SetActive(false);
     }
 
-    //Fourth tutorial intro tab
     private IEnumerator StartIntro4()
     {
         yield return new WaitForSeconds(1);
@@ -340,7 +305,6 @@ public class IntroScripts : MonoBehaviour
         intro9.SetActive(false);
     }
 
-    //Fifth tutorial intro tab
     private IEnumerator StartIntro5()
     {
         yield return new WaitForSeconds(1);
@@ -356,7 +320,6 @@ public class IntroScripts : MonoBehaviour
         intro11.SetActive(false);
     }
 
-    //Sixth tutorial intro tab
     private IEnumerator StartIntro6()
     {
         yield return new WaitForSeconds(1);
@@ -384,7 +347,6 @@ public class IntroScripts : MonoBehaviour
         astronautInteraction.SetActive(false);
     }
 
-    //Start first introduction once the game has started
     bool intro1popup = true;
     public void ShowIntro()
     {
@@ -398,7 +360,6 @@ public class IntroScripts : MonoBehaviour
         }
     }
 
-    //If "W" keyboard button is pressed once, display this
     bool intro2popup = true;
     public void DetectInput()
     {
@@ -412,7 +373,6 @@ public class IntroScripts : MonoBehaviour
         }
     }
 
-    //For the score amount reached, display this
     bool intro3popup = true;
     public void CollectCubes()
     {
@@ -426,7 +386,6 @@ public class IntroScripts : MonoBehaviour
         }
     }
 
-    //Asteroid getting hit with the player, display this
     bool intro4popup = true;
     public void AsteroidCollide()
     {
@@ -440,11 +399,10 @@ public class IntroScripts : MonoBehaviour
         }
     }
 
-    //Asteroid destroyed, display this
     bool intro5popup = true;
     public void AsteroidDestroyed()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.K))
         {
             if (intro5popup)
             {
@@ -454,11 +412,10 @@ public class IntroScripts : MonoBehaviour
         }
     }
 
-    //Asteroid destroyed, display this
     bool intro6popup = true;
     public void UpgradeShip()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.J))
         {
             if (intro6popup)
             {
@@ -467,20 +424,4 @@ public class IntroScripts : MonoBehaviour
             }
         }
     }
-
-    //If score reached to a specific amount, display this
-    /*bool intro3popup = true;
-    public void CollectCubes()
-    {
-        if (ScoreDisplay.theScore == 10)
-        {
-            if (intro3popup)
-            {
-                StartCoroutine(StartIntro3());
-                intro3popup = false;
-            }
-        }
-    }*/
-
-
 }

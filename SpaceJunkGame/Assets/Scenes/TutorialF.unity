@@ -2404,6 +2404,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EarthModel_optimized
       objectReference: {fileID: 0}
+    - target: {fileID: 6425194013498277960, guid: 6926b622e35a17e40a1e7075307d3654,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8030347156330050139, guid: 6926b622e35a17e40a1e7075307d3654,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14329,6 +14334,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4068224992584141240, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4068224992584141243, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20098,6 +20108,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpaceStation
+      objectReference: {fileID: 0}
+    - target: {fileID: 248513086363997185, guid: e53625122720e3340bade05d1776892b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3830800272726550034, guid: e53625122720e3340bade05d1776892b,
         type: 3}
