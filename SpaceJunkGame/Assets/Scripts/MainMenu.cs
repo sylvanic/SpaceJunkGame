@@ -14,21 +14,18 @@ public class MainMenu : MonoBehaviour
     public string ageGroup;
     [Space]
 
-
     public TMP_InputField playerNameInputField;
     private SoundManager soundManager;
-    public GameObject LevelMenuScreen;
-    public GameObject MainMenuScreen;
 
-    Button selectedAgeButton;
-    Button selectedGenderButton;
+    private Button selectedAgeButton;
+    private Button selectedGenderButton;
 
     private Color male, female, other;
     private Color child, teen, adult;
 
-    Color ageSelected = Color.blue;
-    Color genderSelected = Color.blue;
-    Color deselected = Color.white;
+    private Color ageSelected = Color.blue;
+    private Color genderSelected = Color.blue;
+    private Color deselected = Color.white;
 
     private void Awake()
     {
@@ -42,10 +39,7 @@ public class MainMenu : MonoBehaviour
             (gender == "male" || gender == "female" || gender == "other") && 
             (ageGroup == "child" || ageGroup == "teen" || ageGroup == "adult"))
         {
-            ///SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);   ///Plays next scene in game build
-            LevelMenuScreen.SetActive(true);
-            MainMenuScreen.SetActive(false);
-            
+            SceneManager.LoadScene("SelectLevel"); 
         }
         else
         {
