@@ -30,7 +30,7 @@ public class SelectLevel : MonoBehaviour
 
     private void SelectLevel3()
     {
-        SceneManager.LoadScene("TutorialF");
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void BackToMainMenu()
