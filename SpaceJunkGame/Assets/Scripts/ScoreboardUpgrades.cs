@@ -4,25 +4,29 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+
 public class ScoreboardUpgrades : MonoBehaviour
 {
     [SerializeField]
     private bool checkChallengedCompleted;
-  
+    public int levelScoreMinimum = 50;
     public GameObject UpgradeBoard;
     public GameObject MissionCompleted;
-
-    
+    [Space]
     private Button selectedUpgradeBtn;
     private Color deselected = Color.white;
     private Color upgradeSelected = Color.black;
     private Color boosterUpg, weaponUpg, capacityUpg, shieldUpg;
-    public string upgrade;
-    
+    private string upgrade;
 
-    public void CheckObjectivesCompleted()
+    private void Start()
     {
-        if (LevelFinishIntro.score > 100)
+        PlayerStats.currentScore = 124;
+    }
+    
+    public void CheckChallengeCompleted()
+    {
+        if (PlayerStats.currentScore > levelScoreMinimum)    /// Mission Completed
         {
             if (checkChallengedCompleted == false)
             {
@@ -30,13 +34,13 @@ public class ScoreboardUpgrades : MonoBehaviour
             }
             else
             {
-                UpgradeBoard.SetActive(true);
+                UpgradeBoard.SetActive(true);      /// Challenge Completed
                 MissionCompleted.SetActive(false);
             }
         }
         else
         {
-            SceneManager.LoadScene("GameTest");
+            SceneManager.LoadScene("GameTest");    /// Mission Failed
         }
     }
 
@@ -96,6 +100,4 @@ public class ScoreboardUpgrades : MonoBehaviour
             upgrade = "";
         }
     }
-    
-
 }

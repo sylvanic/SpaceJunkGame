@@ -120,7 +120,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2045394895396224062}
-        m_MethodName: CheckObjectivesCompleted
+        m_MethodName: CheckChallengeCompleted
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -453,7 +453,7 @@ GameObject:
   - component: {fileID: 4222536283654343777}
   - component: {fileID: 8325619356124301353}
   m_Layer: 5
-  m_Name: Star1
+  m_Name: BronzeStar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -527,7 +527,7 @@ GameObject:
   - component: {fileID: 4592528137842205771}
   - component: {fileID: 5990141832387779972}
   m_Layer: 5
-  m_Name: ScoreText
+  m_Name: ScoreInput
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -840,6 +840,7 @@ GameObject:
   - component: {fileID: 6139364267869511846}
   - component: {fileID: 2666305021144720733}
   - component: {fileID: 1039402742928847282}
+  - component: {fileID: 2854113420684800670}
   m_Layer: 5
   m_Name: MissionFailed
   m_TagString: Untagged
@@ -911,6 +912,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2854113420684800670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2302741688310956422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcbbe65a3c86bcb4a97c8f2ec59bde3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BronzeStar: {fileID: 762069416448369392}
+  SilverStar: {fileID: 8195570709462898481}
+  GoldStar: {fileID: 6770286607455939338}
+  OneStar: 50
+  TwoStar: 100
+  ThreeStar: 150
+  scoreboardScore: {fileID: 8443701740249991306}
 --- !u!1 &3327152601436952886
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,7 +1562,7 @@ GameObject:
   - component: {fileID: 1372388595034405879}
   - component: {fileID: 5580465571832517555}
   m_Layer: 5
-  m_Name: Star3
+  m_Name: GoldStar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1616,7 +1636,7 @@ GameObject:
   - component: {fileID: 3203664638716969904}
   - component: {fileID: 8443701740249991306}
   m_Layer: 5
-  m_Name: ScoreText
+  m_Name: ScoreInput
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1930,7 +1950,7 @@ GameObject:
   - component: {fileID: 7622684261643648164}
   - component: {fileID: 601409716923022372}
   m_Layer: 5
-  m_Name: Star2
+  m_Name: SilverStar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2044,9 +2064,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkChallengedCompleted: 1
+  levelScoreMinimum: 50
   UpgradeBoard: {fileID: 8955408136043561572}
   MissionCompleted: {fileID: 8606638224349818755}
-  upgrade: 
 --- !u!1 &8606638222683339201
 GameObject:
   m_ObjectHideFlags: 0
@@ -2346,7 +2366,7 @@ GameObject:
   - component: {fileID: 8606638223060724763}
   - component: {fileID: 8606638223060724760}
   m_Layer: 5
-  m_Name: Star3
+  m_Name: GoldStar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2406,7 +2426,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
 --- !u!1 &8606638223094086312
 GameObject:
@@ -2864,7 +2884,7 @@ GameObject:
   - component: {fileID: 8606638223375563480}
   - component: {fileID: 8606638223375563481}
   m_Layer: 5
-  m_Name: Star1
+  m_Name: BronzeStar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2924,7 +2944,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
 --- !u!1 &8606638223385721774
 GameObject:
@@ -3539,7 +3559,7 @@ GameObject:
   - component: {fileID: 8606638223962425478}
   - component: {fileID: 8606638223962425479}
   m_Layer: 5
-  m_Name: Star2
+  m_Name: SilverStar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3599,7 +3619,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
 --- !u!1 &8606638224124073351
 GameObject:
@@ -3721,7 +3741,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2045394895396224062}
-        m_MethodName: CheckObjectivesCompleted
+        m_MethodName: CheckChallengeCompleted
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4041,6 +4061,7 @@ GameObject:
   - component: {fileID: 8606638224349818754}
   - component: {fileID: 8606638224349818756}
   - component: {fileID: 8606638224349818757}
+  - component: {fileID: 1592220705245768690}
   m_Layer: 5
   m_Name: MissionCompleted
   m_TagString: Untagged
@@ -4112,6 +4133,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1592220705245768690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8606638224349818755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcbbe65a3c86bcb4a97c8f2ec59bde3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BronzeStar: {fileID: 8606638223375563479}
+  SilverStar: {fileID: 8606638223962425477}
+  GoldStar: {fileID: 8606638223060724758}
+  OneStar: 50
+  TwoStar: 100
+  ThreeStar: 150
+  scoreboardScore: {fileID: 5990141832387779972}
 --- !u!1 &8955408136043561572
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,7 +16,7 @@ public class PlayerStats : MonoBehaviour
     public int maxCapacity = 3;
 
     //score
-    public int currentScore;
+    public static int currentScore;
     public TextMeshProUGUI scoreText;
     [SerializeField]private int scoreMultiplier;
 
