@@ -18,14 +18,6 @@ public class TutorialInteraction : MonoBehaviour
 
     public GameObject intro8;
 
-    public GameObject intro9;
-    public GameObject intro10;
-
-    public GameObject intro11;
-    public GameObject intro12;
-    public GameObject intro13;
-    public GameObject intro14;
-
     public GameObject blackscreen;
 
     public GameObject astronautInteraction;
@@ -33,6 +25,7 @@ public class TutorialInteraction : MonoBehaviour
 
     public PlayerStats playerStats;
 
+    public GameObject asteroidCollide;
     public GameObject junkDump;
 
     //First Intro
@@ -136,81 +129,6 @@ public class TutorialInteraction : MonoBehaviour
         }
     }
 
-    //Fifth Intro
-    bool ninethIntro = true;
-    public void SkipIntro9()
-    {
-        if (ninethIntro)
-        {
-            intro9.SetActive(false);
-            ninethIntro = false;
-            StopAllCoroutines();
-            intro10.SetActive(true);
-        }
-    }
-
-    bool tenthIntro = true;
-    public void SkipIntro10()
-    {
-        if (tenthIntro)
-        {
-            intro10.SetActive(false);
-            tenthIntro = false;
-            astronautInteraction.SetActive(false);
-            StopAllCoroutines();
-        }
-    }
-
-    //Sixth Intro
-    bool eleventhIntro = true;
-    public void SkipIntro11()
-    {
-        if (eleventhIntro)
-        {
-            intro11.SetActive(false);
-            eleventhIntro = false;
-            StopAllCoroutines();
-            intro12.SetActive(true);
-        }
-    }
-
-    bool twelvethIntro = true;
-    public void SkipIntro12()
-    {
-        if (twelvethIntro)
-        {
-            intro12.SetActive(false);
-            twelvethIntro = false;
-            StopAllCoroutines();
-            intro13.SetActive(true);
-        }
-    }
-
-    bool thirteenthIntro = true;
-    public void SkipIntro13()
-    {
-        if (thirteenthIntro)
-        {
-            intro13.SetActive(false);
-            thirteenthIntro = false;
-            StopAllCoroutines();
-            intro14.SetActive(true);
-        }
-    }
-
-    bool fourteenthIntro = true;
-    public void SkipIntro14()
-    {
-        if (fourteenthIntro)
-        {
-            intro14.SetActive(false);
-            fourteenthIntro = false;
-            astronautInteraction.SetActive(false);
-            StopAllCoroutines();
-            SceneManager.LoadScene("GameTest");
-        }
-    }
-
     public void NextScene()
     {
         SceneManager.LoadScene("GameTest");
@@ -222,7 +140,7 @@ public class TutorialInteraction : MonoBehaviour
         DetectInput();
         ScoreDetect();
         DetectDump();
-        DetectLaser();
+        //DetectAsteroid();
     }
 
     private IEnumerator StartIntro1()
@@ -272,7 +190,7 @@ public class TutorialInteraction : MonoBehaviour
         astronautInteraction.SetActive(false);
     }
 
-    private IEnumerator StartIntro4()
+    public IEnumerator StartIntro4()
     {
         yield return new WaitForSeconds(1);
         astronautInteraction.SetActive(true);
@@ -280,27 +198,18 @@ public class TutorialInteraction : MonoBehaviour
         yield return new WaitForSeconds(3);
         intro8.SetActive(false);
         astronautInteraction.SetActive(false);
+        SceneManager.LoadScene("GameTest");
     }
 
-    private IEnumerator StartIntro6()
+    /*private IEnumerator StartIntro5()
     {
         yield return new WaitForSeconds(1);
         astronautInteraction.SetActive(true);
-        intro11.SetActive(true);
+        intro9.SetActive(true);
         yield return new WaitForSeconds(3);
-        intro11.SetActive(false);
-        intro12.SetActive(true);
-        yield return new WaitForSeconds(3);
-        intro12.SetActive(false);
-        intro13.SetActive(true);
-        yield return new WaitForSeconds(3);
-        intro13.SetActive(false);
-        intro14.SetActive(true);
-        yield return new WaitForSeconds(3);
-        intro14.SetActive(false);
+        intro9.SetActive(false);
         astronautInteraction.SetActive(false);
-        SceneManager.LoadScene("GameTest");
-    }
+    }*/
 
     bool intro1popup = true;
     public void ShowIntro()
@@ -354,16 +263,13 @@ public class TutorialInteraction : MonoBehaviour
         }
     }
 
-    bool intro6popup = true;
-    public void DetectLaser()
-    {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            if (intro6popup)
-            {
-                StartCoroutine(StartIntro6());
-                intro6popup = false;
-            }
-        }
-    }
+    /*bool intro5popup = true;
+    public void DetectAsteroid()
+    {                      
+        if (intro5popup)
+           {
+              StartCoroutine(StartIntro5());
+              intro5popup = false;
+           }                 
+    }*/
 }
