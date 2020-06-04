@@ -20,7 +20,7 @@ public class JunkDump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TrashDisposalLabel.SetText("Dump collected space junk: " + junkDumped + "/" + maxJunkDumped);
+        //TrashDisposalLabel.SetText("Dump collected space junk: " + junkDumped + "/" + maxJunkDumped);
        // WinCondition();
     }
 
