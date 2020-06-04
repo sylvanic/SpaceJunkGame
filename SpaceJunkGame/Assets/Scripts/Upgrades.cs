@@ -6,9 +6,20 @@ public class Upgrades : MonoBehaviour
 {
     [Header("Booster Upgrade")]  
     [SerializeField] private float upgradedMovementSpeed = 8f;
+    public GameObject boosterObj;
     
     [Header("Capacity Upgrade")]
     [SerializeField] private int upgradedCapacity = 0;
+    public GameObject capacityObj;
+
+    [Header("Gun Upgrade")]
+    public GameObject gunObj;
+
+    [Header("Shield Upgrade")]
+    public GameObject shieldObj;
+
+    
+
     
     void Start()
     {
@@ -24,15 +35,22 @@ public class Upgrades : MonoBehaviour
     public void BoosterUpgrade()
     {
        GetComponentInParent<PlayerController>().movementSpeed = upgradedMovementSpeed;
+       boosterObj.SetActive(true);
+        
     }
 
     public void CapacityUpgrade()
     {
         GetComponentInParent<PlayerStats>().capacity = upgradedCapacity;
+        capacityObj.SetActive(true);
     }
 
     public void ShieldUpgrade(){
-        
+        shieldObj.SetActive(true);
+    }
+
+    public void GunUpgrade(){
+        gunObj.SetActive(true);
     }
 
 
