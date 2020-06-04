@@ -65,7 +65,7 @@ public class LevelFinishIntro : MonoBehaviour
     {
         yield return new WaitForSeconds(18);
 
-        if (PlayerStats.currentScore > 50)
+        if (PlayerStats.totalScore > 30)
         {
             MissionComplete.SetActive(true);
         }

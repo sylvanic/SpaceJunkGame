@@ -17,6 +17,7 @@ public class PlayerStats : MonoBehaviour
 
     //score
     public static int currentScore;
+    public static int totalScore;
     public TextMeshProUGUI scoreText;
     [SerializeField]private int scoreMultiplier;
 
@@ -50,7 +51,8 @@ public class PlayerStats : MonoBehaviour
     public void UpdateScore(){
         
         currentScore *= scoreMultiplier;
-        scoreText.text = "Score:" + currentScore;
+        totalScore += currentScore;
+        scoreText.text = "Score:" + totalScore;
     }
 
     void OnCollisionEnter(Collision obj)

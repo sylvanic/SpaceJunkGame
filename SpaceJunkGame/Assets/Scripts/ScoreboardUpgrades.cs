@@ -19,14 +19,9 @@ public class ScoreboardUpgrades : MonoBehaviour
     private Color boosterUpg, weaponUpg, capacityUpg, shieldUpg;
     private string upgrade;
 
-    private void Start()
-    {
-        PlayerStats.currentScore = 124;
-    }
-    
     public void CheckChallengeCompleted()
     {
-        if (PlayerStats.currentScore > levelScoreMinimum)    /// Mission Completed
+        if (PlayerStats.totalScore > levelScoreMinimum)    /// Mission Completed
         {
             if (checkChallengedCompleted == false)
             {
@@ -38,9 +33,18 @@ public class ScoreboardUpgrades : MonoBehaviour
                 MissionCompleted.SetActive(false);
             }
         }
-        else
+        else    /// Mission Failed
+            
         {
-            SceneManager.LoadScene("GameTest");    /// Mission Failed
+            if (SceneManager.GetActiveScene().name == "GameTest")
+            {
+                SceneManager.LoadScene("GameTest");
+            }
+            else if (SceneManager.GetActiveScene().name == "Level_2")
+            {
+                SceneManager.LoadScene("Level_2");
+            }
+           
         }
     }
 
@@ -50,6 +54,11 @@ public class ScoreboardUpgrades : MonoBehaviour
         {
             SceneManager.LoadScene("SelectLevel");
         }
+    }
+
+    public void ReturnToMenu()
+    {
+        SceneManager.LoadScene("NEW_Menu");
     }
 
     public void UpgradeSelected(Button button)
@@ -100,4 +109,5 @@ public class ScoreboardUpgrades : MonoBehaviour
             upgrade = "";
         }
     }
+
 }
