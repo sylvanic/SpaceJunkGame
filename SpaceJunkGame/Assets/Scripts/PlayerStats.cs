@@ -55,7 +55,7 @@ public class PlayerStats : MonoBehaviour
         scoreText.text = "Score:" + totalScore;
     }
 
-    void OnCollisionEnter(Collision obj)
+    public void OnCollisionEnter(Collision obj)
     {
         if (obj.gameObject.tag == "Asteroid")
         {
