@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TutorialInteraction : MonoBehaviour
 {
@@ -23,6 +24,8 @@ public class TutorialInteraction : MonoBehaviour
     public GameObject astronautAppear;
 
     public PlayerStats playerStats;
+
+    public GameObject asteroidCollide;
     public GameObject junkDump;
 
     //First Intro
@@ -113,6 +116,7 @@ public class TutorialInteraction : MonoBehaviour
         }
     }
 
+    //Fourth Intro
     bool eighthIntro = true;
     public void SkipIntro8()
     {
@@ -131,6 +135,7 @@ public class TutorialInteraction : MonoBehaviour
         DetectInput();
         ScoreDetect();
         DetectDump();
+        //DetectAsteroid();
     }
 
     private IEnumerator StartIntro1()
@@ -180,7 +185,7 @@ public class TutorialInteraction : MonoBehaviour
         astronautInteraction.SetActive(false);
     }
 
-    private IEnumerator StartIntro4()
+    public IEnumerator StartIntro4()
     {
         yield return new WaitForSeconds(1);
         astronautInteraction.SetActive(true);
@@ -188,7 +193,18 @@ public class TutorialInteraction : MonoBehaviour
         yield return new WaitForSeconds(3);
         intro8.SetActive(false);
         astronautInteraction.SetActive(false);
+        SceneManager.LoadScene("GameTest");
     }
+
+    /*private IEnumerator StartIntro5()
+    {
+        yield return new WaitForSeconds(1);
+        astronautInteraction.SetActive(true);
+        intro9.SetActive(true);
+        yield return new WaitForSeconds(3);
+        intro9.SetActive(false);
+        astronautInteraction.SetActive(false);
+    }*/
 
     bool intro1popup = true;
     public void ShowIntro()
@@ -241,15 +257,14 @@ public class TutorialInteraction : MonoBehaviour
             }
         }
     }
-    /*private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.name == "SpaceStation")
-        {
-            if (intro4popup)
-            {
-                StartCoroutine(StartIntro4());
-                intro4popup = false;
-            }
-        }
+
+    /*bool intro5popup = true;
+    public void DetectAsteroid()
+    {                      
+        if (intro5popup)
+           {
+              StartCoroutine(StartIntro5());
+              intro5popup = false;
+           }                 
     }*/
 }
