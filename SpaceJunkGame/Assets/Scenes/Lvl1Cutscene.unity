@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 455354611}
-  m_IndirectSpecularColor: {r: 0.015991025, g: 0.029190004, b: 0.06979136, a: 1}
+  m_IndirectSpecularColor: {r: 0.00844413, g: 0.01801573, b: 0.022380032, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3613,15 +3613,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 881527788}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aad8a070b60dff44e9ebb1daef8d76bf, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f436c0c750166e448b02a8555cde96f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   intro: {fileID: 1420105891}
   text1: {fileID: 1493251184}
   text2: {fileID: 2029315365}
   text3: {fileID: 2116376202}
-  MissionComplete: {fileID: 5387128358175295607}
-  MissionFailed: {fileID: 1173698930}
+  MissionComplete: {fileID: 4445623953021708278}
+  MissionFailed: {fileID: 4445623953021708277}
 --- !u!1001 &893118581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4738,12 +4738,6 @@ MonoBehaviour:
   randomize: 1
   maxSpeed: 5
   minSpeed: 3
---- !u!1 &1173698930 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2302741688310956422, guid: 821d46f7cddd408459a7eb31aeb83f30,
-    type: 3}
-  m_PrefabInstance: {fileID: 4445623953021708276}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1226274862
 GameObject:
   m_ObjectHideFlags: 0
@@ -8006,6 +8000,17 @@ PrefabInstance:
       propertyPath: UpgradeBoard
       value: 
       objectReference: {fileID: 4619622}
+    - target: {fileID: 2045394895396224062, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: BoosterObject
+      value: 
+      objectReference: {fileID: 8725587909071885099, guid: 553777566d533f9418532fa28313c583,
+        type: 3}
+    - target: {fileID: 2045394895396224062, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: ParentObject
+      value: 
+      objectReference: {fileID: 893118583}
     - target: {fileID: 3725463968537268820, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -8661,9 +8666,20 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8955408136043561572, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 821d46f7cddd408459a7eb31aeb83f30, type: 3}
---- !u!1 &5387128358175295607 stripped
+--- !u!1 &4445623953021708277 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2302741688310956422, guid: 821d46f7cddd408459a7eb31aeb83f30,
+    type: 3}
+  m_PrefabInstance: {fileID: 4445623953021708276}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4445623953021708278 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8606638224349818755, guid: 821d46f7cddd408459a7eb31aeb83f30,
     type: 3}
