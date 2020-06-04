@@ -43,7 +43,15 @@ public class CountdownTimer : MonoBehaviour
         //CHANGE SCENE ONCE TIME IS UP
         Debug.Log("bruh moment #3");
         soundManager.TimerBuzzer.Play();
-        SceneManager.LoadScene("Lvl1Cutscene");
+        if (SceneManager.GetActiveScene().name == "GameTest")
+        {
+            SceneManager.LoadScene("Lvl1Cutscene");
+        }
+        else if (SceneManager.GetActiveScene().name == "Level_2")
+        {
+            SceneManager.LoadScene("Lvl2Cutscene");
+        }
+        
 
     }
 }

@@ -24,7 +24,7 @@ public class ScoreResults : MonoBehaviour
 
     void Start()
     {
-        scoreboardScore.text = PlayerStats.currentScore.ToString();
+        scoreboardScore.text = PlayerStats.totalScore.ToString();
         Stars();
     }
     
@@ -35,17 +35,17 @@ public class ScoreResults : MonoBehaviour
         tmpGold = GoldStar.GetComponent<Image>().color;
 
 
-        if (PlayerStats.currentScore > OneStar)
+        if (PlayerStats.totalScore > OneStar)
         {
             tmpBronze.a = 1f;
             BronzeStar.GetComponent<Image>().color = tmpBronze;
 
-            if (PlayerStats.currentScore > TwoStar)
+            if (PlayerStats.totalScore > TwoStar)
             {
                 tmpSilver.a = 1f;
                 SilverStar.GetComponent<Image>().color = tmpSilver;
 
-                if (PlayerStats.currentScore > ThreeStar)
+                if (PlayerStats.totalScore > ThreeStar)
                 {
                     tmpGold.a = 1f;
                     GoldStar.GetComponent<Image>().color = tmpGold;
