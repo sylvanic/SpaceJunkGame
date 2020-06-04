@@ -16,7 +16,8 @@ public class PlayerStats : MonoBehaviour
     public int maxCapacity = 3;
 
     //score
-    public int currentScore;
+    public static int currentScore;
+    public static int totalScore;
     public TextMeshProUGUI scoreText;
     [SerializeField]private int scoreMultiplier;
 
@@ -50,7 +51,8 @@ public class PlayerStats : MonoBehaviour
     public void UpdateScore(){
         
         currentScore *= scoreMultiplier;
-        scoreText.text = "Score:" + currentScore;
+        totalScore += currentScore;
+        scoreText.text = "Score:" + totalScore;
     }
 
     public void OnCollisionEnter(Collision obj)
