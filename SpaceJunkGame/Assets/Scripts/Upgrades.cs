@@ -9,9 +9,6 @@ public class Upgrades : MonoBehaviour
     
     [Header("Capacity Upgrade")]
     [SerializeField] private int upgradedCapacity = 0;
-
-    public GameObject boosterObj;
-    public GameObject parent;
     
     void Start()
     {
@@ -27,8 +24,6 @@ public class Upgrades : MonoBehaviour
     public void BoosterUpgrade()
     {
        GetComponentInParent<PlayerController>().movementSpeed = upgradedMovementSpeed;
-        boosterObj = Instantiate(boosterObj);
-        boosterObj.transform.parent = parent.transform;
     }
 
     public void CapacityUpgrade()
