@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class TutorialInteraction : MonoBehaviour
 {
-    public PlayerStats capacity;
-
     public GameObject intro1;
     public GameObject intro2;
     public GameObject intro3;
@@ -17,10 +15,15 @@ public class TutorialInteraction : MonoBehaviour
 
     public GameObject intro7;
 
+    public GameObject intro8;
+
     public GameObject blackscreen;
 
     public GameObject astronautInteraction;
     public GameObject astronautAppear;
+
+    public PlayerStats playerStats;
+    public GameObject junkDump;
 
     //First Intro
     bool firstIntro = true;
@@ -110,11 +113,24 @@ public class TutorialInteraction : MonoBehaviour
         }
     }
 
+    bool eighthIntro = true;
+    public void SkipIntro8()
+    {
+        if (eighthIntro)
+        {
+            intro8.SetActive(false);
+            eighthIntro = false;
+            astronautInteraction.SetActive(false);
+            StopAllCoroutines();
+        }
+    }
+
     void Update()
     {
         ShowIntro();
         DetectInput();
         ScoreDetect();
+        DetectDump();
     }
 
     private IEnumerator StartIntro1()
@@ -164,6 +180,16 @@ public class TutorialInteraction : MonoBehaviour
         astronautInteraction.SetActive(false);
     }
 
+    private IEnumerator StartIntro4()
+    {
+        yield return new WaitForSeconds(1);
+        astronautInteraction.SetActive(true);
+        intro8.SetActive(true);
+        yield return new WaitForSeconds(3);
+        intro8.SetActive(false);
+        astronautInteraction.SetActive(false);
+    }
+
     bool intro1popup = true;
     public void ShowIntro()
     {
@@ -193,13 +219,37 @@ public class TutorialInteraction : MonoBehaviour
     bool intro3popup = true;
     public void ScoreDetect()
     {
-        if (capacity.GetComponent<PlayerStats>().capacity == 3)
+        if (playerStats.capacity == 3)
         {
-            if (intro2popup)
+            if (intro3popup)
             {
-                StartCoroutine(StartIntro2());
-                intro2popup = false;
+                StartCoroutine(StartIntro3());
+                intro3popup = false;
             }
         }
     }
+
+    bool intro4popup = true;
+    public void DetectDump()
+    {
+        if(junkDump.GetComponent<JunkDump>().junkDumped >= 3)
+        {
+            if (intro4popup)
+            {
+                StartCoroutine(StartIntro4());
+                intro4popup = false;
+            }
+        }
+    }
+    /*private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.name == "SpaceStation")
+        {
+            if (intro4popup)
+            {
+                StartCoroutine(StartIntro4());
+                intro4popup = false;
+            }
+        }
+    }*/
 }
