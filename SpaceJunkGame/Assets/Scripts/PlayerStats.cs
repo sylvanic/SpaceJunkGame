@@ -8,7 +8,6 @@ using TMPro;
 
 public class PlayerStats : MonoBehaviour
 {
-
     //Capacity UI and Stats
     public Slider capacitySlider;
     public TextMeshProUGUI capacityText;
@@ -56,15 +55,13 @@ public class PlayerStats : MonoBehaviour
     }
 
     public void OnCollisionEnter(Collision obj)
-    {
+    {      
         if (obj.gameObject.tag == "Asteroid")
         {
             soundManager.AsteroidCrash.Play();
             capacity--;
-
+                             
             Destroy(obj.gameObject,.2f);
         }
     }
-
-
 }
