@@ -4237,7 +4237,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Congrats! Move on to the game!
+  m_Text: Good Job! Now try to get hit by an asteroid.
 --- !u!222 &1278206520
 CanvasRenderer:
   m_ObjectHideFlags: 0
