@@ -21,9 +21,14 @@ public class ScoreboardUpgrades : MonoBehaviour
 
     private void Start()
     {
-        PlayerStats.currentScore = 124;
+        //PlayerStats.currentScore = 124;
     }
-    
+
+    private void Update()
+    {
+        Debug.Log(PlayerStats.currentScore);
+    }
+
     public void CheckChallengeCompleted()
     {
         if (PlayerStats.currentScore > levelScoreMinimum)    /// Mission Completed
@@ -100,4 +105,5 @@ public class ScoreboardUpgrades : MonoBehaviour
             upgrade = "";
         }
     }
+
 }
