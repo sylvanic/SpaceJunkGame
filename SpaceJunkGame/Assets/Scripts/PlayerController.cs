@@ -9,15 +9,11 @@ public class PlayerController : MonoBehaviour
 
     public Transform shootingPont;
     public Projectile projectile;
+    public Projectile upgradedProjectile;
     private SoundManager soundManager;
-
-
-
-   
 
     Transform myT;
 
-  
 
     private void Awake()
     {
