@@ -35,31 +35,26 @@ public class SoundManager : MonoBehaviour
 
     private void Start()
     {
-        if (SceneManager.GetActiveScene().name == "NEW_Menu")
+        if (SceneManager.GetActiveScene().name == "NEW_Menu" || SceneManager.GetActiveScene().name == "SelectLevel")
         {
             Menu.Play();
         }
-        else if (SceneManager.GetActiveScene().name == "Intro")
+
+        else if (SceneManager.GetActiveScene().name == "Intro" || 
+                 SceneManager.GetActiveScene().name == "Lvl1Cutscene" || 
+                 SceneManager.GetActiveScene().name == "Lvl2Cutscene")
         {
             Cutscene.Play();
-
-         //   Menu.Stop();
         }
+
         else if (SceneManager.GetActiveScene().name == "TutorialF")
         {
             Tutorial.Play();
-
-           // Cutscene.Stop();
         }
+
         else if (SceneManager.GetActiveScene().name == "GameTest")
         {
             InGame.Play();
-
-          //  Tutorial.Stop();
-        }
-        else if (SceneManager.GetActiveScene().name == "Lvl1Cutscene")
-        {
-            Cutscene.Play();
         }
     }
 

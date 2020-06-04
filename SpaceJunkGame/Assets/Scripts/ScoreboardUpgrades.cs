@@ -5,58 +5,42 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
-public class ShipUpgrades : MonoBehaviour
+public class ScoreboardUpgrades : MonoBehaviour
 {
     [SerializeField]
     private bool checkChallengedCompleted;
-    public GameObject ScoreBoard;
+    public int levelScoreMinimum = 50;
     public GameObject UpgradeBoard;
-    public TMP_Text Timertext;
-
+    public GameObject MissionCompleted;
+    [Space]
     private Button selectedUpgradeBtn;
-
     private Color deselected = Color.white;
     private Color upgradeSelected = Color.black;
-    public Color boosterUpg, weaponUpg, capacityUpg, shieldUpg;
+    private Color boosterUpg, weaponUpg, capacityUpg, shieldUpg;
+    private string upgrade;
 
-    public string upgrade;
-
-    [SerializeField]
-    public bool isLevelDone;
-    
-
-    /*
-    public void LevelDone()
+    private void Start()
     {
-        if (Timertext.text == "70")
-        {
-            isLevelDone = true;
-            Debug.Log("wow nice");
-
-            if (isLevelDone)
-            {
-                ScoreBoard.SetActive(true);
-                Time.timeScale = 1;
-
-            }
-
-        }
-       
+        PlayerStats.currentScore = 124;
     }
-    */
-
-
-    public void CheckChallengedCompleted()
+    
+    public void CheckChallengeCompleted()
     {
-        if (checkChallengedCompleted == false)
+        if (PlayerStats.currentScore > levelScoreMinimum)    /// Mission Completed
         {
-            SceneManager.LoadScene("Level2");
-            Debug.Log("Challenge not comppleted");
+            if (checkChallengedCompleted == false)
+            {
+                SceneManager.LoadScene("SelectLevel");
+            }
+            else
+            {
+                UpgradeBoard.SetActive(true);      /// Challenge Completed
+                MissionCompleted.SetActive(false);
+            }
         }
         else
         {
-            UpgradeBoard.SetActive(true);
-            Debug.Log("Challenge completed");
+            SceneManager.LoadScene("GameTest");    /// Mission Failed
         }
     }
 
@@ -64,11 +48,9 @@ public class ShipUpgrades : MonoBehaviour
     {
         if (checkChallengedCompleted == true)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            Debug.Log("Welcome to level2");
+            SceneManager.LoadScene("SelectLevel");
         }
     }
-
 
     public void UpgradeSelected(Button button)
     {
@@ -90,7 +72,7 @@ public class ShipUpgrades : MonoBehaviour
         boosterUpg = GameObject.Find("BoosterUpg").GetComponent<Image>().color;
         weaponUpg = GameObject.Find("WeaponUpg").GetComponent<Image>().color;
         capacityUpg = GameObject.Find("CapacityUpg").GetComponent<Image>().color;
-        //shieldUpg = GameObject.Find("ShieldUpg").GetComponent<Image>().color;
+        shieldUpg = GameObject.Find("ShieldUpg").GetComponent<Image>().color;
 
         if (boosterUpg == Color.black)
         {
@@ -104,22 +86,18 @@ public class ShipUpgrades : MonoBehaviour
         {
             upgrade = "capacity";
         }
-        /*
+        
         else if (shieldUpg == Color.black)
         {
             upgrade = "shield";
         }
-        */
+       
         if (boosterUpg == deselected &&
             weaponUpg == deselected && 
-            capacityUpg == deselected)
+            capacityUpg == deselected &&
+            shieldUpg == deselected)
         {
             upgrade = "";
-            Debug.Log("Choose Upgrade");
         }
-
-        Debug.Log(upgrade);
     }
-
-
 }

@@ -32,4 +32,9 @@ public class SelectLevel : MonoBehaviour
     {
         SceneManager.LoadScene("TutorialF");
     }
+
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene("NEW_Menu");
+    }
 }
