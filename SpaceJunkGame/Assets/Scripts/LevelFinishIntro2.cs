@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelFinishIntro1 : MonoBehaviour
+public class LevelFinishIntro2 : MonoBehaviour
 {
     public GameObject intro;
     public GameObject text1;
     public GameObject text2;
     public GameObject text3;
-    public GameObject blackout;
+    public GameObject MissionComplete;
+    public GameObject MissionFailed;
 
     // Start is called before the first frame update
     void Start()
@@ -64,6 +65,13 @@ public class LevelFinishIntro1 : MonoBehaviour
     {
         yield return new WaitForSeconds(18);
 
-        blackout.SetActive(true);
+        if (PlayerStats.currentScore > 50)
+        {
+            MissionComplete.SetActive(true);
+        }
+        else
+        {
+            MissionFailed.SetActive(true);
+        }
     }
 }
