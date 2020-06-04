@@ -39,23 +39,22 @@ public class SoundManager : MonoBehaviour
         {
             Menu.Play();
         }
-        else if (SceneManager.GetActiveScene().name == "Intro" || SceneManager.GetActiveScene().name == "Lvl1Cutscene")
+
+        else if (SceneManager.GetActiveScene().name == "Intro" || 
+                 SceneManager.GetActiveScene().name == "Lvl1Cutscene" || 
+                 SceneManager.GetActiveScene().name == "Lvl2Cutscene")
         {
             Cutscene.Play();
-
-         //   Menu.Stop();
         }
+
         else if (SceneManager.GetActiveScene().name == "TutorialF")
         {
             Tutorial.Play();
-
-           // Cutscene.Stop();
         }
+
         else if (SceneManager.GetActiveScene().name == "GameTest")
         {
             InGame.Play();
-
-          //  Tutorial.Stop();
         }
     }
 
