@@ -7915,6 +7915,11 @@ PrefabInstance:
       propertyPath: maxCapacity
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4405583657123958212, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
+        type: 3}
+      propertyPath: scoreMultiplier
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4405583657335406348, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8319,6 +8324,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Particle System_Projectile (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2958316187039393563, guid: f47799433d0037844baf71b6dca7567f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f47799433d0037844baf71b6dca7567f, type: 3}
 --- !u!1001 &6431457599075034999
@@ -8643,6 +8653,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Particle System_Projectile
       objectReference: {fileID: 0}
+    - target: {fileID: 1889275412488027924, guid: 40652de160c945440b570a4254db5e01,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40652de160c945440b570a4254db5e01, type: 3}
 --- !u!1001 &7470623526020277751
@@ -8725,6 +8740,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Particle System_Projectile (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325885913466784931, guid: 097dee97fbffd234c8bde7fcafa55aab,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1325885913466784958, guid: 097dee97fbffd234c8bde7fcafa55aab,
         type: 3}

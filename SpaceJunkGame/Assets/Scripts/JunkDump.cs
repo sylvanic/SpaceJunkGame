@@ -31,7 +31,7 @@ public class JunkDump : MonoBehaviour
             soundManager.DropOffStation.Play();
             junkDumped = other.GetComponent<PlayerStats>().capacity;
             other.GetComponent<PlayerStats>().capacity = 0;
-           // other.GetComponent<PlayerStats>().UpdateScore();
+            other.GetComponent<PlayerStats>().UpdateScore();
            // Debug.Log(other.GetComponent<PlayerStats>().currentScore);
         }
     }
