@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 92ddd8623b07cc24b96d23bea348e992,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -509,7 +509,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 21
+  field of view: 30
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -696,7 +696,7 @@ PrefabInstance:
     - target: {fileID: 2350023060357582574, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4405583656893822006, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
         type: 3}
@@ -1398,8 +1398,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 35
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 8
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -6986,14 +6986,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asteroidPrefab: {fileID: 6210494670882218710, guid: 02513c76c3fb190409a705179ce35872,
     type: 3}
-  asteroidDensity: 10
-  seed: 0
+  asteroidDensity: 100
+  seed: 100
   innerRadius: 50
   outerRadius: 30
   height: 0
   rotatingClockwise: 1
   minOrbitSpeed: 1
-  maxOrbitSpeed: 15
+  maxOrbitSpeed: 10
   minRotationSpeed: 1
   maxRotationSpeed: 4
 --- !u!135 &2012334263
