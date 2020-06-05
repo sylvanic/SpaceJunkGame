@@ -178,7 +178,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: boost
+  m_text: Boost
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -693,6 +693,11 @@ PrefabInstance:
       propertyPath: gunObj
       value: 
       objectReference: {fileID: 622574087}
+    - target: {fileID: 2350023060357582574, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4405583656893822006, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1314,13 +1319,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207988615}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
+  m_LocalPosition: {x: 1, y: 10, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 95341047}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 46.822002, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
 --- !u!114 &207988617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4742,7 +4747,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: shield idkw
+  m_text: Immunity
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4811,12 +4816,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1159484118}
-    characterCount: 11
+    characterCount: 8
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 2
+    spaceCount: 0
+    wordCount: 1
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -6979,16 +6984,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f879a7b9e81f3064692fb93134b1e8a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidPrefab: {fileID: 6210494670882218710, guid: fa9f2b1a72f652540bc7b81918faf6c7,
+  asteroidPrefab: {fileID: 6210494670882218710, guid: 02513c76c3fb190409a705179ce35872,
     type: 3}
-  asteroidDensity: 100
+  asteroidDensity: 10
   seed: 0
-  innerRadius: 20
+  innerRadius: 50
   outerRadius: 30
   height: 0
   rotatingClockwise: 1
   minOrbitSpeed: 1
-  maxOrbitSpeed: 30
+  maxOrbitSpeed: 15
   minRotationSpeed: 1
   maxRotationSpeed: 4
 --- !u!135 &2012334263
@@ -7121,7 +7126,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: capacit
+  m_text: Capacity
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7190,7 +7195,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2012994132}
-    characterCount: 7
+    characterCount: 8
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -8504,12 +8509,17 @@ PrefabInstance:
     - target: {fileID: 5368995630043088776, guid: cbe0e6f71ae9ab248af8ec20e2e73dbb,
         type: 3}
       propertyPath: bulletsAmount
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5368995630520180448, guid: cbe0e6f71ae9ab248af8ec20e2e73dbb,
         type: 3}
       propertyPath: m_Name
       value: AsteroidBulletHell
+      objectReference: {fileID: 0}
+    - target: {fileID: 5368995630520180448, guid: cbe0e6f71ae9ab248af8ec20e2e73dbb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5368995630520180449, guid: cbe0e6f71ae9ab248af8ec20e2e73dbb,
         type: 3}
