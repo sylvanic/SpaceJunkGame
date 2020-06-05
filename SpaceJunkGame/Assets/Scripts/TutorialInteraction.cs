@@ -131,7 +131,7 @@ public class TutorialInteraction : MonoBehaviour
 
     public void NextScene()
     {
-        SceneManager.LoadScene("GameTest");
+        SceneManager.LoadScene("SelectLevel");
     }
 
     void Update()
