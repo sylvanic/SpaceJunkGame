@@ -17,6 +17,7 @@ public class Upgrades : MonoBehaviour
 
     [Header("Shield Upgrade")]
     public GameObject shieldObj;
+    public bool isShieldActive = false;
 
     
 
@@ -43,10 +44,12 @@ public class Upgrades : MonoBehaviour
     {
         GetComponentInParent<PlayerStats>().capacity = upgradedCapacity;
         capacityObj.SetActive(true);
+
     }
 
     public void ShieldUpgrade(){
         shieldObj.SetActive(true);
+        
     }
 
     public void GunUpgrade(){
