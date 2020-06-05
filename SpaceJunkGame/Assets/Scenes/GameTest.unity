@@ -729,7 +729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48c1b38c1a405a94e98783df46462875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pooledBullet: {fileID: 0}
+  pooledBullet: {fileID: 1871998069}
 --- !u!4 &150659262
 Transform:
   m_ObjectHideFlags: 0
@@ -6710,6 +6710,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1871998069 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8925568781619131857, guid: 946efc7a0da73fa429369aafd2a4cfd2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1060656673}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1943428048
 GameObject:
   m_ObjectHideFlags: 0
