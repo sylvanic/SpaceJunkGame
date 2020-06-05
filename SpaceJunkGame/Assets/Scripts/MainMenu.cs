@@ -39,7 +39,7 @@ public class MainMenu : MonoBehaviour
             (gender == "male" || gender == "female" || gender == "other") && 
             (ageGroup == "child" || ageGroup == "teen" || ageGroup == "adult"))
         {
-            SceneManager.LoadScene("SelectLevel"); 
+            SceneManager.LoadScene("Intro"); 
         }
         else
         {
