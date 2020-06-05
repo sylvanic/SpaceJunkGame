@@ -49,6 +49,7 @@ public class Upgrades : MonoBehaviour
 
     public void ShieldUpgrade(){
         shieldObj.SetActive(true);
+        
     }
 
     public void GunUpgrade(){
