@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
     {
         Turn();
         Thrust();
-        Shoot();
+     
     }
 
     void Thrust()
@@ -63,10 +63,9 @@ public class PlayerController : MonoBehaviour
 
     public void Shoot()
     {
-        if (Input.GetKeyDown("1"))
-        {
+        
             soundManager.Shoot.Play();
             Projectile newProjectile = Instantiate(projectile, shootingPont.position, shootingPont.rotation) as Projectile;
-        }
+        
     }
 }
