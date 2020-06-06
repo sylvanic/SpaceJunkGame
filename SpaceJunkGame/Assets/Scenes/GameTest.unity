@@ -8990,7 +8990,7 @@ PrefabInstance:
     - target: {fileID: 2743448374143750817, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 33
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 2743448374143750817, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -9015,12 +9015,32 @@ PrefabInstance:
     - target: {fileID: 2743448374143750817, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_text
-      value: Collect 20 sattellites +15 points
+      value: Collect 20 satellites +15 points
       objectReference: {fileID: 0}
     - target: {fileID: 2743448374143750817, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_firstOverflowCharacterIndex
-      value: 27
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300475681395667773, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_text
+      value: 'Deposit junk: 0 / 5'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300475681395667773, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300475681395667773, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3300475681395667773, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3320341461316568404, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
