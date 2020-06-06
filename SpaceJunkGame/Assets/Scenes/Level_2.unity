@@ -1340,7 +1340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 116136223}
   smoothSpeed: 0.125
-  offset: {x: 0, y: 11.5, z: -11.1}
+  offset: {x: 0, y: 2, z: 2}
 --- !u!114 &207988618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1399,7 +1399,7 @@ Camera:
   far clip plane: 1000
   field of view: 35
   orthographic: 1
-  orthographic size: 8
+  orthographic size: 15
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
