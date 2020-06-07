@@ -13,6 +13,7 @@ public class PlayerStats : MonoBehaviour
     public TextMeshProUGUI capacityText;
     public int capacity = 0;
     public int maxCapacity = 3;
+    
 
     //score
     public static int currentScore;
@@ -21,22 +22,34 @@ public class PlayerStats : MonoBehaviour
     [SerializeField]private int scoreMultiplier;
 
     private SoundManager soundManager;
+    //private Sprite exclamation_mark;
 
     void Start()
     {
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
         capacitySlider.maxValue = maxCapacity;
+        
+        
     }
 
     void Update()
     {
        CapacitySliderUpdate();
+       
+       
     }
+   
 
     private void OnGUI()
     {
         // GUI.Label(new Rect(10, 10, 100, 20), "Payload: " + payload + "/" + maxPayload);
         //TrashCollectionLabel.SetText("Collect pieces of space junk: " + capacity + "/" + maxCapacity);
+
+         //if (capacity == maxCapacity)
+        //{
+         // this.gameObject.GetComponent<SpriteRenderer>().sprite = exclamation_mark;
+
+       // }
     }
 
     private void CapacitySliderUpdate()
@@ -45,13 +58,24 @@ public class PlayerStats : MonoBehaviour
         capacitySlider.value = capacity;
         capacityText.text = capacity.ToString();
         currentScore = capacity;
+
+
+//play CapacityFull SFX if the capacity bar is full
+       // if (currentScore == maxCapacity)
+        //{
+          //  soundManager.CapacityFull.Play();
+       // }
     }
+    
+       
+    
 
     public void UpdateScore(){
         
         currentScore *= scoreMultiplier;
         totalScore += currentScore;
         scoreText.text = "Score:" + totalScore;
+        
     }
 
     public void OnCollisionEnter(Collision obj)
