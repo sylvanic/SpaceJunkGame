@@ -47,7 +47,6 @@ public class ScoreboardUpgrades : MonoBehaviour
                 SceneManager.LoadScene("Level_2");
             }
 
-            selectedUpgradeBtn.IsActive
         }
     }
 
