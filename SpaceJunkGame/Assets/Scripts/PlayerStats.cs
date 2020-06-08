@@ -57,7 +57,7 @@ public class PlayerStats : MonoBehaviour
         capacity = Mathf.Clamp(capacity, 0, maxCapacity);
         if(capacity >= maxCapacity)
         {
-            //sound
+            soundManager.CapacityFull.Play();
         }
         else
         {

@@ -2850,6 +2850,11 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6431457599106118966, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 35a341efaa96ed54084c7060b2c56179, type: 3}
     - target: {fileID: 6431457599112077835, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
         type: 3}
       propertyPath: m_audioClip
@@ -5194,7 +5199,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 52c4532cffe64154e8c668ed1231d2cc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.996381
+      value: 5.77
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 52c4532cffe64154e8c668ed1231d2cc,
         type: 3}
@@ -5204,7 +5209,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 52c4532cffe64154e8c668ed1231d2cc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.326947
+      value: 0.82
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 52c4532cffe64154e8c668ed1231d2cc,
         type: 3}
@@ -7227,7 +7232,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: af572a5f707568545815b1043bfa6c2a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.406
+      value: -10.59
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: af572a5f707568545815b1043bfa6c2a,
         type: 3}
@@ -7237,7 +7242,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: af572a5f707568545815b1043bfa6c2a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.548
+      value: 1.63
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: af572a5f707568545815b1043bfa6c2a,
         type: 3}
@@ -9688,6 +9693,11 @@ PrefabInstance:
         type: 3}
       propertyPath: scoreMultiplier
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4405583657123958218, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4405583657335406348, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
         type: 3}
