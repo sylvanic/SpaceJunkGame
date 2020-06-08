@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 92ddd8623b07cc24b96d23bea348e992,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -147,6 +147,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+--- !u!1 &7992364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7992366}
+  - component: {fileID: 7992365}
+  m_Layer: 0
+  m_Name: Post-processing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &7992365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7992364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: ef1268b4759f61d40b22a597adaaab34, type: 2}
+--- !u!4 &7992366
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7992364}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.36, y: 7.841645, z: -4.67}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &14886198 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 427658171226613849, guid: 7b1a7bcae69accb4fa0ec0de28064194,
@@ -408,6 +456,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceShuttle (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7166577522531319351, guid: 61b968d0f1dcb2f47b720f2be5e7c84c,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61b968d0f1dcb2f47b720f2be5e7c84c, type: 3}
 --- !u!4 &54944696 stripped
@@ -493,7 +546,7 @@ Transform:
   - {fileID: 459490022}
   - {fileID: 2118057038}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &92526469
 PrefabInstance:
@@ -1331,6 +1384,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Drone (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 9107331695212827037, guid: 5d8e6b6dbe0b04e429ce1cdbc8e5a480,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d8e6b6dbe0b04e429ce1cdbc8e5a480, type: 3}
 --- !u!4 &125961915 stripped
@@ -1530,6 +1588,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Drone (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 9107331695212827037, guid: 5d8e6b6dbe0b04e429ce1cdbc8e5a480,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d8e6b6dbe0b04e429ce1cdbc8e5a480, type: 3}
 --- !u!4 &200645507 stripped
@@ -1604,6 +1667,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SatelliteV2 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230288622596096194, guid: e03a9ebba87f6204d87cce34ac1c1785,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e03a9ebba87f6204d87cce34ac1c1785, type: 3}
@@ -1698,6 +1766,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SatelliteV2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230288622596096194, guid: e03a9ebba87f6204d87cce34ac1c1785,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e03a9ebba87f6204d87cce34ac1c1785, type: 3}
@@ -2204,6 +2277,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Satellite (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 3140909461892677398, guid: 5d449be38a973424287974a2f6143eca,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d449be38a973424287974a2f6143eca, type: 3}
 --- !u!4 &239438587 stripped
@@ -2297,6 +2375,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Satellite (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140909461892677398, guid: 5d449be38a973424287974a2f6143eca,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d449be38a973424287974a2f6143eca, type: 3}
@@ -2414,7 +2497,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &346538617
 GameObject:
@@ -2714,6 +2797,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceShuttle (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7166577522531319351, guid: 61b968d0f1dcb2f47b720f2be5e7c84c,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61b968d0f1dcb2f47b720f2be5e7c84c, type: 3}
 --- !u!4 &373613048 stripped
@@ -2789,6 +2877,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceShuttle (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7166577522531319351, guid: 61b968d0f1dcb2f47b720f2be5e7c84c,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61b968d0f1dcb2f47b720f2be5e7c84c, type: 3}
 --- !u!1001 &404276756
@@ -2857,6 +2950,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpaceShuttle (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7166577522531319351, guid: 61b968d0f1dcb2f47b720f2be5e7c84c,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61b968d0f1dcb2f47b720f2be5e7c84c, type: 3}
@@ -3029,6 +3127,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Satellite (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3140909461892677398, guid: 5d449be38a973424287974a2f6143eca,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d449be38a973424287974a2f6143eca, type: 3}
 --- !u!4 &420692901 stripped
@@ -3123,6 +3226,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceShuttle (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7166577522531319351, guid: 61b968d0f1dcb2f47b720f2be5e7c84c,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61b968d0f1dcb2f47b720f2be5e7c84c, type: 3}
 --- !u!4 &421911488 stripped
@@ -3180,6 +3288,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sputnik (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1929998047561314820, guid: d62465fce8a5873489487ace4686e66d,
+        type: 3}
+      propertyPath: m_TagString
+      value: smallTrash
       objectReference: {fileID: 0}
     - target: {fileID: 3212160717054541847, guid: d62465fce8a5873489487ace4686e66d,
         type: 3}
@@ -3330,6 +3443,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrashMedium (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2747842001787807898, guid: b537d340c05eb24449de3d93f5e4214f,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b537d340c05eb24449de3d93f5e4214f, type: 3}
 --- !u!4 &470067507 stripped
@@ -3410,6 +3528,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ControlBoard (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8399166299553243637, guid: 53f8c4ff92415f046b1baab55ad6d32c,
+        type: 3}
+      propertyPath: m_TagString
+      value: smallTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53f8c4ff92415f046b1baab55ad6d32c, type: 3}
@@ -3505,6 +3628,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Satellite (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3140909461892677398, guid: 5d449be38a973424287974a2f6143eca,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d449be38a973424287974a2f6143eca, type: 3}
 --- !u!4 &517176923 stripped
@@ -3549,6 +3677,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EscapePod (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 427658171226613849, guid: 7b1a7bcae69accb4fa0ec0de28064194,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     - target: {fileID: 3725603958544636490, guid: 7b1a7bcae69accb4fa0ec0de28064194,
         type: 3}
@@ -3699,6 +3832,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceShuttle (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7166577522531319351, guid: 61b968d0f1dcb2f47b720f2be5e7c84c,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61b968d0f1dcb2f47b720f2be5e7c84c, type: 3}
 --- !u!4 &535365804 stripped
@@ -3718,6 +3856,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EscapePod (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 427658171226613849, guid: 7b1a7bcae69accb4fa0ec0de28064194,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     - target: {fileID: 3725603958544636490, guid: 7b1a7bcae69accb4fa0ec0de28064194,
         type: 3}
@@ -3868,6 +4011,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ControlBoard (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8399166299553243637, guid: 53f8c4ff92415f046b1baab55ad6d32c,
+        type: 3}
+      propertyPath: m_TagString
+      value: smallTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53f8c4ff92415f046b1baab55ad6d32c, type: 3}
 --- !u!4 &545339526 stripped
@@ -4000,6 +4148,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Satellite (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 3140909461892677398, guid: 5d449be38a973424287974a2f6143eca,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d449be38a973424287974a2f6143eca, type: 3}
 --- !u!4 &564314082 stripped
@@ -4073,7 +4226,7 @@ Transform:
   - {fileID: 928856218}
   - {fileID: 125961915}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &578735832
 PrefabInstance:
@@ -4141,6 +4294,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Drone (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9107331695212827037, guid: 5d8e6b6dbe0b04e429ce1cdbc8e5a480,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d8e6b6dbe0b04e429ce1cdbc8e5a480, type: 3}
@@ -4317,6 +4475,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SatelliteDish (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825656986447810399, guid: ca84211d3c9f2ec48a71efd2963b14f2,
+        type: 3}
+      propertyPath: m_TagString
+      value: smallTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca84211d3c9f2ec48a71efd2963b14f2, type: 3}
@@ -4712,7 +4875,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &633826946
 PrefabInstance:
@@ -4784,7 +4947,7 @@ PrefabInstance:
     - target: {fileID: 8825656986447810399, guid: ca84211d3c9f2ec48a71efd2963b14f2,
         type: 3}
       propertyPath: m_TagString
-      value: bigTrash
+      value: smallTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca84211d3c9f2ec48a71efd2963b14f2, type: 3}
@@ -5024,6 +5187,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EscapePod (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 427658171226613849, guid: 7b1a7bcae69accb4fa0ec0de28064194,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     - target: {fileID: 3725603958544636490, guid: 7b1a7bcae69accb4fa0ec0de28064194,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5117,6 +5285,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sputnik (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1929998047561314820, guid: d62465fce8a5873489487ace4686e66d,
+        type: 3}
+      propertyPath: m_TagString
+      value: smallTrash
       objectReference: {fileID: 0}
     - target: {fileID: 3212160717054541847, guid: d62465fce8a5873489487ace4686e66d,
         type: 3}
@@ -5267,6 +5440,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Satellite (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 3140909461892677398, guid: 5d449be38a973424287974a2f6143eca,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d449be38a973424287974a2f6143eca, type: 3}
 --- !u!4 &664324936 stripped
@@ -5379,6 +5557,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SatelliteV2 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230288622596096194, guid: e03a9ebba87f6204d87cce34ac1c1785,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e03a9ebba87f6204d87cce34ac1c1785, type: 3}
@@ -5690,6 +5873,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SatelliteV2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8230288622596096194, guid: e03a9ebba87f6204d87cce34ac1c1785,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e03a9ebba87f6204d87cce34ac1c1785, type: 3}
 --- !u!1 &721635257
@@ -5758,7 +5946,7 @@ PrefabInstance:
     - target: {fileID: 1929998047561314820, guid: d62465fce8a5873489487ace4686e66d,
         type: 3}
       propertyPath: m_TagString
-      value: mediumTrash
+      value: smallTrash
       objectReference: {fileID: 0}
     - target: {fileID: 3212160717054541847, guid: d62465fce8a5873489487ace4686e66d,
         type: 3}
@@ -6027,6 +6215,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SatelliteV2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8230288622596096194, guid: e03a9ebba87f6204d87cce34ac1c1785,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e03a9ebba87f6204d87cce34ac1c1785, type: 3}
 --- !u!4 &755435925 stripped
@@ -6187,6 +6380,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EscapePod (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 427658171226613849, guid: 7b1a7bcae69accb4fa0ec0de28064194,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     - target: {fileID: 3725603958544636490, guid: 7b1a7bcae69accb4fa0ec0de28064194,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6280,6 +6478,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EscapePod (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 427658171226613849, guid: 7b1a7bcae69accb4fa0ec0de28064194,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     - target: {fileID: 3725603958544636490, guid: 7b1a7bcae69accb4fa0ec0de28064194,
         type: 3}
@@ -6418,7 +6621,7 @@ PrefabInstance:
     - target: {fileID: 4068224992584141243, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4068224992584141243, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
         type: 3}
@@ -6705,6 +6908,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Drone (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 9107331695212827037, guid: 5d8e6b6dbe0b04e429ce1cdbc8e5a480,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d8e6b6dbe0b04e429ce1cdbc8e5a480, type: 3}
 --- !u!4 &878442064 stripped
@@ -6799,6 +7007,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Satellite (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3140909461892677398, guid: 5d449be38a973424287974a2f6143eca,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d449be38a973424287974a2f6143eca, type: 3}
 --- !u!4 &896663579 stripped
@@ -6885,6 +7098,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Satellite (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140909461892677398, guid: 5d449be38a973424287974a2f6143eca,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d449be38a973424287974a2f6143eca, type: 3}
@@ -6980,6 +7198,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceShuttle (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7166577522531319351, guid: 61b968d0f1dcb2f47b720f2be5e7c84c,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61b968d0f1dcb2f47b720f2be5e7c84c, type: 3}
 --- !u!4 &917881757 stripped
@@ -7074,6 +7297,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Drone (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 9107331695212827037, guid: 5d8e6b6dbe0b04e429ce1cdbc8e5a480,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d8e6b6dbe0b04e429ce1cdbc8e5a480, type: 3}
 --- !u!4 &928856218 stripped
@@ -7131,6 +7359,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EscapePod (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 427658171226613849, guid: 7b1a7bcae69accb4fa0ec0de28064194,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     - target: {fileID: 3725603958544636490, guid: 7b1a7bcae69accb4fa0ec0de28064194,
         type: 3}
@@ -7280,6 +7513,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Satellite (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140909461892677398, guid: 5d449be38a973424287974a2f6143eca,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d449be38a973424287974a2f6143eca, type: 3}
@@ -7492,6 +7730,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Helmet (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4125346095390363220, guid: a8e2894c5f942d840a0c653537a4daf5,
+        type: 3}
+      propertyPath: m_TagString
+      value: smallTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8e2894c5f942d840a0c653537a4daf5, type: 3}
 --- !u!4 &1015865598 stripped
@@ -7567,6 +7810,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Satellite (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3140909461892677398, guid: 5d449be38a973424287974a2f6143eca,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d449be38a973424287974a2f6143eca, type: 3}
 --- !u!4 &1022387611 stripped
@@ -7605,6 +7853,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sputnik (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1929998047561314820, guid: d62465fce8a5873489487ace4686e66d,
+        type: 3}
+      propertyPath: m_TagString
+      value: smallTrash
       objectReference: {fileID: 0}
     - target: {fileID: 3212160717054541847, guid: d62465fce8a5873489487ace4686e66d,
         type: 3}
@@ -7773,6 +8026,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Satellite (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140909461892677398, guid: 5d449be38a973424287974a2f6143eca,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d449be38a973424287974a2f6143eca, type: 3}
@@ -7961,6 +8219,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Satellite (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3140909461892677398, guid: 5d449be38a973424287974a2f6143eca,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d449be38a973424287974a2f6143eca, type: 3}
 --- !u!4 &1103652919 stripped
@@ -7999,6 +8262,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EscapePod (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 427658171226613849, guid: 7b1a7bcae69accb4fa0ec0de28064194,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     - target: {fileID: 3725603958544636490, guid: 7b1a7bcae69accb4fa0ec0de28064194,
         type: 3}
@@ -8133,7 +8401,7 @@ PrefabInstance:
     - target: {fileID: 8825656986447810399, guid: ca84211d3c9f2ec48a71efd2963b14f2,
         type: 3}
       propertyPath: m_TagString
-      value: bigTrash
+      value: smallTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca84211d3c9f2ec48a71efd2963b14f2, type: 3}
@@ -8154,6 +8422,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EscapePod (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 427658171226613849, guid: 7b1a7bcae69accb4fa0ec0de28064194,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     - target: {fileID: 3725603958544636490, guid: 7b1a7bcae69accb4fa0ec0de28064194,
         type: 3}
@@ -8460,6 +8733,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceShuttle (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7166577522531319351, guid: 61b968d0f1dcb2f47b720f2be5e7c84c,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61b968d0f1dcb2f47b720f2be5e7c84c, type: 3}
 --- !u!4 &1172865510 stripped
@@ -8604,7 +8882,7 @@ Transform:
   - {fileID: 1965788822}
   - {fileID: 509541918}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1203540985 stripped
 GameObject:
@@ -8691,6 +8969,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SatelliteV2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230288622596096194, guid: e03a9ebba87f6204d87cce34ac1c1785,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e03a9ebba87f6204d87cce34ac1c1785, type: 3}
@@ -8897,6 +9180,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SatelliteV2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8230288622596096194, guid: e03a9ebba87f6204d87cce34ac1c1785,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e03a9ebba87f6204d87cce34ac1c1785, type: 3}
 --- !u!4 &1285966981 stripped
@@ -8971,6 +9259,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpaceShuttle (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7166577522531319351, guid: 61b968d0f1dcb2f47b720f2be5e7c84c,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61b968d0f1dcb2f47b720f2be5e7c84c, type: 3}
@@ -9066,6 +9359,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SatelliteV2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8230288622596096194, guid: e03a9ebba87f6204d87cce34ac1c1785,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e03a9ebba87f6204d87cce34ac1c1785, type: 3}
 --- !u!4 &1341824131 stripped
@@ -9160,6 +9458,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SatelliteV2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8230288622596096194, guid: e03a9ebba87f6204d87cce34ac1c1785,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e03a9ebba87f6204d87cce34ac1c1785, type: 3}
 --- !u!4 &1343095498 stripped
@@ -9253,6 +9556,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SatelliteV2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230288622596096194, guid: e03a9ebba87f6204d87cce34ac1c1785,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e03a9ebba87f6204d87cce34ac1c1785, type: 3}
@@ -9366,6 +9674,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpaceShuttle (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7166577522531319351, guid: 61b968d0f1dcb2f47b720f2be5e7c84c,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61b968d0f1dcb2f47b720f2be5e7c84c, type: 3}
@@ -9690,7 +10003,7 @@ PrefabInstance:
     - target: {fileID: 4835060777369688028, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4835060777369688028, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -10060,7 +10373,7 @@ Transform:
   m_LocalScale: {x: 0.8426685, y: 0.8426685, z: 0.8426685}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1380170266
 PrefabInstance:
@@ -10073,6 +10386,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EscapePod (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 427658171226613849, guid: 7b1a7bcae69accb4fa0ec0de28064194,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     - target: {fileID: 3725603958544636490, guid: 7b1a7bcae69accb4fa0ec0de28064194,
         type: 3}
@@ -10223,6 +10541,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceShuttle (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 7166577522531319351, guid: 61b968d0f1dcb2f47b720f2be5e7c84c,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61b968d0f1dcb2f47b720f2be5e7c84c, type: 3}
 --- !u!4 &1407418229 stripped
@@ -10299,6 +10622,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EscapePod (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 427658171226613849, guid: 7b1a7bcae69accb4fa0ec0de28064194,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     - target: {fileID: 3725603958544636490, guid: 7b1a7bcae69accb4fa0ec0de28064194,
         type: 3}
@@ -10536,6 +10864,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceShuttle (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7166577522531319351, guid: 61b968d0f1dcb2f47b720f2be5e7c84c,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61b968d0f1dcb2f47b720f2be5e7c84c, type: 3}
 --- !u!1001 &1437464911
@@ -10549,6 +10882,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EscapePod (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 427658171226613849, guid: 7b1a7bcae69accb4fa0ec0de28064194,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     - target: {fileID: 3725603958544636490, guid: 7b1a7bcae69accb4fa0ec0de28064194,
         type: 3}
@@ -10718,6 +11056,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceShuttle (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7166577522531319351, guid: 61b968d0f1dcb2f47b720f2be5e7c84c,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61b968d0f1dcb2f47b720f2be5e7c84c, type: 3}
 --- !u!4 &1455629547 stripped
@@ -10831,6 +11174,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Satellite (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3140909461892677398, guid: 5d449be38a973424287974a2f6143eca,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d449be38a973424287974a2f6143eca, type: 3}
 --- !u!4 &1470586463 stripped
@@ -10924,6 +11272,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpaceShuttle (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7166577522531319351, guid: 61b968d0f1dcb2f47b720f2be5e7c84c,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61b968d0f1dcb2f47b720f2be5e7c84c, type: 3}
@@ -11184,6 +11537,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EscapePod (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 427658171226613849, guid: 7b1a7bcae69accb4fa0ec0de28064194,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     - target: {fileID: 3725603958544636490, guid: 7b1a7bcae69accb4fa0ec0de28064194,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11278,6 +11636,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EscapePod (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 427658171226613849, guid: 7b1a7bcae69accb4fa0ec0de28064194,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     - target: {fileID: 3725603958544636490, guid: 7b1a7bcae69accb4fa0ec0de28064194,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11352,6 +11715,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EscapePod (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 427658171226613849, guid: 7b1a7bcae69accb4fa0ec0de28064194,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     - target: {fileID: 3725603958544636490, guid: 7b1a7bcae69accb4fa0ec0de28064194,
         type: 3}
@@ -11572,6 +11940,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceShuttle (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7166577522531319351, guid: 61b968d0f1dcb2f47b720f2be5e7c84c,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61b968d0f1dcb2f47b720f2be5e7c84c, type: 3}
 --- !u!4 &1785215167 stripped
@@ -11666,6 +12039,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Drone (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 9107331695212827037, guid: 5d8e6b6dbe0b04e429ce1cdbc8e5a480,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d8e6b6dbe0b04e429ce1cdbc8e5a480, type: 3}
 --- !u!4 &1788535769 stripped
@@ -11712,54 +12090,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
---- !u!1 &1835014279
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1835014281}
-  - component: {fileID: 1835014280}
-  m_Layer: 0
-  m_Name: Post-processing
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1835014280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835014279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isGlobal: 1
-  priority: 0
-  blendDistance: 0
-  weight: 1
-  sharedProfile: {fileID: 11400000, guid: ef1268b4759f61d40b22a597adaaab34, type: 2}
---- !u!4 &1835014281
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835014279}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.637116, y: 7.841645, z: -4.1032815}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1841868424
 GameObject:
   m_ObjectHideFlags: 0
@@ -11850,7 +12180,7 @@ Transform:
   - {fileID: 917208234}
   - {fileID: 239438587}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1852309588 stripped
 GameObject:
@@ -11882,6 +12212,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EscapePod (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 427658171226613849, guid: 7b1a7bcae69accb4fa0ec0de28064194,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     - target: {fileID: 3725603958544636490, guid: 7b1a7bcae69accb4fa0ec0de28064194,
         type: 3}
@@ -12026,6 +12361,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Satellite (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3140909461892677398, guid: 5d449be38a973424287974a2f6143eca,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d449be38a973424287974a2f6143eca, type: 3}
 --- !u!4 &1902369319 stripped
@@ -12119,6 +12459,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Satellite (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140909461892677398, guid: 5d449be38a973424287974a2f6143eca,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d449be38a973424287974a2f6143eca, type: 3}
@@ -12307,6 +12652,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Drone (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 9107331695212827037, guid: 5d8e6b6dbe0b04e429ce1cdbc8e5a480,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d8e6b6dbe0b04e429ce1cdbc8e5a480, type: 3}
 --- !u!4 &1932823035 stripped
@@ -12381,6 +12731,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SatelliteV2 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230288622596096194, guid: e03a9ebba87f6204d87cce34ac1c1785,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e03a9ebba87f6204d87cce34ac1c1785, type: 3}
@@ -12476,6 +12831,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SatelliteV2 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 8230288622596096194, guid: e03a9ebba87f6204d87cce34ac1c1785,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e03a9ebba87f6204d87cce34ac1c1785, type: 3}
 --- !u!4 &1938398062 stripped
@@ -12533,6 +12893,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sputnik (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1929998047561314820, guid: d62465fce8a5873489487ace4686e66d,
+        type: 3}
+      propertyPath: m_TagString
+      value: smallTrash
       objectReference: {fileID: 0}
     - target: {fileID: 3212160717054541847, guid: d62465fce8a5873489487ace4686e66d,
         type: 3}
@@ -12608,6 +12973,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EscapePod (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 427658171226613849, guid: 7b1a7bcae69accb4fa0ec0de28064194,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     - target: {fileID: 3725603958544636490, guid: 7b1a7bcae69accb4fa0ec0de28064194,
         type: 3}
@@ -12732,6 +13102,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SatelliteV2 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230288622596096194, guid: e03a9ebba87f6204d87cce34ac1c1785,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e03a9ebba87f6204d87cce34ac1c1785, type: 3}
@@ -13167,6 +13542,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sputnik (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1929998047561314820, guid: d62465fce8a5873489487ace4686e66d,
+        type: 3}
+      propertyPath: m_TagString
+      value: smallTrash
+      objectReference: {fileID: 0}
     - target: {fileID: 3212160717054541847, guid: d62465fce8a5873489487ace4686e66d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13340,6 +13720,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SatelliteV2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230288622596096194, guid: e03a9ebba87f6204d87cce34ac1c1785,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e03a9ebba87f6204d87cce34ac1c1785, type: 3}
@@ -13640,6 +14025,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EscapePod (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 427658171226613849, guid: 7b1a7bcae69accb4fa0ec0de28064194,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     - target: {fileID: 3725603958544636490, guid: 7b1a7bcae69accb4fa0ec0de28064194,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13770,6 +14160,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Satellite (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 3140909461892677398, guid: 5d449be38a973424287974a2f6143eca,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d449be38a973424287974a2f6143eca, type: 3}
 --- !u!4 &2089506616 stripped
@@ -13864,6 +14259,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Drone (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 9107331695212827037, guid: 5d8e6b6dbe0b04e429ce1cdbc8e5a480,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d8e6b6dbe0b04e429ce1cdbc8e5a480, type: 3}
 --- !u!4 &2099546467 stripped
@@ -13938,6 +14338,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpaceShuttle (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7166577522531319351, guid: 61b968d0f1dcb2f47b720f2be5e7c84c,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61b968d0f1dcb2f47b720f2be5e7c84c, type: 3}
@@ -14033,6 +14438,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Satellite (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3140909461892677398, guid: 5d449be38a973424287974a2f6143eca,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d449be38a973424287974a2f6143eca, type: 3}
 --- !u!4 &2113303395 stripped
@@ -14127,6 +14537,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SatelliteV2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8230288622596096194, guid: e03a9ebba87f6204d87cce34ac1c1785,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e03a9ebba87f6204d87cce34ac1c1785, type: 3}
 --- !u!4 &2117559713 stripped
@@ -14220,6 +14635,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SatelliteDish (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825656986447810399, guid: ca84211d3c9f2ec48a71efd2963b14f2,
+        type: 3}
+      propertyPath: m_TagString
+      value: smallTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca84211d3c9f2ec48a71efd2963b14f2, type: 3}
@@ -14413,7 +14833,7 @@ PrefabInstance:
     - target: {fileID: 1300948494759162954, guid: 989ee05ad6cc4ad47b2b3cb37478ef73,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1300948494759162954, guid: 989ee05ad6cc4ad47b2b3cb37478ef73,
         type: 3}
@@ -14504,6 +14924,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SatelliteV2
       objectReference: {fileID: 0}
+    - target: {fileID: 8230288622596096194, guid: e03a9ebba87f6204d87cce34ac1c1785,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e03a9ebba87f6204d87cce34ac1c1785, type: 3}
 --- !u!1001 &553441555630100981
@@ -14572,6 +14997,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ControlBoard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8399166299553243637, guid: 53f8c4ff92415f046b1baab55ad6d32c,
+        type: 3}
+      propertyPath: m_TagString
+      value: smallTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53f8c4ff92415f046b1baab55ad6d32c, type: 3}
@@ -14642,6 +15072,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SatelliteDish
       objectReference: {fileID: 0}
+    - target: {fileID: 8825656986447810399, guid: ca84211d3c9f2ec48a71efd2963b14f2,
+        type: 3}
+      propertyPath: m_TagString
+      value: smallTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca84211d3c9f2ec48a71efd2963b14f2, type: 3}
 --- !u!1001 &955415108817131391
@@ -14711,6 +15146,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Drone
       objectReference: {fileID: 0}
+    - target: {fileID: 9107331695212827037, guid: 5d8e6b6dbe0b04e429ce1cdbc8e5a480,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d8e6b6dbe0b04e429ce1cdbc8e5a480, type: 3}
 --- !u!1001 &1176883570517117730
@@ -14779,6 +15219,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpaceShuttle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7166577522531319351, guid: 61b968d0f1dcb2f47b720f2be5e7c84c,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61b968d0f1dcb2f47b720f2be5e7c84c, type: 3}
@@ -14978,6 +15423,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Helmet
       objectReference: {fileID: 0}
+    - target: {fileID: 4125346095390363220, guid: a8e2894c5f942d840a0c653537a4daf5,
+        type: 3}
+      propertyPath: m_TagString
+      value: smallTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8e2894c5f942d840a0c653537a4daf5, type: 3}
 --- !u!1001 &5368995630471752804
@@ -15132,6 +15582,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrashMedium
       objectReference: {fileID: 0}
+    - target: {fileID: 2747842001787807898, guid: b537d340c05eb24449de3d93f5e4214f,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b537d340c05eb24449de3d93f5e4214f, type: 3}
 --- !u!1001 &6392628318115406919
@@ -15200,6 +15655,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Satellite
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140909461892677398, guid: 5d449be38a973424287974a2f6143eca,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d449be38a973424287974a2f6143eca, type: 3}
@@ -15288,6 +15748,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EscapePod
+      objectReference: {fileID: 0}
+    - target: {fileID: 427658171226613849, guid: 7b1a7bcae69accb4fa0ec0de28064194,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     - target: {fileID: 3725603958544636490, guid: 7b1a7bcae69accb4fa0ec0de28064194,
         type: 3}
