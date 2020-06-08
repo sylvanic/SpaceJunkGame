@@ -9,6 +9,9 @@ TagManager:
   - Asteroid
   - Trash
   - SoundManager
+  - smallTrash
+  - mediumTrash
+  - bigTrash
   layers:
   - Default
   - TransparentFX

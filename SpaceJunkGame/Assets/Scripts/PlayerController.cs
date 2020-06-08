@@ -4,20 +4,16 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField]public float movementSpeed = 50f;
+    [SerializeField] public float movementSpeed = 50f;
     [SerializeField] float turnSpeed = 60f;
 
     public Transform shootingPont;
     public Projectile projectile;
+    public Projectile upgradedProjectile;
     private SoundManager soundManager;
-
-
-
-   
 
     Transform myT;
 
-  
 
     private void Awake()
     {
@@ -25,16 +21,15 @@ public class PlayerController : MonoBehaviour
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
 
 
-        
 
-        
+
+
     }
     private void Update()
     {
         Turn();
         Thrust();
-        Shoot();
-        
+     
     }
 
     void Thrust()
@@ -44,14 +39,14 @@ public class PlayerController : MonoBehaviour
         {
             soundManager.RocketEngine.Play();
             soundManager.RocketEngine.loop = true;
-           
+
 
         }
 
         if (Input.GetKeyUp(KeyCode.W))
         {
             soundManager.RocketEngine.Stop();
-            
+
 
 
         }
@@ -63,16 +58,14 @@ public class PlayerController : MonoBehaviour
 
         myT.Rotate(0, yaw, 0);
 
-      
+
     }
 
-    void Shoot()
+    public void Shoot()
     {
-        if (Input.GetKeyDown("1"))
-        {
+        
             soundManager.Shoot.Play();
             Projectile newProjectile = Instantiate(projectile, shootingPont.position, shootingPont.rotation) as Projectile;
-        }
-
+        
     }
 }

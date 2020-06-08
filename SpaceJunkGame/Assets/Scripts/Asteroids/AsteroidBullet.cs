@@ -5,16 +5,17 @@ using UnityEngine;
 public class AsteroidBullet : MonoBehaviour
 {
     private Vector2 moveDirection;
-    private float moveSpeed;
+    public float moveSpeed;
+    [SerializeField]private float lifeTime;
 
     private void OnEnable()
     {
-        Invoke("Destroy", 6f);
+        Invoke("Destroy", lifeTime);
     }
     // Start is called before the first frame update
     void Start()
     {
-        moveSpeed = 5f;
+       
     }
 
     // Update is called once per frame
