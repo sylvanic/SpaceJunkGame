@@ -1035,6 +1035,11 @@ PrefabInstance:
       propertyPath: scoreMultiplier
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4405583657123958212, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
+        type: 3}
+      propertyPath: maxCapacity
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 4405583657335406348, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4776,6 +4781,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SatelliteDish (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8825656986447810399, guid: ca84211d3c9f2ec48a71efd2963b14f2,
+        type: 3}
+      propertyPath: m_TagString
+      value: bigTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca84211d3c9f2ec48a71efd2963b14f2, type: 3}
 --- !u!4 &633826947 stripped
@@ -5744,6 +5754,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sputnik (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1929998047561314820, guid: d62465fce8a5873489487ace4686e66d,
+        type: 3}
+      propertyPath: m_TagString
+      value: mediumTrash
       objectReference: {fileID: 0}
     - target: {fileID: 3212160717054541847, guid: d62465fce8a5873489487ace4686e66d,
         type: 3}
@@ -8114,6 +8129,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SatelliteDish (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825656986447810399, guid: ca84211d3c9f2ec48a71efd2963b14f2,
+        type: 3}
+      propertyPath: m_TagString
+      value: bigTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca84211d3c9f2ec48a71efd2963b14f2, type: 3}
@@ -15194,6 +15214,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sputnik
+      objectReference: {fileID: 0}
+    - target: {fileID: 1929998047561314820, guid: d62465fce8a5873489487ace4686e66d,
+        type: 3}
+      propertyPath: m_TagString
+      value: smallTrash
       objectReference: {fileID: 0}
     - target: {fileID: 3212160717054541847, guid: d62465fce8a5873489487ace4686e66d,
         type: 3}
