@@ -14,10 +14,12 @@ public class ScoreboardUpgrades : MonoBehaviour
     public GameObject MissionCompleted;
     [Space]
     private Button selectedUpgradeBtn;
-    private Color deselected = Color.white;
+    public static Color deselected = Color.white;
     private Color upgradeSelected = Color.black;
-    private Color boosterUpg, weaponUpg, capacityUpg, shieldUpg;
+    public static Color boosterUpg, weaponUpg, capacityUpg, shieldUpg;
     private string upgrade;
+
+    public GameObject checkChosenUpgrade;
 
     public void CheckChallengeCompleted()
     {
@@ -44,21 +46,27 @@ public class ScoreboardUpgrades : MonoBehaviour
             {
                 SceneManager.LoadScene("Level_2");
             }
-           
+
+            selectedUpgradeBtn.IsActive
         }
     }
 
-    public void ChallengeNextLevel()
+    private void Update()
     {
-        if (checkChallengedCompleted == true)
+        Debug.Log(upgrade);
+    }
+
+    public void CheckUpgradeSelected()
+    {
+        if (upgrade == null || upgrade == "")
         {
+            checkChosenUpgrade.SetActive(true);
+        }
+        else
+        {
+            checkChosenUpgrade.SetActive(false);
             SceneManager.LoadScene("SelectLevel");
         }
-    }
-
-    public void ReturnToMenu()
-    {
-        SceneManager.LoadScene("NEW_Menu");
     }
 
     public void UpgradeSelected(Button button)
@@ -109,5 +117,6 @@ public class ScoreboardUpgrades : MonoBehaviour
             upgrade = "";
         }
     }
+
 
 }

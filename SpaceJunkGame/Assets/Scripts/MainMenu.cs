@@ -35,21 +35,23 @@ public class MainMenu : MonoBehaviour
 
         playerName = playerNameInputField.text;
 
+        SceneManager.LoadScene("Intro");
+
+        /*
         if ((playerName != "") &&                                                   ///Checks if all player data has been filled in 
             (gender == "male" || gender == "female" || gender == "other") && 
             (ageGroup == "child" || ageGroup == "teen" || ageGroup == "adult"))
         {
-            SceneManager.LoadScene("Intro"); 
+            
         }
         else
         {
             Debug.Log("fill in your name");
             CheckInputs();                      ///Red outline around box when field isn't filled in 
         }
-
-        Debug.Log(playerName);
-
+        */
     }
+    
 
     public void QuitGame()
     {
@@ -107,9 +109,6 @@ public class MainMenu : MonoBehaviour
         {
             gender = "";
         }
-       
-
-       // Debug.Log(gender);
 
     }
 
@@ -153,6 +152,5 @@ public class MainMenu : MonoBehaviour
             ageGroup = "";
         }
 
-       // Debug.Log(ageGroup);
     }
 }
