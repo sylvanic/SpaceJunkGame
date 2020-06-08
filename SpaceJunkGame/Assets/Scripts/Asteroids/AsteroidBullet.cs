@@ -6,10 +6,11 @@ public class AsteroidBullet : MonoBehaviour
 {
     private Vector2 moveDirection;
     public float moveSpeed;
+    [SerializeField]private float lifeTime;
 
     private void OnEnable()
     {
-        Invoke("Destroy", 6f);
+        Invoke("Destroy", lifeTime);
     }
     // Start is called before the first frame update
     void Start()
