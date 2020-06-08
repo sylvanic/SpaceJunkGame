@@ -1,5 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: caf8fbf97adc23c4d8560459f29e0abf
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD:SpaceJunkGame/Assets/Assets/Simply Application Rating/Example.meta
+guid: 9cc81a172001be44cbb8a6e6462883c1
+=======
+guid: f00fc735d11e0d7498477f2a15987cb1
+>>>>>>> master:SpaceJunkGame/Assets/Add-ons.meta
+=======
+guid: caf8fbf97adc23c4d8560459f29e0abf
+>>>>>>> master
+>>>>>>> origin/ShauntaeJ
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
