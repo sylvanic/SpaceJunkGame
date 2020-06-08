@@ -60,6 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  lifeTime: 6
 --- !u!1001 &7190215691518322065
 PrefabInstance:
   m_ObjectHideFlags: 0

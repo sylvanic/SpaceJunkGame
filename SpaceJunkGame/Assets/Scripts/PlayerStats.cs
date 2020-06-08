@@ -12,7 +12,7 @@ public class PlayerStats : MonoBehaviour
     public Slider capacitySlider;
     public TextMeshProUGUI capacityText;
     public int capacity = 0;
-    public int maxCapacity = 3;
+    public int maxCapacity = 0;
     
 
     //score
@@ -28,7 +28,6 @@ public class PlayerStats : MonoBehaviour
     {
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
         capacitySlider.maxValue = maxCapacity;
-        
         
     }
 
@@ -55,9 +54,17 @@ public class PlayerStats : MonoBehaviour
     private void CapacitySliderUpdate()
     {
         capacity = Mathf.Clamp(capacity, 0, maxCapacity);
+        if(capacity >= maxCapacity)
+        {
+            //this isn't working yet COME BACK TO IT
+            Debug.Log("reee");
+        }
+        else
+        {
         capacitySlider.value = capacity;
         capacityText.text = capacity.ToString();
         currentScore = capacity;
+        }
 
 
 //play CapacityFull SFX if the capacity bar is full
