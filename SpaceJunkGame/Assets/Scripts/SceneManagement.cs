@@ -6,13 +6,20 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagement : MonoBehaviour
 {
+
     public void ReturnToMainMenu()
     {
         SceneManager.LoadScene("NEW_Menu");
     }
 
-    public void FamiliarWithSpaceJunk()
+    public void IntroFamiliarityYes()
     {
         SceneManager.LoadScene("Tutorial");
     }
+
+    public void SelectLevel()
+    {
+        SceneManager.LoadScene("SelectLevel");
+    }
+ 
 }
