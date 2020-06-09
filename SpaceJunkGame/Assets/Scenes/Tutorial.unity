@@ -1546,6 +1546,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Helmet
       objectReference: {fileID: 0}
+    - target: {fileID: 4125346095390363220, guid: a8e2894c5f942d840a0c653537a4daf5,
+        type: 3}
+      propertyPath: m_TagString
+      value: smallTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8e2894c5f942d840a0c653537a4daf5, type: 3}
 --- !u!1001 &393768720
@@ -1614,6 +1619,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SatelliteDish
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825656986447810399, guid: ca84211d3c9f2ec48a71efd2963b14f2,
+        type: 3}
+      propertyPath: m_TagString
+      value: smallTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca84211d3c9f2ec48a71efd2963b14f2, type: 3}
@@ -2871,6 +2881,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SatelliteV2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8230288622596096194, guid: e03a9ebba87f6204d87cce34ac1c1785,
+        type: 3}
+      propertyPath: m_TagString
+      value: smallTrash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e03a9ebba87f6204d87cce34ac1c1785, type: 3}
@@ -4273,6 +4288,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Sputnik
+      objectReference: {fileID: 0}
+    - target: {fileID: 1929998047561314820, guid: d62465fce8a5873489487ace4686e66d,
+        type: 3}
+      propertyPath: m_TagString
+      value: smallTrash
       objectReference: {fileID: 0}
     - target: {fileID: 3212160717054541847, guid: d62465fce8a5873489487ace4686e66d,
         type: 3}
@@ -6646,6 +6666,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Satellite
       objectReference: {fileID: 0}
+    - target: {fileID: 3140909461892677398, guid: 5d449be38a973424287974a2f6143eca,
+        type: 3}
+      propertyPath: m_TagString
+      value: smallTrash
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d449be38a973424287974a2f6143eca, type: 3}
 --- !u!1 &1837962249
@@ -7877,6 +7902,11 @@ PrefabInstance:
       propertyPath: intro10
       value: 
       objectReference: {fileID: 567009469}
+    - target: {fileID: 4405583657123958212, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
+        type: 3}
+      propertyPath: capacity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4405583657123958219, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
         type: 3}
       propertyPath: m_Enabled

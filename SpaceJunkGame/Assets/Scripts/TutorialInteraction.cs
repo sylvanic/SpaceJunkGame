@@ -40,7 +40,6 @@ public class TutorialInteraction : MonoBehaviour
             intro1.SetActive(false);
             firstIntro = false;
             StopAllCoroutines();
-            intro2popup = true;
             intro2.SetActive(true);
         }
     }
@@ -52,7 +51,6 @@ public class TutorialInteraction : MonoBehaviour
             intro2.SetActive(false);
             secondIntro = false;
             StopAllCoroutines();
-            intro2popup = true;
             intro3.SetActive(true);
         }
     }
@@ -65,7 +63,6 @@ public class TutorialInteraction : MonoBehaviour
             intro3.SetActive(false);
             thirdIntro = false;
             StopAllCoroutines();
-            intro2popup = true;
             intro4.SetActive(true);
         }
     }
@@ -78,7 +75,6 @@ public class TutorialInteraction : MonoBehaviour
             intro4.SetActive(false);
             fourthIntro = false;
             StopAllCoroutines();
-            intro2popup = true;
             intro5.SetActive(true);
         }
     }

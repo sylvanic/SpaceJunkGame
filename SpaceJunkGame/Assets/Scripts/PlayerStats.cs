@@ -33,9 +33,7 @@ public class PlayerStats : MonoBehaviour
 
     void Update()
     {
-       CapacitySliderUpdate();
-       
-       
+        CapacitySliderUpdate();
     }
    
 
