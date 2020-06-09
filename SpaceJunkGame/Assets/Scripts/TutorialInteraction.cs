@@ -347,7 +347,7 @@ public class TutorialInteraction : MonoBehaviour
 
     public void DetectInput()
     {
-        if (Input.GetKeyDown(KeyCode.W) && intro2popup)
+        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && intro2popup)
         {
                 StartCoroutine(StartIntro2());
                 intro2popup = false;
