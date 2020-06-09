@@ -8,12 +8,11 @@ public class AsteroidHitCheck : MonoBehaviour
     public GameObject astronautInteraction;
     public GameObject intro9;
     public GameObject intro10;
-    public TutorialInteraction tutInt;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -25,8 +24,8 @@ public class AsteroidHitCheck : MonoBehaviour
     bool introDisplay5 = true;
     public void OnCollisionEnter(Collision obj)
     {
-        if (obj.gameObject.tag == "Asteroid" && tutInt.intro5popup)
-        {           
+        if (obj.gameObject.tag == "Asteroid" )
+        {
             if (introDisplay5)
             {
                 StartCoroutine(StartIntro5());
@@ -46,6 +45,5 @@ public class AsteroidHitCheck : MonoBehaviour
         yield return new WaitForSeconds(3);
         intro10.SetActive(false);
         astronautInteraction.SetActive(false);
-        tutInt.intro5popup = true;
     }
 }

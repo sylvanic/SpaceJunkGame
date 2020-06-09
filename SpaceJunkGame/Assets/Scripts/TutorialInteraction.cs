@@ -20,6 +20,7 @@ public class TutorialInteraction : MonoBehaviour
     public GameObject intro12;
     public GameObject intro13;
     public GameObject intro14;
+    public GameObject intro15;
     public GameObject astronautInteraction;
     public GameObject astronautAppear;
     public PlayerStats playerStats;
@@ -28,9 +29,9 @@ public class TutorialInteraction : MonoBehaviour
     bool intro2popup = false;
     bool intro3popup = false;
     bool intro4popup = false;
-    public bool intro5popup = false;
+    bool intro5popup = false;
     bool intro6popup = false;
-
+    public bool hitByAsteroid = false;
     //First Intro
     bool firstIntro = true;
     public void SkipIntro1()
@@ -205,6 +206,18 @@ public class TutorialInteraction : MonoBehaviour
         {
             intro14.SetActive(false);
             fourteenthIntro = false;
+            StopAllCoroutines();
+            intro15.SetActive(true);
+        }
+    }
+
+    bool fifteenthIntro = true;
+    public void SkipIntro15()
+    {
+        if (fifteenthIntro)
+        {
+            intro15.SetActive(false);
+            fifteenthIntro = false;
             astronautInteraction.SetActive(false);
             StopAllCoroutines();
             SceneManager.LoadScene("GameTest");
@@ -231,6 +244,7 @@ public class TutorialInteraction : MonoBehaviour
         DetectInput();
         ScoreDetect();
         DetectDump();
+        DetectHit();
         DetectLaser();
     }
 
@@ -290,6 +304,20 @@ public class TutorialInteraction : MonoBehaviour
         yield return new WaitForSeconds(3);
         intro8.SetActive(false);
         astronautInteraction.SetActive(false);
+        intro5popup = true;
+    }
+
+    public IEnumerator StartIntro5()
+    {
+        yield return new WaitForSeconds(1);
+        astronautInteraction.SetActive(true);
+        intro9.SetActive(true);
+        yield return new WaitForSeconds(3);
+        intro9.SetActive(false);
+        intro10.SetActive(true);
+        yield return new WaitForSeconds(3);
+        intro10.SetActive(false);
+        astronautInteraction.SetActive(false);
         intro6popup = true;
     }
 
@@ -307,8 +335,11 @@ public class TutorialInteraction : MonoBehaviour
         yield return new WaitForSeconds(3);
         intro13.SetActive(false);
         intro14.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(5);
         intro14.SetActive(false);
+        intro15.SetActive(true);
+        yield return new WaitForSeconds(3);
+        intro15.SetActive(false);
         astronautInteraction.SetActive(false);
         SceneManager.LoadScene("GameTest");
     }
@@ -325,7 +356,7 @@ public class TutorialInteraction : MonoBehaviour
 
     public void ScoreDetect()
     {
-        if (playerStats.capacity == 3 && intro3popup)
+        if ((playerStats.capacity == 3 || junkDump.GetComponent<JunkDump>().junkDumped >= 3) && intro3popup)
         {
                 StartCoroutine(StartIntro3());
                 intro3popup = false;
@@ -339,6 +370,15 @@ public class TutorialInteraction : MonoBehaviour
         {
                 StartCoroutine(StartIntro4());
                 intro4popup = false;
+        }
+    }
+
+    public void DetectHit()
+    {
+        if(hitByAsteroid && intro5popup)
+        {
+             StartCoroutine(StartIntro5());
+             intro5popup = false;
         }
     }
 
