@@ -41,7 +41,7 @@ public class LevelFinishIntro2 : MonoBehaviour
 
     private IEnumerator ActivationRoutineText2()
     {
-        yield return new WaitForSeconds(9);
+        yield return new WaitForSeconds(7);
 
         text2.SetActive(true);
 
