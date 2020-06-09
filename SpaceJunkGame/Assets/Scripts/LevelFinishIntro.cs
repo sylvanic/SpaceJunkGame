@@ -11,6 +11,8 @@ public class LevelFinishIntro : MonoBehaviour
     public GameObject MissionComplete;
     public GameObject MissionFailed;
 
+    private int scoreMinimum;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -65,7 +67,7 @@ public class LevelFinishIntro : MonoBehaviour
     {
         yield return new WaitForSeconds(18);
 
-        if (PlayerStats.totalScore > 30)
+        if (PlayerStats.totalScore > 10)
         {
             MissionComplete.SetActive(true);
         }
