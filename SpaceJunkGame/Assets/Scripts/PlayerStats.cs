@@ -35,7 +35,6 @@ public class PlayerStats : MonoBehaviour
     {
        CapacitySliderUpdate();
        
-       
     }
    
 
@@ -53,25 +52,11 @@ public class PlayerStats : MonoBehaviour
 
     private void CapacitySliderUpdate()
     {
-        capacity = Mathf.Clamp(capacity, 0, maxCapacity);
-        if(capacity >= maxCapacity)
-        {
-            //this isn't working yet COME BACK TO IT
-            Debug.Log("reee");
-        }
-        else
-        {
+        capacity = Mathf.Clamp(capacity, 0, maxCapacity);         
         capacitySlider.value = capacity;
         capacityText.text = capacity.ToString();
         currentScore = capacity;
-        }
 
-
-//play CapacityFull SFX if the capacity bar is full
-       // if (currentScore == maxCapacity)
-        //{
-          //  soundManager.CapacityFull.Play();
-       // }
     }
     
        

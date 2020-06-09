@@ -37,6 +37,11 @@ public class Pickable : MonoBehaviour
                 }
                 Destroy(gameObject);
             }
+            else{
+
+                //full sound and message
+                Debug.Log("ok");
+            }
         }
     }
 }
