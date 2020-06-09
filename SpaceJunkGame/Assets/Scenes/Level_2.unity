@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 92ddd8623b07cc24b96d23bea348e992,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -10290,6 +10290,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8526824553880951359, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8526824554288589575, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -13571,7 +13576,7 @@ MonoBehaviour:
   asteroidPrefab: {fileID: 6210494670882218710, guid: fa9f2b1a72f652540bc7b81918faf6c7,
     type: 3}
   asteroidDensity: 100
-  seed: 100
+  seed: 0
   innerRadius: 5
   outerRadius: 20
   height: 0
