@@ -449,6 +449,11 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 8c92f37ce71d8164baadffa9046e211f, type: 3}
+    - target: {fileID: 6431457598766538028, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4, type: 3}
 --- !u!1 &963194225
@@ -782,7 +787,7 @@ TextMesh:
   m_Font: {fileID: 12800000, guid: 5e0617ff69747d7449119afc0aed81bc, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4280281343
+    rgba: 4292851861
 --- !u!23 &1157994088
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -848,7 +853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10e7e1e9ef2205545bdcf7cc5cfbfd71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IntroText: {fileID: 0}
+  IntroText: {fileID: 1157994086}
 --- !u!1 &1274532012
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,7 +900,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1348327438
 PrefabInstance:
@@ -1802,7 +1807,6 @@ GameObject:
   - component: {fileID: 6111601374124256293}
   - component: {fileID: 6111601374124256290}
   - component: {fileID: 6111601374124256291}
-  - component: {fileID: 6111601374124256294}
   m_Layer: 5
   m_Name: FamiliarityCanvas
   m_TagString: Untagged
@@ -1893,16 +1897,3 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &6111601374124256294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6111601374124256288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10e7e1e9ef2205545bdcf7cc5cfbfd71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IntroText: {fileID: 1157994086}
