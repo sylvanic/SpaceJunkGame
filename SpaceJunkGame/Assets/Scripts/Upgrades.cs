@@ -37,6 +37,11 @@ public class Upgrades : MonoBehaviour
     {
        GetComponentInParent<PlayerController>().movementSpeed = upgradedMovementSpeed;
        boosterObj.SetActive(true);
+
+        if (ResultScreens.currentUpgrade == "")
+        {
+            boosterObj.SetActive(false);
+        }
         
     }
 
