@@ -21,6 +21,7 @@ public class PlayerStats : MonoBehaviour
     public TextMeshProUGUI scoreText;
     [SerializeField]private int scoreMultiplier;
 
+    public TutorialInteraction tutInt;
     private SoundManager soundManager;
     //private Sprite exclamation_mark;
 
@@ -33,9 +34,7 @@ public class PlayerStats : MonoBehaviour
 
     void Update()
     {
-       CapacitySliderUpdate();
-       
-       
+        CapacitySliderUpdate();
     }
    
 
@@ -91,8 +90,8 @@ public class PlayerStats : MonoBehaviour
         {
             soundManager.AsteroidCrash.Play();
             capacity--;
-                             
             Destroy(obj.gameObject,.2f);
         }
+        tutInt.hitByAsteroid = true;
     }
 }

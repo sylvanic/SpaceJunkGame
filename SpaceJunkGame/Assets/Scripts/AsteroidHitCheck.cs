@@ -12,7 +12,7 @@ public class AsteroidHitCheck : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -24,8 +24,8 @@ public class AsteroidHitCheck : MonoBehaviour
     bool introDisplay5 = true;
     public void OnCollisionEnter(Collision obj)
     {
-        if (obj.gameObject.tag == "Asteroid")
-        {           
+        if (obj.gameObject.tag == "Asteroid" )
+        {
             if (introDisplay5)
             {
                 StartCoroutine(StartIntro5());

@@ -23,19 +23,24 @@ public class Pickable : MonoBehaviour
             if (other.GetComponent<PlayerStats>().capacity < other.GetComponent<PlayerStats>().maxCapacity)
             {
                 soundManager.PickUp.Play();
-                if(this.tag=="smallTrash")
+                if(tag=="smallTrash")
                 {
                 other.GetComponent<PlayerStats>().capacity++;
                 }
-                else if(this.tag=="mediumTrash")
+                else if(tag=="mediumTrash")
                 {
                 other.GetComponent<PlayerStats>().capacity+=5;
                 }
-                else if(this.tag=="bigTrash")
+                else if(tag=="bigTrash")
                 {
                     other.GetComponent<PlayerStats>().capacity+=10;
                 }
                 Destroy(gameObject);
+            }
+            else{
+
+                //full sound and message
+                Debug.Log("ok");
             }
         }
     }
