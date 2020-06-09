@@ -30,7 +30,6 @@ public class TutorialInteraction : MonoBehaviour
 
     public GameObject astronautInteraction;
     public GameObject astronautAppear;
-
     public PlayerStats playerStats;
 
     public GameObject junkDump;
@@ -303,6 +302,7 @@ public class TutorialInteraction : MonoBehaviour
     }
 
     bool intro1popup = true;
+    bool youCanMove = false;
     public void ShowIntro()
     {
         if (Time.timeScale == 1)
@@ -312,13 +312,14 @@ public class TutorialInteraction : MonoBehaviour
                 StartCoroutine(StartIntro1());
                 intro1popup = false;
             }
+            youCanMove = true;
         }
     }
 
     bool intro2popup = true;
     public void DetectInput()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W) && youCanMove)
         {
             if (intro2popup)
             {
