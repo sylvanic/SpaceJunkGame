@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 558a8e2b6826cf840aae193990ba9f2e, type: 3}
   m_Name: ShadowsMidtonesHighlights
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   shadows:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.8597177, z: 0.8441046, w: -0.22620168}
+    m_Value: {x: 1, y: 0.9063441, z: 0.72470057, w: -0.22620168}
   midtones:
     m_OverrideState: 1
-    m_Value: {x: 0.9503008, y: 0.7741232, z: 1, w: -0.047125217}
+    m_Value: {x: 1, y: 0.8092822, z: 0.56999487, w: -0.028275082}
   highlights:
     m_OverrideState: 1
-    m_Value: {x: 0.8941382, y: 1, z: 0.5594957, w: 0.3016023}
+    m_Value: {x: 1, y: 0.99380964, z: 0.8641921, w: -0.056550466}
   shadowsStart:
     m_OverrideState: 0
     m_Value: 0
@@ -86,25 +86,6 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
     min: 0
---- !u!114 &-4393079459280818250
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81180773991d8724ab7f2d216912b564, type: 3}
-  m_Name: ChromaticAberration
-  m_EditorClassIdentifier: 
-  active: 1
-  m_AdvancedMode: 0
-  intensity:
-    m_OverrideState: 1
-    m_Value: 0.15
-    min: 0
-    max: 1
 --- !u!114 &-2639193074182579754
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -130,12 +111,12 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.603
+    m_Value: 0.3
     min: 0
     max: 1
   smoothness:
     m_OverrideState: 1
-    m_Value: 0.11
+    m_Value: 1
     min: 0.01
     max: 1
   rounded:
@@ -157,7 +138,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   postExposure:
     m_OverrideState: 1
-    m_Value: -0.7
+    m_Value: -0.3
   contrast:
     m_OverrideState: 1
     m_Value: 0
@@ -197,7 +178,6 @@ MonoBehaviour:
   - {fileID: -6168056719388221809}
   - {fileID: 4901956470124251920}
   - {fileID: -180702576614399806}
-  - {fileID: -4393079459280818250}
   - {fileID: -2639193074182579754}
 --- !u!114 &4901956470124251920
 MonoBehaviour:
