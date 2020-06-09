@@ -32,6 +32,7 @@ public class TutorialInteraction : MonoBehaviour
     bool intro5popup = false;
     bool intro6popup = false;
     public bool hitByAsteroid = false;
+    public bool laserHasBeenShot = false;
     //First Intro
     bool firstIntro = true;
     public void SkipIntro1()
@@ -265,10 +266,10 @@ public class TutorialInteraction : MonoBehaviour
         yield return new WaitForSeconds(5);
         intro3.SetActive(false);
         intro4.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         intro4.SetActive(false);
         intro5.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         intro5.SetActive(false);
         astronautInteraction.SetActive(false);
         intro2popup = true;
@@ -279,7 +280,7 @@ public class TutorialInteraction : MonoBehaviour
         yield return new WaitForSeconds(1);
         astronautInteraction.SetActive(true);
         intro6.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         intro6.SetActive(false);
         astronautInteraction.SetActive(false);
         intro3popup = true;
@@ -290,7 +291,7 @@ public class TutorialInteraction : MonoBehaviour
         yield return new WaitForSeconds(1);
         astronautInteraction.SetActive(true);
         intro7.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         intro7.SetActive(false);
         astronautInteraction.SetActive(false);
         intro4popup = true;
@@ -301,7 +302,7 @@ public class TutorialInteraction : MonoBehaviour
         yield return new WaitForSeconds(1);
         astronautInteraction.SetActive(true);
         intro8.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         intro8.SetActive(false);
         astronautInteraction.SetActive(false);
         intro5popup = true;
@@ -312,10 +313,10 @@ public class TutorialInteraction : MonoBehaviour
         yield return new WaitForSeconds(1);
         astronautInteraction.SetActive(true);
         intro9.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         intro9.SetActive(false);
         intro10.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         intro10.SetActive(false);
         astronautInteraction.SetActive(false);
         intro6popup = true;
@@ -326,19 +327,19 @@ public class TutorialInteraction : MonoBehaviour
         yield return new WaitForSeconds(1);
         astronautInteraction.SetActive(true);
         intro11.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         intro11.SetActive(false);
         intro12.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         intro12.SetActive(false);
         intro13.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         intro13.SetActive(false);
         intro14.SetActive(true);
         yield return new WaitForSeconds(5);
         intro14.SetActive(false);
         intro15.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         intro15.SetActive(false);
         astronautInteraction.SetActive(false);
         SceneManager.LoadScene("GameTest");
@@ -384,10 +385,15 @@ public class TutorialInteraction : MonoBehaviour
 
     public void DetectLaser()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && intro6popup)
+        if (laserHasBeenShot && intro6popup)
         {
                 StartCoroutine(StartIntro6());
                 intro6popup = false;
         }
+    }
+
+    public void LaserShot()
+    {
+        laserHasBeenShot = true;
     }
 }
