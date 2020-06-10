@@ -77,8 +77,20 @@ public class PlayerStats : MonoBehaviour
         
     }
 
+    public void OnTriggerEnter(Collider other) {
+        if (other.gameObject.tag == "Asteroid")
+        {
+            soundManager.AsteroidCrash.Play();
+            capacity--;
+            Destroy(other.gameObject,.1f);
+            Debug.Log("!!!!!!asteroid collision idk");
+        }
+    }
+
     public void OnCollisionEnter(Collision obj)
     {      
+        Debug.Log(this.name);
+        Debug.Log(obj.gameObject.name);
         if (obj.gameObject.tag == "Asteroid")
         {
             soundManager.AsteroidCrash.Play();
@@ -86,6 +98,6 @@ public class PlayerStats : MonoBehaviour
             Destroy(obj.gameObject,.1f);
             Debug.Log("asteroid collision idk");
         }
-        tutInt.hitByAsteroid = true;
+        //tutInt.hitByAsteroid = true;
     }
 }
