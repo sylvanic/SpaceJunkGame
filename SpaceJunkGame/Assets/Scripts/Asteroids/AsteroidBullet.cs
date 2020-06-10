@@ -29,6 +29,8 @@ public class AsteroidBullet : MonoBehaviour
         moveDirection = dir;
     }
 
+    
+
     private void Destroy()
     {
         gameObject.SetActive(false);

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7956778267861263510}
   m_Layer: 0
   m_Name: AsteroidBullet
-  m_TagString: Untagged
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,6 +179,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: asteroid 3 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8925568781619131857, guid: 946efc7a0da73fa429369aafd2a4cfd2,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7443510059167254710, guid: 946efc7a0da73fa429369aafd2a4cfd2, type: 3}
