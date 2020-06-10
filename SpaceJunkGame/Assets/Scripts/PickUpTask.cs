@@ -10,15 +10,16 @@ public class PickUpTask : Objective
 
     private void Update()
     {
-        //junk = Pickable.junkAmount;
-    }
+        junk = Pickable.junkAmount;
 
-    public override bool IsComplete()
-    {
         if (junk >= requiredJunk)
         {
             junk = requiredJunk;
         }
+    }
+
+    public override bool IsComplete()
+    {  
         return (junk >= requiredJunk);
     }
 
