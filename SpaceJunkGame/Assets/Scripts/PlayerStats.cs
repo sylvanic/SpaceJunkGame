@@ -83,7 +83,8 @@ public class PlayerStats : MonoBehaviour
         {
             soundManager.AsteroidCrash.Play();
             capacity--;
-            Destroy(obj.gameObject,.2f);
+            Destroy(obj.gameObject,.1f);
+            Debug.Log("asteroid collision idk");
         }
         //tutInt.hitByAsteroid = true;
     }
