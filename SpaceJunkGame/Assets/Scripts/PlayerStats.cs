@@ -21,7 +21,7 @@ public class PlayerStats : MonoBehaviour
     public TextMeshProUGUI scoreText;
     [SerializeField]private int scoreMultiplier;
 
-    public TutorialInteraction tutInt;
+    //public TutorialInteraction tutInt;
     private SoundManager soundManager;
     //private Sprite exclamation_mark;
 
