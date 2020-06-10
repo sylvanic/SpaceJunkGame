@@ -25,5 +25,15 @@ public class Projectile : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
+        
+    }
+
+     private void OnTriggerEnter(Collider other) {
+        if(other.tag=="bigTrash")
+        {
+            other.GetComponent<TrashDestruction>().BigTrashDeath();
+            Destroy(gameObject);
+            Debug.Log("idk");
+        }
     }
 }

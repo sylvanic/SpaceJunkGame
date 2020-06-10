@@ -20,7 +20,6 @@ public class PlayerStats : MonoBehaviour
     public static int totalScore;
     public TextMeshProUGUI scoreText;
     [SerializeField]private int scoreMultiplier;
-
     private SoundManager soundManager;
     //private Sprite exclamation_mark;
 
@@ -33,9 +32,7 @@ public class PlayerStats : MonoBehaviour
 
     void Update()
     {
-       CapacitySliderUpdate();
-       
-       
+        CapacitySliderUpdate();
     }
    
 
@@ -54,17 +51,10 @@ public class PlayerStats : MonoBehaviour
     private void CapacitySliderUpdate()
     {
         capacity = Mathf.Clamp(capacity, 0, maxCapacity);
-        if(capacity >= maxCapacity)
-        {
-            //this isn't working yet COME BACK TO IT
-            Debug.Log("reee");
-        }
-        else
-        {
         capacitySlider.value = capacity;
         capacityText.text = capacity.ToString();
         currentScore = capacity;
-        }
+    
 
 
 //play CapacityFull SFX if the capacity bar is full
@@ -85,14 +75,25 @@ public class PlayerStats : MonoBehaviour
         
     }
 
+    public void OnTriggerEnter(Collider other) {
+        if (other.gameObject.tag == "Asteroid")
+        {
+            soundManager.AsteroidCrash.Play();
+            capacity--;
+            Debug.Log("!!!!!!asteroid collision idk");
+        }
+    }
+
     public void OnCollisionEnter(Collision obj)
     {      
+       
         if (obj.gameObject.tag == "Asteroid")
         {
             soundManager.AsteroidCrash.Play();
             capacity--;
-                             
-            Destroy(obj.gameObject,.2f);
+            Destroy(obj.gameObject,.1f);
+            Debug.Log("asteroid collision idk");
         }
+        
     }
 }

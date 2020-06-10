@@ -4,33 +4,62 @@ using UnityEngine;
 
 public class LevelFinishIntro3 : MonoBehaviour
 {
-    public GameObject intro;
     public GameObject text1;
     public GameObject text2;
     public GameObject text3;
     public GameObject MissionComplete;
     public GameObject MissionFailed;
+    float time;
+    bool intro1playing = true;
+    bool intro2playing = true;
+    bool intro3playing = true;
 
-    // Start is called before the first frame update
-    void Start()
+    void Update()
     {
-        StartCoroutine(ActivationRoutineCanvas());
-        StartCoroutine(ActivationRoutineText());
-        StartCoroutine(ActivationRoutineText2());
-        StartCoroutine(ActivationRoutineText3());
-        StartCoroutine(ActivationRoutineBlackout());
+        time += 1 * Time.deltaTime;
+        intro1();
+        intro2();
+        intro3();
+        blackout();
     }
 
-    private IEnumerator ActivationRoutineCanvas()
+    public void intro1()
     {
-        yield return new WaitForSeconds(1);
-
-        intro.SetActive(true);
+        if (time >= 0 && intro1playing)
+        {
+            StartCoroutine(Text1());
+            intro1playing = false;
+        }
+        
     }
 
-    private IEnumerator ActivationRoutineText()
+    public void intro2()
     {
-        yield return new WaitForSeconds(3);
+        if (time >= 10 && intro2playing)
+        {
+            StartCoroutine(Text2());
+            intro2playing = false;
+        }
+            
+    }
+
+    public void intro3()
+    {
+        if (time >= 14 && intro3playing)
+        {
+            StartCoroutine(Text3());
+            intro3playing = false;
+        }
+    }
+
+    public void blackout()
+    {
+        StartCoroutine(Blackout());
+    }
+
+    private IEnumerator Text1()
+    {
+        yield return new WaitForSeconds(6);
 
         text1.SetActive(true);
 
@@ -39,10 +68,8 @@ public class LevelFinishIntro3 : MonoBehaviour
         text1.SetActive(false);
     }
 
-    private IEnumerator ActivationRoutineText2()
+    private IEnumerator Text2()
     {
-        yield return new WaitForSeconds(7);
-
         text2.SetActive(true);
 
         yield return new WaitForSeconds(4);
@@ -50,10 +77,8 @@ public class LevelFinishIntro3 : MonoBehaviour
         text2.SetActive(false);
     }
 
-    private IEnumerator ActivationRoutineText3()
+    private IEnumerator Text3()
     {
-        yield return new WaitForSeconds(13);
-
         text3.SetActive(true);
 
         yield return new WaitForSeconds(5);
@@ -61,7 +86,7 @@ public class LevelFinishIntro3 : MonoBehaviour
         text3.SetActive(false);
     }
 
-    private IEnumerator ActivationRoutineBlackout()
+    private IEnumerator Blackout()
     {
         yield return new WaitForSeconds(18);
 

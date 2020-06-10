@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using JetBrains.Annotations;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -37,5 +38,6 @@ public class TextScroll : MonoBehaviour
             SceneManager.LoadScene("Tutorial");  ///Intro done, load tutorial
 
         }
+
     }
 }

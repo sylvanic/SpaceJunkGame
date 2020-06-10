@@ -20,7 +20,7 @@ public class SelectLevel : MonoBehaviour
     
     private void SelectLevel1()
     {
-        SceneManager.LoadScene("Intro");
+        SceneManager.LoadScene("GameTest");
     }
 
     private void SelectLevel2()
@@ -30,7 +30,7 @@ public class SelectLevel : MonoBehaviour
 
     private void SelectLevel3()
     {
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("Level_3");
     }
 
     public void BackToMainMenu()

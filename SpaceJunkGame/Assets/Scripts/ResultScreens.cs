@@ -5,22 +5,26 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
-public class ScoreboardUpgrades : MonoBehaviour
+public class ResultScreens : MonoBehaviour
 {
-    [SerializeField]
-    private bool checkChallengedCompleted;
+    public bool checkChallengedCompleted;
     public int levelScoreMinimum = 50;
     public GameObject UpgradeBoard;
     public GameObject MissionCompleted;
     [Space]
     private Button selectedUpgradeBtn;
     private Color deselected = Color.white;
-    private Color upgradeSelected = Color.black;
+    private Color upgradeSelected = Color.blue;
     private Color boosterUpg, weaponUpg, capacityUpg, shieldUpg;
-    private string upgrade;
+    public static string currentUpgrade;
+
+    public GameObject checkChosenUpgrade;
+
 
     public void CheckChallengeCompleted()
     {
+        Debug.Log("clicked");
+
         if (PlayerStats.totalScore > levelScoreMinimum)    /// Mission Completed
         {
             if (checkChallengedCompleted == false)
@@ -33,32 +37,42 @@ public class ScoreboardUpgrades : MonoBehaviour
                 MissionCompleted.SetActive(false);
             }
         }
-        else    /// Mission Failed
-            
+        else   
         {
-            if (SceneManager.GetActiveScene().name == "GameTest")
+            if (SceneManager.GetActiveScene().name == "Lvl1Cutscene")
             {
                 SceneManager.LoadScene("GameTest");
             }
-            else if (SceneManager.GetActiveScene().name == "Level_2")
+            else if (SceneManager.GetActiveScene().name == "Lvl2Cutscene")
             {
                 SceneManager.LoadScene("Level_2");
             }
-           
+            else if (SceneManager.GetActiveScene().name == "Lvl3Cutscene")
+            {
+                SceneManager.LoadScene("Level_3");
+            }
+
         }
+
+      
     }
 
-    public void ChallengeNextLevel()
+    public void ShowEndScreen()
     {
-        if (checkChallengedCompleted == true)
+        SceneManager.LoadScene("EndScreen");
+    }
+
+    public void CheckUpgradeSelected()
+    {
+        if (currentUpgrade == null || currentUpgrade == "")
         {
+            checkChosenUpgrade.SetActive(true);
+        }
+        else
+        {
+            checkChosenUpgrade.SetActive(false);
             SceneManager.LoadScene("SelectLevel");
         }
-    }
-
-    public void ReturnToMenu()
-    {
-        SceneManager.LoadScene("NEW_Menu");
     }
 
     public void UpgradeSelected(Button button)
@@ -83,22 +97,22 @@ public class ScoreboardUpgrades : MonoBehaviour
         capacityUpg = GameObject.Find("CapacityUpg").GetComponent<Image>().color;
         shieldUpg = GameObject.Find("ShieldUpg").GetComponent<Image>().color;
 
-        if (boosterUpg == Color.black)
+        if (boosterUpg == Color.blue)
         {
-            upgrade = "booster";
+            currentUpgrade = "booster";
         }
-        else if (weaponUpg == Color.black)
+        else if (weaponUpg == Color.blue)
         {
-            upgrade = "weapon";
+            currentUpgrade = "weapon";
         }
-        else if (capacityUpg == Color.black)
+        else if (capacityUpg == Color.blue)
         {
-            upgrade = "capacity";
+            currentUpgrade = "capacity";
         }
         
-        else if (shieldUpg == Color.black)
+        else if (shieldUpg == Color.blue)
         {
-            upgrade = "shield";
+            currentUpgrade = "shield";
         }
        
         if (boosterUpg == deselected &&
@@ -106,8 +120,9 @@ public class ScoreboardUpgrades : MonoBehaviour
             capacityUpg == deselected &&
             shieldUpg == deselected)
         {
-            upgrade = "";
+            currentUpgrade = "";
         }
     }
+
 
 }

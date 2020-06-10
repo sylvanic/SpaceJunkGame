@@ -11,30 +11,28 @@ public class TutorialInteraction : MonoBehaviour
     public GameObject intro3;
     public GameObject intro4;
     public GameObject intro5;
-
     public GameObject intro6;
-
     public GameObject intro7;
-
     public GameObject intro8;
-
     public GameObject intro9;
     public GameObject intro10;
-
     public GameObject intro11;
     public GameObject intro12;
     public GameObject intro13;
     public GameObject intro14;
-
-    public GameObject blackscreen;
-
+    public GameObject intro15;
     public GameObject astronautInteraction;
     public GameObject astronautAppear;
-
     public PlayerStats playerStats;
-
     public GameObject junkDump;
 
+    bool intro2popup = false;
+    bool intro3popup = false;
+    bool intro4popup = false;
+    bool intro5popup = false;
+    bool intro6popup = false;
+    public bool hitByAsteroid = false;
+    public bool laserHasBeenShot = false;
     //First Intro
     bool firstIntro = true;
     public void SkipIntro1()
@@ -47,7 +45,6 @@ public class TutorialInteraction : MonoBehaviour
             intro2.SetActive(true);
         }
     }
-
     bool secondIntro = true;
     public void SkipIntro2()
     {
@@ -91,9 +88,9 @@ public class TutorialInteraction : MonoBehaviour
         {
             intro5.SetActive(false);
             fifthIntro = false;
-            blackscreen.SetActive(false);
             astronautInteraction.SetActive(false);
-            StopAllCoroutines();           
+            StopAllCoroutines();
+            intro2popup = true;
         }
     }
 
@@ -103,10 +100,12 @@ public class TutorialInteraction : MonoBehaviour
     {
         if (sixthIntro)
         {
+            StartCoroutine(StartIntro2());
             intro6.SetActive(false);
             sixthIntro = false;            
             astronautInteraction.SetActive(false);
             StopAllCoroutines();
+            intro3popup = true;
         }
     }
 
@@ -120,6 +119,7 @@ public class TutorialInteraction : MonoBehaviour
             seventhIntro = false;
             astronautInteraction.SetActive(false);
             StopAllCoroutines();
+            intro4popup = true;
         }
     }
 
@@ -133,6 +133,7 @@ public class TutorialInteraction : MonoBehaviour
             eighthIntro = false;
             astronautInteraction.SetActive(false);
             StopAllCoroutines();
+            intro5popup = true;
         }
     }
 
@@ -158,6 +159,7 @@ public class TutorialInteraction : MonoBehaviour
             tenthIntro = false;
             astronautInteraction.SetActive(false);
             StopAllCoroutines();
+            intro6popup = true;
         }
     }
 
@@ -205,6 +207,18 @@ public class TutorialInteraction : MonoBehaviour
         {
             intro14.SetActive(false);
             fourteenthIntro = false;
+            StopAllCoroutines();
+            intro15.SetActive(true);
+        }
+    }
+
+    bool fifteenthIntro = true;
+    public void SkipIntro15()
+    {
+        if (fifteenthIntro)
+        {
+            intro15.SetActive(false);
+            fifteenthIntro = false;
             astronautInteraction.SetActive(false);
             StopAllCoroutines();
             SceneManager.LoadScene("GameTest");
@@ -216,40 +230,49 @@ public class TutorialInteraction : MonoBehaviour
         SceneManager.LoadScene("SelectLevel");
     }
 
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene("NEW_Menu");
+    }
+
+    private void Start()
+    {
+        StartCoroutine(StartIntro1());
+    }
+
     void Update()
     {
-        ShowIntro();
         DetectInput();
         ScoreDetect();
         DetectDump();
+        DetectHit();
         DetectLaser();
     }
 
     private IEnumerator StartIntro1()
     {
         yield return new WaitForSeconds(1);
-        blackscreen.SetActive(true);
         astronautAppear.SetActive(true);
         yield return new WaitForSeconds(2);
         astronautAppear.SetActive(false);
         astronautInteraction.SetActive(true);        
         intro1.SetActive(true);       
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(5);
         intro1.SetActive(false);               
         intro2.SetActive(true);       
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(5);
         intro2.SetActive(false);        
         intro3.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(5);
         intro3.SetActive(false);
         intro4.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         intro4.SetActive(false);
         intro5.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         intro5.SetActive(false);
-        blackscreen.SetActive(false);
         astronautInteraction.SetActive(false);
+        intro2popup = true;
     }
 
     private IEnumerator StartIntro2()
@@ -257,9 +280,10 @@ public class TutorialInteraction : MonoBehaviour
         yield return new WaitForSeconds(1);
         astronautInteraction.SetActive(true);
         intro6.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         intro6.SetActive(false);
         astronautInteraction.SetActive(false);
+        intro3popup = true;
     }
 
     private IEnumerator StartIntro3()
@@ -267,9 +291,10 @@ public class TutorialInteraction : MonoBehaviour
         yield return new WaitForSeconds(1);
         astronautInteraction.SetActive(true);
         intro7.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         intro7.SetActive(false);
         astronautInteraction.SetActive(false);
+        intro4popup = true;
     }
 
     private IEnumerator StartIntro4()
@@ -277,9 +302,24 @@ public class TutorialInteraction : MonoBehaviour
         yield return new WaitForSeconds(1);
         astronautInteraction.SetActive(true);
         intro8.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         intro8.SetActive(false);
         astronautInteraction.SetActive(false);
+        intro5popup = true;
+    }
+
+    public IEnumerator StartIntro5()
+    {
+        yield return new WaitForSeconds(1);
+        astronautInteraction.SetActive(true);
+        intro9.SetActive(true);
+        yield return new WaitForSeconds(4);
+        intro9.SetActive(false);
+        intro10.SetActive(true);
+        yield return new WaitForSeconds(4);
+        intro10.SetActive(false);
+        astronautInteraction.SetActive(false);
+        intro6popup = true;
     }
 
     private IEnumerator StartIntro6()
@@ -287,83 +327,73 @@ public class TutorialInteraction : MonoBehaviour
         yield return new WaitForSeconds(1);
         astronautInteraction.SetActive(true);
         intro11.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         intro11.SetActive(false);
         intro12.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         intro12.SetActive(false);
         intro13.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         intro13.SetActive(false);
         intro14.SetActive(true);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(5);
         intro14.SetActive(false);
+        intro15.SetActive(true);
+        yield return new WaitForSeconds(4);
+        intro15.SetActive(false);
         astronautInteraction.SetActive(false);
         SceneManager.LoadScene("GameTest");
     }
 
-    bool intro1popup = true;
-    public void ShowIntro()
-    {
-        if (Time.timeScale == 1)
-        {
-            if (intro1popup)
-            {
-                StartCoroutine(StartIntro1());
-                intro1popup = false;
-            }
-        }
-    }
-
-    bool intro2popup = true;
     public void DetectInput()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && intro2popup)
         {
-            if (intro2popup)
-            {
                 StartCoroutine(StartIntro2());
                 intro2popup = false;
-            }
+
         }
     }
 
-    bool intro3popup = true;
     public void ScoreDetect()
     {
-        if (playerStats.capacity == 3)
+        if ((playerStats.capacity == 3 || junkDump.GetComponent<JunkDump>().junkDumped >= 3) && intro3popup)
         {
-            if (intro3popup)
-            {
                 StartCoroutine(StartIntro3());
                 intro3popup = false;
-            }
         }
     }
 
-    bool intro4popup = true;
+
     public void DetectDump()
     {
-        if(junkDump.GetComponent<JunkDump>().junkDumped >= 3)
+        if (junkDump.GetComponent<JunkDump>().junkDumped >= 3 && intro4popup)
         {
-            if (intro4popup)
-            {
                 StartCoroutine(StartIntro4());
                 intro4popup = false;
-            }
         }
     }
 
-    bool intro6popup = true;
+    public void DetectHit()
+    {
+        if(hitByAsteroid && intro5popup)
+        {
+             StartCoroutine(StartIntro5());
+             intro5popup = false;
+        }
+    }
+
     public void DetectLaser()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (laserHasBeenShot && intro6popup)
         {
-            if (intro6popup)
-            {
                 StartCoroutine(StartIntro6());
                 intro6popup = false;
-            }
         }
+    }
+
+    public void LaserShot()
+    {
+        laserHasBeenShot = true;
     }
 }
