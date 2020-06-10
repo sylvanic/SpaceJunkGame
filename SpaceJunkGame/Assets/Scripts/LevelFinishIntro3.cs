@@ -89,14 +89,14 @@ public class LevelFinishIntro3 : MonoBehaviour
     private IEnumerator Text6()
     {
         text6.SetActive(true);
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(8);
         text6.SetActive(false);
     }
 
     private IEnumerator Text7()
     {
         text7.SetActive(true);
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(8);
         text7.SetActive(false);
     }
 
@@ -176,7 +176,7 @@ public class LevelFinishIntro3 : MonoBehaviour
 
     public void intro6()
     {
-        if (intro6playing && time >= 34)
+        if (intro6playing && time >= 42)
         {
             StartCoroutine(Text6());
             intro6playing = false;
@@ -185,7 +185,7 @@ public class LevelFinishIntro3 : MonoBehaviour
 
     public void intro7()
     {
-        if (intro7playing && time >= 39)
+        if (intro7playing && time >= 50)
         {
             StartCoroutine(Text7());
             intro7playing = false;
@@ -194,7 +194,7 @@ public class LevelFinishIntro3 : MonoBehaviour
 
     public void intro8()
     {
-        if (intro8playing && time >= 46)
+        if (intro8playing && time >= 55)
         {
             StartCoroutine(Text8());
             intro8playing = false;
@@ -202,7 +202,7 @@ public class LevelFinishIntro3 : MonoBehaviour
     }
     public void intro9()
     {
-        if (intro9playing && time >= 51)
+        if (intro9playing && time >= 60)
         {
             StartCoroutine(Text9());
             intro9playing = false;
@@ -211,7 +211,7 @@ public class LevelFinishIntro3 : MonoBehaviour
 
     public void blackout()
     {
-        if (blackoutplaying && time >= 55)
+        if (blackoutplaying && time >= 65)
         { 
             StartCoroutine(Blackout());
             blackoutplaying = false;
