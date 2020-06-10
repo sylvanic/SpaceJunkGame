@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 212914873854904024}
   - component: {fileID: 7631727705085029121}
   - component: {fileID: 7631727705085029134}
+  - component: {fileID: -4755487801668923916}
   m_Layer: 0
   m_Name: Sputnik
   m_TagString: Untagged
@@ -109,6 +110,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6b09ee3f4b447f419a8392a1d6a6d7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-4755487801668923916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929998047561314820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84ee00d71976d944290934234f5fa63c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1 &7631727705730684067
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:SpaceJunkGame/Assets/Plugins/FMOD/src.meta
-guid: 2d690d91d1427f64eaee18fd3cb26ca8
-=======
-guid: 9ecd196fe34599e429d83a487fa2b28a
->>>>>>> master:SpaceJunkGame/Assets/Animation - Interaction/FMOD.meta
+guid: 589f633946cef7b4aa728f15554fcad3
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
