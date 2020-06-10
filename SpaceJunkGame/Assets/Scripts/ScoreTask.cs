@@ -11,16 +11,16 @@ public class ScoreTask : Objective
     private void Update()
     {
         points = PlayerStats.totalScore;
-    }
 
-    public override bool IsComplete()
-    {
         if (points >= requiredPoints)
         {
             points = requiredPoints;
         }
-        return (points >= requiredPoints);
+    }
 
+    public override bool IsComplete()
+    {
+        return (points >= requiredPoints);
     }
 
     public override void Complete()

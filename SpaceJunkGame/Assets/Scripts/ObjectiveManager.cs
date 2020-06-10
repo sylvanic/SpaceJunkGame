@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ObjectiveManager : MonoBehaviour
 {
@@ -11,6 +12,13 @@ public class ObjectiveManager : MonoBehaviour
     private void Awake()
     {
         objective = GetComponents<Objective>();
+
+        if (SceneManager.GetActiveScene().name == "Level_2" || SceneManager.GetActiveScene().name == "Level_3")
+        {
+            PlayerStats.hitAmount = 0;
+            PlayerStats.totalScore = 0;
+            Pickable.junkAmount = 0;
+        }
     }
 
     private void OnGUI()
