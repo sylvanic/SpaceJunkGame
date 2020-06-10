@@ -20,8 +20,6 @@ public class PlayerStats : MonoBehaviour
     public static int totalScore;
     public TextMeshProUGUI scoreText;
     [SerializeField]private int scoreMultiplier;
-
-    //public TutorialInteraction tutInt;
     private SoundManager soundManager;
     //private Sprite exclamation_mark;
 
@@ -96,6 +94,6 @@ public class PlayerStats : MonoBehaviour
             Destroy(obj.gameObject,.1f);
             Debug.Log("asteroid collision idk");
         }
-        //tutInt.hitByAsteroid = true;
+        
     }
 }
