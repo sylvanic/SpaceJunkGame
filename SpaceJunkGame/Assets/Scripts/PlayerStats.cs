@@ -82,15 +82,13 @@ public class PlayerStats : MonoBehaviour
         {
             soundManager.AsteroidCrash.Play();
             capacity--;
-            Destroy(other.gameObject,.1f);
             Debug.Log("!!!!!!asteroid collision idk");
         }
     }
 
     public void OnCollisionEnter(Collision obj)
     {      
-        Debug.Log(this.name);
-        Debug.Log(obj.gameObject.name);
+       
         if (obj.gameObject.tag == "Asteroid")
         {
             soundManager.AsteroidCrash.Play();
