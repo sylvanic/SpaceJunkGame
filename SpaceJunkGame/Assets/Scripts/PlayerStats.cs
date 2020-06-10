@@ -26,7 +26,9 @@ public class PlayerStats : MonoBehaviour
     void Start()
     {
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
+        if(capacitySlider){
         capacitySlider.maxValue = maxCapacity;
+        }
         
     }
 
@@ -51,8 +53,13 @@ public class PlayerStats : MonoBehaviour
     private void CapacitySliderUpdate()
     {
         capacity = Mathf.Clamp(capacity, 0, maxCapacity);
-        capacitySlider.value = capacity;
-        capacityText.text = capacity.ToString();
+        if(capacitySlider){
+            capacitySlider.value = capacity;
+        }
+       
+        if(capacityText){
+            capacityText.text = capacity.ToString();
+        }
         currentScore = capacity;
     
 
