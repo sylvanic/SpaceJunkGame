@@ -19,11 +19,6 @@ public class PlayerController : MonoBehaviour
     {
         myT = transform;
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
-
-
-
-
-
     }
     private void Update()
     {
