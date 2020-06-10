@@ -138,6 +138,11 @@ public class LevelFinishIntro3 : MonoBehaviour
         }
     }
 
+    public void SkipIntro1()
+    {
+
+    }
+
     public void intro2()
     {
         if (intro2playing && time >=10)
@@ -176,7 +181,7 @@ public class LevelFinishIntro3 : MonoBehaviour
 
     public void intro6()
     {
-        if (intro6playing && time >= 42)
+        if (intro6playing && time >= 34)
         {
             StartCoroutine(Text6());
             intro6playing = false;
@@ -185,7 +190,7 @@ public class LevelFinishIntro3 : MonoBehaviour
 
     public void intro7()
     {
-        if (intro7playing && time >= 50)
+        if (intro7playing && time >= 42)
         {
             StartCoroutine(Text7());
             intro7playing = false;
@@ -194,7 +199,7 @@ public class LevelFinishIntro3 : MonoBehaviour
 
     public void intro8()
     {
-        if (intro8playing && time >= 55)
+        if (intro8playing && time >= 50)
         {
             StartCoroutine(Text8());
             intro8playing = false;
@@ -202,7 +207,7 @@ public class LevelFinishIntro3 : MonoBehaviour
     }
     public void intro9()
     {
-        if (intro9playing && time >= 60)
+        if (intro9playing && time >= 55)
         {
             StartCoroutine(Text9());
             intro9playing = false;
@@ -211,7 +216,7 @@ public class LevelFinishIntro3 : MonoBehaviour
 
     public void blackout()
     {
-        if (blackoutplaying && time >= 65)
+        if (blackoutplaying && time >= 60)
         { 
             StartCoroutine(Blackout());
             blackoutplaying = false;

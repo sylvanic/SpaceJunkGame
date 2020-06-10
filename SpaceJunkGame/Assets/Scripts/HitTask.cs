@@ -9,7 +9,7 @@ public class HitTask : Objective
 
     private void Update()
     {
-        hits = PlayerStats.hitAmount;
+        //hits = PlayerStats.hitAmount;
     }
 
 
