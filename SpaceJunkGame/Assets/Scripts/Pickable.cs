@@ -5,6 +5,7 @@ using UnityEngine;
 public class Pickable : MonoBehaviour
 {
     private SoundManager soundManager;
+    public static int junkAmount;
 
     void Start()
     {
@@ -20,8 +21,10 @@ public class Pickable : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            
             if (other.GetComponent<PlayerStats>().capacity < other.GetComponent<PlayerStats>().maxCapacity)
             {
+                junkAmount++;
                 soundManager.PickUp.Play();
                 if(tag=="smallTrash")
                 {

@@ -21,9 +21,10 @@ public class PlayerStats : MonoBehaviour
     public TextMeshProUGUI scoreText;
     [SerializeField]private int scoreMultiplier;
 
-    public TutorialInteraction tutInt;
+    //public TutorialInteraction tutInt;
     private SoundManager soundManager;
     //private Sprite exclamation_mark;
+    public static int hitAmount;
 
     void Start()
     {
@@ -88,10 +89,11 @@ public class PlayerStats : MonoBehaviour
     {      
         if (obj.gameObject.tag == "Asteroid")
         {
+            hitAmount++;
             soundManager.AsteroidCrash.Play();
             capacity--;
             Destroy(obj.gameObject,.2f);
         }
-        tutInt.hitByAsteroid = true;
+      //  tutInt.hitByAsteroid = true;
     }
 }
