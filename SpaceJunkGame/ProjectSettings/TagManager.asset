@@ -12,6 +12,7 @@ TagManager:
   - smallTrash
   - mediumTrash
   - bigTrash
+  - ObjectiveManager
   layers:
   - Default
   - TransparentFX

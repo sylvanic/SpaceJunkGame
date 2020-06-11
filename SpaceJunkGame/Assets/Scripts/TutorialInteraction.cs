@@ -221,7 +221,7 @@ public class TutorialInteraction : MonoBehaviour
             fifteenthIntro = false;
             astronautInteraction.SetActive(false);
             StopAllCoroutines();
-            SceneManager.LoadScene("GameTest");
+            SceneManager.LoadScene("SelectLevel");
         }
     }
 
@@ -342,7 +342,7 @@ public class TutorialInteraction : MonoBehaviour
         yield return new WaitForSeconds(4);
         intro15.SetActive(false);
         astronautInteraction.SetActive(false);
-        SceneManager.LoadScene("GameTest");
+        SceneManager.LoadScene("SelectLevel");
     }
 
     public void DetectInput()
