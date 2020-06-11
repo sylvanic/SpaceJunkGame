@@ -34,7 +34,6 @@ public class LevelFinishIntro3 : MonoBehaviour
     void Update()
     {
         time += 1 * Time.deltaTime;
-        print(time);
         intro1();
         intro2();
         intro3();
