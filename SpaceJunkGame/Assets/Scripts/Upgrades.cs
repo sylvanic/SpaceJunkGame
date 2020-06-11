@@ -17,6 +17,7 @@ public class Upgrades : MonoBehaviour
 
     [Header("Shield Upgrade")]
     public GameObject shieldObj;
+    [SerializeField] private float shieldTime = 0;
     public bool isShieldActive = false;
 
     
@@ -52,15 +53,26 @@ public class Upgrades : MonoBehaviour
 
     }
 
-    public void ShieldUpgrade(){
+    public void ShieldUpgrade()
+    {
         shieldObj.SetActive(true);
-        
+        GetComponent<BoxCollider>().enabled=false;
+        StartCoroutine(ActivateShield(shieldTime));
+
     }
 
-    public void GunUpgrade(){
+    public IEnumerator ActivateShield(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        GetComponent<BoxCollider>().enabled=true;
+    }
+
+    public void GunUpgrade()
+    {
         gunObj.SetActive(true);
     }
 
+  
 
     
 }
