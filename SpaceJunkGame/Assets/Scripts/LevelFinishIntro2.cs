@@ -4,66 +4,145 @@ using UnityEngine;
 
 public class LevelFinishIntro2 : MonoBehaviour
 {
-    public GameObject intro;
+    public GameObject astronaut;
     public GameObject text1;
     public GameObject text2;
     public GameObject text3;
+    public GameObject text3alt;
     public GameObject MissionComplete;
     public GameObject MissionFailed;
+    float time;
+    bool intro1play = true;
+    bool intro2play = true;
+    bool intro3play = true;
+    bool blackoutplay = true;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-        StartCoroutine(ActivationRoutineCanvas());
-        StartCoroutine(ActivationRoutineText());
-        StartCoroutine(ActivationRoutineText2());
-        StartCoroutine(ActivationRoutineText3());
-        StartCoroutine(ActivationRoutineBlackout());
+        time += 1 * Time.deltaTime;
+        print(time);
+        Intro1();
+        Intro2();
+        Intro3();
+        Blackout();
     }
 
-    private IEnumerator ActivationRoutineCanvas()
+    public void Intro1()
     {
-        yield return new WaitForSeconds(1);
+        if (intro1play)
+        {
+            StartCoroutine(ActivationRoutineText());
+            intro1play = false;
+        }
+    }
 
-        intro.SetActive(true);
+    public void Intro2()
+    {
+        if (intro2play && time >= 8.5)
+        {
+            StartCoroutine(ActivationRoutineText2());
+            intro2play = false;
+        }
+    }
+
+    public void Intro3()
+    {
+        if (intro3play && time >= 12.5)
+        {
+            StartCoroutine(ActivationRoutineText3());
+            intro3play = false;
+        }
+    }
+
+    public void Blackout()
+    {
+        if (blackoutplay && time >= 18)
+        {
+            StartCoroutine(ActivationRoutineBlackout());
+            blackoutplay = false;
+        }
+    }
+
+    bool firstIntro = true;
+    public void SkipIntro1()
+    {
+        if (firstIntro)
+        {
+            text1.SetActive(false);
+            astronaut.SetActive(false);
+            firstIntro = false;
+            StopAllCoroutines();
+        }
+    }
+
+    bool secondIntro = true;
+    public void SkipIntro2()
+    {
+        if (secondIntro)
+        {
+            text2.SetActive(false);
+            astronaut.SetActive(false);
+            secondIntro = false;
+            StopAllCoroutines();
+        }
+    }
+
+    bool thirdIntro = true;
+    public void SkipIntro3()
+    {
+        if (thirdIntro)
+        {
+            text3.SetActive(false);
+            text3alt.SetActive(false);
+            astronaut.SetActive(false);
+            thirdIntro = false;
+            StopAllCoroutines();
+            time = 18;
+        }
     }
 
     private IEnumerator ActivationRoutineText()
     {
-        yield return new WaitForSeconds(3);
-
+        astronaut.SetActive(true);
         text1.SetActive(true);
 
         yield return new WaitForSeconds(4);
-
+        astronaut.SetActive(false);
         text1.SetActive(false);
     }
 
     private IEnumerator ActivationRoutineText2()
     {
-        yield return new WaitForSeconds(7);
-
         text2.SetActive(true);
-
         yield return new WaitForSeconds(4);
-
         text2.SetActive(false);
     }
 
     private IEnumerator ActivationRoutineText3()
     {
-        yield return new WaitForSeconds(13);
+        astronaut.SetActive(true);
+        if (PlayerStats.totalScore > 50)
+        {
+            
+            text3.SetActive(true);
 
-        text3.SetActive(true);
-
-        yield return new WaitForSeconds(5);
-
-        text3.SetActive(false);
+            yield return new WaitForSeconds(5);
+            astronaut.SetActive(false);
+            text3.SetActive(false);
+        }
+        
+        else
+        {
+            text3alt.SetActive(true);
+            yield return new WaitForSeconds(5);
+            astronaut.SetActive(false);
+            text3alt.SetActive(false);
+        }
     }
 
     private IEnumerator ActivationRoutineBlackout()
     {
-        yield return new WaitForSeconds(18);
+        yield return new WaitForSeconds(0);
 
         if (PlayerStats.totalScore > 50)
         {
