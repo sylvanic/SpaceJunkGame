@@ -6,6 +6,8 @@ public class Pickable : MonoBehaviour
 {
     private SoundManager soundManager;
     public static int junkAmount;
+    public int currentScore = 0;
+    public int maxCapacity = 0;
 
     void Start()
     {
@@ -41,6 +43,11 @@ public class Pickable : MonoBehaviour
             else{
 
                 //full sound and message
+                
+                if (currentScore == maxCapacity)
+                {
+               soundManager.CapacityFull.Play();
+                }
                 Debug.Log("ok");
             }
         }
