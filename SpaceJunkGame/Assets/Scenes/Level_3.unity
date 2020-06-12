@@ -12913,10 +12913,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 919388969301136777, guid: 401260bd9a904ea4899d0fb6f399ef1c,
+        type: 3}
+      propertyPath: requiredPoints
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 919388969301136778, guid: 401260bd9a904ea4899d0fb6f399ef1c,
+        type: 3}
+      propertyPath: requiredJunk
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 919388969301136781, guid: 401260bd9a904ea4899d0fb6f399ef1c,
         type: 3}
       propertyPath: m_Name
       value: ObjectiveManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 919388969301136822, guid: 401260bd9a904ea4899d0fb6f399ef1c,
+        type: 3}
+      propertyPath: requiredHits
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 401260bd9a904ea4899d0fb6f399ef1c, type: 3}
@@ -14362,6 +14377,11 @@ PrefabInstance:
         type: 3}
       propertyPath: turnSpeed
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4405583657123958219, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
+        type: 3}
+      propertyPath: movementSpeed
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4405583657335406348, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
         type: 3}

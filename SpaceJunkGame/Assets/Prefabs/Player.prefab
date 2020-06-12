@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 4405583657123958219}
   - component: {fileID: 4405583657123958212}
   - component: {fileID: -6944145879956197401}
+  - component: {fileID: 4341951199431313936}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -194,8 +195,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d1f92a72a77ef542882dc95e38d185b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 4
-  turnSpeed: 300
+  joystick: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+    type: 3}
+  movementSpeed: 1
+  turnSpeed: 100
   shootingPont: {fileID: 8959641947031414184}
   projectile: {fileID: -934081936609658432, guid: 1b79057482fb4ad4c96daf77a7ff774f,
     type: 3}
@@ -230,13 +233,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b800c630282725a418552879f1928d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradedMovementSpeed: 8
+  upgradedMovementSpeed: 4
   boosterObj: {fileID: 434650612991534438}
   upgradedCapacity: 0
   capacityObj: {fileID: 3517824636223310583}
   gunObj: {fileID: 4208872477288407468}
   shieldObj: {fileID: 6154235806678978188}
+  shieldTime: 0
   isShieldActive: 0
+--- !u!114 &4341951199431313936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5253051781096775556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1f92a72a77ef542882dc95e38d185b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  joystick: {fileID: 0}
+  movementSpeed: 4
+  turnSpeed: 100
+  shootingPont: {fileID: 0}
+  projectile: {fileID: -934081936609658432, guid: 1b79057482fb4ad4c96daf77a7ff774f,
+    type: 3}
+  upgradedProjectile: {fileID: 0}
 --- !u!1001 &660277296448088857
 PrefabInstance:
   m_ObjectHideFlags: 0
