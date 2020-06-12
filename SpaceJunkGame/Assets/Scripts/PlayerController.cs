@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public Joystick joystick;
     [SerializeField] public float movementSpeed = 50f;
     [SerializeField] float turnSpeed = 60f;
 
@@ -29,12 +30,18 @@ public class PlayerController : MonoBehaviour
 
     void Thrust()
     {
-        myT.position += myT.forward * movementSpeed * Time.deltaTime * Input.GetAxis("Vertical");
+
+        if(joystick.Vertical>=.2f){
+            myT.position += myT.forward*movementSpeed*Time.deltaTime;
+        }
+
+        //myT.position += myT.forward * movementSpeed * Time.deltaTime * joystick.Vertical;
+
+        soundManager.RocketEngine.pitch *= Input.GetAxis("Vertical");
         if (Input.GetKeyDown(KeyCode.W))
         {
             soundManager.RocketEngine.Play();
-            soundManager.RocketEngine.loop = true;
-
+            soundManager.RocketEngine.loop = true;        
 
         }
 
@@ -49,7 +56,7 @@ public class PlayerController : MonoBehaviour
 
     void Turn()
     {
-        float yaw = turnSpeed * Time.deltaTime * Input.GetAxis("Horizontal");
+        float yaw = turnSpeed * Time.deltaTime * joystick.Horizontal;
 
         myT.Rotate(0, yaw, 0);
 

@@ -50,7 +50,7 @@ public class Pickable : MonoBehaviour
                soundManager.CapacityFull.Play();
                 
                 }
-                Debug.Log("ok");
+               
             }
         }
     }
