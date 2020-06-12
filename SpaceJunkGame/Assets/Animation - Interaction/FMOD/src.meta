@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD:SpaceJunkGame/Assets/Animation - Interaction/FMOD/src.meta
 guid: b9451b1ec2803f44780661a7e2a5ae18
+=======
+guid: 60bdf9c5acef01847b300f19f2cfc455
+>>>>>>> Radina:SpaceJunkGame/Assets/Add-ons.meta~Updated upstream
+=======
+guid: b9451b1ec2803f44780661a7e2a5ae18
+>>>>>>> Radina
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
