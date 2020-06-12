@@ -31,32 +31,30 @@ public class PlayerController : MonoBehaviour
     void Thrust()
     {
 
-        if(joystick.Vertical>=.2f){
-            myT.position += myT.forward*movementSpeed*Time.deltaTime;
-        }
+       // if(joystick.Vertical>=.2f){
+       //     myT.position += myT.forward*movementSpeed*Time.deltaTime;
+       // }
 
-        //myT.position += myT.forward * movementSpeed * Time.deltaTime * joystick.Vertical;
+        myT.position += myT.forward * movementSpeed * Time.deltaTime * Input.GetAxis("Vertical");
 
-        soundManager.RocketEngine.pitch *= Input.GetAxis("Vertical");
+        soundManager.RocketEngine.pitch = Input.GetAxis("Vertical");
+            
         if (Input.GetKeyDown(KeyCode.W))
         {
             soundManager.RocketEngine.Play();
-            soundManager.RocketEngine.loop = true;        
-
+            soundManager.RocketEngine.loop = true;  
+            
         }
 
         if (Input.GetKeyUp(KeyCode.W))
         {
             soundManager.RocketEngine.Stop();
-
-
-
         }
     }
 
     void Turn()
     {
-        float yaw = turnSpeed * Time.deltaTime * joystick.Horizontal;
+        float yaw = turnSpeed * Time.deltaTime * Input.GetAxis("Horizontal");
 
         myT.Rotate(0, yaw, 0);
 

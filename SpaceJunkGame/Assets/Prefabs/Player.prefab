@@ -194,8 +194,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d1f92a72a77ef542882dc95e38d185b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 4
-  turnSpeed: 300
+  joystick: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+    type: 3}
+  movementSpeed: 5
+  turnSpeed: 200
   shootingPont: {fileID: 8959641947031414184}
   projectile: {fileID: -934081936609658432, guid: 1b79057482fb4ad4c96daf77a7ff774f,
     type: 3}
@@ -236,6 +238,7 @@ MonoBehaviour:
   capacityObj: {fileID: 3517824636223310583}
   gunObj: {fileID: 4208872477288407468}
   shieldObj: {fileID: 6154235806678978188}
+  shieldTime: 0
   isShieldActive: 0
 --- !u!1001 &660277296448088857
 PrefabInstance:
