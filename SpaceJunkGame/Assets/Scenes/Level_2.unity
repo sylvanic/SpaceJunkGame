@@ -5105,6 +5105,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObjectiveManager
       objectReference: {fileID: 0}
+    - target: {fileID: 919388969301136781, guid: 401260bd9a904ea4899d0fb6f399ef1c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 401260bd9a904ea4899d0fb6f399ef1c, type: 3}
 --- !u!1 &632627219
