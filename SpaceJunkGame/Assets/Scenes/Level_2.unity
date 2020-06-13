@@ -16302,7 +16302,7 @@ PrefabInstance:
         type: 3}
       propertyPath: asteroidPrefab
       value: 
-      objectReference: {fileID: 7845325112926101339, guid: 70dfac14cca76204ba03b13a1ffdfd12,
+      objectReference: {fileID: 8925568781619131857, guid: 946efc7a0da73fa429369aafd2a4cfd2,
         type: 3}
     - target: {fileID: 8181768689322133271, guid: b4f87b14e97ac354bbefced6db3d8db8,
         type: 3}
