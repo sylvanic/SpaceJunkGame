@@ -30,6 +30,7 @@ public class MainMenu : MonoBehaviour
     private void Awake()
     {
     }
+
     public void PlayGame()
     {
 
