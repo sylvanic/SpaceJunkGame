@@ -8,6 +8,7 @@ public class Pickable : MonoBehaviour
     public static int junkAmount;
     public int currentScore = 0;
     public int maxCapacity = 0;
+    
 
     void Start()
     {
@@ -42,11 +43,12 @@ public class Pickable : MonoBehaviour
             }
             else{
 
-                //full sound and message
+                //Capacity full SFX and message
                 
                 if (currentScore == maxCapacity)
                 {
                soundManager.CapacityFull.Play();
+                
                 }
                
             }

@@ -70,6 +70,7 @@ public class ResultScreens : MonoBehaviour
         }
         else
         {
+            PlayerPrefs.SetString("ChosenUpgrade", currentUpgrade);
             checkChosenUpgrade.SetActive(false);
             SceneManager.LoadScene("SelectLevel");
         }

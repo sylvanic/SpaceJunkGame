@@ -20,7 +20,7 @@ public class LevelFinishIntro2 : MonoBehaviour
     private void Update()
     {
         time += 1 * Time.deltaTime;
-        print(time);
+       // print(time);
         Intro1();
         Intro2();
         Intro3();
@@ -144,7 +144,9 @@ public class LevelFinishIntro2 : MonoBehaviour
     {
         yield return new WaitForSeconds(0);
 
-        if (PlayerStats.totalScore > 50)
+        PlayerPrefs.SetInt("ScoreLevel2", PlayerStats.totalScore);
+
+        if (PlayerStats.totalScore > 5)
         {
             MissionComplete.SetActive(true);
         }

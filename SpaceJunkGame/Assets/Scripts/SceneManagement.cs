@@ -6,9 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagement : MonoBehaviour
 {
+    private SaveInfo saveinfo;
+
+    private void Awake()
+    {
+        saveinfo = GameObject.FindGameObjectWithTag("SaveInfo").GetComponent<SaveInfo>();
+    }
 
     public void ReturnToMainMenu()
     {
+        saveinfo.ResetSaves();
         SceneManager.LoadScene("NEW_Menu");
     }
 

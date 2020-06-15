@@ -62,14 +62,7 @@ public class PlayerStats : MonoBehaviour
             capacityText.text = capacity.ToString();
         }
         currentScore = capacity;
-    
-
-
-//play CapacityFull SFX if the capacity bar is full
-       // if (currentScore == maxCapacity)
-        //{
-          //  soundManager.CapacityFull.Play();
-       // }
+   
     }
     
        
