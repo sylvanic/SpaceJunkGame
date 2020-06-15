@@ -9,6 +9,7 @@ public class SaveInfo : MonoBehaviour
 {
     public static SaveInfo Instance;
 
+
     private void Update()
     {
       
@@ -38,6 +39,8 @@ public class SaveInfo : MonoBehaviour
 
         saveData.highscore = saveData.scoreLevel1 + saveData.scoreLevel2 + saveData.scoreLevel3;
 
+        PlayerPrefs.SetInt("Highscore", saveData.highscore);
+
         saveData.chosenUpgrade = PlayerPrefs.GetString("ChosenUpgrade");
 
         saveData.playerName = PlayerPrefs.GetString("PlayerName");
@@ -60,9 +63,9 @@ public class SaveInfo : MonoBehaviour
 
 
         //Display saved data 
-       // Debug.Log("Level 1: " + loadedData.scoreLevel1 + "Level 2: " + loadedData.scoreLevel2 + "Level 3: " + loadedData.scoreLevel3);
-      //  Debug.Log("Highscore:" + loadedData.highscore);
-      //  Debug.Log("name: " + loadedData.playerName + "gender: " + loadedData.playerGender + "age: " + loadedData.playerAge);
+      // Debug.Log("Level 1: " + loadedData.scoreLevel1 + "Level 2: " + loadedData.scoreLevel2 + "Level 3: " + loadedData.scoreLevel3);
+      // Debug.Log("Highscore:" + loadedData.highscore);
+      // Debug.Log("name: " + loadedData.playerName + "gender: " + loadedData.playerGender + "age: " + loadedData.playerAge);
 
     }
 
