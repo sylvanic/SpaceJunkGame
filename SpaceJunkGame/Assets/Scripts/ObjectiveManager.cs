@@ -13,6 +13,7 @@ public class ObjectiveManager : MonoBehaviour
     {
         objective = GetComponents<Objective>();
 
+
         if (SceneManager.GetActiveScene().name == "Level_2" || SceneManager.GetActiveScene().name == "Level_3")
         {
             PlayerStats.hitAmount = 0;

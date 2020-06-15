@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.Security;
 
 public class CountdownTimer : MonoBehaviour
 {
@@ -42,6 +43,8 @@ public class CountdownTimer : MonoBehaviour
         //CHANGE SCENE ONCE TIME IS UP
         Debug.Log("bruh moment #3");
         soundManager.TimerBuzzer.Play();
+        
+
         if (SceneManager.GetActiveScene().name == "GameTest")
         {
             SceneManager.LoadScene("Lvl1Cutscene");
@@ -50,7 +53,10 @@ public class CountdownTimer : MonoBehaviour
         {
             SceneManager.LoadScene("Lvl2Cutscene");
         }
-        
+        else if (SceneManager.GetActiveScene().name == "Level_3")
+        {
+            SceneManager.LoadScene("Lvl3Cutscene");
+        }       
 
     }
 }
