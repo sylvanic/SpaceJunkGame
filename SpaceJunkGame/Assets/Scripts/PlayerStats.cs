@@ -21,8 +21,11 @@ public class PlayerStats : MonoBehaviour
     public TextMeshProUGUI scoreText;
     [SerializeField]private int scoreMultiplier = 0;
     private SoundManager soundManager;
-    //private Sprite exclamation_mark;
+    [SerializeField] private Image exclamation_mark;
     public static int hitAmount;
+
+
+    public GameObject explosionPrefab;
 
     void Start()
     {
@@ -30,6 +33,7 @@ public class PlayerStats : MonoBehaviour
         if(capacitySlider){
         capacitySlider.maxValue = maxCapacity;
         }
+
         
     }
 
@@ -62,11 +66,22 @@ public class PlayerStats : MonoBehaviour
             capacityText.text = capacity.ToString();
         }
         currentScore = capacity;
-   
+
+        if (capacity == maxCapacity)
+        {
+            Debug.Log("here");
+            exclamation_mark.gameObject.SetActive(true);
+        }
+
+        else if(capacity != maxCapacity)
+                {
+            exclamation_mark.gameObject.SetActive(false);
+        }
+
     }
-    
-       
-    
+
+
+
 
     public void UpdateScore(){
         
@@ -95,6 +110,8 @@ public class PlayerStats : MonoBehaviour
             capacity--;
             Destroy(obj.gameObject,.1f);
             Debug.Log("asteroid collision idk");
+
+            Instantiate(explosionPrefab, obj.transform.position, Quaternion.identity);
         }
         
     }

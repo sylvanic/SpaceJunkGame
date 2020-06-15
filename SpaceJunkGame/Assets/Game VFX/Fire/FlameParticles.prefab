@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 5896961315313566346}
   m_LocalRotation: {x: -0, y: -0.6244016, z: -0, w: 0.78110343}
   m_LocalPosition: {x: 1.606, y: 5.633, z: -3.559958}
-  m_LocalScale: {x: 5.1452, y: 5.1452, z: 5.1452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -4705,11 +4705,12 @@ ParticleSystemRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6daf8bbfc99ac3944bd8a5bcd09797e3, type: 2}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 0ad9cfa3f71c1764a8b73efdf6549e67, type: 2}
+  - {fileID: 2100000, guid: 0ad9cfa3f71c1764a8b73efdf6549e67, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4717,6 +4718,7 @@ ParticleSystemRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0

@@ -14,7 +14,7 @@ public class ResultScreens : MonoBehaviour
     [Space]
     private Button selectedUpgradeBtn;
     private Color deselected = Color.white;
-    private Color upgradeSelected = Color.blue;
+    public Color upgradeSelected;
     private Color boosterUpg, weaponUpg, capacityUpg, shieldUpg;
     public static string currentUpgrade;
 
@@ -98,20 +98,20 @@ public class ResultScreens : MonoBehaviour
         capacityUpg = GameObject.Find("CapacityUpg").GetComponent<Image>().color;
         shieldUpg = GameObject.Find("ShieldUpg").GetComponent<Image>().color;
 
-        if (boosterUpg == Color.blue)
+        if (boosterUpg == upgradeSelected)
         {
             currentUpgrade = "booster";
         }
-        else if (weaponUpg == Color.blue)
+        else if (weaponUpg == upgradeSelected)
         {
             currentUpgrade = "weapon";
         }
-        else if (capacityUpg == Color.blue)
+        else if (capacityUpg == upgradeSelected)
         {
             currentUpgrade = "capacity";
         }
         
-        else if (shieldUpg == Color.blue)
+        else if (shieldUpg == upgradeSelected)
         {
             currentUpgrade = "shield";
         }

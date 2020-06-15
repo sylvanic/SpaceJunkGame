@@ -3,14 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SaveInfo : MonoBehaviour
 {
     public static SaveInfo Instance;
 
+
     private void Update()
     {
-        // SomeScore();
+      
         Save();
         Load();
     }
@@ -37,7 +39,13 @@ public class SaveInfo : MonoBehaviour
 
         saveData.highscore = saveData.scoreLevel1 + saveData.scoreLevel2 + saveData.scoreLevel3;
 
+        PlayerPrefs.SetInt("Highscore", saveData.highscore);
+
         saveData.chosenUpgrade = PlayerPrefs.GetString("ChosenUpgrade");
+
+        saveData.playerName = PlayerPrefs.GetString("PlayerName");
+        saveData.playerGender = PlayerPrefs.GetString("PlayerGender");
+        saveData.playerAge = PlayerPrefs.GetString("PlayerAge");
 
         //Convert to Json
         string jsonData = JsonUtility.ToJson(saveData);
@@ -55,10 +63,9 @@ public class SaveInfo : MonoBehaviour
 
 
         //Display saved data 
-        Debug.Log("Level 1: " + loadedData.scoreLevel1 + "Level 2: " + loadedData.scoreLevel2 + "Level 3: " +
-            loadedData.scoreLevel3);
-        Debug.Log("Highscore:" + loadedData.highscore);
-
+      // Debug.Log("Level 1: " + loadedData.scoreLevel1 + "Level 2: " + loadedData.scoreLevel2 + "Level 3: " + loadedData.scoreLevel3);
+      // Debug.Log("Highscore:" + loadedData.highscore);
+      // Debug.Log("name: " + loadedData.playerName + "gender: " + loadedData.playerGender + "age: " + loadedData.playerAge);
 
     }
 

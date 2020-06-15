@@ -30,10 +30,15 @@ public class MainMenu : MonoBehaviour
     private void Awake()
     {
     }
+
     public void PlayGame()
     {
 
         playerName = playerNameInputField.text;
+
+        PlayerPrefs.SetString("PlayerName", playerName);
+        PlayerPrefs.SetString("PlayerGender", gender);
+        PlayerPrefs.SetString("PlayerAge", ageGroup);
 
         SceneManager.LoadScene("Intro");
 
@@ -42,7 +47,7 @@ public class MainMenu : MonoBehaviour
             (gender == "male" || gender == "female" || gender == "other") && 
             (ageGroup == "child" || ageGroup == "teen" || ageGroup == "adult"))
         {
-            
+       
         }
         else
         {
@@ -50,6 +55,7 @@ public class MainMenu : MonoBehaviour
             CheckInputs();                      ///Red outline around box when field isn't filled in 
         }
         */
+        
     }
     
 

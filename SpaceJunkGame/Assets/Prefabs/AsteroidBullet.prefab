@@ -144,6 +144,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: asteroid 3 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7845325112926101339, guid: 70dfac14cca76204ba03b13a1ffdfd12,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70dfac14cca76204ba03b13a1ffdfd12, type: 3}
 --- !u!4 &3336713569148084819 stripped
