@@ -8,6 +8,7 @@ public class AsteroidBullet : MonoBehaviour
     public float moveSpeed;
     [SerializeField]private float lifeTime;
 
+
     private void OnEnable()
     {
         Invoke("Destroy", lifeTime);
