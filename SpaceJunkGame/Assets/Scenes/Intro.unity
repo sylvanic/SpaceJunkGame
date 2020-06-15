@@ -1388,8 +1388,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451631391}
   m_CullTransparentMesh: 0
-<<<<<<< HEAD
-=======
 --- !u!1 &1594307740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1447,7 +1445,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> parent of 8c9022f... main menu and intro translated
 --- !u!1 &1618705055
 GameObject:
   m_ObjectHideFlags: 0
