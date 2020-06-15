@@ -88,11 +88,9 @@ public class LanguageSwitchMenu : MonoBehaviour
             scoreLeaderboardText.text = "SCORE";
             backButtonLeaderboardText.text = "BACK";
 
-            optionsText.text = "Options";
-            optionsText.fontSize = 100;
+            optionText.text = "Options";
             masterVolumeText.text = "Master Volume";
             sfxVolumeText.text = "SFX Volume";
-            sfxVolumeText.fontSize = 60;
             backButtonOptionsText.text = "Back";
         }
         else
@@ -105,28 +103,25 @@ public class LanguageSwitchMenu : MonoBehaviour
             GenderText.text = "Geslacht:";
             maleText.text = "man";
             femaleText.text = "vrouw";
-            otherText.text = "overige";
+            otherText.text = "overig";
             AgeGroupText.text = "Kies je leeftijdsgroep:";
             childText.text = "kind (7+)";
             teenText.text = "tiener (14+)";
             adultText.text = "volwassen (18+)";
 
-            optionButtonText.text = "Instellingen";
-            leaderboardButtonText.text = "Scorebord";
-            quitbuttonText.text = "Afsluiten";
-            quitbuttonText.fontSize = 24.6f;
+            optionButtonText.text = ;
+            leaderboardButtonText.text = ;
+            quitbuttonText.text = ;
 
-            leaderboardText.text = "Scorebord";
-            playerLeaderboardText.text = "SPELER";
-            scoreLeaderboardText.text = "SCORE";
-            backButtonLeaderboardText.text = "TERUG";
+            leaderboardText.text =;
+            playerLeaderboardText.text = ;
+            scoreLeaderboardText.text = ;
+            backButtonLeaderboardText.text = ;
 
-            optionsText.text = "Instellingen";
-            optionsText.fontSize = 77;
-            masterVolumeText.text = "Hoofdvolume";
-            sfxVolumeText.text = "Geluidseffectvolume";
-            sfxVolumeText.fontSize = 42;
-            backButtonOptionsText.text = "Terug";
+            optionText.text = ;
+            masterVolumeText.text =;
+            sfxVolumeText.text =;
+            backButtonOptionsText.text =;
         }
     }
 
