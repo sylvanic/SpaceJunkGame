@@ -199,9 +199,12 @@ MonoBehaviour:
   movementSpeed: 5
   turnSpeed: 200
   shootingPont: {fileID: 8959641947031414184}
+  cooldownTime: 3
   projectile: {fileID: -934081936609658432, guid: 1b79057482fb4ad4c96daf77a7ff774f,
     type: 3}
-  upgradedProjectile: {fileID: 0}
+  currentProjectile: {fileID: 0}
+  upgradedProjectile: {fileID: 6656862985657900748, guid: ebab30cb527e68c40abca19fa478f098,
+    type: 3}
 --- !u!114 &4405583657123958212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,11 +237,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradedMovementSpeed: 8
   boosterObj: {fileID: 434650612991534438}
-  upgradedCapacity: 0
+  upgradedCapacity: 10
   capacityObj: {fileID: 3517824636223310583}
   gunObj: {fileID: 4208872477288407468}
   shieldObj: {fileID: 6154235806678978188}
-  shieldTime: 0
+  shieldTime: 3
   isShieldActive: 0
 --- !u!1001 &660277296448088857
 PrefabInstance:

@@ -19,7 +19,7 @@ public class PlayerStats : MonoBehaviour
     public static int currentScore;
     public static int totalScore;
     public TextMeshProUGUI scoreText;
-    [SerializeField]private int scoreMultiplier;
+    [SerializeField]private int scoreMultiplier = 0;
     private SoundManager soundManager;
     //private Sprite exclamation_mark;
     public static int hitAmount;
@@ -91,7 +91,7 @@ public class PlayerStats : MonoBehaviour
         if (obj.gameObject.tag == "Asteroid")
         {
             hitAmount++;
-            soundManager.AsteroidCrash.Play();
+            //soundManager.AsteroidCrash.Play();
             capacity--;
             Destroy(obj.gameObject,.1f);
             Debug.Log("asteroid collision idk");
