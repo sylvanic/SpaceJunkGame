@@ -36,6 +36,7 @@ public class PlayerStats : MonoBehaviour
     void Update()
     {
         CapacitySliderUpdate();
+        Debug.Log(hitAmount);
     }
    
 
