@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class LanguageSwitch : MonoBehaviour
 {
+    /*
     public bool EnglishText = true;
     public bool DutchText = false;
 
@@ -19,5 +20,6 @@ public class LanguageSwitch : MonoBehaviour
             txt.text = "Ruimte Concierge";
         }
     }
+    */
 }
     

@@ -63,9 +63,9 @@ public class SaveInfo : MonoBehaviour
 
 
         //Display saved data 
-       Debug.Log("Level 1: " + loadedData.scoreLevel1 + "Level 2: " + loadedData.scoreLevel2 + "Level 3: " + loadedData.scoreLevel3);
-       Debug.Log("Highscore:" + loadedData.highscore);
-       Debug.Log("name: " + loadedData.playerName + "gender: " + loadedData.playerGender + "age: " + loadedData.playerAge);
+      // Debug.Log("Level 1: " + loadedData.scoreLevel1 + "Level 2: " + loadedData.scoreLevel2 + "Level 3: " + loadedData.scoreLevel3);
+      // Debug.Log("Highscore:" + loadedData.highscore);
+      // Debug.Log("name: " + loadedData.playerName + "gender: " + loadedData.playerGender + "age: " + loadedData.playerAge);
 
     }
 
