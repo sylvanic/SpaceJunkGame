@@ -2682,7 +2682,7 @@ MonoBehaviour:
   levelScoreMinimum: 20
   UpgradeBoard: {fileID: 8955408136043561572}
   MissionCompleted: {fileID: 8606638224349818755}
-  upgradeSelected: {r: 0.5001896, g: 0.7169812, b: 0.4836241, a: 1}
+  upgradeSelected: {r: 0, g: 0, b: 1, a: 1}
   checkChosenUpgrade: {fileID: 1581194304033455184}
 --- !u!114 &1196946448681064970
 MonoBehaviour:
@@ -2761,7 +2761,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: aaedfeef68f2ae142b0666de09897f00, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 01e3a68f036f82047a62657774e04a2c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2793,8 +2793,8 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 0.7137255, g: 0.81960785, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.7137255, g: 0.8196079, b: 1, a: 1}
+    m_SelectedColor: {r: 0.7137255, g: 0.8196079, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3121,7 +3121,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b6f0fcbd658c08e47a26e291f11aecc0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6d1fed30f53ce6144887063e0d828abf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3481,7 +3481,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6f7f7cb3bfa1a7b43a772fdb3d069e61, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aecb3ce24402928419a7639fa2584b05, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3826,7 +3826,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bef2ea1acb7b0814dba92ce3c3430934, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 72fee9b11e0f9154fa1445a8c3186a16, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4003,6 +4003,7 @@ GameObject:
   - component: {fileID: 3915890196991563939}
   - component: {fileID: 3993447674180935979}
   - component: {fileID: 1607555597395437030}
+  - component: {fileID: 6707755035589738739}
   m_Layer: 5
   m_Name: ChooseUpgrade
   m_TagString: Untagged
@@ -4074,3 +4075,15 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6707755035589738739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8955408136043561572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 711b40a189a4ccd42a382c8d80791654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -9,7 +9,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float turnSpeed = 60f;
 
     public Transform shootingPont;
-    public Projectile projectile;
+    [SerializeField] private float cooldownTime;
+    private bool onCooldown;
+    public Projectile projectile;  
+
+    public Projectile currentProjectile;
     public Projectile upgradedProjectile;
     private SoundManager soundManager;
 
@@ -18,6 +22,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        currentProjectile = projectile;
         myT = transform;
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
     }
@@ -31,41 +36,50 @@ public class PlayerController : MonoBehaviour
     void Thrust()
     {
 
-       // if(joystick.Vertical>=.2f){
-       //     myT.position += myT.forward*movementSpeed*Time.deltaTime;
-       // }
+        if(joystick.Vertical>=.2f){
+            myT.position += myT.forward*movementSpeed*Time.deltaTime;
+        }
 
-        myT.position += myT.forward * movementSpeed * Time.deltaTime * Input.GetAxis("Vertical");
+       // myT.position += myT.forward * movementSpeed * Time.deltaTime * Input.GetAxis("Vertical");
 
-        soundManager.RocketEngine.pitch = Input.GetAxis("Vertical");
+       // soundManager.RocketEngine.pitch = Input.GetAxis("Vertical");
             
         if (Input.GetKeyDown(KeyCode.W))
         {
-            soundManager.RocketEngine.Play();
-            soundManager.RocketEngine.loop = true;  
+           // soundManager.RocketEngine.Play();
+         //   soundManager.RocketEngine.loop = true;  
             
         }
 
         if (Input.GetKeyUp(KeyCode.W))
         {
-            soundManager.RocketEngine.Stop();
+           // soundManager.RocketEngine.Stop();
         }
     }
 
     void Turn()
     {
-        float yaw = turnSpeed * Time.deltaTime * Input.GetAxis("Horizontal");
+        float yaw = turnSpeed * Time.deltaTime * joystick.Horizontal;
 
         myT.Rotate(0, yaw, 0);
-
 
     }
 
     public void Shoot()
-    {
-        
+    {   
+            if(onCooldown == false)
+            {
             soundManager.Shoot.Play();
-            Projectile newProjectile = Instantiate(projectile, shootingPont.position, shootingPont.rotation) as Projectile;
-        
+            Projectile newProjectile = Instantiate(currentProjectile, 
+                                                   shootingPont.position, 
+                                                   shootingPont.rotation) as Projectile;   
+            
+            onCooldown = true;
+            StartCoroutine(ShootingCooldown(cooldownTime));
+            }                                                 
     }
+    IEnumerator ShootingCooldown(float waitTime){
+            yield return new WaitForSeconds(waitTime);
+            onCooldown = false;
+    } 
 }

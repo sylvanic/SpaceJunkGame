@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2350827268581811600}
   - component: {fileID: 2433329432388976738}
   - component: {fileID: 2433329432388976739}
+  - component: {fileID: 5813386796823764341}
   m_Layer: 0
   m_Name: asteroid_low 1
   m_TagString: Asteroid
@@ -227,6 +228,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.018400736, y: 0.020175252, z: 0.017580006}
   m_Center: {x: -0.000029063318, y: -0.000021825079, z: 0.00002303766}
+--- !u!114 &5813386796823764341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6091866689629136069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e1743f67272a514ab501f36eca369d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 351978525725663259, guid: c5a9216e086c72e43a7a9ce2b4d27bd1,
+    type: 3}
 --- !u!1 &9097067981585569627
 GameObject:
   m_ObjectHideFlags: 0
