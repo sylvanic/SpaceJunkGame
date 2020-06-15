@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 6211377128987929104}
   - component: {fileID: 7396599203613382617}
   - component: {fileID: 2474819715152835098}
-  - component: {fileID: -934081936609658432}
   - component: {fileID: 7258345256950592459}
+  - component: {fileID: 6656862985657900748}
   m_Layer: 0
-  m_Name: Projectile
+  m_Name: UpgradedProjectile
   m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3469272002881759007}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.524}
-  m_LocalScale: {x: 0.077077135, y: 0.1134026, z: 0.34551036}
+  m_LocalPosition: {x: 0, y: 0, z: -0.46108}
+  m_LocalScale: {x: 0.110721305, y: 0.16290283, z: 0.4963256}
   m_Children:
   - {fileID: 8675652418840503872}
   - {fileID: 5414947025066355078}
@@ -92,23 +92,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3469272002881759007}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-934081936609658432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3469272002881759007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9d00bc8a23d11643884eda393124aca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &7258345256950592459
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -125,6 +113,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &6656862985657900748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3469272002881759007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01c05b89c7468e645acc23e4806c9689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6051341018533426089
 GameObject:
   m_ObjectHideFlags: 0

@@ -36,14 +36,22 @@ public class Upgrades : MonoBehaviour
 
     public void BoosterUpgrade()
     {
+       float _originalSpeed = GetComponentInParent<PlayerController>().movementSpeed;
        GetComponentInParent<PlayerController>().movementSpeed = upgradedMovementSpeed;
        boosterObj.SetActive(true);
+       StartCoroutine(ActivateBooster(3,_originalSpeed));
 
         if (ResultScreens.currentUpgrade == "")
         {
             boosterObj.SetActive(false);
         }
         
+    }
+
+    public IEnumerator ActivateBooster(float boostTime, float originalSpeed){
+        yield return new WaitForSeconds(boostTime);
+        GetComponentInParent<PlayerController>().movementSpeed = originalSpeed;
+        boosterObj.SetActive(false);
     }
 
     public void CapacityUpgrade()
@@ -62,13 +70,14 @@ public class Upgrades : MonoBehaviour
     }
 
     public IEnumerator ActivateShield(float waitTime)
-    {
+    {   
         yield return new WaitForSeconds(waitTime);
         GetComponent<BoxCollider>().enabled=true;
     }
 
     public void GunUpgrade()
     {
+        GetComponent<PlayerController>().currentProjectile = GetComponent<PlayerController>().upgradedProjectile;
         gunObj.SetActive(true);
     }
 
