@@ -16,5 +16,9 @@ public class Save
     public int highscore;
 
     public string chosenUpgrade;
+
+    public string playerName;
+    public string playerGender;
+    public string playerAge;
 }
 
