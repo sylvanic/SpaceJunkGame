@@ -2682,6 +2682,7 @@ MonoBehaviour:
   levelScoreMinimum: 20
   UpgradeBoard: {fileID: 8955408136043561572}
   MissionCompleted: {fileID: 8606638224349818755}
+  upgradeSelected: {r: 0.5001896, g: 0.7169812, b: 0.4836241, a: 1}
   checkChosenUpgrade: {fileID: 1581194304033455184}
 --- !u!114 &1196946448681064970
 MonoBehaviour:
@@ -4002,7 +4003,6 @@ GameObject:
   - component: {fileID: 3915890196991563939}
   - component: {fileID: 3993447674180935979}
   - component: {fileID: 1607555597395437030}
-  - component: {fileID: 6707755035589738739}
   m_Layer: 5
   m_Name: ChooseUpgrade
   m_TagString: Untagged
@@ -4074,15 +4074,3 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6707755035589738739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8955408136043561572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 711b40a189a4ccd42a382c8d80791654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

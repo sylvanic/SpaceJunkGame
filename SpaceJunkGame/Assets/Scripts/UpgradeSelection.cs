@@ -6,6 +6,12 @@ public class UpgradeSelection : MonoBehaviour
     private string previousUpgrade;
 
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        PlayerPrefs.GetString("ChosenUpgrade");
+    }
+
     void Start()
     {
         upgrades = GameObject.FindGameObjectWithTag("Player").GetComponent<Upgrades>();
@@ -14,7 +20,17 @@ public class UpgradeSelection : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        
+        PlayerPrefs.SetInt("HasBooster", 0);
+        PlayerPrefs.SetInt("HasWeapon", 0);
+        PlayerPrefs.SetInt("HasCapacity", 0);
+        PlayerPrefs.SetInt("HasShield", 0);
+
+        if (PlayerPrefs.GetInt("ChosenUpgrade") == 1)
+        {
+          //  SetActive(Res)
+        }
+       
+        /*
         if (ResultScreens.currentUpgrade != previousUpgrade)
         {
             switch (previousUpgrade)
@@ -52,9 +68,10 @@ public class UpgradeSelection : MonoBehaviour
                 upgrades.ShieldUpgrade();
                 break;
         }
+        */
     }
 
-    
+    /*
     private void DeselectBooster()
     {
         upgrades.boosterObj.SetActive(false);
@@ -74,4 +91,5 @@ public class UpgradeSelection : MonoBehaviour
     {
         upgrades.shieldObj.SetActive(false);
     }
+    */
 }
