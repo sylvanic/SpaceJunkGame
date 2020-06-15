@@ -5,53 +5,58 @@ using UnityEngine.UI;
 
 public class DisplayLeaderboard : MonoBehaviour
 {
-    public Transform scoreContainer;
-    public Transform playerTemplate;
+    private Transform scoreContainer;
+    private Transform playerTemplate;
 
     private List<Transform> playerScoreTransformList;   
 
     void Awake()
     {
-        scoreContainer = transform.Find("Tab");
-        playerTemplate = scoreContainer.Find("SecondTab");
+        PlayerPrefs.GetInt("leaderboard", 0);
 
-        playerTemplate.gameObject.SetActive(false);
-
-        //clearScoreTable();
-
-        string jsonString = PlayerPrefs.GetString("highscoreTable");
-        Scores highscores = JsonUtility.FromJson<Scores>(jsonString);
-
-        //Sort out the score
-        for (int i = 0; i < highscores.scoreList.Count; i++)
+        if (PlayerPrefs.HasKey("leaderboard"))
         {
-            for (int j = 0; j < highscores.scoreList.Count; j++)
+            scoreContainer = transform.Find("Tab");
+            playerTemplate = scoreContainer.Find("SecondTab");
+
+            playerTemplate.gameObject.SetActive(false);
+
+            //clearScoreTable();
+
+            string jsonString = PlayerPrefs.GetString("leaderboard");
+            Scores highscores = JsonUtility.FromJson<Scores>(jsonString);
+
+            //Sort out the score
+            for (int i = 0; i < highscores.scoreList.Count; i++)
             {
-                if (highscores.scoreList[i].score > highscores.scoreList[j].score)
+                for (int j = 0; j < highscores.scoreList.Count; j++)
                 {
-                    PlayerScore swap = highscores.scoreList[i];
-                    highscores.scoreList[i] = highscores.scoreList[j];
-                    highscores.scoreList[j] = swap;
+                    if (highscores.scoreList[i].score > highscores.scoreList[j].score)
+                    {
+                        PlayerScore swap = highscores.scoreList[i];
+                        highscores.scoreList[i] = highscores.scoreList[j];
+                        highscores.scoreList[j] = swap;
+                    }
                 }
             }
-        }
 
-        //Limit till 10
-        if (highscores.scoreList.Count > 10)
-        {
-            for (int h = highscores.scoreList.Count; h > 10; h--)
+            //Limit till 10
+            if (highscores.scoreList.Count > 10)
             {
-                highscores.scoreList.RemoveAt(10);
+                for (int h = highscores.scoreList.Count; h > 10; h--)
+                {
+                    highscores.scoreList.RemoveAt(10);
+                }
+            }
+
+            //Display the tab of players info
+            playerScoreTransformList = new List<Transform>();
+            foreach (PlayerScore playerScore in highscores.scoreList)
+            {
+                CreatePlayersScoreTab(playerScore, scoreContainer, playerScoreTransformList);
             }
         }
-
-        //Display the tab of players info
-        playerScoreTransformList = new List<Transform>();
-        foreach (PlayerScore playerScore in highscores.scoreList)
-        {
-            CreatePlayersScoreTab(playerScore, scoreContainer, playerScoreTransformList);
-        }
-    }
+    }  
 
     private void CreatePlayersScoreTab(PlayerScore playerScore, Transform container, List<Transform> transformList)
     {
@@ -87,31 +92,31 @@ public class DisplayLeaderboard : MonoBehaviour
                 break;
         }
 
-        scoreTab.Find("Rank").GetComponent<Text>().text = rankString;
+        scoreTab.Find("rank").GetComponent<Text>().text = rankString;
 
         int score = playerScore.score;
-        scoreTab.Find("Score").GetComponent<Text>().text = score.ToString();
+        scoreTab.Find("score").GetComponent<Text>().text = score.ToString();
 
         string name = playerScore.name;
-        scoreTab.Find("Name").GetComponent<Text>().text = name;
+        scoreTab.Find("name").GetComponent<Text>().text = name;
 
         if (rank == 1)
         {
-            scoreTab.Find("Rank").GetComponent<Text>().color = new Color32(255, 214, 51, 255);
-            scoreTab.Find("Score").GetComponent<Text>().color = new Color32(255, 214, 51, 255);
-            scoreTab.Find("Name").GetComponent<Text>().color = new Color32(255, 214, 51, 255);
+            scoreTab.Find("rank").GetComponent<Text>().color = new Color32(255, 214, 51, 255);
+            scoreTab.Find("score").GetComponent<Text>().color = new Color32(255, 214, 51, 255);
+            scoreTab.Find("name").GetComponent<Text>().color = new Color32(255, 214, 51, 255);
         }
         if (rank == 2)
         {
-            scoreTab.Find("Rank").GetComponent<Text>().color = new Color32(220, 220, 220, 255);
-            scoreTab.Find("Score").GetComponent<Text>().color = new Color32(220, 220, 220, 255);
-            scoreTab.Find("Name").GetComponent<Text>().color = new Color32(220, 220, 220, 255);
+            scoreTab.Find("rank").GetComponent<Text>().color = new Color32(220, 220, 220, 255);
+            scoreTab.Find("score").GetComponent<Text>().color = new Color32(220, 220, 220, 255);
+            scoreTab.Find("name").GetComponent<Text>().color = new Color32(220, 220, 220, 255);
         }
         if (rank == 3)
         {
-            scoreTab.Find("Rank").GetComponent<Text>().color = new Color32(219, 167, 112, 255);
-            scoreTab.Find("Score").GetComponent<Text>().color = new Color32(219, 167, 112, 255);
-            scoreTab.Find("Name").GetComponent<Text>().color = new Color32(219, 167, 112, 255);
+            scoreTab.Find("rank").GetComponent<Text>().color = new Color32(219, 167, 112, 255);
+            scoreTab.Find("score").GetComponent<Text>().color = new Color32(219, 167, 112, 255);
+            scoreTab.Find("name").GetComponent<Text>().color = new Color32(219, 167, 112, 255);
         }
 
         transformList.Add(scoreTab);
@@ -120,7 +125,7 @@ public class DisplayLeaderboard : MonoBehaviour
     private void clearScoreTable()
     {
         //Load saved scores
-        string jsonString = PlayerPrefs.GetString("highscoreTable");
+        string jsonString = PlayerPrefs.GetString("leaderboard");
         Scores highscores = JsonUtility.FromJson<Scores>(jsonString);
 
         //Clear scores table
@@ -128,7 +133,7 @@ public class DisplayLeaderboard : MonoBehaviour
 
         //Save updated scores
         string json = JsonUtility.ToJson(highscores);
-        PlayerPrefs.SetString("highscoreTable", json);
+        PlayerPrefs.SetString("leaderboard", json);
         PlayerPrefs.Save();
     }
 
