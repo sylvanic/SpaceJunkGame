@@ -696,10 +696,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Are you familiar with the problems the space
-
-    debris in earth''s orbit
-    causes?'
+  m_text: Are you familiar with the problems the space debris in earth's orbit causes?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1fa0659de5708504d8cc39e2ea26e2e3, type: 2}
   m_sharedMaterial: {fileID: -8018162707225744622, guid: 1fa0659de5708504d8cc39e2ea26e2e3,
@@ -1418,7 +1415,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d021369958411be49aa08f45651ae3c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question: {fileID: 0}
+  question: {fileID: 1097812878}
+  yes: {fileID: 1376382038}
+  no: {fileID: 1451631391}
+  story: {fileID: 1157994086}
+  textSkip: {fileID: 444828968}
 --- !u!114 &1594307742
 MonoBehaviour:
   m_ObjectHideFlags: 0
