@@ -13083,6 +13083,11 @@ PrefabInstance:
       propertyPath: requiredJunk
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 919388969301136779, guid: 401260bd9a904ea4899d0fb6f399ef1c,
+        type: 3}
+      propertyPath: objective.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919388969301136781, guid: 401260bd9a904ea4899d0fb6f399ef1c,
         type: 3}
       propertyPath: m_Name
