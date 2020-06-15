@@ -1398,7 +1398,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1594307743}
   - component: {fileID: 1594307742}
-  - component: {fileID: 1594307741}
   m_Layer: 0
   m_Name: IntroLanguageSwitcher
   m_TagString: Untagged
@@ -1406,19 +1405,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1594307741
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1594307740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d021369958411be49aa08f45651ae3c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  question: {fileID: 0}
 --- !u!114 &1594307742
 MonoBehaviour:
   m_ObjectHideFlags: 0

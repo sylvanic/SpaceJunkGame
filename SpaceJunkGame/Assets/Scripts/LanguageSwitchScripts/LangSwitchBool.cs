@@ -14,4 +14,3 @@ public class LangSwitchBool : MonoBehaviour
         englishTxt = true;
     }
 }
-}

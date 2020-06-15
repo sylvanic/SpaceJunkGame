@@ -37,4 +37,3 @@ public class LanguageSwitchIntro : MonoBehaviour
         }
     }
 }
-}
