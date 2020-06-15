@@ -1,31 +1,31 @@
-﻿using System.Collections;
+﻿using System.CodeDom;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class SaveInfo : MonoBehaviour
 {
-    int lvl1 = 34;
-    int lvl2 = 44;
-    int lvl3 = 102;
-
-    float time = 30f;
+    public static SaveInfo Instance;
 
     private void Update()
     {
         // SomeScore();
         Save();
         Load();
-
-        time -= 1 * Time.deltaTime;
-
-        Debug.Log("time " + time);
     }
 
-    private void SomeScore()
+    private void Awake()
     {
-        PlayerPrefs.SetInt("ScoreLevel1", lvl1);
-        PlayerPrefs.SetInt("ScoreLevel2", lvl2);
-        PlayerPrefs.SetInt("ScoreLevel3", lvl3);
+        if (Instance == false)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+        DontDestroyOnLoad(this);
     }
 
     private void Save()
@@ -36,6 +36,8 @@ public class SaveInfo : MonoBehaviour
         saveData.scoreLevel3 = PlayerPrefs.GetInt("ScoreLevel3");
 
         saveData.highscore = saveData.scoreLevel1 + saveData.scoreLevel2 + saveData.scoreLevel3;
+
+        saveData.chosenUpgrade = PlayerPrefs.GetString("ChosenUpgrade");
 
         //Convert to Json
         string jsonData = JsonUtility.ToJson(saveData);
@@ -58,5 +60,10 @@ public class SaveInfo : MonoBehaviour
         Debug.Log("Highscore:" + loadedData.highscore);
 
 
+    }
+
+    public void ResetSaves()
+    {
+        PlayerPrefs.DeleteAll();
     }
 }
