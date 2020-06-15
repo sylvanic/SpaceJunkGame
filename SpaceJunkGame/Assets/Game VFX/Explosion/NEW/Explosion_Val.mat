@@ -41,7 +41,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MuzzleFlash:
-        m_Texture: {fileID: 2800000, guid: 5cb0f1b6a5ef0864890876c21e2ae516, type: 3}
+        m_Texture: {fileID: 2800000, guid: 5b22f35a2dfaf644594fac8e84d6aeda, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
