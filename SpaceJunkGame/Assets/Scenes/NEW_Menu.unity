@@ -6706,7 +6706,7 @@ MonoBehaviour:
   optionsButton: {fileID: 114348862}
   leaderboardButton: {fileID: 1644702362}
   quitButton: {fileID: 1795101075669182668}
-  leaderboard: {fileID: 827530103}
+  leaderboard: {fileID: 377500967}
   playerLeaderboard: {fileID: 2029623263}
   scoreLeaderboard: {fileID: 1151689477}
   backButtonLeaderboard: {fileID: 996033210}
