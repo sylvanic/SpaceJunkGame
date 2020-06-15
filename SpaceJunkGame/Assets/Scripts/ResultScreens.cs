@@ -14,7 +14,7 @@ public class ResultScreens : MonoBehaviour
     [Space]
     private Button selectedUpgradeBtn;
     private Color deselected = Color.white;
-    public Color upgradeSelected = Color.blue;
+    public Color upgradeSelected;
     private Color boosterUpg, weaponUpg, capacityUpg, shieldUpg;
     public static string currentUpgrade;
 
