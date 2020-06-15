@@ -1,23 +1,32 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 
 public class LanguageSwitch : MonoBehaviour
 {
-    public bool EnglishText = true;
-    public bool DutchText = false;
-
-    public Text txt;
-
-    public void ChangeTitleLang()
+    public static bool englishTxt;
+    public GameObject gameTitleEng;
+    public GameObject gameTitleDutch;
+    private void Update()
     {
-        if (EnglishText)
+        if (englishTxt)
         {
-            txt.text = engName;
+            gameTitleEng.SetActive(true);
+            gameTitleDutch.SetActive(false);
         }
-        if (DutchText)
+        else
         {
-            txt.text = "Ruimte Concierge";
+            gameTitleEng.SetActive(false);
+            gameTitleDutch.SetActive(true);
         }
+    }
+
+    public void Dutch()
+    {
+        englishTxt = false;
+    }
+
+    public void English()
+    {
+        englishTxt = true;
     }
 }
     
