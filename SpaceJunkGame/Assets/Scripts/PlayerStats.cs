@@ -73,6 +73,11 @@ public class PlayerStats : MonoBehaviour
             exclamation_mark.gameObject.SetActive(true);
         }
 
+        else if(capacity != maxCapacity)
+                {
+            exclamation_mark.gameObject.SetActive(false);
+        }
+
     }
 
 
