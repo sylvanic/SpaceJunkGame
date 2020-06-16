@@ -1,5 +1,13 @@
 fileFormatVersion: 2
-guid: 520286438347e1e4a875fffbdaf00560
+<<<<<<< HEAD
+guid: 37988cc4a53a9b741a752b907c67c6f6
+=======
+<<<<<<< HEAD:SpaceJunkGame/Assets/Assets/Simply Application Rating/Example.meta
+guid: d6b9a6454020eb6438533b410a8b7bcd
+=======
+guid: 37988cc4a53a9b741a752b907c67c6f6
+>>>>>>> Radina:SpaceJunkGame/Assets/Plugins/FMOD/src.meta
+>>>>>>> Radina
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
