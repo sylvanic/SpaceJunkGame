@@ -13,7 +13,6 @@ public class ActivateUpgrade : MonoBehaviour
 
         if (PlayerPrefs.GetInt("HasBooster") == 1)
         {
-            upgrades.BoosterUpgrade();
             BoosterCard.SetActive(true);
         }
 
@@ -25,7 +24,6 @@ public class ActivateUpgrade : MonoBehaviour
 
         else if (PlayerPrefs.GetInt("HasShield") == 1)
         {
-            upgrades.ShieldUpgrade();
             ImmunityCard.SetActive(true);
         }
 
