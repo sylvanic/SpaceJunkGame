@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class LanguageSwitchTutorial : MonoBehaviour
@@ -40,7 +38,7 @@ public class LanguageSwitchTutorial : MonoBehaviour
             part13.text = "Time is also limited, so think fast while the map will show you the way.";
             part14.text = "Minimap Legend:\n- Blue: Space trash.\n-Green: The space station.\n- Red: Asteroids.";
             part15.text = "That is it for the tutorial, good luck and have fun!";
-}
+        }
         else
         {
             part1.text = "Gegroet, reiziger. Welkom bij Ruimte Concierge. Mijn naam is Astro, en ik zal jou instructeur zijn.";
