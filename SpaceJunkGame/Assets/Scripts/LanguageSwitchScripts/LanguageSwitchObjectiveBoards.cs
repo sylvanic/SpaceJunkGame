@@ -54,16 +54,16 @@ public class LanguageSwitchObjectiveBoards : MonoBehaviour
         else
         {
             MCTitle.text = "MISSIE GEHAALD!";
-            MCScore.text = "SCORE:";
+            MCScore.text = "AANTAL PUNTEN:";
             MCNext.text = "VOLGENDE";
 
             MFTitle.text = "MISSIE MISLUKT!";
-            MFScore.text = "SCORE:";
+            MFScore.text = "AANTAL PUNTEN:";
             MFQuit.text = "OPGEVEN";
             MFReplay.text = "OPNIEUW";
 
             Confirm.text = "ALLE vooruitgang zal VERLOREN gaan!";
-            ConfirmWarning.text = "Zeker dat U wilt stopped?";
+            ConfirmWarning.text = "Zeker dat U wilt stoppen?";
             ConfirmYes.text = "JA";
             ConfirmNo.text = "NEE";
 

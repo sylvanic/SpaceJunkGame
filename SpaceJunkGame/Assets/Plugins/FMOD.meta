@@ -1,7 +1,18 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 31e30a9f8314e2749b2aeff161f80727
 folderAsset: yes
 DefaultImporter:
+=======
+<<<<<<< HEAD:SpaceJunkGame/Assets/Plugins/FMOD.meta
+guid: 31e30a9f8314e2749b2aeff161f80727
+folderAsset: yes
+DefaultImporter:
+=======
+guid: 9ced8d8f762edf34f8b8dc7d979ed0b0
+PrefabImporter:
+>>>>>>> Radina:SpaceJunkGame/Assets/Game VFX/Twinkling stars/TwinkleStars.prefab.meta
+>>>>>>> origin/ShauntaeJ
   externalObjects: {}
   userData: 
   assetBundleName: 
