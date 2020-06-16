@@ -1,30 +1,39 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LanguageSwitchUI : MonoBehaviour
 {
-    public TextMeshPro timer;
-    public GameObject storageCapacity;
-    public GameObject objectives;
-    public GameObject challenges;
-    public GameObject gameTitle;
-    public GameObject quit;
-    public GameObject confirmationQuit;
-    public GameObject confirmationWarning;
-    public GameObject confirmationYes;
-    public GameObject confirmationNo;
+    public TextMeshProUGUI timer;
+    public Text storageCapacity;
+    public Text objectives;
+    public Text challenges;
+    public TextMeshProUGUI gameTitle;
+    public TextMeshProUGUI quit;
+    public TextMeshProUGUI confirmationQuit;
+    public TextMeshProUGUI confirmationWarning;
+    public TextMeshProUGUI confirmationYes;
+    public TextMeshProUGUI confirmationNo;
 
     private void Awake()
     {
         if (LangSwitchBool.englishTxt)
         {
             timer.text = "Timer:";
+            storageCapacity.text = "Storage Capacity";
         }
         else
         {
             timer.text = "Tijd:";
+            storageCapacity.text = "Opslagcapaciteit";
+            objectives.text = "";
+            challenges.text = "";
+            gameTitle.text = "";
+            quit.text = "";
+            confirmationQuit.text = "";
+            confirmationWarning.text = "";
+            confirmationYes.text = "";
+            confirmationNo.text = "";
         }
     }
 }
