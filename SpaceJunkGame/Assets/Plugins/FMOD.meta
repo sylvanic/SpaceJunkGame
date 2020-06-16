@@ -1,6 +1,19 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
-guid: 31e30a9f8314e2749b2aeff161f80727
+<<<<<<< HEAD
+<<<<<<<< HEAD:SpaceJunkGame/Assets/Plugins/FMOD.meta
+guid: 59e9d9447b27fc640bd402bbaab97be3
+========
+<<<<<<< HEAD
+<<<<<<< HEAD:SpaceJunkGame/Assets/Animation - Interaction/FMOD.meta
+guid: 589f633946cef7b4aa728f15554fcad3
+=======
+guid: 5a582f4b1a244834caba826f449e164b
+>>>>>>> Radina:SpaceJunkGame/Assets/Game VFX/Twinkling stars.meta
+=======
+guid: 589f633946cef7b4aa728f15554fcad3
+>>>>>>> Radina
+>>>>>>>> ShauntaeJ:SpaceJunkGame/Assets/Animation - Interaction/FMOD.meta
 folderAsset: yes
 DefaultImporter:
 =======
@@ -12,7 +25,12 @@ DefaultImporter:
 guid: 9ced8d8f762edf34f8b8dc7d979ed0b0
 PrefabImporter:
 >>>>>>> Radina:SpaceJunkGame/Assets/Game VFX/Twinkling stars/TwinkleStars.prefab.meta
->>>>>>> origin/ShauntaeJ
+>>>>>>> ShauntaeJ
+=======
+guid: 31e30a9f8314e2749b2aeff161f80727
+folderAsset: yes
+DefaultImporter:
+>>>>>>> Uzay2
   externalObjects: {}
   userData: 
   assetBundleName: 
