@@ -17,7 +17,7 @@ public class HitVFX : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "Asteroid")
+        if (col.gameObject)
         {
             rend.sharedMaterial = material[1];
         }

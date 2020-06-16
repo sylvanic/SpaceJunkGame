@@ -7,6 +7,13 @@ public class IdleQuit : MonoBehaviour
 {
     public float time = 30f;
 
+    private SceneManagement sceneManager;
+
+    private void Awake()
+    {
+        sceneManager = GetComponent<SceneManagement>();
+    }
+
     void Update()
     {
         time -= 1 * Time.deltaTime;
@@ -17,7 +24,7 @@ public class IdleQuit : MonoBehaviour
 
         if (time <= 0)
         {
-            SceneManager.LoadScene("NEW_Menu");
+            sceneManager.ReturnToMainMenu();
         }
     }
 }

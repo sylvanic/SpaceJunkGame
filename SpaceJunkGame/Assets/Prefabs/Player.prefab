@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 4405583657123958219}
   - component: {fileID: 4405583657123958212}
   - component: {fileID: -6944145879956197401}
-  - component: {fileID: 3657817417147156478}
+  - component: {fileID: 1796236713872034420}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -224,6 +224,8 @@ MonoBehaviour:
   maxCapacity: 3
   scoreText: {fileID: 0}
   scoreMultiplier: 0
+  exclamation_mark: {fileID: 0}
+  explosionPrefab: {fileID: 0}
 --- !u!114 &-6944145879956197401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,7 +246,7 @@ MonoBehaviour:
   shieldObj: {fileID: 6154235806678978188}
   shieldTime: 3
   isShieldActive: 0
---- !u!114 &3657817417147156478
+--- !u!114 &1796236713872034420
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -253,7 +255,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5253051781096775556}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 711b40a189a4ccd42a382c8d80791654, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f7ea2708912e5044aef016c1ca67f90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &660277296448088857

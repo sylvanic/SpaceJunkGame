@@ -15,10 +15,16 @@ public class Save
 
     public int highscore;
 
-    public string chosenUpgrade;
-
     public string playerName;
     public string playerGender;
     public string playerAge;
+
+
+    public string chosenUpgrade;
+
+    public int HasBooster;
+    public int HasWeapon;
+    public int HasCapacity;
+    public int HasShield;
 }
 

@@ -21,6 +21,7 @@ public class ResultScreens : MonoBehaviour
     public GameObject checkChosenUpgrade;
 
 
+
     public void CheckChallengeCompleted()
     {
         Debug.Log("clicked");
@@ -37,7 +38,7 @@ public class ResultScreens : MonoBehaviour
                 MissionCompleted.SetActive(false);
             }
         }
-        else   
+        else            /// Mission Failed
         {
             if (SceneManager.GetActiveScene().name == "Lvl1Cutscene")
             {
@@ -124,6 +125,5 @@ public class ResultScreens : MonoBehaviour
             currentUpgrade = "";
         }
     }
-
 
 }

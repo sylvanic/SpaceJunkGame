@@ -12,11 +12,11 @@ public class SaveInfo : MonoBehaviour
 
     private void Update()
     {
-      
         Save();
         Load();
-    }
 
+    }
+    
     private void Awake()
     {
         if (Instance == false)
@@ -43,11 +43,10 @@ public class SaveInfo : MonoBehaviour
 
         saveData.chosenUpgrade = PlayerPrefs.GetString("ChosenUpgrade");
 
-        PlayerPrefs.GetInt("HasBooster");
-        PlayerPrefs.GetInt("HasWeapon");
-        PlayerPrefs.GetInt("HasCapacity");
-        PlayerPrefs.GetInt("HasShield");
-
+        saveData.HasBooster = PlayerPrefs.GetInt("HasBooster");
+        saveData.HasWeapon = PlayerPrefs.GetInt("HasWeapon");
+        saveData.HasCapacity = PlayerPrefs.GetInt("HasCapacity");
+        saveData.HasShield = PlayerPrefs.GetInt("HasShield");
 
         saveData.playerName = PlayerPrefs.GetString("PlayerName");
         saveData.playerGender = PlayerPrefs.GetString("PlayerGender");
@@ -73,7 +72,9 @@ public class SaveInfo : MonoBehaviour
         // Debug.Log("Highscore:" + loadedData.highscore);
         // Debug.Log("name: " + loadedData.playerName + "gender: " + loadedData.playerGender + "age: " + loadedData.playerAge);
 
-        //Debug.Log("chosen upgrade: " + loadedData.chosenUpgrade);
+        // Debug.Log("chosen upgrade: " + loadedData.chosenUpgrade);
+
+        //Debug.Log("booster" + loadedData.HasBooster + "weapon" + loadedData.HasWeapon + "capacity" + loadedData.HasCapacity + "shield" + loadedData.HasShield);
 
     }
 
@@ -81,4 +82,5 @@ public class SaveInfo : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
     }
+
 }
