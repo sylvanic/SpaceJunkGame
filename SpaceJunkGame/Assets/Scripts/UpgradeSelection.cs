@@ -2,7 +2,6 @@
 
 public class UpgradeSelection : MonoBehaviour
 {
-    private Upgrades upgrades;
     private string previousUpgrade;
 
     // Start is called before the first frame update
@@ -14,38 +13,28 @@ public class UpgradeSelection : MonoBehaviour
 
     void Start()
     {
-        upgrades = GameObject.FindGameObjectWithTag("Player").GetComponent<Upgrades>();
     }
 
     // Update is called once per frame
     private void Update()
     {
-        PlayerPrefs.SetInt("HasBooster", 0);
-        PlayerPrefs.SetInt("HasWeapon", 0);
-        PlayerPrefs.SetInt("HasCapacity", 0);
-        PlayerPrefs.SetInt("HasShield", 0);
-
-        if (PlayerPrefs.GetInt("ChosenUpgrade") == 1)
-        {
-          //  SetActive(Res)
-        }
-       
-        /*
+        
+        
         if (ResultScreens.currentUpgrade != previousUpgrade)
         {
             switch (previousUpgrade)
             {
                 case "booster":
-                    DeselectBooster();
+                    PlayerPrefs.SetInt("HasBooster", 0);
                     break;
                 case "weapon":
-                    DeselectWeapon();
+                    PlayerPrefs.SetInt("HasWeapon", 0);
                     break;
                 case "capacity":
-                    DeselectCapacity();
+                    PlayerPrefs.SetInt("HasCapacity", 0);
                     break;
                 case "shield":
-                    DeselectShield();
+                    PlayerPrefs.SetInt("HasShield", 0);
                     break;
             }
 
@@ -56,40 +45,19 @@ public class UpgradeSelection : MonoBehaviour
         switch (ResultScreens.currentUpgrade)
         {
             case "booster":
-                upgrades.BoosterUpgrade();
+                PlayerPrefs.SetInt("HasBooster", 1);
                 break;
             case "weapon":
-                upgrades.GunUpgrade();
+                PlayerPrefs.SetInt("HasWeapon", 1);
                 break;
             case "capacity":
-                upgrades.CapacityUpgrade();
+                PlayerPrefs.SetInt("HasCapacity", 1);
                 break;
             case "shield":
-                upgrades.ShieldUpgrade();
+                PlayerPrefs.SetInt("HasShield", 1);
                 break;
         }
-        */
+        
     }
 
-    /*
-    private void DeselectBooster()
-    {
-        upgrades.boosterObj.SetActive(false);
-    }
-
-    private void DeselectWeapon()
-    {
-        upgrades.gunObj.SetActive(false);
-    }
-
-    private void DeselectCapacity()
-    {
-        upgrades.capacityObj.SetActive(false);
-    }
-
-    private void DeselectShield()
-    {
-        upgrades.shieldObj.SetActive(false);
-    }
-    */
 }
