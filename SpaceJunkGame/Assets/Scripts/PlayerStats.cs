@@ -85,6 +85,7 @@ public class PlayerStats : MonoBehaviour
             soundManager.AsteroidCrash.Play();
             capacity--;
             Debug.Log("!!!!!!asteroid collision idk");
+            other.gameObject.SetActive(false);
         }
     }
 
