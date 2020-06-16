@@ -75,7 +75,7 @@ public class PlayerStats : MonoBehaviour
         
         currentScore *= scoreMultiplier;
         totalScore += currentScore;
-        scoreText.text = "Score:" + totalScore;
+        scoreText.text = "Punten: " + totalScore;
         
     }
 

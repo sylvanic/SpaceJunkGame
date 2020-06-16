@@ -4,44 +4,56 @@ using UnityEngine.UI;
 
 public class LanguageSwitchUI : MonoBehaviour
 {
-    public TextMeshProUGUI timer;
-    public Text storageCapacity;
-    public Text objectives;
-    public Text challenges;
-    public TextMeshProUGUI gameTitle;
-    public TextMeshProUGUI quit;
-    public TextMeshProUGUI confirmationQuit;
-    public TextMeshProUGUI confirmationWarning;
-    public TextMeshProUGUI confirmationYes;
-    public TextMeshProUGUI confirmationNo;
+    public TextMeshProUGUI Timer;
+    public TextMeshProUGUI Score;
+    public TextMeshProUGUI GameTitle;
+    public TextMeshProUGUI Quit;
+
+    public Text StorageCapacity;
+
+    public Text Objectives;
+    public Text Challenges;
+
+    public Text LaserTitle;
+
+    public TextMeshProUGUI Confirm;
+    public TextMeshProUGUI ConfirmWarning;
+    public TextMeshProUGUI ConfirmYes;
+    public TextMeshProUGUI ConfirmNo;
+
 
     private void Awake()
     {
         if (LangSwitchBool.englishTxt)
         {
-            timer.text = "Timer:";
-            storageCapacity.text = "Storage Capacity";
-            objectives.text = "Objectives";
-            challenges.text = "Challenges";
-            gameTitle.text = "Space Janitor";
-            quit.text = "";
-            confirmationQuit.text = "";
-            confirmationWarning.text = "";
-            confirmationYes.text = "";
-            confirmationNo.text = "";
+            Timer.text = "Timer: ";
+            //Score.text = "Score: ";
+            GameTitle.text = "Space Janitor";
+            Quit.text = "Quit";
+            StorageCapacity.text = "Storage Capacity";
+            Objectives.text = "Objectives";
+            Challenges.text = "Challenges";
+            LaserTitle.text = "Laser";
+
+            Confirm.text = "ALL progress will be LOST!";
+            ConfirmWarning.text = "Sure you want to quit?";
+            ConfirmYes.text = "YES";
+            ConfirmNo.text = "NO";
         }
         else
         {
-            timer.text = "Tijd:";
-            storageCapacity.text = "Opslagcapaciteit";
-            objectives.text = "Doelen";
-            challenges.text = "Uitdagingen";
-            gameTitle.text = "Ruimte Concierge";
-            quit.text = "";
-            confirmationQuit.text = "";
-            confirmationWarning.text = "";
-            confirmationYes.text = "";
-            confirmationNo.text = "";
+            Timer.text = "Tijd: ";
+            //Score.text = "Punten: ";
+            GameTitle.text = "Ruimte Congierge";
+            Quit.text = "Opgeven";
+            StorageCapacity.text = "Opslagcapaciteit";
+            Objectives.text = "Doelen";
+            Challenges.text = "Uitdagingen";
+            LaserTitle.text = "Laser";
+            Confirm.text = "ALLE vooruitgang zal VERLOREN gaan!";
+            ConfirmWarning.text = "Zeker dat U wilt stoppen?";
+            ConfirmYes.text = "JA";
+            ConfirmNo.text = "NEE";
         }
     }
 }
