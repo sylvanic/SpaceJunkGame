@@ -22,7 +22,7 @@ public class Projectile : MonoBehaviour
         if (collision.gameObject.tag == "Asteroid")
         {
             Debug.Log("asteroid hit with projectile");
-            Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
             Destroy(gameObject);
         }
         
