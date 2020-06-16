@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 8609672c4512a854a907a7c81e32e89d,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -6878,6 +6878,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4405583656880770653}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1813301089 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -6944145879956197401, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
+    type: 3}
+  m_PrefabInstance: {fileID: 4405583656880770653}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813301087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b800c630282725a418552879f1928d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1813301091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9338,6 +9350,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -442
       objectReference: {fileID: 0}
+    - target: {fileID: 1793691164813211640, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1813301089}
+    - target: {fileID: 1793691164813211640, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GunUpgrade
+      objectReference: {fileID: 0}
     - target: {fileID: 2218844923536589083, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_IsActive
@@ -9351,7 +9373,7 @@ PrefabInstance:
     - target: {fileID: 2402086305968774709, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2465029693019426464, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -9426,7 +9448,7 @@ PrefabInstance:
     - target: {fileID: 2879532231285853419, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2933970818302509688, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
