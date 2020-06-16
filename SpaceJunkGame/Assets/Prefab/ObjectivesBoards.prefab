@@ -2566,6 +2566,64 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &6452069382908001963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2732594287892580066}
+  - component: {fileID: 7984606883483909180}
+  m_Layer: 0
+  m_Name: ObjectivesBoardsLanguageSwitcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2732594287892580066
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6452069382908001963}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8606638222639270720}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7984606883483909180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6452069382908001963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b0feae255ac82c4985f1fe3a7e8090d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MCTitle: {fileID: 8606638223145293344}
+  MCScore: {fileID: 2276651583507902172}
+  MCNext: {fileID: 8606638222998939845}
+  MFTitle: {fileID: 5207751798358017955}
+  MFScore: {fileID: 6386877972749431617}
+  MFQuit: {fileID: 6657469859138860346}
+  MFReplay: {fileID: 3725463968537268820}
+  Confirm: {fileID: 6068923830322479380}
+  ConfirmWarning: {fileID: 2442825564944510107}
+  ConfirmYes: {fileID: 7056239863789771496}
+  ConfirmNo: {fileID: 3027703410890904477}
+  CCTitle: {fileID: 8286233827865527554}
+  ChooseUpgrade: {fileID: 6303151743638718402}
+  CCNext: {fileID: 4934224611610712315}
+  ChooseUpgradeConfirm: {fileID: 2667760012155592660}
 --- !u!1 &6565068981614104473
 GameObject:
   m_ObjectHideFlags: 0
@@ -3685,6 +3743,7 @@ RectTransform:
   - {fileID: 6139364267869511846}
   - {fileID: 451843778862308211}
   - {fileID: 3915890196991563939}
+  - {fileID: 2732594287892580066}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
