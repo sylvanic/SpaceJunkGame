@@ -6691,29 +6691,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 341e9bb111170a249892bda0dca4741a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTitle: {fileID: 507572022610740064}
-  writeYourName: {fileID: 1698740669}
-  enterName: {fileID: 757130366}
-  Gender: {fileID: 1772736576}
-  male: {fileID: 1408339715}
-  female: {fileID: 390471260}
-  other: {fileID: 1952015894}
-  AgeGroup: {fileID: 2079873173}
-  child: {fileID: 608275549}
-  teen: {fileID: 2126739325}
-  adult: {fileID: 70727721}
-  startButton: {fileID: 1795101075480045636}
-  optionsButton: {fileID: 114348862}
-  leaderboardButton: {fileID: 1644702362}
-  quitButton: {fileID: 1795101075669182668}
-  leaderboard: {fileID: 377500967}
-  playerLeaderboard: {fileID: 2029623263}
-  scoreLeaderboard: {fileID: 1151689477}
-  backButtonLeaderboard: {fileID: 996033210}
-  options: {fileID: 2026008290}
-  masterVolume: {fileID: 1856658735}
-  sfxVolume: {fileID: 206688387}
-  backButtonOptions: {fileID: 1664289003}
+  gameTitle: {fileID: 507572022610740070}
+  writeYourName: {fileID: 1698740671}
+  enterName: {fileID: 757130368}
+  Gender: {fileID: 1772736578}
+  male: {fileID: 1408339717}
+  female: {fileID: 390471262}
+  other: {fileID: 1952015896}
+  AgeGroup: {fileID: 2079873175}
+  child: {fileID: 608275551}
+  teen: {fileID: 2126739327}
+  adult: {fileID: 70727723}
+  startButton: {fileID: 1795101075480045638}
+  optionsButton: {fileID: 114348864}
+  leaderboardButton: {fileID: 1644702364}
+  quitButton: {fileID: 1795101075669182665}
+  leaderboard: {fileID: 827530105}
+  playerLeaderboard: {fileID: 2029623265}
+  scoreLeaderboard: {fileID: 1151689479}
+  backButtonLeaderboard: {fileID: 996033212}
+  options: {fileID: 2026008292}
+  masterVolume: {fileID: 1856658737}
+  sfxVolume: {fileID: 206688389}
+  backButtonOptions: {fileID: 1664289005}
 --- !u!1 &1557346868
 GameObject:
   m_ObjectHideFlags: 0

@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1417,11 +1417,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d021369958411be49aa08f45651ae3c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question: {fileID: 1097812878}
-  yes: {fileID: 1376382038}
-  no: {fileID: 1451631391}
-  story: {fileID: 1157994086}
-  textSkip: {fileID: 444828968}
+  question: {fileID: 1097812880}
+  yes: {fileID: 1376382040}
+  no: {fileID: 1451631393}
+  story: {fileID: 1157994087}
+  textSkip: {fileID: 444828969}
 --- !u!4 &1594307743
 Transform:
   m_ObjectHideFlags: 0
