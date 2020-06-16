@@ -52,22 +52,7 @@ public class PlayerController : MonoBehaviour
             
         }
 
-
-       // myT.position += myT.forward * movementSpeed * Time.deltaTime * Input.GetAxis("Vertical");
-
-       // soundManager.RocketEngine.pitch = Input.GetAxis("Vertical");
-            
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-           // soundManager.RocketEngine.Play();
-         //   soundManager.RocketEngine.loop = true;  
-            
-        }
-
-        if (Input.GetKeyUp(KeyCode.W))
-        {
-           // soundManager.RocketEngine.Stop();
-        }
+       
     }
 
     void Turn()

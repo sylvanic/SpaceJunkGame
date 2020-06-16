@@ -43,18 +43,6 @@ public class PlayerStats : MonoBehaviour
     }
    
 
-    private void OnGUI()
-    {
-        // GUI.Label(new Rect(10, 10, 100, 20), "Payload: " + payload + "/" + maxPayload);
-        //TrashCollectionLabel.SetText("Collect pieces of space junk: " + capacity + "/" + maxCapacity);
-
-         //if (capacity == maxCapacity)
-        //{
-         // this.gameObject.GetComponent<SpriteRenderer>().sprite = exclamation_mark;
-
-       // }
-    }
-
     private void CapacitySliderUpdate()
     {
         capacity = Mathf.Clamp(capacity, 0, maxCapacity);
@@ -106,10 +94,10 @@ public class PlayerStats : MonoBehaviour
         if (obj.gameObject.tag == "Asteroid")
         {
             hitAmount++;
-            //soundManager.AsteroidCrash.Play();
             capacity--;
             Destroy(obj.gameObject,.1f);
             Debug.Log("asteroid collision idk");
+            soundManager.AsteroidCrash.Play();
 
             Instantiate(explosionPrefab, obj.transform.position, Quaternion.identity);
         }
