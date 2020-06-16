@@ -29,6 +29,6 @@ public class PickUpTask : Objective
 
     public override void DrawHUD()
     {
-             GUI.Label(new Rect(1565, 285, 300, 100),string.Format("Collected {0}/{1} junk", junk, requiredJunk), ObjectiveManager.guiStyle);
+             GUI.Label(new Rect(1565, 285, 300, 100),string.Format(LangSwitchBool.pickUpTaskTxt, junk, requiredJunk), ObjectiveManager.guiStyle);
     }
 }

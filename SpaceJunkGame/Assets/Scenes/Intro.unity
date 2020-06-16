@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -696,10 +696,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Are you familiar with the problems the space
-
-    debris in earth''s orbit
-    causes?'
+  m_text: Ben je bekend met de problemen dat ruimteafval veroorzaakt?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1fa0659de5708504d8cc39e2ea26e2e3, type: 2}
   m_sharedMaterial: {fileID: -8018162707225744622, guid: 1fa0659de5708504d8cc39e2ea26e2e3,
@@ -745,7 +742,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 45
+  m_firstOverflowCharacterIndex: 35
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -769,10 +766,10 @@ MonoBehaviour:
   m_margin: {x: -280.66418, y: 0, z: -311.5853, w: 0}
   m_textInfo:
     textComponent: {fileID: 1097812880}
-    characterCount: 76
+    characterCount: 59
     spriteCount: 0
-    spaceCount: 12
-    wordCount: 13
+    spaceCount: 8
+    wordCount: 9
     linkCount: 0
     lineCount: 2
     pageCount: 1
@@ -833,17 +830,20 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157994086}
-  m_Text: "Space. The final frontier.\n\n\n\nOr at least, it would have\nbeen.\n\n\nThe
-    year is 2050. Mankind\nhas advanced their\nscientific capabilities to the\npoint
-    where space travel is\npossible.\n\n\nOur planet, the place we\nhave called home
-    for as\nlong as we existed, has\nnot only provided for us,\nbut has enriched
-    our\nminds and exposed us to\nits beauty.\n\n\nNow, as earth's population\ncontinues
-    to grow, a need\nfor galactic colonization has\ncome, not only for the\nexpansion
-    of humanity's\nliving space, but to explore\nstrange new worlds, and go\nwhere
-    no man has gone\nbefore.\n\n\nHowever, we currently face\na crisis, very close
-    to our\nhome.\n\n\nWe cannot send any\nequipment beyond our orbit\nwithout serious
-    damage \nfrom space debris.\n\n\nIt's your mission to clean up\nearth's orbit
-    from any junk\nand make our dream of\ninterstellar space travel\npossible."
+  m_Text: "Ruimte. De laatste grens.\r\n\r\n\r\nOf te minste, dat zou het \r\nmoeten
+    zijn.\r\n\r\n\r\nHet jaar is 2050. De\r\nmensheid heeft zijn\r\nwetenschappelijke\r\nmogelijkheid
+    zo bevorderd\r\ndat ruimtevaart nu mogelijk\r\nis.\r\n\r\n\r\nOnze planeet, de
+    plaats wat\r\nwe ons thuis hebben genoemd\r\nvoor zolang als we bestaan,\r\nheeft
+    niet alleen voor ons\r\ngezorgt, maar heeft onze\r\ngeestelijk verrijkt en haar\r\nschoonheid
+    aan ons laten\r\nzien.\r\n\r\n\r\nNu, terwijl de bevolking\r\nvan de aarde blijft
+    groeien, \r\nkrijgt de mensheid een\r\nbehoefte voor galactische\r\nkolonisatie,
+    niet alleen \r\nvoor het uitbreiding van de\r\nmensheid's leefruimte, maar \r\nook
+    om het verkennen van\r\nvreemde nieuwe werelden, en\r\nnaar plekken waar niemand\r\ngeweest
+    is gaan.\r\n\r\n\r\nEchter, we worden momenteel\r\ngeconfronteerd met\r\neen
+    crisis, veel dichter\r\nbij ons thuis.\r\n\r\n\r\n\r\nWe kunnen geen apparatuur
+    \r\nver van de aarde versturen\r\nzonder dat zeernstige schade\r\nvan ruimteafval
+    krijgen.\r\n\r\n\r\nHet is jouw missie om de\r\nruimteafval rondom de aarde\r\nop
+    te ruimen, en onze droom\r\nvan interstellaire ruimtevaart\r\nmogelijk te maken.\r"
   m_OffsetZ: 0
   m_CharacterSize: 0.5
   m_LineSpacing: 1.5
@@ -1116,7 +1116,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Yes
+  m_text: Ja
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1fa0659de5708504d8cc39e2ea26e2e3, type: 2}
   m_sharedMaterial: {fileID: -8018162707225744622, guid: 1fa0659de5708504d8cc39e2ea26e2e3,
@@ -1186,7 +1186,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1376382040}
-    characterCount: 3
+    characterCount: 2
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -1285,7 +1285,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'No
+  m_text: 'Nee
 
 '
   m_isRightToLeft: 0
@@ -1357,7 +1357,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1451631393}
-    characterCount: 3
+    characterCount: 4
     spriteCount: 0
     spaceCount: 1
     wordCount: 1

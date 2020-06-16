@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: dd8296136d30b82429d028c00097fdf1,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -191,7 +191,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level Complete
+  m_Text: Niveau Gehaalt
 --- !u!222 &18226624
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1260,7 +1260,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: OH NO! Watch out!
+  m_Text: OH NEE! Kijk uit!
 --- !u!222 &245128596
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1314,6 +1314,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: PlayOneShot
       objectReference: {fileID: 0}
+    - target: {fileID: 2442825564944510107, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: Weet je zeker dat je wil afsluiten?
+      objectReference: {fileID: 0}
     - target: {fileID: 2622846376285938480, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1339,6 +1344,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3027703410890904477, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: NEE
+      objectReference: {fileID: 0}
     - target: {fileID: 3361468519573710831, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -1348,6 +1358,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PlayOneShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3725463968537268820, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: HERSPELEN
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934224611610712315, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: VOLGENDE
+      objectReference: {fileID: 0}
+    - target: {fileID: 5207751798358017955, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: MISSIE GEFAALT!
       objectReference: {fileID: 0}
     - target: {fileID: 5970877261538605793, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
@@ -1359,6 +1384,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PlayOneShot
       objectReference: {fileID: 0}
+    - target: {fileID: 6068923830322479380, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: Al je voortgang zal verloren raken!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6657469859138860346, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: AFSLUITEN
+      objectReference: {fileID: 0}
     - target: {fileID: 6951408964879994315, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -1368,6 +1403,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PlayOneShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056239863789771496, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: JA
+      objectReference: {fileID: 0}
+    - target: {fileID: 8286233827865527554, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: UITDAGING GEHAALT!
       objectReference: {fileID: 0}
     - target: {fileID: 8606638222639270720, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
@@ -1479,6 +1524,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObjectivesBoards
       objectReference: {fileID: 0}
+    - target: {fileID: 8606638222998939845, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: VOLGENDE
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606638223145293344, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: MISSIE GESLAAGT!
+      objectReference: {fileID: 0}
     - target: {fileID: 8606638224124073353, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -1584,7 +1639,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Next Level
+  m_Text: Volgend niveau
 --- !u!222 &343175338
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2759,7 +2814,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Main Menu
+  m_Text: Hoofdmenu
 --- !u!222 &599606385
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3330,7 +3385,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Next Level
+  m_Text: Volgend Niveau
 --- !u!222 &709248734
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4846,7 +4901,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Time:\t\t\t\t\t0"
+  m_Text: "Tijd:\t\t\t\t\t0"
 --- !u!222 &1226274865
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5172,7 +5227,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Upgrade Unclocked!
+  m_Text: Nieuw upgrade ontgrendelt!
 --- !u!222 &1270069371
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6387,7 +6442,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Level Unlocked!
+  m_Text: Nieuw Niveau ontgrendelt!
 --- !u!222 &1763691886
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8255,7 +8310,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Computer: WARNING! DANGER APPROACHING SECTOR 7.'
+  m_Text: 'Computer: WAARSCHUWING! GEVAAR NADERT SECTOR 7.'
 --- !u!1001 &1749843715941443530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8832,7 +8887,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: OH NO! We celebrated too early. We have unfinished business to attend to.
+  m_Text: OH NEE! We hebben ons overwinning te vroeg gevierd. We hebben wat onafgemaakte
+    zaken om bij te wonen.
 --- !u!224 &1749843716447765257
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9726,7 +9782,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Great Job! That was ... unexpected but you did it. Another mission success.
+  m_Text: "Goed gedaan! Dat was\u2026 niet verwacht, maar je hebt het gedaan. Nog
+    een missie succesvol volbracht."
 --- !u!224 &1749843717143287543
 RectTransform:
   m_ObjectHideFlags: 0

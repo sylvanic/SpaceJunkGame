@@ -28,6 +28,6 @@ public class ScoreTask : Objective
 
     public override void DrawHUD()
     {
-        GUI.Label(new Rect(1565, 215, 300, 100),string.Format("Obtain a score of {0}/{1} points", points, requiredPoints), ObjectiveManager.guiStyle);
+        GUI.Label(new Rect(1565, 215, 300, 100),string.Format(LangSwitchBool.scoreTaskTxt, points, requiredPoints), ObjectiveManager.guiStyle);
     }
 }

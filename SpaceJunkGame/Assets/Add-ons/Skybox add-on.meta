@@ -1,5 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD:SpaceJunkGame/Assets/Add-ons/Skybox add-on.meta
 guid: 544f0f5a0e3fc354982750efb002513a
+=======
+guid: 589f633946cef7b4aa728f15554fcad3
+>>>>>>> Radina:SpaceJunkGame/Assets/Animation - Interaction/FMOD.meta
+=======
+<<<<<<< HEAD
+guid: 544f0f5a0e3fc354982750efb002513a
+=======
+guid: e4272a7fc5e1a494f9064b7622adac58
+>>>>>>> Uzay2
+>>>>>>> Radina
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
