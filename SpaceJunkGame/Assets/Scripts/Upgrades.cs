@@ -21,8 +21,6 @@ public class Upgrades : MonoBehaviour
     public bool isShieldActive = false;
 
     
-
-    
     void Start()
     {
      
@@ -80,8 +78,6 @@ public class Upgrades : MonoBehaviour
         GetComponent<PlayerController>().currentProjectile = GetComponent<PlayerController>().upgradedProjectile;
         gunObj.SetActive(true);
     }
-
-  
 
     
 }

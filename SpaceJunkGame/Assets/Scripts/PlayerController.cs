@@ -35,8 +35,12 @@ public class PlayerController : MonoBehaviour
 
     void Thrust()
     {
-
-        if(joystick.Vertical>=.2f){
+        //get the directional vector of the joystic
+      
+        if(Mathf.Abs(joystick.Vertical) >= .2f || Mathf.Abs(joystick.Horizontal) >= .2f){
+            Vector3 v = new Vector3(joystick.Direction.x, 0.0f, joystick.Direction.y);
+            Debug.DrawRay(transform.position, v * 10.0f, Color.red);  
+            transform.rotation =  Quaternion.LookRotation(v);
             myT.position += myT.forward*movementSpeed*Time.deltaTime;
         }
 

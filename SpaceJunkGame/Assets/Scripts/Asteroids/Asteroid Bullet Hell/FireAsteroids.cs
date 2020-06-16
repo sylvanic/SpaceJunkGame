@@ -27,8 +27,6 @@ public class FireAsteroids : MonoBehaviour
             Vector3 bulMoveVector = new Vector3(bulDirX, 0f, bulDirZ);
             Vector2 bulDir = (bulMoveVector - transform.position).normalized;
 
-            //i am going to commit bosnia genocide
-
             GameObject bul = AsteroidBulletPool.bulletPoolInstance.GetBullet();
             bul.transform.position = transform.position;
             bul.transform.rotation = transform.rotation;
