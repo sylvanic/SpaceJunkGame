@@ -15,4 +15,8 @@ public class LanguageSwitchUI : MonoBehaviour
     public GameObject confirmationYes;
     public GameObject confirmationNo;
 
+    private void Awake()
+    {
+        
+    }
 }
