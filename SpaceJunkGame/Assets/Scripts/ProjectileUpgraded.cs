@@ -19,7 +19,7 @@ public class ProjectileUpgraded : Projectile
         
         if(other.gameObject.tag=="Asteroid")
         {
-            Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
         }
     }
 }

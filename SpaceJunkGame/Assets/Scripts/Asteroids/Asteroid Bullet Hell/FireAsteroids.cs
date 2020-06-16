@@ -28,10 +28,12 @@ public class FireAsteroids : MonoBehaviour
             Vector2 bulDir = (bulMoveVector - transform.position).normalized;
 
             GameObject bul = AsteroidBulletPool.bulletPoolInstance.GetBullet();
+            if(bul!=null){
             bul.transform.position = transform.position;
             bul.transform.rotation = transform.rotation;
             bul.SetActive(true);
             bul.GetComponent<AsteroidBullet>().SetMoveDirection(bulDir);
+            }
 
             angle += angleStep;
         }

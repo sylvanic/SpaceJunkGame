@@ -42,23 +42,17 @@ public class PlayerController : MonoBehaviour
             Debug.DrawRay(transform.position, v * 10.0f, Color.red);  
             transform.rotation =  Quaternion.LookRotation(v);
             myT.position += myT.forward*movementSpeed*Time.deltaTime;
-        }
-
-       // myT.position += myT.forward * movementSpeed * Time.deltaTime * Input.GetAxis("Vertical");
-
-       // soundManager.RocketEngine.pitch = Input.GetAxis("Vertical");
-            
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-           // soundManager.RocketEngine.Play();
-         //   soundManager.RocketEngine.loop = true;  
+            if(!soundManager.RocketEngine.isPlaying)
+            {
+                soundManager.RocketEngine.Play();
+                soundManager.RocketEngine.loop = true;
+            }
+        }else{
+            soundManager.RocketEngine.Stop();
             
         }
 
-        if (Input.GetKeyUp(KeyCode.W))
-        {
-           // soundManager.RocketEngine.Stop();
-        }
+       
     }
 
     void Turn()

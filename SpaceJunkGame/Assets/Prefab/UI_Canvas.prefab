@@ -1767,16 +1767,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b60b8a712541a0641997ef9b074e3b73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: {fileID: 0}
-  storageCapacity: {fileID: 8526824554526226569}
-  objectives: {fileID: 6166300212192025431}
-  challenges: {fileID: 6166300212536317980}
-  gameTitle: {fileID: 4835060776518726003}
-  quit: {fileID: 8543163709257425034}
-  confirmationQuit: {fileID: 0}
-  confirmationWarning: {fileID: 0}
-  confirmationYes: {fileID: 0}
-  confirmationNo: {fileID: 0}
+  timer: {fileID: 5749212300715889829}
+  storageCapacity: {fileID: 8526824554526226571}
+  objectives: {fileID: 6166300212192025429}
+  challenges: {fileID: 6166300212536317978}
+  gameTitle: {fileID: 4835060776518726001}
+  quit: {fileID: 5681993819051428137}
+  confirmationQuit: {fileID: 8469657755460589196}
+  confirmationWarning: {fileID: 24147627223857923}
+  confirmationYes: {fileID: 4638617517629754736}
+  confirmationNo: {fileID: 844410632110212101}
 --- !u!1 &4835060775815284112
 GameObject:
   m_ObjectHideFlags: 0
