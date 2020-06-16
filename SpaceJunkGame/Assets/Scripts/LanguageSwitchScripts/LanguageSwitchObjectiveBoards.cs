@@ -67,7 +67,7 @@ public class LanguageSwitchObjectiveBoards : MonoBehaviour
             ConfirmYes.text = "JA";
             ConfirmNo.text = "NEE";
 
-            CCTitle.text = "CHALLENGE COMPLETED!";
+            CCTitle.text = "UITDAGING GEHAALD!";
             ChooseUpgrade.text = "Kies een upgrade";
             CCNext.text = "VOLGENDE";
             ChooseUpgradeConfirm.text = "Kies eerst een upgrade!";
