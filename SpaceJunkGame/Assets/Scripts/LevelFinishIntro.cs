@@ -148,6 +148,8 @@ public class LevelFinishIntro : MonoBehaviour
 
         PlayerPrefs.SetInt("ScoreLevel1", PlayerStats.totalScore);
 
+        PlayerStats.totalScore = 100;
+
         if (PlayerStats.totalScore > 5)
         {
             MissionComplete.SetActive(true);
