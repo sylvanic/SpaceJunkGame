@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LanguageSwitchTutorial : MonoBehaviour
 {
-    void Update()
+    void Awake()
     {
         
     }

@@ -8,7 +8,7 @@ public class LanguageSwitchIntro : MonoBehaviour
     public GameObject no;
     public GameObject story;
     public GameObject textSkip;
-    private void Update()
+    private void Awake()
     {
         TextMeshProUGUI questionText = question.GetComponent<TextMeshProUGUI>();
         TextMeshProUGUI yesText = yes.GetComponent<TextMeshProUGUI>();

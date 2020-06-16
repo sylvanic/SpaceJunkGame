@@ -1,5 +1,6 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<<< HEAD:SpaceJunkGame/Assets/Plugins/FMOD.meta
 guid: 59e9d9447b27fc640bd402bbaab97be3
 ========
@@ -25,6 +26,11 @@ guid: 9ced8d8f762edf34f8b8dc7d979ed0b0
 PrefabImporter:
 >>>>>>> Radina:SpaceJunkGame/Assets/Game VFX/Twinkling stars/TwinkleStars.prefab.meta
 >>>>>>> ShauntaeJ
+=======
+guid: 31e30a9f8314e2749b2aeff161f80727
+folderAsset: yes
+DefaultImporter:
+>>>>>>> Uzay2
   externalObjects: {}
   userData: 
   assetBundleName: 
