@@ -2,7 +2,7 @@
 
 public class LangSwitchBool : MonoBehaviour
 {
-    public static bool englishTxt = true;
+    public static bool englishTxt = false;
 
     public void Dutch()
     {
