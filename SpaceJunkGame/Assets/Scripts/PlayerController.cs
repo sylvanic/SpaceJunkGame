@@ -42,7 +42,16 @@ public class PlayerController : MonoBehaviour
             Debug.DrawRay(transform.position, v * 10.0f, Color.red);  
             transform.rotation =  Quaternion.LookRotation(v);
             myT.position += myT.forward*movementSpeed*Time.deltaTime;
+            if(!soundManager.RocketEngine.isPlaying)
+            {
+                soundManager.RocketEngine.Play();
+                soundManager.RocketEngine.loop = true;
+            }
+        }else{
+            soundManager.RocketEngine.Stop();
+            
         }
+
 
        // myT.position += myT.forward * movementSpeed * Time.deltaTime * Input.GetAxis("Vertical");
 
