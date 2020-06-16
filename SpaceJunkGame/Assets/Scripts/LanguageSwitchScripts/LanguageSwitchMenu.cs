@@ -34,7 +34,7 @@ public class LanguageSwitchMenu : MonoBehaviour
     public GameObject masterVolume;
     public GameObject sfxVolume;
     public GameObject backButtonOptions;
-    private void Update()
+    private void Awake()
     {
         TextMeshProUGUI gameTitleText = gameTitle.GetComponent<TextMeshProUGUI>();
         TextMeshProUGUI startButtonText = startButton.GetComponent<TextMeshProUGUI>();

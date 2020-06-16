@@ -17,7 +17,7 @@ public class LangSwitchBool : MonoBehaviour
         englishTxt = true;
     }
 
-    private void Update()
+    private void Awake()
     {
         if (englishTxt)
         {
