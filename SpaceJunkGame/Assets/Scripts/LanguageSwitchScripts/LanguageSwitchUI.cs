@@ -21,14 +21,22 @@ public class LanguageSwitchUI : MonoBehaviour
         {
             timer.text = "Timer:";
             storageCapacity.text = "Storage Capacity";
+            objectives.text = "Objectives";
+            challenges.text = "Challenges";
+            gameTitle.text = "Space Janitor";
+            quit.text = "";
+            confirmationQuit.text = "";
+            confirmationWarning.text = "";
+            confirmationYes.text = "";
+            confirmationNo.text = "";
         }
         else
         {
             timer.text = "Tijd:";
             storageCapacity.text = "Opslagcapaciteit";
-            objectives.text = "";
-            challenges.text = "";
-            gameTitle.text = "";
+            objectives.text = "Doelen";
+            challenges.text = "Uitdagingen";
+            gameTitle.text = "Ruimte Concierge";
             quit.text = "";
             confirmationQuit.text = "";
             confirmationWarning.text = "";

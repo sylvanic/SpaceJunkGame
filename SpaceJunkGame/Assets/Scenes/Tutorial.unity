@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 8609672c4512a854a907a7c81e32e89d,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4152,6 +4152,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05418e7f0a3bed24f83b47b678824729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  part1: {fileID: 1264771760}
+  part2: {fileID: 517647695}
+  part3: {fileID: 1045656923}
+  part4: {fileID: 1786298103}
+  part5: {fileID: 2008381591}
+  part6: {fileID: 639668854}
+  part7: {fileID: 1763805135}
+  part8: {fileID: 1278206519}
+  part9: {fileID: 1747905405}
+  part10: {fileID: 156093816}
+  part11: {fileID: 1027135486}
+  part12: {fileID: 1654506726}
+  part13: {fileID: 333309723}
+  part14: {fileID: 1736235622}
+  part15: {fileID: 300560938}
 --- !u!1001 &1153476519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9328,10 +9343,15 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2233434919850610049, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 2402086305968774709, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2465029693019426464, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -9406,7 +9426,7 @@ PrefabInstance:
     - target: {fileID: 2879532231285853419, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 2933970818302509688, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -9813,7 +9833,7 @@ PrefabInstance:
     - target: {fileID: 8526824553880951359, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8526824554288589575, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
