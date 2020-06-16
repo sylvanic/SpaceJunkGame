@@ -3604,13 +3604,11 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Bugged Game
+    - m_Text: 'Controles werken niet '
       m_Image: {fileID: 0}
-    - m_Text: Game Crashes
+    - m_Text: Spel crasht
       m_Image: {fileID: 0}
-    - m_Text: Player Going Off Grid
-      m_Image: {fileID: 0}
-    - m_Text: Other
+    - m_Text: Overige
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6999,7 +6997,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1716803628
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7432,11 +7430,11 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Wasn't much to learn
+    - m_Text: 'Heeft niet veel geleerd '
       m_Image: {fileID: 0}
-    - m_Text: There was no purpose
+    - m_Text: Geen duidelijk doel
       m_Image: {fileID: 0}
-    - m_Text: No experience
+    - m_Text: Overige
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8922,7 +8920,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bugged Game
+  m_text: 'Controles werken niet '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 128826ab5dca4c146b4e9b20b1a6a600, type: 2}
   m_sharedMaterial: {fileID: -2935708435768262662, guid: 128826ab5dca4c146b4e9b20b1a6a600,
@@ -8992,10 +8990,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2010245328}
-    characterCount: 11
+    characterCount: 22
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 2
+    spaceCount: 3
+    wordCount: 3
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -10033,7 +10031,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2052049103569231132
 MonoBehaviour:
   m_ObjectHideFlags: 0
