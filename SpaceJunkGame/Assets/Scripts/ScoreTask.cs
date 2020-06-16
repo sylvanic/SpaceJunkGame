@@ -1,12 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class ScoreTask : Objective
 {
     private int points;
     public int requiredPoints;
 
+    public static string scoreTaskTxt; 
+
+    private void Awake()
+    {
+        if (LangSwitchBool.englishTxt)
+        {
+            scoreTaskTxt = "Obtain a score of {0}/{1} points";
+        }
+        else
+        {
+            scoreTaskTxt = "Verzamel {0}/{1} punten";
+        }
+    }
+        
     private void Update()
     {
         points = PlayerStats.totalScore;
@@ -28,6 +43,6 @@ public class ScoreTask : Objective
 
     public override void DrawHUD()
     {
-        GUI.Label(new Rect(1565, 215, 300, 100),string.Format(LangSwitchBool.scoreTaskTxt, points, requiredPoints), ObjectiveManager.guiStyle);
+        GUI.Label(new Rect(1565, 215, 300, 100),string.Format(scoreTaskTxt , points, requiredPoints), ObjectiveManager.guiStyle);
     }
 }
