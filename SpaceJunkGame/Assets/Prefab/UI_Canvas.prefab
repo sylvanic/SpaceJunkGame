@@ -1719,6 +1719,64 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &4486546930584864512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2233434919850610049}
+  - component: {fileID: 6117560959601660922}
+  m_Layer: 5
+  m_Name: UILangSwitcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2233434919850610049
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4486546930584864512}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4835060777369688028}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -784, y: 294.69}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6117560959601660922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4486546930584864512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b60b8a712541a0641997ef9b074e3b73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 9092729445987887964}
+  storageCapacity: {fileID: 8526824554526226569}
+  objectives: {fileID: 6166300212192025431}
+  challenges: {fileID: 6166300212536317980}
+  gameTitle: {fileID: 4835060776518726003}
+  quit: {fileID: 8543163709257425034}
+  confirmationQuit: {fileID: 0}
+  confirmationWarning: {fileID: 0}
+  confirmationYes: {fileID: 0}
+  confirmationNo: {fileID: 0}
 --- !u!1 &4835060775815284112
 GameObject:
   m_ObjectHideFlags: 0
@@ -2679,6 +2737,7 @@ RectTransform:
   - {fileID: 2402086305968774709}
   - {fileID: 2879532231285853419}
   - {fileID: 8526824553880951359}
+  - {fileID: 2233434919850610049}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
