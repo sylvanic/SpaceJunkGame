@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -6691,29 +6691,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 341e9bb111170a249892bda0dca4741a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTitle: {fileID: 507572022610740064}
-  writeYourName: {fileID: 1698740669}
-  enterName: {fileID: 757130366}
-  Gender: {fileID: 1772736576}
-  male: {fileID: 1408339715}
-  female: {fileID: 390471260}
-  other: {fileID: 1952015894}
-  AgeGroup: {fileID: 2079873173}
-  child: {fileID: 608275549}
-  teen: {fileID: 2126739325}
-  adult: {fileID: 70727721}
-  startButton: {fileID: 1795101075480045636}
-  optionsButton: {fileID: 114348862}
-  leaderboardButton: {fileID: 1644702362}
-  quitButton: {fileID: 1795101075669182668}
-  leaderboard: {fileID: 377500967}
-  playerLeaderboard: {fileID: 2029623263}
-  scoreLeaderboard: {fileID: 1151689477}
-  backButtonLeaderboard: {fileID: 996033210}
-  options: {fileID: 2026008290}
-  masterVolume: {fileID: 1856658735}
-  sfxVolume: {fileID: 206688387}
-  backButtonOptions: {fileID: 1664289003}
+  gameTitle: {fileID: 507572022610740070}
+  writeYourName: {fileID: 1698740671}
+  enterName: {fileID: 757130368}
+  Gender: {fileID: 1772736578}
+  male: {fileID: 1408339717}
+  female: {fileID: 390471262}
+  other: {fileID: 1952015896}
+  AgeGroup: {fileID: 2079873175}
+  child: {fileID: 608275551}
+  teen: {fileID: 2126739327}
+  adult: {fileID: 70727723}
+  startButton: {fileID: 1795101075480045638}
+  optionsButton: {fileID: 114348864}
+  leaderboardButton: {fileID: 1644702364}
+  quitButton: {fileID: 1795101075669182665}
+  leaderboard: {fileID: 827530105}
+  playerLeaderboard: {fileID: 2029623265}
+  scoreLeaderboard: {fileID: 1151689479}
+  backButtonLeaderboard: {fileID: 996033212}
+  options: {fileID: 2026008292}
+  masterVolume: {fileID: 1856658737}
+  sfxVolume: {fileID: 206688389}
+  backButtonOptions: {fileID: 1664289005}
 --- !u!1 &1557346868
 GameObject:
   m_ObjectHideFlags: 0
@@ -9072,6 +9072,95 @@ RectTransform:
   m_AnchoredPosition: {x: -25, y: -120}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &2015265889
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8344602286204755792, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_Name
+      value: TwinkleStars
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755799, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6546f799b4f573b4b8afaed0b78af011, type: 2}
+    - target: {fileID: 8344602286204755799, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6546f799b4f573b4b8afaed0b78af011, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e73d28bd2deb934e906a599ad7f7be8, type: 3}
 --- !u!1 &2026008290
 GameObject:
   m_ObjectHideFlags: 0

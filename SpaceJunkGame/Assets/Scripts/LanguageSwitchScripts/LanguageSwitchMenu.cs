@@ -5,126 +5,99 @@ using UnityEngine.UI;
 public class LanguageSwitchMenu : MonoBehaviour
 {
     //top
-    public GameObject gameTitle;
+    public TextMeshProUGUI gameTitle;
     //left side
-    public GameObject writeYourName;
-    public GameObject enterName;
-    public GameObject Gender;
-    public GameObject male;
-    public GameObject female;
-    public GameObject other;
-    public GameObject AgeGroup;
-    public GameObject child;
-    public GameObject teen;
-    public GameObject adult;
+    public TextMeshProUGUI writeYourName;
+    public TextMeshProUGUI enterName;
+    public TextMeshProUGUI Gender;
+    public TextMeshProUGUI male;
+    public TextMeshProUGUI female;
+    public TextMeshProUGUI other;
+    public TextMeshProUGUI AgeGroup;
+    public TextMeshProUGUI child;
+    public TextMeshProUGUI teen;
+    public TextMeshProUGUI adult;
     //right side
-    public GameObject startButton;
-    public GameObject optionsButton;
-    public GameObject leaderboardButton;
-    public GameObject quitButton;
+    public TextMeshProUGUI startButton;
+    public TextMeshProUGUI optionsButton;
+    public TextMeshProUGUI leaderboardButton;
+    public TextMeshProUGUI quitButton;
 
     //leaderboard section
-    public GameObject leaderboard;
-    public GameObject playerLeaderboard;
-    public GameObject scoreLeaderboard;
-    public GameObject backButtonLeaderboard;
+    public TextMeshProUGUI leaderboard;
+    public TextMeshProUGUI playerLeaderboard;
+    public TextMeshProUGUI scoreLeaderboard;
+    public TextMeshProUGUI backButtonLeaderboard;
 
     //options section
-    public GameObject options;
-    public GameObject masterVolume;
-    public GameObject sfxVolume;
-    public GameObject backButtonOptions;
+    public TextMeshProUGUI options;
+    public TextMeshProUGUI masterVolume;
+    public TextMeshProUGUI sfxVolume;
+    public TextMeshProUGUI backButtonOptions;
     private void Update()
     {
-        TextMeshProUGUI gameTitleText = gameTitle.GetComponent<TextMeshProUGUI>();
-        TextMeshProUGUI startButtonText = startButton.GetComponent<TextMeshProUGUI>();
-        TextMeshProUGUI writeYourNameText = writeYourName.GetComponent<TextMeshProUGUI>();
-        TextMeshProUGUI enterNameText = enterName.GetComponent<TextMeshProUGUI>();
-        TextMeshProUGUI GenderText = Gender.GetComponent<TextMeshProUGUI>();
-        TextMeshProUGUI maleText = male.GetComponent<TextMeshProUGUI>();
-        TextMeshProUGUI femaleText = female.GetComponent<TextMeshProUGUI>();
-        TextMeshProUGUI otherText = other.GetComponent<TextMeshProUGUI>();
-        TextMeshProUGUI AgeGroupText = AgeGroup.GetComponent<TextMeshProUGUI>();
-        TextMeshProUGUI childText = child.GetComponent<TextMeshProUGUI>();
-        TextMeshProUGUI teenText = teen.GetComponent<TextMeshProUGUI>();
-        TextMeshProUGUI adultText = adult.GetComponent<TextMeshProUGUI>();
-        
-        TextMeshProUGUI optionButtonText = optionsButton.GetComponent<TextMeshProUGUI>();
-        TextMeshProUGUI leaderboardButtonText = leaderboardButton.GetComponent<TextMeshProUGUI>();
-        TextMeshProUGUI quitbuttonText = quitButton.GetComponent<TextMeshProUGUI>();
-         
-        TextMeshProUGUI leaderboardText = leaderboard.GetComponent<TextMeshProUGUI>();
-        TextMeshProUGUI playerLeaderboardText = playerLeaderboard.GetComponent<TextMeshProUGUI>();
-        TextMeshProUGUI scoreLeaderboardText = scoreLeaderboard.GetComponent<TextMeshProUGUI>();
-        TextMeshProUGUI backButtonLeaderboardText = backButtonLeaderboard.GetComponent<TextMeshProUGUI>();
-         
-        TextMeshProUGUI optionsText = options.GetComponent<TextMeshProUGUI>();
-        TextMeshProUGUI masterVolumeText = masterVolume.GetComponent<TextMeshProUGUI>();
-        TextMeshProUGUI sfxVolumeText = sfxVolume.GetComponent<TextMeshProUGUI>();
-        TextMeshProUGUI backButtonOptionsText = backButtonOptions.GetComponent<TextMeshProUGUI>();
-
         if (LangSwitchBool.englishTxt)
         {
-            gameTitleText.text = "Space Janitor";
-            gameTitleText.fontSize = 150;
-            startButtonText.text = "Start";
-            writeYourNameText.text = "Write your name:";
-            enterNameText.text = "Enter name...";
-            GenderText.text = "Gender:";
-            maleText.text = "male";
-            femaleText.text = "female";
-            otherText.text = "other";
-            AgeGroupText.text = "Select your age group:";
-            childText.text = "child (7+)";
-            teenText.text = "teen (14+)";
-            adultText.text = "adult (18+)";
+            gameTitle.text = "Space Janitor";
+            gameTitle.fontSize = 150;
+            startButton.text = "Start";
+            writeYourName.text = "Write your name:";
+            enterName.text = "Enter name...";
+            Gender.text = "Gender:";
+            male.text = "male";
+            female.text = "female";
+            other.text = "other";
+            AgeGroup.text = "Select your age group:";
+            child.text = "child (7+)";
+            teen.text = "teen (14+)";
+            adult.text = "adult (18+)";
 
-            optionButtonText.text = "Options";
-            leaderboardButtonText.text = "Leaderboard";
-            quitbuttonText.text = "Quit";
+            optionsButton.text = "Options";
+            leaderboardButton.text = "Leaderboard";
+            quitButton.text = "Quit";
 
-            leaderboardText.text = "Leaderboard";
-            playerLeaderboardText.text = "PLAYER";
-            scoreLeaderboardText.text = "SCORE";
-            backButtonLeaderboardText.text = "BACK";
+            leaderboard.text = "Leaderboard";
+            playerLeaderboard.text = "PLAYER";
+            scoreLeaderboard.text = "SCORE";
+            backButtonLeaderboard.text = "BACK";
 
-            optionsText.text = "Options";
-            masterVolumeText.text = "Master Volume";
-            sfxVolumeText.text = "SFX Volume";
-            backButtonOptionsText.text = "Back";
+            options.text = "Options";
+            masterVolume.text = "Master Volume";
+            sfxVolume.text = "SFX Volume";
+            backButtonOptions.text = "Back";
         }
         else
         {
-            gameTitleText.text = "Ruimte Congierge";
-            gameTitleText.fontSize = 120;
-            startButtonText.text = "Begin";
-            writeYourNameText.text = "Schrijf je naam:";
-            enterNameText.text = "Vul je naam in...";
-            GenderText.text = "Geslacht:";
-            maleText.text = "man";
-            femaleText.text = "vrouw";
-            otherText.text = "overig";
-            AgeGroupText.text = "Kies je leeftijdsgroep:";
-            childText.text = "kind (7+)";
-            teenText.text = "tiener (14+)";
-            adultText.text = "volwassen (18+)";
+            gameTitle.text = "Ruimte Congierge";
+            gameTitle.fontSize = 120;
+            startButton.text = "Begin";
+            writeYourName.text = "Schrijf je naam:";
+            enterName.text = "Vul je naam in...";
+            Gender.text = "Geslacht:";
+            male.text = "man";
+            female.text = "vrouw";
+            other.text = "overig";
+            AgeGroup.text = "Kies je leeftijdsgroep:";
+            child.text = "kind (7+)";
+            teen.text = "tiener (14+)";
+            adult.text = "volwassen (18+)";
 
-            optionButtonText.text = "Instellingen";
-            leaderboardButtonText.text = "Scorebord";
-            quitbuttonText.text = "Afsluiten";
-            quitbuttonText.fontSize = 24.6f;
+            optionsButton.text = "Instellingen";
+            leaderboardButton.text = "Scorebord";
+            quitButton.text = "Afsluiten";
+            quitButton.fontSize = 24.6f;
 
-            leaderboardText.text = "Scorebord";
-            playerLeaderboardText.text = "SPELER";
-            scoreLeaderboardText.text = "SCORE";
-            backButtonLeaderboardText.text = "TERUG";
+            leaderboard.text = "Scorebord";
+            playerLeaderboard.text = "SPELER";
+            scoreLeaderboard.text = "SCORE";
+            backButtonLeaderboard.text = "TERUG";
 
-            optionsText.text = "Instellingen";
-            optionsText.fontSize = 77;
-            masterVolumeText.text = "Hoofdvolume";
-            sfxVolumeText.text = "Geluidseffectvolume";
-            sfxVolumeText.fontSize = 42;
-            backButtonOptionsText.text = "Terug";
+            options.text = "Instellingen";
+            options.fontSize = 77;
+            masterVolume.text = "Hoofdvolume";
+            sfxVolume.text = "Geluidseffectvolume";
+            sfxVolume.fontSize = 42;
+            backButtonOptions.text = "Terug";
         }
     }
 

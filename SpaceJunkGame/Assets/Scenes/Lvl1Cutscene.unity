@@ -284,6 +284,95 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 26105736}
   m_CullTransparentMesh: 0
+--- !u!1001 &37789148
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8344602286204755792, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_Name
+      value: TwinkleStars
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755799, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6546f799b4f573b4b8afaed0b78af011, type: 2}
+    - target: {fileID: 8344602286204755799, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6546f799b4f573b4b8afaed0b78af011, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e73d28bd2deb934e906a599ad7f7be8, type: 3}
 --- !u!1 &48378216
 GameObject:
   m_ObjectHideFlags: 0
@@ -3387,7 +3476,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The problem continues to grow, but you have done a great job.
+  m_Text: Het probleem wordt alsmaar groter, maar je hebt een goede daad verricht.
 --- !u!222 &777586219
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3474,6 +3563,95 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 788571243}
   m_CullTransparentMesh: 0
+--- !u!1001 &788784603
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1523239359}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.051066764
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.24416323
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.33926034
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9070165
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5913625
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.5913632
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.5913627
+      objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_Name
+      value: atmoSphere
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 74782dc5a756ee745a02aefef5368ac8, type: 3}
 --- !u!1 &818590823
 GameObject:
   m_ObjectHideFlags: 0
@@ -3543,7 +3721,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The problem continues to grow.
+  m_Text: Het probleem wordt alsmaar groter.
 --- !u!222 &818590826
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6257,6 +6435,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6926b622e35a17e40a1e7075307d3654, type: 3}
+--- !u!4 &1523239359 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8030347156330050139, guid: 6926b622e35a17e40a1e7075307d3654,
+    type: 3}
+  m_PrefabInstance: {fileID: 1523239358}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1524756292
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6744,7 +6928,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: However...
+  m_Text: "Maar\u2026"
 --- !u!222 &1708902083
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7069,7 +7253,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Good job! You did it, you have slightly decreased space pollution!
+  m_Text: Goed gedaan! Je hebt ruimte vervuiling een beetje kunnen verminderen!
 --- !u!222 &1774426972
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8411,6 +8595,11 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2442825564944510107, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: Weet je zeker dat je wil afsluiten?
+      objectReference: {fileID: 0}
     - target: {fileID: 2622846376285938480, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -8436,6 +8625,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: PlayOneShot
       objectReference: {fileID: 0}
+    - target: {fileID: 2667760012155592660, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: Kies eerst een upgrade!
+      objectReference: {fileID: 0}
     - target: {fileID: 3027703410890904477, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -8455,6 +8649,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027703410890904477, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: NEE
       objectReference: {fileID: 0}
     - target: {fileID: 3361468519573710831, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
@@ -8516,6 +8715,11 @@ PrefabInstance:
       propertyPath: m_textInfo.spaceCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3725463968537268820, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: HERHALEN
+      objectReference: {fileID: 0}
     - target: {fileID: 4217515532184414301, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -8575,6 +8779,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934224611610712315, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: VOLGENDE
       objectReference: {fileID: 0}
     - target: {fileID: 4952295082958600916, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
@@ -8625,6 +8834,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5207751798358017955, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: MISSIE GEFAALD!
       objectReference: {fileID: 0}
     - target: {fileID: 5970877261538605793, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
@@ -8681,6 +8895,11 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6068923830322479380, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: Al je voortgang zal verloren gaan!
+      objectReference: {fileID: 0}
     - target: {fileID: 6303151743638718402, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -8705,6 +8924,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.spaceCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6303151743638718402, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: KIES EEN UPGRADE
       objectReference: {fileID: 0}
     - target: {fileID: 6322406160387725712, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
@@ -8761,6 +8985,11 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6657469859138860346, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: AFSLUITEN
+      objectReference: {fileID: 0}
     - target: {fileID: 6951408964879994315, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -8790,6 +9019,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056239863789771496, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: JA
       objectReference: {fileID: 0}
     - target: {fileID: 8174029987742785832, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
@@ -8835,6 +9069,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8286233827865527554, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: UITDAGING GEHAALT!
       objectReference: {fileID: 0}
     - target: {fileID: 8443701740249991306, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
@@ -9041,6 +9280,11 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8606638222998939845, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: VOLGENDE
+      objectReference: {fileID: 0}
     - target: {fileID: 8606638223094086316, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -9100,6 +9344,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606638223145293344, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: MISSIE GESLAAGD!
       objectReference: {fileID: 0}
     - target: {fileID: 8606638223303549227, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}

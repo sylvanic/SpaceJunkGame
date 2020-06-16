@@ -215,9 +215,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is still stopping us from going further into space. In there future,
-    this number will only grow, to the point that we won't be able to contain it
-    anymore.
+  m_Text: Dit houdt ons alsnog tegen om verder de ruimte in te gaan. In de toekomst
+    zal dit nummer groter worden, tot het punt dat het niet meer beheersbaar is.
 --- !u!222 &60720776
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -926,7 +925,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Good job, you have cleared the earth's atmosphere of space debris!
+  m_Text: "Goed gedaan, je hebt de aarde\u2019s atmosfeer van ruimteafval schoongemaakt!"
 --- !u!222 &239928277
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -951,6 +950,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: PlayOneShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2442825564944510107, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: Weet je zeker dat je wil afsluiten?
       objectReference: {fileID: 0}
     - target: {fileID: 2622846376285938480, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
@@ -977,6 +981,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2667760012155592660, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: Kies eerst een upgrade!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027703410890904477, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: NEE
+      objectReference: {fileID: 0}
     - target: {fileID: 3361468519573710831, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -986,6 +1000,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PlayOneShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3725463968537268820, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: HERHALEN
       objectReference: {fileID: 0}
     - target: {fileID: 4934224611610712315, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
@@ -1007,6 +1026,16 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4934224611610712315, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: VOLGENDE
+      objectReference: {fileID: 0}
+    - target: {fileID: 5207751798358017955, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: MISSIE GEFAALT!
+      objectReference: {fileID: 0}
     - target: {fileID: 5970877261538605793, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -1016,6 +1045,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PlayOneShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6068923830322479380, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: Al je voortgang zal verloren gaan!
       objectReference: {fileID: 0}
     - target: {fileID: 6303151743638718402, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
@@ -1042,6 +1076,16 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6303151743638718402, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: KIES JE UPGRADE
+      objectReference: {fileID: 0}
+    - target: {fileID: 6657469859138860346, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: AFSLUITEN
+      objectReference: {fileID: 0}
     - target: {fileID: 6951408964879994315, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -1051,6 +1095,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PlayOneShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 7056239863789771496, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: JA
       objectReference: {fileID: 0}
     - target: {fileID: 8286233827865527554, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
@@ -1076,6 +1125,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8286233827865527554, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: UITDAGING GEHAALT!
       objectReference: {fileID: 0}
     - target: {fileID: 8606638222639270720, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
@@ -1191,6 +1245,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606638222998939845, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: VOLGENDE
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606638223145293344, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: m_text
+      value: MISSIE GESLAAGT!
       objectReference: {fileID: 0}
     - target: {fileID: 8606638223303549227, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
@@ -2755,8 +2819,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: There is not much ordinary people can do to help, other than being aware
-    of this issue.
+  m_Text: Er is niet veel wat normale mensen kunnen doen, anders dan over dit onderwerp
+    bekend zijn.
 --- !u!222 &796354150
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3182,6 +3246,95 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b3c839212bb61b42ad84b3c8e1b31a3, type: 3}
+--- !u!1001 &831977817
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8344602286204755792, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_Name
+      value: TwinkleStars
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755799, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6546f799b4f573b4b8afaed0b78af011, type: 2}
+    - target: {fileID: 8344602286204755799, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6546f799b4f573b4b8afaed0b78af011, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e73d28bd2deb934e906a599ad7f7be8, type: 3}
 --- !u!1 &867275086
 GameObject:
   m_ObjectHideFlags: 0
@@ -3414,8 +3567,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Even though you've collected a lot of space trash today, it is only a fraction
-    of what is out there in the sky.
+  m_Text: Ookal heb je erg veel ruimteafval opgeruimt vandaag, het is maar een klein
+    deel van wat er in de lucht rond vliegt.
 --- !u!222 &959017740
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3523,8 +3676,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Thank you for playing Space Janitor, and we hope we have made you aware
-    of this problem.
+  m_Text: Dank je wel voor het spelen van Ruimte Concierge, we hopen dat we je meer
+    bewust hebben gemaakt van dit probleem.
 --- !u!222 &1007874797
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4522,8 +4675,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Currently, there are 34,000 pieces of space debris, large enough to seriously
-    damage equipment, in the sky, according to the European Space Agency.
+  m_Text: Op dit moment zijn er 34.000 stukken ruimteafval die rondvliegen in de
+    lucht groot genoeg om ernstige schaden aan te richten aan apparatuur, volgens
+    de Europese Ruimteagentschap.
 --- !u!222 &1561674002
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5365,7 +5519,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: But...
+  m_Text: "Maar\u2026"
 --- !u!222 &1741269848
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5494,6 +5648,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6926b622e35a17e40a1e7075307d3654, type: 3}
+--- !u!4 &1835757037 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8030347156330050139, guid: 6926b622e35a17e40a1e7075307d3654,
+    type: 3}
+  m_PrefabInstance: {fileID: 1835757036}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1859244719
 GameObject:
   m_ObjectHideFlags: 0
@@ -5563,8 +5723,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: We on earth are very proud of your work. Thanks to you, we can now safely
-    explore the galaxy!
+  m_Text: Wij op aarde zijn erg trots op jou werk. Met dank aan jou kunnen we nu
+    veilig het heelal verkennen!
 --- !u!222 &1859244722
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5806,6 +5966,95 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b3c839212bb61b42ad84b3c8e1b31a3, type: 3}
+--- !u!1001 &1920599428
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1835757037}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.6238065
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.6238065
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.6238065
+      objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 74782dc5a756ee745a02aefef5368ac8,
+        type: 3}
+      propertyPath: m_Name
+      value: atmoSphere
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 74782dc5a756ee745a02aefef5368ac8, type: 3}
 --- !u!1001 &1943333181
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6149,7 +6398,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Our mission is not done yet.
+  m_Text: Onze missie is nog niet volbracht.
 --- !u!222 &2083121264
 CanvasRenderer:
   m_ObjectHideFlags: 0
