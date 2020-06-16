@@ -29,6 +29,6 @@ public class HitTask : Objective
 
     public override void DrawHUD()
     {
-        GUI.Label(new Rect(1565, 455, 300, 100),string.Format("Get hit by an asteroid {0}/{1} times", hits, requiredHits), ObjectiveManager.guiStyle);
+        GUI.Label(new Rect(1565, 455, 300, 100),string.Format(LangSwitchBool.hitTaskTxt, hits, requiredHits), ObjectiveManager.guiStyle);
     }
 }
