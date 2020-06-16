@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class ProjectileUpgraded : Projectile
 {
-    // Start is called before the first frame updatefloat speed = 10;
-
-    private float speed = 10;
-
+    // Start is called before the first frame update
     private void Start()
     {
 

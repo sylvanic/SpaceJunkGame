@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    float speed = 10;
+    protected float speed = 10;
 
 
     private void Start()
