@@ -54,7 +54,7 @@ public class Upgrades : MonoBehaviour
 
     public void CapacityUpgrade()
     {
-        GetComponentInParent<PlayerStats>().capacity = upgradedCapacity;
+        GetComponentInParent<PlayerStats>().maxCapacity = upgradedCapacity;
         capacityObj.SetActive(true);
 
     }
