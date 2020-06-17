@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class LanguageSwitchUI : MonoBehaviour
 {
     public TextMeshProUGUI Timer;
-    public TextMeshProUGUI Score;
+    public static TextMeshProUGUI Score;
     public TextMeshProUGUI GameTitle;
     public TextMeshProUGUI Quit;
 
@@ -27,7 +27,7 @@ public class LanguageSwitchUI : MonoBehaviour
         if (LangSwitchBool.englishTxt)
         {
             Timer.text = "Timer: ";
-            //Score.text = "Score: ";
+            Score.text = "Score: ";
             GameTitle.text = "Space Janitor";
             Quit.text = "Quit";
             StorageCapacity.text = "Storage Capacity";
@@ -43,7 +43,7 @@ public class LanguageSwitchUI : MonoBehaviour
         else
         {
             Timer.text = "Tijd: ";
-            //Score.text = "Punten: ";
+            Score.text = "Punten: ";
             GameTitle.text = "Ruimte Congierge";
             Quit.text = "Opgeven";
             StorageCapacity.text = "Opslagcapaciteit";
