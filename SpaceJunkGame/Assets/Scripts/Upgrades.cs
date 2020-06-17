@@ -64,7 +64,6 @@ public class Upgrades : MonoBehaviour
         shieldObj.SetActive(true);
         GetComponent<BoxCollider>().enabled=false;
         StartCoroutine(ActivateShield(shieldTime));
-
     }
 
     public IEnumerator ActivateShield(float waitTime)
