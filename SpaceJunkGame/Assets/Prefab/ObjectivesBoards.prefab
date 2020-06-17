@@ -3768,7 +3768,7 @@ MonoBehaviour:
   levelScoreMinimum: 20
   UpgradeBoard: {fileID: 8955408136043561572}
   MissionCompleted: {fileID: 8606638224349818755}
-  upgradeSelected: {r: 0, g: 0, b: 1, a: 1}
+  upgradeSelected: {r: 0.16696332, g: 0.38737687, b: 0.5283019, a: 1}
   checkChosenUpgrade: {fileID: 1581194304033455184}
 --- !u!114 &1196946448681064970
 MonoBehaviour:
