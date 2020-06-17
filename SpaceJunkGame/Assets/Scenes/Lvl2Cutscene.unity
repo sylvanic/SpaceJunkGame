@@ -5580,8 +5580,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 529305196}
-        m_MethodName: GoToLvl3
+      - m_Target: {fileID: 1749843716329215275}
+        m_MethodName: SkipCutscene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

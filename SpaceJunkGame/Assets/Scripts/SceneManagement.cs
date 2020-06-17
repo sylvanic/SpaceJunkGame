@@ -28,15 +28,4 @@ public class SceneManagement : MonoBehaviour
     {
         SceneManager.LoadScene("SelectLevel");
     }
-
-    public void GoToLvl2()
-    {
-        SceneManager.LoadScene("Level_2");
-    }
-
-    public void GoToLvl3()
-    {
-        SceneManager.LoadScene("Level_3");
-    }
-
 }

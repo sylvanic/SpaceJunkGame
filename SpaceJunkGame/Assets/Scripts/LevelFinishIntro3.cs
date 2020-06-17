@@ -113,13 +113,13 @@ public class LevelFinishIntro3 : MonoBehaviour
         text9.SetActive(true);
         yield return new WaitForSeconds(5);
         text9.SetActive(false);
+        yield return new WaitForSeconds(1);
     }
 
 
     private IEnumerator Blackout()
     {
-        yield return new WaitForSeconds(1);
-
+        yield return new WaitForSeconds(0);
         PlayerPrefs.SetInt("ScoreLevel3", PlayerStats.totalScore);
 
         if (PlayerStats.totalScore > 5)
@@ -339,5 +339,31 @@ public class LevelFinishIntro3 : MonoBehaviour
             StartCoroutine(Blackout());
             blackoutplaying = false;
         }
+    }
+
+    public void SkipCutscene()
+    {
+        astronaut.SetActive(false);
+        text1.SetActive(false);
+        text2.SetActive(false);
+        text3.SetActive(false);
+        text4.SetActive(false);
+        text5.SetActive(false);
+        text6.SetActive(false);
+        text7.SetActive(false);
+        text8.SetActive(false);
+        text9.SetActive(false);
+        intro1playing = false;
+        intro2playing = false;
+        intro3playing = false;
+        intro4playing = false;
+        intro5playing = false;
+        intro6playing = false;
+        intro7playing = false;
+        intro8playing = false;
+        intro9playing = false;
+        blackoutplaying = false;
+        StopAllCoroutines();
+        StartCoroutine(Blackout());
     }
 }
