@@ -88,7 +88,7 @@ public class PlayerStats : MonoBehaviour
         
         currentScore *= scoreMultiplier;
         totalScore += currentScore;
-        scoreText.text = LanguageSwitchUI.Score + " " + totalScore;
+        scoreText.text = totalScore.ToString();
         
     }
 
