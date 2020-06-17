@@ -40,6 +40,7 @@ public class PlayerStats : MonoBehaviour
     void Update()
     {
         CapacitySliderUpdate();
+    
     }
    
 
@@ -68,6 +69,18 @@ public class PlayerStats : MonoBehaviour
 
     }
 
+    private IEnumerator MeshBlinking(int blinkCount,float blinkTime){
+        
+        for(int i = 0; i<blinkCount;i++)
+        {
+        GetComponentInChildren<Renderer>().enabled=false;
+        yield return new WaitForSeconds(blinkTime);
+        GetComponentInChildren<Renderer>().enabled=true;      
+        yield return new WaitForSeconds(blinkTime);
+        }
+
+    }   
+
 
 
 
@@ -86,6 +99,7 @@ public class PlayerStats : MonoBehaviour
             capacity--;
             Debug.Log("!!!!!!asteroid collision idk");
             other.gameObject.SetActive(false);
+            StartCoroutine(MeshBlinking(3,.5f));
         }
     }
 
@@ -99,6 +113,7 @@ public class PlayerStats : MonoBehaviour
             Destroy(obj.gameObject,.1f);
             Debug.Log("asteroid collision idk");
             soundManager.AsteroidCrash.Play();
+            StartCoroutine(MeshBlinking(6,.1f));
 
             Instantiate(explosionPrefab, obj.transform.position, Quaternion.identity);
         }
