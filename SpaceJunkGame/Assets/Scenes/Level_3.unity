@@ -3589,7 +3589,7 @@ MonoBehaviour:
   spaceTrashDrop: {fileID: 6097170887517306071, guid: bf479d05f885da347aa97bf9aedd822a,
     type: 3}
   trashCount: 3
-  explosionPrefab: {fileID: 4243359209303866693, guid: 8d345eb932bacfd4da6679c3e85f60fe,
+  explosionPrefab: {fileID: 351978525725663259, guid: c5a9216e086c72e43a7a9ce2b4d27bd1,
     type: 3}
 --- !u!1 &573088673 stripped
 GameObject:
@@ -6446,7 +6446,7 @@ MonoBehaviour:
   spaceTrashDrop: {fileID: 6103944583620015663, guid: ff819d50676b5f343a5586c928bcac76,
     type: 3}
   trashCount: 2
-  explosionPrefab: {fileID: 4243359209303866693, guid: 8d345eb932bacfd4da6679c3e85f60fe,
+  explosionPrefab: {fileID: 351978525725663259, guid: c5a9216e086c72e43a7a9ce2b4d27bd1,
     type: 3}
 --- !u!1001 &1034209128
 PrefabInstance:
@@ -9700,7 +9700,7 @@ MonoBehaviour:
   spaceTrashDrop: {fileID: 6097170887517306071, guid: bf479d05f885da347aa97bf9aedd822a,
     type: 3}
   trashCount: 3
-  explosionPrefab: {fileID: 4243359209303866693, guid: 8d345eb932bacfd4da6679c3e85f60fe,
+  explosionPrefab: {fileID: 351978525725663259, guid: c5a9216e086c72e43a7a9ce2b4d27bd1,
     type: 3}
 --- !u!1 &1625964700
 GameObject:
@@ -10648,7 +10648,7 @@ MonoBehaviour:
   spaceTrashDrop: {fileID: 6103944583620015663, guid: ff819d50676b5f343a5586c928bcac76,
     type: 3}
   trashCount: 2
-  explosionPrefab: {fileID: 4243359209303866693, guid: 8d345eb932bacfd4da6679c3e85f60fe,
+  explosionPrefab: {fileID: 351978525725663259, guid: c5a9216e086c72e43a7a9ce2b4d27bd1,
     type: 3}
 --- !u!1001 &1898557962
 PrefabInstance:
