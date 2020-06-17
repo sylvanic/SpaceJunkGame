@@ -73,10 +73,28 @@ public class PlayerStats : MonoBehaviour
         
         for(int i = 0; i<blinkCount;i++)
         {
+        
+        ParticleSystemRenderer[] flames;
+        flames = GetComponentsInChildren<ParticleSystemRenderer>();
+
+        foreach(ParticleSystemRenderer flame in flames)
+        {
+            flame.enabled=false;
+        }
+
         GetComponentInChildren<Renderer>().enabled=false;
         yield return new WaitForSeconds(blinkTime);
-        GetComponentInChildren<Renderer>().enabled=true;      
+        
+        foreach(ParticleSystemRenderer flame in flames)
+        {
+            flame.enabled=true;
+        }    
+        
+        GetComponentInChildren<Renderer>().enabled=true;    
         yield return new WaitForSeconds(blinkTime);
+        
+       
+
         }
 
     }   
