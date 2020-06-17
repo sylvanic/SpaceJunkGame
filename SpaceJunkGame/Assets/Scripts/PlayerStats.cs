@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
-
+using UnityEngine.SocialPlatforms.Impl;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -106,7 +106,7 @@ public class PlayerStats : MonoBehaviour
         
         currentScore *= scoreMultiplier;
         totalScore += currentScore;
-        scoreText.text = "Punten: " + totalScore;
+        scoreText.text = totalScore.ToString();
         
     }
 

@@ -33,7 +33,7 @@ public class LanguageSwitchTutorial : MonoBehaviour
         if (LangSwitchBool.englishTxt)
         {
             part1.text = "Greetings, traveller. Welcome to Space Janitor. My name is Astro and I'll be your instructor.";
-            part2.text = "We have a serious problem on hand! Earth is being polluted by space junk!";
+            part2.text = "We have a serious problem on hand! Earth's orbit is being polluted by space junk!";
             part3.text = "We need your help to clean up this mess. ";
             part4.text = "Don't worry, I'll guide you through the tutorial.";
             part5.text = "Lets start with the basics. To control your spaceship, use the direction pad on your screen.";
@@ -45,7 +45,7 @@ public class LanguageSwitchTutorial : MonoBehaviour
             part11.text = "Nice work! This laser will destroy asteroids. Now you know how to defend yourself.";
             part11point1.text = "There is one other thing you can do with the laser.";
             part11point2.text = "Search around the area. You will find a burning piece of space junk.";
-            part11point3.text = "This one is too big to pick up. You must shoot these big pieces of space trash before you can clean it up. Try it out.";
+            part11point3.text = "This one is too big to pick up. You must shoot these flaming big pieces of space trash before you can clean it up. Try it out.";
             part11point4.text = "Good job! Now you know how to pick up big space junk.";
             part12.text = "Completing these objectives and achievements will give you bonus points.";
             part13.text = "Time is also limited, so think fast while the map will show you the way.";
@@ -59,7 +59,7 @@ public class LanguageSwitchTutorial : MonoBehaviour
         else
         {
             part1.text = "Gegroet, reiziger. Welkom bij Ruimte Concierge. Mijn naam is Astro, en ik zal jou instructeur zijn.";
-            part2.text = "We hebben een ernstig probleem! Onze aarde is vervuild door ruimteafval!";
+            part2.text = "We hebben een ernstig probleem! De baan van onze aarde wordt vervuild door ruimteafval!";
             part3.text = "We hebben jou hulp nodig om deze vervuiling op te ruimen.";
             part4.text = "Maak je geen zorgen, ik zal je leiden door deze les.";
             part5.text = "Laten we met het basis beginnen. Om je ruimteschip te bedienen, gebruik de richtingstoetsen op je scherm.";
