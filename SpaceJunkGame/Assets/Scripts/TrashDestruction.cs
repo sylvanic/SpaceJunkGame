@@ -6,6 +6,7 @@ public class TrashDestruction : MonoBehaviour
 {
     public GameObject spaceTrashDrop;
     public int trashCount = 3;
+    public GameObject explosionPrefab;
 
     void Start()
     {
@@ -25,6 +26,7 @@ public class TrashDestruction : MonoBehaviour
              Instantiate(spaceTrashDrop,transform.position +
                          new Vector3(Random.Range(-1f,1f),0,Random.Range(-.5f,.5f)),
                          Quaternion.identity);
+            Instantiate(explosionPrefab,gameObject.transform.position, Quaternion.identity);
         }
         
         

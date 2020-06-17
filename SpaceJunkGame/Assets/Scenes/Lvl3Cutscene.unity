@@ -3261,7 +3261,7 @@ PrefabInstance:
     - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.06
+      value: -2.9
       objectReference: {fileID: 0}
     - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
         type: 3}
@@ -3271,7 +3271,7 @@ PrefabInstance:
     - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.94
+      value: -16.3
       objectReference: {fileID: 0}
     - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
         type: 3}
@@ -3316,12 +3316,17 @@ PrefabInstance:
     - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2.9634523
       objectReference: {fileID: 0}
     - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2.9634523
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344602286204755797, guid: 0e73d28bd2deb934e906a599ad7f7be8,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.9634523
       objectReference: {fileID: 0}
     - target: {fileID: 8344602286204755799, guid: 0e73d28bd2deb934e906a599ad7f7be8,
         type: 3}
@@ -6320,7 +6325,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
