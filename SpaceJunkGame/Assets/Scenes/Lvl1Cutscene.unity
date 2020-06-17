@@ -7046,9 +7046,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1684273115}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 590ba8c1e0e065f49a2358b06ee2c61a, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d07db60672a41a41a30119c86fe85d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text1: {fileID: 1774426971}
+  text2: {fileID: 1708902082}
+  text3: {fileID: 818590825}
+  text3alt: {fileID: 777586218}
 --- !u!4 &1684273117
 Transform:
   m_ObjectHideFlags: 0

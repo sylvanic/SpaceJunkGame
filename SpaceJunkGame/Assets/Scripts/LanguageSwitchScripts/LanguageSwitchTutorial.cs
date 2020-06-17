@@ -37,7 +37,7 @@ public class LanguageSwitchTutorial : MonoBehaviour
             part3.text = "We need your help to clean up this mess. ";
             part4.text = "Don't worry, I'll guide you through the tutorial.";
             part5.text = "Lets start with the basics. To control your spaceship, use the direction pad on your screen.";
-            part6.text = "Good! Now try to move around and collect junk parts.";
+            part6.text = "Good! Now try to move around and collect 3 junk parts.";
             part7.text = "Once you have collected 3 pieces of junk, dispose of them at the spacestation.";
             part8.text = "Good Job! Now try to get hit by an asteroid.";
             part9.text = "Once you've been hit, you lose your load. But there is way to get rid of obstacles.";
@@ -63,7 +63,7 @@ public class LanguageSwitchTutorial : MonoBehaviour
             part3.text = "We hebben jou hulp nodig om deze vervuiling op te ruimen.";
             part4.text = "Maak je geen zorgen, ik zal je leiden door deze les.";
             part5.text = "Laten we met het basis beginnen. Om je ruimteschip te bedienen, gebruik de richtingstoetsen op je scherm.";
-            part6.text = "Goed zo! Probeer nu rond te bewegen en afval te verzamelen.";
+            part6.text = "Goed zo! Probeer nu rond te bewegen en 3 stukken afval te verzamelen.";
             part7.text = "Wanneer je 3 stukken afval hebt verzamelt, gooi ze weg op het ruimtestation.";
             part8.text = "Goed gedaan! Probeer nu door een asteroid geraakt te worden.";
             part9.text = "Wanneer je geraakt wordt, verlies je wat van je lading. Maar er is een manier om van deze obstakels af te komen.";
