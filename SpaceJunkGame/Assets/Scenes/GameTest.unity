@@ -9771,10 +9771,10 @@ Transform:
   - {fileID: 1672317740}
   - {fileID: 1045299515}
   - {fileID: 487192226}
+  - {fileID: 1850398705}
   - {fileID: 1764299839}
   - {fileID: 1956863781}
   - {fileID: 2125989292}
-  - {fileID: 1850398705}
   - {fileID: 1759032679}
   - {fileID: 2074628060}
   - {fileID: 1055625945}
@@ -10665,6 +10665,11 @@ PrefabInstance:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 1178512385}
+    - target: {fileID: 4405583657123958219, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
+        type: 3}
+      propertyPath: movementSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4405583657335406348, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
         type: 3}
       propertyPath: m_LocalPosition.x
