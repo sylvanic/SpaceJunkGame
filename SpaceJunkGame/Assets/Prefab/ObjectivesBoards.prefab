@@ -3768,8 +3768,12 @@ MonoBehaviour:
   levelScoreMinimum: 20
   UpgradeBoard: {fileID: 8955408136043561572}
   MissionCompleted: {fileID: 8606638224349818755}
-  upgradeSelected: {r: 0, g: 0, b: 1, a: 1}
   checkChosenUpgrade: {fileID: 1581194304033455184}
+  buttons:
+  - {fileID: 8606638224284088092}
+  - {fileID: 8606638223903797494}
+  - {fileID: 8606638223094086316}
+  - {fileID: 8606638222683339205}
 --- !u!114 &1196946448681064970
 MonoBehaviour:
   m_ObjectHideFlags: 0
