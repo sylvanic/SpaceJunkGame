@@ -11,16 +11,24 @@ public class ResultScreens : MonoBehaviour
     public int levelScoreMinimum = 50;
     public GameObject UpgradeBoard;
     public GameObject MissionCompleted;
-    [Space]
-    private Button selectedUpgradeBtn;
-    private Color deselected = Color.white;
-    public Color upgradeSelected;
-    private Color boosterUpg, weaponUpg, capacityUpg, shieldUpg;
-    public static string currentUpgrade;
-
     public GameObject checkChosenUpgrade;
+    [Space]
+    public Button[] buttons;
+
+    public static string currentUpgrade;
+    public static string currentUpgrade2;
+
+    
 
 
+    private void Start()
+    {
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            int closureIndex = i; // Prevents the closure problem
+            buttons[closureIndex].onClick.AddListener(() => TaskOnClick(closureIndex));
+        }
+    }
 
     public void CheckChallengeCompleted()
     {
@@ -65,65 +73,71 @@ public class ResultScreens : MonoBehaviour
 
     public void CheckUpgradeSelected()
     {
-        if (currentUpgrade == null || currentUpgrade == "")
-        {
-            checkChosenUpgrade.SetActive(true);
-        }
-        else
-        {
-            PlayerPrefs.SetString("ChosenUpgrade", currentUpgrade);
+        //if ((currentUpgrade == null || currentUpgrade == "") || (currentUpgrade2 == null || currentUpgrade2 == ""))
+       //{
+        //    checkChosenUpgrade.SetActive(true);
+        //}
+       // else
+       // {
+            if (SceneManager.GetActiveScene().name == "Lvl1Cutscene")
+            {
+                PlayerPrefs.SetString("ChosenUpgrade", currentUpgrade);
+            }
+            else if (SceneManager.GetActiveScene().name == "Lvl2Cutscene")
+            {
+                PlayerPrefs.SetString("ChosenUpgrade2", currentUpgrade2);
+            }
+          
             checkChosenUpgrade.SetActive(false);
             SceneManager.LoadScene("SelectLevel");
-        }
+       // }
     }
 
-    public void UpgradeSelected(Button button)
+
+    public void TaskOnClick(int buttonIndex)
     {
-        if (selectedUpgradeBtn == button)
+        Debug.Log("You have clicked the button #" + buttonIndex, buttons[buttonIndex]);
+
+        if (SceneManager.GetActiveScene().name == "Lvl1Cutscene")
         {
-            button.GetComponent<Image>().color = deselected;
-            selectedUpgradeBtn = null;
-        }
-        else
-        {
-            if (selectedUpgradeBtn != null)
+            switch (buttonIndex)
             {
-                selectedUpgradeBtn.GetComponent<Image>().color = deselected;
+                case 0:
+                    currentUpgrade = "booster";
+                    break;
+                case 1:
+                    currentUpgrade = "weapon";
+                    break;
+                case 2:
+                    currentUpgrade = "capacity";
+                    break;
+                case 3:
+                    currentUpgrade = "shield";
+                    break;
             }
-            button.GetComponent<Image>().color = upgradeSelected;
-            selectedUpgradeBtn = button;
-        }
-
-        boosterUpg = GameObject.Find("BoosterUpg").GetComponent<Image>().color;
-        weaponUpg = GameObject.Find("WeaponUpg").GetComponent<Image>().color;
-        capacityUpg = GameObject.Find("CapacityUpg").GetComponent<Image>().color;
-        shieldUpg = GameObject.Find("ShieldUpg").GetComponent<Image>().color;
-
-        if (boosterUpg == upgradeSelected)
-        {
-            currentUpgrade = "booster";
-        }
-        else if (weaponUpg == upgradeSelected)
-        {
-            currentUpgrade = "weapon";
-        }
-        else if (capacityUpg == upgradeSelected)
-        {
-            currentUpgrade = "capacity";
         }
         
-        else if (shieldUpg == upgradeSelected)
+        if (SceneManager.GetActiveScene().name == "Lvl2Cutscene")
         {
-            currentUpgrade = "shield";
+            switch (buttonIndex)
+            {
+                case 0:
+                    currentUpgrade2 = "booster";
+                    break;
+                case 1:
+                    currentUpgrade2 = "weapon";
+                    break;
+                case 2:
+                    currentUpgrade2 = "capacity";
+                    break;
+                case 3:
+                    currentUpgrade2 = "shield";
+                    break;
+            }
         }
-       
-        if (boosterUpg == deselected &&
-            weaponUpg == deselected && 
-            capacityUpg == deselected &&
-            shieldUpg == deselected)
-        {
-            currentUpgrade = "";
-        }
+
+        Debug.Log("currentUpgrade1" + currentUpgrade);
+        Debug.Log("currentUpgrade2" + currentUpgrade2);
     }
 
 }

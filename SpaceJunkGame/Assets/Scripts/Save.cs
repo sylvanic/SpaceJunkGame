@@ -21,10 +21,17 @@ public class Save
 
 
     public string chosenUpgrade;
+    public string chosenUpgrade2;
 
     public int HasBooster;
     public int HasWeapon;
     public int HasCapacity;
     public int HasShield;
+
+    public int HasBooster2;
+    public int HasWeapon2;
+    public int HasCapacity2;
+    public int HasShield2;
+
 }
 

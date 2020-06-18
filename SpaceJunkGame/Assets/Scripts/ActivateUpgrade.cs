@@ -11,26 +11,40 @@ public class ActivateUpgrade : MonoBehaviour
     {
         upgrades = GetComponent<Upgrades>();
 
-        if (PlayerPrefs.GetInt("HasBooster") == 1)
+        switch (ResultScreens.currentUpgrade)
         {
-            BoosterCard.SetActive(true);
+            case "booster":
+                BoosterCard.SetActive(true);
+                break;
+            case "capacity":
+                 upgrades.CapacityUpgrade();
+                CapacityCard.SetActive(true);
+                break;
+            case "shield":
+                ImmunityCard.SetActive(true);
+                break;
+            case "weapon":
+                upgrades.GunUpgrade();
+                WeaponCard.SetActive(true);
+                break;
         }
 
-        else if (PlayerPrefs.GetInt("HasCapacity") == 1)
+        switch (ResultScreens.currentUpgrade2)
         {
-            upgrades.CapacityUpgrade();
-            CapacityCard.SetActive(true);
-        }
-
-        else if (PlayerPrefs.GetInt("HasShield") == 1)
-        {
-            ImmunityCard.SetActive(true);
-        }
-
-        else if (PlayerPrefs.GetInt("HasWeapon") == 1)
-        {
-            upgrades.GunUpgrade();
-            WeaponCard.SetActive(true);
+            case "booster":
+                BoosterCard.SetActive(true);
+                break;
+            case "capacity":
+                upgrades.CapacityUpgrade();
+                CapacityCard.SetActive(true);
+                break;
+            case "shield":
+                ImmunityCard.SetActive(true);
+                break;
+            case "weapon":
+                upgrades.GunUpgrade();
+                WeaponCard.SetActive(true);
+                break;
         }
     }
 }
