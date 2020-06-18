@@ -6,35 +6,33 @@ using UnityEngine.UI;
 
 public class SelectLevel : MonoBehaviour
 {
-    public Button Level1, Level2, Level3;
+    public Button[] buttons;
 
-    public void ChosenLevel()
+    private void Start()
     {
-        Level1.onClick.AddListener(SelectLevel1);
-
-        Level2.onClick.AddListener(SelectLevel2);
-
-        Level3.onClick.AddListener(SelectLevel3);
-
-    }
-    
-    private void SelectLevel1()
-    {
-        SceneManager.LoadScene("GameTest");
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            int closureIndex = i; // Prevents the closure problem
+            buttons[closureIndex].onClick.AddListener(() => TaskOnClick(closureIndex));
+        }
     }
 
-    private void SelectLevel2()
+    public void TaskOnClick(int buttonIndex)
     {
-        SceneManager.LoadScene("Level_2");
-    }
+        //Debug.Log("You have clicked the button #" + buttonIndex, buttons[buttonIndex]);
 
-    private void SelectLevel3()
-    {
-        SceneManager.LoadScene("Level_3");
-    }
+        switch (buttonIndex)
+        {
+            case 0:
+                SceneManager.LoadScene("GameTest");
+                break;
+            case 1:
+                SceneManager.LoadScene("Level_2");
+                break;
+            case 2:
+                SceneManager.LoadScene("Level_3");
+                break;
 
-    public void BackToMainMenu()
-    {
-        SceneManager.LoadScene("NEW_Menu");
+        }
     }
 }
