@@ -17,7 +17,7 @@ public class HitTask : Objective
         }
         else
         {
-            hitTaskTxt = "Word door een asteroid {0}/{1}\nkeer geraakt";
+            hitTaskTxt = "Word door een asteroid\ngeraakt ";
         }
        
 

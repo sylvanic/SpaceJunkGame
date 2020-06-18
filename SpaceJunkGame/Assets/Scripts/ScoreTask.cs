@@ -17,7 +17,7 @@ public class ScoreTask : Objective
         }
         else
         {
-            scoreTaskTxt = "Verzamel {0}/{1} punten";
+            scoreTaskTxt = "Verzamel punten: ";
         }
     }
         

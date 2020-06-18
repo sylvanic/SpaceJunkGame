@@ -18,7 +18,7 @@ public class PickUpTask : Objective
         }
         else
         {
-            pickUpTaskTxt = "Verzamel {0}/{1} afval";
+            pickUpTaskTxt = "Verzamel afval: ";
         }
     }
 
