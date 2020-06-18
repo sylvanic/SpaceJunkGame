@@ -42,7 +42,7 @@ public class LanguageSwitchTutorial : MonoBehaviour
             part2.text = "We have a serious problem on hand! Earth's orbit is being polluted by space junk!";
             part3.text = "We need your help to clean up this mess. ";
             part4.text = "Don't worry, I'll guide you through the tutorial.";
-            part5.text = "Lets start with the basics. To control your spaceship, use the direction pad on your screen.";
+            part5.text = "Lets start with the basics. To control your spaceship, press this virtual joystick here.";
             part5.fontSize = 24;
             part6.text = "Good! Now try to move around and collect 3 junk parts.";
             part7.text = "Once you have collected 3 pieces of junk, dispose of them at the spacestation.";
@@ -75,7 +75,7 @@ public class LanguageSwitchTutorial : MonoBehaviour
             part2.text = "We hebben een ernstig probleem! De baan van onze aarde wordt vervuild door ruimteafval!";
             part3.text = "We hebben jou hulp nodig om deze vervuiling op te ruimen.";
             part4.text = "Maak je geen zorgen, ik zal je leiden door deze les.";
-            part5.text = "Laten we met het basis beginnen. Om je ruimteschip te bedienen, gebruik de richtingstoetsen op je scherm.";
+            part5.text = "Laten we met het basis beginnen. Om je ruimteschip te bedienen, gebruik deze virtuele joystick.";
             part5.fontSize = 20;
             part6.text = "Goed zo! Probeer nu rond te bewegen en 3 stukken afval te verzamelen.";
             part7.text = "Wanneer je 3 stukken afval hebt verzamelt, gooi ze weg op het ruimtestation.";
