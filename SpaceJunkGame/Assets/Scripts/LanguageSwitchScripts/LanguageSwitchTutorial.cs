@@ -19,6 +19,12 @@ public class LanguageSwitchTutorial : MonoBehaviour
     public Text part11point2;
     public Text part11point3;
     public Text part11point4;
+    public Text part11point5;
+    public Text part11point6;
+    public Text part11point7;
+    public Text part11point8;
+    public Text part11point9;
+    public Text part11point10;
     public Text part12;
     public Text part13;
     public Text part14;
@@ -47,6 +53,12 @@ public class LanguageSwitchTutorial : MonoBehaviour
             part11point2.text = "Search around the area. You will find a burning piece of space junk.";
             part11point3.text = "This one is too big to pick up. You must shoot these flaming big pieces of space trash before you can clean it up. Try it out.";
             part11point4.text = "Good job! Now you know how to pick up big space junk.";
+            part11point5.text = "There is one last thing I want to teach you.";
+            part11point6.text = "These are upgrades. After you beat a level, you can choose one.";
+            part11point7.text = "This is the booster upgrade. It will let you go faster with your ship.";
+            part11point8.text = "This is the weapon upgrade. It will make your laser more powerful.";
+            part11point9.text = "This is the capacity upgrade. With this, you can carry more junk.";
+            part11point10.text = "This is the immunity upgrade. You're invincible from asteroids with his for a while.";
             part12.text = "Completing these objectives and achievements will give you bonus points.";
             part13.text = "Time is also limited, so think fast while the map will show you the way.";
             part14.text = "Minimap Legend:\n- Blue: Space trash.\n-Green: The space station.\n- Red: Asteroids.";
@@ -73,6 +85,12 @@ public class LanguageSwitchTutorial : MonoBehaviour
             part11point2.text = "Zoek rond deze omgeving. Je zal een grote brandende stuk ruimteafval vinden.";
             part11point3.text = "Deze is te groot om op te pakken. Schiet het met je laser om hem op te ruimen. Probeer het nu.";
             part11point4.text = "Goed gedaan! Nu weet je hoe je grote ruimteafval kan opruimen.";
+            part11point5.text = "Er is nog een laatste ding dat ik je wil leren.";
+            part11point6.text = "Dit zijn upgrades. Nadat je een level haalt, kan je een upgrade kiezen om te gebruiken.";
+            part11point7.text = "Dit is de booster upgrade. Hiermee kan je sneller gaan met je schip.";
+            part11point8.text = "Dit is de wapen upgrade. Hiermee is je laser krachtiger.";
+            part11point9.text = "Dit is de capaciteitsupgrade. Hiermee kan je meer afval dragen.";
+            part11point10.text = "Dit is de immuniteitsupgrade. Hiermee wordt je voor een korte tijd onraakbaar door astroiden.";
             part12.text = "Als je deze doelen en prestaties voltooit, zal je bonuspunten krijge.";
             part13.text = "Je tijd is beperkt, dus denk snel, de hemelkaart zal je de weg wijzen.";
             part14.text = "Hemelkaart legenda:\n-Blauw: ruimteafval.\n-Groen: Het ruimtestation.\n-Rood: astroiden.";
