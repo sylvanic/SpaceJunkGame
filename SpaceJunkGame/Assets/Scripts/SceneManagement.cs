@@ -16,6 +16,7 @@ public class SceneManagement : MonoBehaviour
     public void ReturnToMainMenu()
     {
         saveinfo.ResetSaves();
+        Time.timeScale = 1;
         SceneManager.LoadScene("NEW_Menu");
     }
 

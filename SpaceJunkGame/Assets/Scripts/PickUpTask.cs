@@ -7,13 +7,14 @@ public class PickUpTask : Objective
 
     private int junk;
     public int requiredJunk;
+
     public static string pickUpTaskTxt;
 
     private void Awake()
     {
         if (LangSwitchBool.englishTxt)
         {
-            pickUpTaskTxt = "Collected { 0}/{ 1} junk";
+            pickUpTaskTxt = "Collect junk: ";
         }
         else
         {
@@ -42,6 +43,6 @@ public class PickUpTask : Objective
 
     public override void DrawHUD()
     {
-             GUI.Label(new Rect(1565, 285, 300, 100),string.Format(pickUpTaskTxt, junk, requiredJunk), ObjectiveManager.guiStyle);
+             GUI.Label(new Rect(1565, 285, 300, 100),string.Format(pickUpTaskTxt + "{0}/{1}", junk, requiredJunk), ObjectiveManager.guiStyle);
     }
 }

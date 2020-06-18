@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class ScoreTask : Objective
 {
@@ -14,7 +13,7 @@ public class ScoreTask : Objective
     {
         if (LangSwitchBool.englishTxt)
         {
-            scoreTaskTxt = "Obtain a score of {0}/{1} points";
+            scoreTaskTxt = "Obtain a score of ";
         }
         else
         {
@@ -43,6 +42,6 @@ public class ScoreTask : Objective
 
     public override void DrawHUD()
     {
-        GUI.Label(new Rect(1565, 215, 300, 100),string.Format(scoreTaskTxt , points, requiredPoints), ObjectiveManager.guiStyle);
+        GUI.Label(new Rect(1565, 215, 300, 100),string.Format(scoreTaskTxt + "{0}/{1}", points, requiredPoints), ObjectiveManager.guiStyle);
     }
 }
