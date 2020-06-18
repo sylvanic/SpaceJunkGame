@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -220,9 +220,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.40784317, g: 0.5254902, b: 0.63529414, a: 1}
+    m_PressedColor: {r: 0.40784317, g: 0.5254902, b: 0.63529414, a: 1}
+    m_SelectedColor: {r: 0.40784317, g: 0.5254902, b: 0.63529414, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -242,17 +242,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1795101075398017909}
-        m_MethodName: AgeGroupSelected
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 13125786}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2100161601}
         m_MethodName: PlayOneShot
         m_Mode: 2
@@ -977,9 +966,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.40784317, g: 0.5254902, b: 0.63529414, a: 1}
+    m_PressedColor: {r: 0.40784317, g: 0.5254902, b: 0.63529414, a: 1}
+    m_SelectedColor: {r: 0.40784317, g: 0.5254902, b: 0.63529414, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -999,17 +988,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1795101075398017909}
-        m_MethodName: AgeGroupSelected
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 169618134}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2100161601}
         m_MethodName: PlayOneShot
         m_Mode: 2
@@ -2293,9 +2271,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.40784317, g: 0.5254902, b: 0.63529414, a: 1}
+    m_PressedColor: {r: 0.40784317, g: 0.5254902, b: 0.63529414, a: 1}
+    m_SelectedColor: {r: 0.40784317, g: 0.5254902, b: 0.63529414, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2315,17 +2293,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1795101075398017909}
-        m_MethodName: GenderSelected
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 396474331}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2100161601}
         m_MethodName: PlayOneShot
         m_Mode: 2
@@ -3735,9 +3702,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.40784317, g: 0.5254902, b: 0.63529414, a: 1}
+    m_PressedColor: {r: 0.40784317, g: 0.5254902, b: 0.63529414, a: 1}
+    m_SelectedColor: {r: 0.40784317, g: 0.5254902, b: 0.63529414, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3757,17 +3724,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1795101075398017909}
-        m_MethodName: GenderSelected
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 762144177}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2100161601}
         m_MethodName: PlayOneShot
         m_Mode: 2
@@ -3934,9 +3890,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.40784317, g: 0.5254902, b: 0.63529414, a: 1}
+    m_PressedColor: {r: 0.40784317, g: 0.5254902, b: 0.63529414, a: 1}
+    m_SelectedColor: {r: 0.40784317, g: 0.5254902, b: 0.63529414, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3956,17 +3912,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1795101075398017909}
-        m_MethodName: AgeGroupSelected
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 796381939}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2100161601}
         m_MethodName: PlayOneShot
         m_Mode: 2
@@ -5229,6 +5174,8 @@ MonoBehaviour:
   gender: 
   ageGroup: 
   playerNameInputField: {fileID: 0}
+  genderButtons: []
+  ageButtons: []
 --- !u!1 &1034510299
 GameObject:
   m_ObjectHideFlags: 0
@@ -5984,9 +5931,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.40784317, g: 0.5254902, b: 0.63529414, a: 1}
+    m_PressedColor: {r: 0.40784317, g: 0.5254902, b: 0.63529414, a: 1}
+    m_SelectedColor: {r: 0.40784317, g: 0.5254902, b: 0.63529414, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -6006,17 +5953,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1795101075398017909}
-        m_MethodName: GenderSelected
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1355056405}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2100161601}
         m_MethodName: PlayOneShot
         m_Mode: 2
@@ -10859,6 +10795,14 @@ MonoBehaviour:
   gender: 
   ageGroup: 
   playerNameInputField: {fileID: 945680388}
+  genderButtons:
+  - {fileID: 396474331}
+  - {fileID: 1355056405}
+  - {fileID: 762144177}
+  ageButtons:
+  - {fileID: 169618134}
+  - {fileID: 796381939}
+  - {fileID: 13125786}
 --- !u!224 &1795101075398017914
 RectTransform:
   m_ObjectHideFlags: 0

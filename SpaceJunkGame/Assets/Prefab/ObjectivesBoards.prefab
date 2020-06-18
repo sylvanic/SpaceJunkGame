@@ -2624,6 +2624,12 @@ MonoBehaviour:
   ChooseUpgrade: {fileID: 6303151743638718402}
   CCNext: {fileID: 4934224611610712315}
   ChooseUpgradeConfirm: {fileID: 2667760012155592660}
+  Capa: {fileID: 8606638223094086316}
+  Immun: {fileID: 8606638222683339205}
+  CapacityEng: {fileID: 21300000, guid: 6d1fed30f53ce6144887063e0d828abf, type: 3}
+  CapacityDutch: {fileID: 21300000, guid: 7507a4d1388ca27459db779d6f0be3d1, type: 3}
+  ImmunityEng: {fileID: 21300000, guid: 01e3a68f036f82047a62657774e04a2c, type: 3}
+  ImmunityDutch: {fileID: 21300000, guid: 8c12d519cc3f9cc4f8319824fa1b388d, type: 3}
 --- !u!1 &6565068981614104473
 GameObject:
   m_ObjectHideFlags: 0
@@ -3884,9 +3890,9 @@ MonoBehaviour:
     m_NormalColor: {r: 0.7137255, g: 0.81960785, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.7137255, g: 0.8196079, b: 1, a: 1}
-    m_SelectedColor: {r: 0.7137255, g: 0.8196079, b: 1, a: 1}
+    m_SelectedColor: {r: 0.15686275, g: 0.2784314, b: 0.3882353, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
+    m_ColorMultiplier: 2.01
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
@@ -3903,18 +3909,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8606638222683339203}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2045394895396224062}
-        m_MethodName: UpgradeSelected
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8606638222683339205}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &8606638222998939843
 GameObject:
   m_ObjectHideFlags: 0
@@ -4244,9 +4239,9 @@ MonoBehaviour:
     m_NormalColor: {r: 0.7137255, g: 0.81960785, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.15686275, g: 0.2784314, b: 0.3882353, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
+    m_ColorMultiplier: 2.01
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
@@ -4263,18 +4258,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8606638223094086314}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2045394895396224062}
-        m_MethodName: UpgradeSelected
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8606638223094086316}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &8606638223145293790
 GameObject:
   m_ObjectHideFlags: 0
@@ -4604,9 +4588,9 @@ MonoBehaviour:
     m_NormalColor: {r: 0.7137255, g: 0.81960785, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.15686275, g: 0.2784314, b: 0.3882353, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
+    m_ColorMultiplier: 2.01
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
@@ -4623,18 +4607,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8606638223903797493}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2045394895396224062}
-        m_MethodName: UpgradeSelected
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8606638223903797494}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &8606638223962425477
 GameObject:
   m_ObjectHideFlags: 0
@@ -4949,9 +4922,9 @@ MonoBehaviour:
     m_NormalColor: {r: 0.7137255, g: 0.81960785, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 0.15686275, g: 0.2784314, b: 0.3882353, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
+    m_ColorMultiplier: 2.01
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
@@ -4968,18 +4941,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8606638224284088090}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2045394895396224062}
-        m_MethodName: UpgradeSelected
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8606638224284088092}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &8606638224349818755
 GameObject:
   m_ObjectHideFlags: 0
