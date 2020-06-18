@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 8609672c4512a854a907a7c81e32e89d,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -11785,8 +11785,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lets start with the basics. To control your spaceship, press any of the
-    arrow keys or WASD to move.
+  m_Text: Lets start with the basics. To control your spaceship, press the virtual
+    joystick on the left.
 --- !u!222 &2008381592
 CanvasRenderer:
   m_ObjectHideFlags: 0
