@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class TutorialInteraction : MonoBehaviour
 {
@@ -38,6 +39,12 @@ public class TutorialInteraction : MonoBehaviour
     public GameObject bigSpaceJunk;
     public GameObject upgrades;
     public GameObject upgradeNL;
+    public GameObject goal1;
+    public GameObject goal2;
+    public GameObject goal3;
+    public GameObject goal4;
+    public GameObject goal5;
+    public GameObject goal6;
 
     bool intro2popup = false;
     bool intro3popup = false;
@@ -105,6 +112,7 @@ public class TutorialInteraction : MonoBehaviour
             astronautInteraction.SetActive(false);
             StopAllCoroutines();
             intro2popup = true;
+            goal1.SetActive(true);
         }
     }
 
@@ -114,12 +122,14 @@ public class TutorialInteraction : MonoBehaviour
     {
         if (sixthIntro)
         {
+            
             StartCoroutine(StartIntro2());
             intro6.SetActive(false);
             sixthIntro = false;            
             astronautInteraction.SetActive(false);
             StopAllCoroutines();
             intro3popup = true;
+            goal2.SetActive(true);
         }
     }
 
@@ -134,6 +144,7 @@ public class TutorialInteraction : MonoBehaviour
             astronautInteraction.SetActive(false);
             StopAllCoroutines();
             intro4popup = true;
+            goal3.SetActive(true);
         }
     }
 
@@ -148,6 +159,7 @@ public class TutorialInteraction : MonoBehaviour
             astronautInteraction.SetActive(false);
             StopAllCoroutines();
             intro5popup = true;
+            goal4.SetActive(true);
         }
     }
 
@@ -174,6 +186,7 @@ public class TutorialInteraction : MonoBehaviour
             astronautInteraction.SetActive(false);
             StopAllCoroutines();
             intro6popup = true;
+            goal5.SetActive(true);
         }
     }
 
@@ -223,9 +236,11 @@ public class TutorialInteraction : MonoBehaviour
             elevenpoint3Intro = false;
             astronautInteraction.SetActive(false);
             StopAllCoroutines();
+            goal6.SetActive(true);
         }
     }
 
+    //Seventh Intro
     bool elevenpoint4Intro = true;
     public void SkipIntro11point4()
     {
@@ -427,6 +442,7 @@ public class TutorialInteraction : MonoBehaviour
         intro5.SetActive(true);
         yield return new WaitForSeconds(4);
         intro5.SetActive(false);
+        goal1.SetActive(true);
         astronautInteraction.SetActive(false);
         intro2popup = true;
     }
@@ -434,39 +450,46 @@ public class TutorialInteraction : MonoBehaviour
     private IEnumerator StartIntro2()
     {
         yield return new WaitForSeconds(1);
+        goal1.SetActive(false);
         astronautInteraction.SetActive(true);
         intro6.SetActive(true);
         yield return new WaitForSeconds(4);
         intro6.SetActive(false);
         astronautInteraction.SetActive(false);
         intro3popup = true;
+        goal2.SetActive(true);
     }
 
     private IEnumerator StartIntro3()
     {
         yield return new WaitForSeconds(1);
+        goal2.SetActive(false);
         astronautInteraction.SetActive(true);
         intro7.SetActive(true);
         yield return new WaitForSeconds(4);
         intro7.SetActive(false);
         astronautInteraction.SetActive(false);
         intro4popup = true;
+        goal3.SetActive(true);
     }
 
     private IEnumerator StartIntro4()
     {
         yield return new WaitForSeconds(1);
+        goal3.SetActive(false);
         astronautInteraction.SetActive(true);
         intro8.SetActive(true);
         yield return new WaitForSeconds(4);
         intro8.SetActive(false);
         astronautInteraction.SetActive(false);
         intro5popup = true;
+        goal4.SetActive(true);
     }
 
     public IEnumerator StartIntro5()
     {
         yield return new WaitForSeconds(1);
+        goal4.SetActive(false);
         astronautInteraction.SetActive(true);
         intro9.SetActive(true);
         yield return new WaitForSeconds(4);
@@ -476,11 +499,13 @@ public class TutorialInteraction : MonoBehaviour
         intro10.SetActive(false);
         astronautInteraction.SetActive(false);
         intro6popup = true;
+        goal5.SetActive(true);
     }
 
     private IEnumerator StartIntro6()
     {
         yield return new WaitForSeconds(1);
+        goal5.SetActive(false);
         astronautInteraction.SetActive(true);
         intro11.SetActive(true);
         yield return new WaitForSeconds(4);
@@ -495,9 +520,11 @@ public class TutorialInteraction : MonoBehaviour
         yield return new WaitForSeconds(4);
         intro11point3.SetActive(false);
         astronautInteraction.SetActive(false);
+        goal6.SetActive(true);
     }
     public IEnumerator StartIntro7()
     {
+        goal6.SetActive(false);
         astronautInteraction.SetActive(true);
         intro11point4.SetActive(true);
         yield return new WaitForSeconds(4);
@@ -551,7 +578,7 @@ public class TutorialInteraction : MonoBehaviour
 
     public void ScoreDetect()
     {
-        if ((playerStats.capacity == 3 || junkDump.GetComponent<JunkDump>().junkDumped >= 3) && intro3popup)
+        if ((playerStats.capacity == 3 || junkDump.GetComponent<JunkDump>().junkDumped >= 1) && intro3popup)
         {
                 StartCoroutine(StartIntro3());
                 intro3popup = false;
@@ -561,7 +588,7 @@ public class TutorialInteraction : MonoBehaviour
 
     public void DetectDump()
     {
-        if (junkDump.GetComponent<JunkDump>().junkDumped >= 3 && intro4popup)
+        if (junkDump.GetComponent<JunkDump>().junkDumped >= 1 && intro4popup)
         {
                 StartCoroutine(StartIntro4());
                 intro4popup = false;
