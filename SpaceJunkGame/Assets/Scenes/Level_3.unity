@@ -7081,6 +7081,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EarthModel_optimized
       objectReference: {fileID: 0}
+    - target: {fileID: 9042212044884341491, guid: 989ee05ad6cc4ad47b2b3cb37478ef73,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 989ee05ad6cc4ad47b2b3cb37478ef73, type: 3}
 --- !u!4 &1154113532 stripped
