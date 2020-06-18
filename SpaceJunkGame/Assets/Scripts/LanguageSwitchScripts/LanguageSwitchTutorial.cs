@@ -93,7 +93,7 @@ public class LanguageSwitchTutorial : MonoBehaviour
             part11point8.text = "Dit is de wapen upgrade. Hiermee is je laser krachtiger.";
             part11point9.text = "Dit is de capaciteitsupgrade. Hiermee kan je meer afval dragen.";
             part11point10.text = "Dit is de immuniteitsupgrade. Hiermee wordt je voor een korte tijd onraakbaar door astroiden.";
-            part12.text = "Als je deze doelen en prestaties voltooit, zal je bonuspunten krijge.";
+            part12.text = "Als je deze doelen en prestaties voltooit, zal je bonuspunten krijgen.";
             part13.text = "Je tijd is beperkt, dus denk snel, de hemelkaart zal je de weg wijzen.";
             part14.text = "Hemelkaart legenda:\n-Blauw: ruimteafval.\n-Groen: Het ruimtestation.\n-Rood: astroiden.";
             part15.text = "Dat was het voor de tutorial, success en veel plezier!";
