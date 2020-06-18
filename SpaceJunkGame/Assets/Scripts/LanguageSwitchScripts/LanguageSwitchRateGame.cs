@@ -41,7 +41,9 @@ public class LanguageSwitchRateGame : MonoBehaviour
 
             F1Title.text = "Rate our Game!";
             F1Wrong.text = "What went wrong?";
-
+            F1DropDown.options[0].text = "Controls don't work";
+            F1DropDown.options[1].text = "Game crashed";
+            F1DropDown.options[2].text = "Other";
             F1Next.text = "Next";
 
             P2Title.text = "Rate our Game!";
@@ -50,6 +52,9 @@ public class LanguageSwitchRateGame : MonoBehaviour
 
             F2Title.text = "Rate our Game!";
             F2Wrong.text = "What went wrong?";
+            F2DropDown.options[0].text = "Didn't learn much";
+            F2DropDown.options[1].text = "Goal not clear";
+            F2DropDown.options[2].text = "Other";
             F2Finish.text = "Finish";
 
             Thanks.text = "Thank you for your\n feedback!";
@@ -66,6 +71,9 @@ public class LanguageSwitchRateGame : MonoBehaviour
 
             F1Title.text = "Beoordeel ons Spel!";
             F1Wrong.text = "Wat ging er mis?";
+            F1DropDown.options[0].text = "Controles werken niet";
+            F1DropDown.options[1].text = "Spel crasht";
+            F1DropDown.options[2].text = "Overige";
             F1Next.text = "Volgende";
 
             P2Title.text = "Beoordeel ons Spel!";
@@ -74,6 +82,9 @@ public class LanguageSwitchRateGame : MonoBehaviour
 
             F2Title.text = "Beoordeel ons Spel!";
             F2Wrong.text = "Wat ging er mis?";
+            F2DropDown.options[0].text = "Heeft niet veel geleerd";
+            F2DropDown.options[1].text = "Doel niet duidelijk";
+            F2DropDown.options[2].text = "Overige";
             F2Finish.text = "Einde";
 
             Thanks.text = "Bedankt voor uw\n feedback!";
@@ -82,6 +93,5 @@ public class LanguageSwitchRateGame : MonoBehaviour
 
         }
     }
-
 
 }

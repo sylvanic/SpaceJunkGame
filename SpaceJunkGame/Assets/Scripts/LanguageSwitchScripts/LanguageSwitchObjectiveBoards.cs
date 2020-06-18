@@ -24,7 +24,17 @@ public class LanguageSwitchObjectiveBoards : MonoBehaviour
     public TextMeshProUGUI ChooseUpgrade;
     public TextMeshProUGUI CCNext;
     public TextMeshProUGUI ChooseUpgradeConfirm;
+    [Space]
+    public Button Capa;
+    public Button Immun;
 
+    public Sprite CapacityEng;
+    public Sprite CapacityDutch;
+
+    public Sprite ImmunityEng;
+    public Sprite ImmunityDutch;
+
+   
 
 
     private void Awake()
@@ -50,6 +60,9 @@ public class LanguageSwitchObjectiveBoards : MonoBehaviour
             CCNext.text = "NEXT";
             ChooseUpgradeConfirm.text = "Choose an upgrade first!";
 
+            Capa.image.sprite = CapacityEng;
+            Immun.image.sprite = ImmunityEng;
+
         }
         else
         {
@@ -71,6 +84,9 @@ public class LanguageSwitchObjectiveBoards : MonoBehaviour
             ChooseUpgrade.text = "Kies een upgrade";
             CCNext.text = "VOLGENDE";
             ChooseUpgradeConfirm.text = "Kies eerst een upgrade!";
+
+            Capa.image.sprite = CapacityDutch;
+            Immun.image.sprite = ImmunityDutch;
         }
        
     }

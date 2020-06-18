@@ -18,8 +18,6 @@ public class ResultScreens : MonoBehaviour
     public static string currentUpgrade;
     public static string currentUpgrade2;
 
-    
-
 
     private void Start()
     {
@@ -136,8 +134,8 @@ public class ResultScreens : MonoBehaviour
             }
         }
 
-        Debug.Log("currentUpgrade1" + currentUpgrade);
-        Debug.Log("currentUpgrade2" + currentUpgrade2);
+        //Debug.Log("currentUpgrade1" + currentUpgrade);
+        //Debug.Log("currentUpgrade2" + currentUpgrade2);
     }
 
 }
