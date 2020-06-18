@@ -10946,7 +10946,7 @@ PrefabInstance:
     - target: {fileID: 2233434919850610049, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2402086305968774709, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -11147,6 +11147,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835060776518726001, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_text
+      value: Ruimte Concierge
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835060776518726001, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835060776518726001, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835060776518726001, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4835060776673739856, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -11378,6 +11398,11 @@ PrefabInstance:
       propertyPath: m_textInfo.characterCount
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4963120427424089465, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5373964627778423475, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
@@ -11387,6 +11412,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5681993819051428137, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_text
+      value: Afsluiten
+      objectReference: {fileID: 0}
+    - target: {fileID: 5681993819051428137, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5810764194673604015, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -11508,7 +11543,7 @@ PrefabInstance:
     - target: {fileID: 8526824553880951359, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8526824554288589575, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
