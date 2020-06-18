@@ -53,6 +53,7 @@ public class LanguageSwitchMenu : MonoBehaviour
             adult.text = "adult (18+)";
 
             optionsButton.text = "Options";
+            optionsButton.fontSize = 45;
             leaderboardButton.text = "Leaderboard";
             quitButton.text = "Quit";
 
@@ -83,6 +84,7 @@ public class LanguageSwitchMenu : MonoBehaviour
             adult.text = "volwassen (18+)";
 
             optionsButton.text = "Instellingen";
+            optionsButton.fontSize = 39;
             leaderboardButton.text = "Scorebord";
             quitButton.text = "Afsluiten";
             quitButton.fontSize = 24.6f;
