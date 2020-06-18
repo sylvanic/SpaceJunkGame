@@ -13,11 +13,11 @@ public class HitTask : Objective
     {
         if (LangSwitchBool.englishTxt)
         {
-            hitTaskTxt = "Get hit by an asteroid ";
+            hitTaskTxt = "Get hit by an asteroid: ";
         }
         else
         {
-            hitTaskTxt = "Word door een asteroid {0}/{1}\nkeer geraakt";
+            hitTaskTxt = "Word door een asteroid\ngeraakt: ";
         }
        
 

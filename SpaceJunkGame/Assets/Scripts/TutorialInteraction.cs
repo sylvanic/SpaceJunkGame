@@ -21,6 +21,12 @@ public class TutorialInteraction : MonoBehaviour
     public GameObject intro11point2;
     public GameObject intro11point3;
     public GameObject intro11point4;
+    public GameObject intro11point5;
+    public GameObject intro11point6;
+    public GameObject intro11point7;
+    public GameObject intro11point8;
+    public GameObject intro11point9;
+    public GameObject intro11point10;
     public GameObject intro12;
     public GameObject intro13;
     public GameObject intro14;
@@ -30,6 +36,8 @@ public class TutorialInteraction : MonoBehaviour
     public PlayerStats playerStats;
     public GameObject junkDump;
     public GameObject bigSpaceJunk;
+    public GameObject upgrades;
+    public GameObject upgradeNL;
 
     bool intro2popup = false;
     bool intro3popup = false;
@@ -226,6 +234,96 @@ public class TutorialInteraction : MonoBehaviour
             intro11point4.SetActive(false);
             elevenpoint4Intro = false;
             StopAllCoroutines();
+            intro11point5.SetActive(true);
+        }
+    }
+
+    bool elevenpoint5Intro = true;
+    public void SkipIntro11point5()
+    {
+        if (elevenpoint5Intro)
+        {
+            intro11point5.SetActive(false);
+            elevenpoint5Intro = false;
+            StopAllCoroutines();
+            astronautInteraction.SetActive(false);
+            intro11point6.SetActive(true);
+            if (LangSwitchBool.englishTxt)
+            {
+                upgrades.SetActive(true);
+            }
+            else
+            {
+                upgradeNL.SetActive(true);
+            }
+        }
+    }
+
+    bool elevenpoint6Intro = true;
+    public void SkipIntro11point6()
+    {
+        if (elevenpoint6Intro)
+        {
+            intro11point6.SetActive(false);
+            elevenpoint6Intro = false;
+            StopAllCoroutines();
+            intro11point7.SetActive(true);
+        }
+    }
+
+    bool elevenpoint7Intro = true;
+    public void SkipIntro11point7()
+    {
+        if (elevenpoint7Intro)
+        {
+            intro11point7.SetActive(false);
+            elevenpoint7Intro = false;
+            StopAllCoroutines();
+            intro11point8.SetActive(true);
+        }
+    }
+
+    bool elevenpoint8Intro = true;
+    public void SkipIntro11point8()
+    {
+        if (elevenpoint8Intro)
+        {
+            intro11point8.SetActive(false);
+            elevenpoint8Intro = false;
+            StopAllCoroutines();
+            intro11point9.SetActive(true);
+        }
+    }
+
+    bool elevenpoint9Intro = true;
+    public void SkipIntro11point9()
+    {
+        if (elevenpoint9Intro)
+        {
+            intro11point9.SetActive(false);
+            elevenpoint9Intro = false;
+            StopAllCoroutines();
+            intro11point10.SetActive(true);
+        }
+    }
+
+    bool elevenpoint10Intro = true;
+    public void SkipIntro11point10()
+    {
+        if (elevenpoint10Intro)
+        {
+            intro11point10.SetActive(false);
+            if (LangSwitchBool.englishTxt)
+            {
+                upgrades.SetActive(false);
+            }
+            else
+            {
+                upgradeNL.SetActive(false);
+            }
+            astronautInteraction.SetActive(true);
+            elevenpoint10Intro = false;
+            StopAllCoroutines();
             intro12.SetActive(true);
         }
     }
@@ -404,6 +502,27 @@ public class TutorialInteraction : MonoBehaviour
         intro11point4.SetActive(true);
         yield return new WaitForSeconds(4);
         intro11point4.SetActive(false);
+        intro11point5.SetActive(true);
+        yield return new WaitForSeconds(4);
+        intro11point5.SetActive(false);
+        astronautInteraction.SetActive(false);
+        upgrades.SetActive(true);
+        intro11point6.SetActive(true);
+        yield return new WaitForSeconds(4);
+        intro11point6.SetActive(false);
+        intro11point7.SetActive(true);
+        yield return new WaitForSeconds(4);
+        intro11point7.SetActive(false);
+        intro11point8.SetActive(true);
+        yield return new WaitForSeconds(4);
+        intro11point8.SetActive(false);
+        intro11point9.SetActive(true);
+        yield return new WaitForSeconds(4);
+        intro11point9.SetActive(false);
+        intro11point10.SetActive(true);
+        yield return new WaitForSeconds(4);
+        intro11point10.SetActive(false);
+        upgrades.SetActive(false);
         intro12.SetActive(true);
         yield return new WaitForSeconds(4);
         intro12.SetActive(false);
