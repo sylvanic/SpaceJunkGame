@@ -27,7 +27,8 @@ public class LanguageSwitchUI : MonoBehaviour
         if (LangSwitchBool.englishTxt)
         {
             Timer.text = "Timer: ";
-            //Score.text = "Score: ";
+            Score.text = "Score: ";
+            Score.fontSize = 34;
             GameTitle.text = "Space Janitor";
             Quit.text = "Quit";
             StorageCapacity.text = "Storage Capacity";
@@ -43,7 +44,8 @@ public class LanguageSwitchUI : MonoBehaviour
         else
         {
             Timer.text = "Tijd: ";
-            //Score.text = "Punten: ";
+            Score.text = "Punten: ";
+            Score.fontSize = 30;
             GameTitle.text = "Ruimte Congierge";
             Quit.text = "Opgeven";
             StorageCapacity.text = "Opslagcapaciteit";

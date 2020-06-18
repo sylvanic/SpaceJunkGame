@@ -20,7 +20,6 @@ public class LevelFinishIntro2 : MonoBehaviour
     private void Update()
     {
         time += 1 * Time.deltaTime;
-       // print(time);
         Intro1();
         Intro2();
         Intro3();
@@ -99,6 +98,16 @@ public class LevelFinishIntro2 : MonoBehaviour
             StopAllCoroutines();
             time = 18;
         }
+    }
+
+    public void SkipCutscene()
+    {
+        intro1play = false;
+        intro2play = false;
+        intro3play = false;
+        blackoutplay = false;
+        StopAllCoroutines();
+        StartCoroutine(ActivationRoutineBlackout());
     }
 
     private IEnumerator ActivationRoutineText()

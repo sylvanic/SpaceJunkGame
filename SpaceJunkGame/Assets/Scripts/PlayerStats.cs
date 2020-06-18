@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
-
+using UnityEngine.SocialPlatforms.Impl;
 
 public class PlayerStats : MonoBehaviour
 {
@@ -40,6 +40,7 @@ public class PlayerStats : MonoBehaviour
     void Update()
     {
         CapacitySliderUpdate();
+    
     }
    
 
@@ -68,6 +69,36 @@ public class PlayerStats : MonoBehaviour
 
     }
 
+    private IEnumerator MeshBlinking(int blinkCount,float blinkTime){
+        
+        for(int i = 0; i<blinkCount;i++)
+        {
+        
+        ParticleSystemRenderer[] flames;
+        flames = GetComponentsInChildren<ParticleSystemRenderer>();
+
+        foreach(ParticleSystemRenderer flame in flames)
+        {
+            flame.enabled=false;
+        }
+
+        GetComponentInChildren<Renderer>().enabled=false;
+        yield return new WaitForSeconds(blinkTime);
+        
+        foreach(ParticleSystemRenderer flame in flames)
+        {
+            flame.enabled=true;
+        }    
+        
+        GetComponentInChildren<Renderer>().enabled=true;    
+        yield return new WaitForSeconds(blinkTime);
+        
+       
+
+        }
+
+    }   
+
 
 
 
@@ -75,7 +106,7 @@ public class PlayerStats : MonoBehaviour
         
         currentScore *= scoreMultiplier;
         totalScore += currentScore;
-        scoreText.text = "Punten: " + totalScore;
+        scoreText.text = totalScore.ToString();
         
     }
 
@@ -86,6 +117,7 @@ public class PlayerStats : MonoBehaviour
             capacity--;
             Debug.Log("!!!!!!asteroid collision idk");
             other.gameObject.SetActive(false);
+            StartCoroutine(MeshBlinking(3,.5f));
         }
     }
 
@@ -99,6 +131,7 @@ public class PlayerStats : MonoBehaviour
             Destroy(obj.gameObject,.1f);
             Debug.Log("asteroid collision idk");
             soundManager.AsteroidCrash.Play();
+            StartCoroutine(MeshBlinking(6,.1f));
 
             Instantiate(explosionPrefab, obj.transform.position, Quaternion.identity);
         }

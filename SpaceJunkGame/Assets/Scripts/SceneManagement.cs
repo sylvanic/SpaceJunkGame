@@ -28,5 +28,4 @@ public class SceneManagement : MonoBehaviour
     {
         SceneManager.LoadScene("SelectLevel");
     }
- 
 }
