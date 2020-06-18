@@ -21,6 +21,12 @@ public class TutorialInteraction : MonoBehaviour
     public GameObject intro11point2;
     public GameObject intro11point3;
     public GameObject intro11point4;
+    public GameObject intro11point5;
+    public GameObject intro11point6;
+    public GameObject intro11point7;
+    public GameObject intro11point8;
+    public GameObject intro11point9;
+    public GameObject intro11point10;
     public GameObject intro12;
     public GameObject intro13;
     public GameObject intro14;
@@ -30,6 +36,7 @@ public class TutorialInteraction : MonoBehaviour
     public PlayerStats playerStats;
     public GameObject junkDump;
     public GameObject bigSpaceJunk;
+    public GameObject upgrades;
 
     bool intro2popup = false;
     bool intro3popup = false;
