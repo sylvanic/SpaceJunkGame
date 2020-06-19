@@ -29,15 +29,15 @@ public class LanguageSwitchLvl3Cutscene : MonoBehaviour
         }
         else
         {
-            part1.text = "Goed gedaan, je hebt de aarde’s atmosfeer van ruimteafval schoongemaakt!";
-            part2.text = "Wij op aarde zijn erg trots op jou werk. Met dank aan jou kunnen we nu veilig het heelal verkennen!";
+            part1.text = "Goed gedaan, je hebt de aardes atmosfeer van ruimteafval schoongemaakt!";
+            part2.text = "Wij op aarde zijn trots op jou werk. Met dank aan jou kunnen we nu veilig het heelal verkennen!";
             part3.text = "Maar…";
             part4.text = "Onze missie is nog niet volbracht.";
-            part5.text = "Ookal heb je erg veel ruimteafval opgeruimt vandaag, het is maar een klein deel van wat er in de lucht rond vliegt.";
+            part5.text = "Ook al heb je veel ruimteafval opgeruimt vandaag, het is maar een klein deel van wat er in de lucht rond vliegt.";
             part6.text = "Op dit moment zijn er 34.000 stukken ruimteafval die rondvliegen in de lucht groot genoeg om ernstige schaden aan te richten aan apparatuur, volgens de Europese Ruimteagentschap.";
             part7.text = "Dit houdt ons alsnog tegen om verder de ruimte in te gaan. In de toekomst zal dit nummer groter worden, tot het punt dat het niet meer beheersbaar is.";
             part8.text = "Er is niet veel wat normale mensen kunnen doen, anders dan over dit onderwerp bekend zijn.";
-            part9.text = "Dank je wel voor het spelen van Ruimte Concierge, we hopen dat we je meer bewust hebben gemaakt van dit probleem.";
+            part9.text = "Dank je wel voor het spelen van Ruimte Schoonmaker, we hopen dat we je meer bewust hebben gemaakt van dit probleem.";
         }
     }
 }
