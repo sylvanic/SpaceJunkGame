@@ -65,12 +65,13 @@ public class LanguageSwitchMenu : MonoBehaviour
             options.text = "Options";
             masterVolume.text = "Master Volume";
             sfxVolume.text = "SFX Volume";
+            sfxVolume.fontSize = 60;
             backButtonOptions.text = "Back";
         }
         else
         {
-            gameTitle.text = "Ruimte Congierge";
-            gameTitle.fontSize = 120;
+            gameTitle.text = "Ruimte Schoonmaker";
+            gameTitle.fontSize = 100;
             startButton.text = "Begin";
             writeYourName.text = "Schrijf je naam:";
             enterName.text = "Vul je naam in...";
