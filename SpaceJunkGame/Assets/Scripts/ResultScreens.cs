@@ -7,7 +7,7 @@ using TMPro;
 
 public class ResultScreens : MonoBehaviour
 {
-    public bool checkChallengedCompleted;
+    public static bool checkChallengedCompleted = false;
     public int levelScoreMinimum = 50;
     public GameObject UpgradeBoard;
     public GameObject MissionCompleted;

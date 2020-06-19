@@ -10,6 +10,8 @@ public class PickUpTask : Objective
 
     public static string pickUpTaskTxt;
 
+    private GUIStyle guiStyle = new GUIStyle();
+
     private void Awake()
     {
         if (LangSwitchBool.englishTxt)
@@ -20,6 +22,9 @@ public class PickUpTask : Objective
         {
             pickUpTaskTxt = "Verzamel afval: ";
         }
+
+        guiStyle.normal.textColor = Color.white;
+        guiStyle.fontSize = 25;
     }
 
     private void Update()
@@ -39,10 +44,11 @@ public class PickUpTask : Objective
 
     public override void Complete()
     {
+        guiStyle.normal.textColor = Color.black;
     }
 
     public override void DrawHUD()
     {
-             GUI.Label(new Rect(1565, 285, 300, 100),string.Format(pickUpTaskTxt + "{0}/{1}", junk, requiredJunk), ObjectiveManager.guiStyle);
+             GUI.Label(new Rect(1565, 285, 300, 100),string.Format(pickUpTaskTxt + "{0}/{1}", junk, requiredJunk), guiStyle);
     }
 }

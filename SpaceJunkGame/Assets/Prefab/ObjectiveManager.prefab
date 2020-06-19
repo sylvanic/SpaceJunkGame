@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 919388969301136776}
   - component: {fileID: 919388969301136779}
-  - component: {fileID: 919388969301136777}
-  - component: {fileID: 919388969301136778}
-  - component: {fileID: 919388969301136822}
+  - component: {fileID: 6825701820986408687}
+  - component: {fileID: 3381678843432021343}
+  - component: {fileID: 3302201509618151350}
   m_Layer: 0
   m_Name: ObjectiveManager
   m_TagString: Untagged
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objective: []
---- !u!114 &919388969301136777
+--- !u!114 &6825701820986408687
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -60,7 +60,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   requiredPoints: 20
---- !u!114 &919388969301136778
+--- !u!114 &3381678843432021343
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -72,8 +72,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb4eb5b768baa0241b7e8f4068144a17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiredJunk: 12
---- !u!114 &919388969301136822
+  requiredJunk: 10
+--- !u!114 &3302201509618151350
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
