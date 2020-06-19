@@ -46,7 +46,7 @@ public class LanguageSwitchUI : MonoBehaviour
             Timer.text = "Tijd: ";
             Score.text = "Punten: ";
             Score.fontSize = 30;
-            GameTitle.text = "Ruimte Congierge";
+            GameTitle.text = "Ruimte Schoonmaker";
             Quit.text = "Opgeven";
             StorageCapacity.text = "Opslagcapaciteit";
             Objectives.text = "Doelen";
