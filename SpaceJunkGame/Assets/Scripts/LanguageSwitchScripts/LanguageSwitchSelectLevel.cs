@@ -21,7 +21,7 @@ public class LanguageSwitchSelectLevel : MonoBehaviour
         }
         else
         {
-            gameTitle.text = "Ruimte Concierge";
+            gameTitle.text = "Ruimte Schoonmaker";
             lvl1.text = "Niveau";
             lvl2.text = "Niveau";
             lvl3.text = "Niveau";

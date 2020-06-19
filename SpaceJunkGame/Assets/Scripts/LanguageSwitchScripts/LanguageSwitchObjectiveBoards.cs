@@ -27,6 +27,7 @@ public class LanguageSwitchObjectiveBoards : MonoBehaviour
     [Space]
     public Button Capa;
     public Button Immun;
+    public Button Weapon;
 
     public Sprite CapacityEng;
     public Sprite CapacityDutch;
@@ -34,9 +35,10 @@ public class LanguageSwitchObjectiveBoards : MonoBehaviour
     public Sprite ImmunityEng;
     public Sprite ImmunityDutch;
 
-   
+    public Sprite WeaponEng;
+    public Sprite WeaponDutch;
 
-
+  
     private void Awake()
     {
         if (LangSwitchBool.englishTxt)
@@ -62,6 +64,7 @@ public class LanguageSwitchObjectiveBoards : MonoBehaviour
 
             Capa.image.sprite = CapacityEng;
             Immun.image.sprite = ImmunityEng;
+            Weapon.image.sprite = WeaponEng;
 
         }
         else
@@ -87,6 +90,7 @@ public class LanguageSwitchObjectiveBoards : MonoBehaviour
 
             Capa.image.sprite = CapacityDutch;
             Immun.image.sprite = ImmunityDutch;
+            Weapon.image.sprite = WeaponDutch;
         }
        
     }

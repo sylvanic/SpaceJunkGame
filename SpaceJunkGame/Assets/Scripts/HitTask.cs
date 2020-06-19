@@ -7,7 +7,9 @@ public class HitTask : Objective
     private int hits;
     public int requiredHits;
 
-    public static string hitTaskTxt; 
+    public static string hitTaskTxt;
+
+    private GUIStyle guiStyle = new GUIStyle();
 
     private void Awake()
     {
@@ -19,7 +21,9 @@ public class HitTask : Objective
         {
             hitTaskTxt = "Word door een asteroid\ngeraakt: ";
         }
-       
+
+        guiStyle.normal.textColor = Color.white;
+        guiStyle.fontSize = 25;
 
     }
 
@@ -31,6 +35,7 @@ public class HitTask : Objective
         {
             hits = requiredHits;
         }
+
     }
 
 
@@ -41,10 +46,13 @@ public class HitTask : Objective
 
     public override void Complete()
     {
+        ResultScreens.checkChallengedCompleted = true;
+        guiStyle.normal.textColor = Color.black;
+
     }
 
     public override void DrawHUD()
     {
-        GUI.Label(new Rect(1565, 455, 300, 100),string.Format(hitTaskTxt +"{0}/{1}", hits, requiredHits), ObjectiveManager.guiStyle);
+        GUI.Label(new Rect(1565, 455, 300, 100),string.Format(hitTaskTxt +"{0}/{1}", hits, requiredHits), guiStyle);
     }
 }
