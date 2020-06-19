@@ -1376,6 +1376,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Smoke VFX
       objectReference: {fileID: 0}
+    - target: {fileID: 8431655650240795228, guid: b8b57e601546c9d4fb645e215266f2f0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8431655650240795229, guid: b8b57e601546c9d4fb645e215266f2f0,
         type: 3}
       propertyPath: m_LocalPosition.x
