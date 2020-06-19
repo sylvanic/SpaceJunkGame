@@ -86,7 +86,7 @@ public class LanguageSwitchTutorial : MonoBehaviour
         }
         else
         {
-            part1.text = "Gegroet, reiziger. Welkom bij Ruimte Concierge. Mijn naam is Astro, en ik zal jou instructeur zijn.";
+            part1.text = "Gegroet, reiziger. Welkom bij Ruimte Schoonmaker. Mijn naam is Astro, en ik zal jouw instructeur zijn.";
             part2.text = "We hebben een ernstig probleem! De baan van onze aarde wordt vervuild door ruimteafval!";
             part3.text = "Aan jou de taak om deze vervuiling op te ruimen.";
             part3point1.text = "Als je al weet hoe je moet spelen, druk op deze skip knop.";
@@ -95,10 +95,10 @@ public class LanguageSwitchTutorial : MonoBehaviour
             part5.fontSize = 20;
             part6.text = "Goed zo! Probeer nu rond te bewegen en 3 stukken afval te verzamelen.";
             part7.text = "Wanneer je 3 stukken afval hebt verzamelt, gooi ze weg op het ruimtestation.";
-            part8.text = "Goed gedaan! Probeer nu door een asteroid geraakt te worden.";
+            part8.text = "Goed gedaan! Probeer nu door een asteroïde geraakt te worden.";
             part9.text = "Wanneer je geraakt wordt, verlies je wat van je lading. Maar er is een manier om van deze obstakels af te komen.";
             part10.text = "Druk op deze knop om je laser te schieten.";
-            part11.text = "Goed zo! Deze laser kan astroiden verwoesten. Nu weet je hoe je jezelf kan beschermen.";
+            part11.text = "Goed zo! Deze laser kan asteroïden verwoesten. Nu weet je hoe je jezelf kan beschermen.";
             part11point1.text = "Er is nog een ding dat je kan doen met je laser.";
             part11point2.text = "Zoek rond deze omgeving. Je zal een grote brandende stuk ruimteafval vinden.";
             part11point3.text = "Deze is te groot om op te pakken. Schiet het met je laser om hem op te ruimen. Probeer het nu.";
@@ -108,10 +108,10 @@ public class LanguageSwitchTutorial : MonoBehaviour
             part11point7.text = "Dit is de booster upgrade. Hiermee kan je sneller gaan met je schip.";
             part11point8.text = "Dit is de wapen upgrade. Hiermee is je laser krachtiger.";
             part11point9.text = "Dit is de capaciteitsupgrade. Hiermee kan je meer afval dragen.";
-            part11point10.text = "Dit is de immuniteitsupgrade. Hiermee wordt je voor een korte tijd onraakbaar door astroiden.";
+            part11point10.text = "Dit is de immuniteitsupgrade. Hiermee wordt je voor een korte tijd onraakbaar door asteroïden.";
             part12.text = "Hier staan je doelen en prestaties. Als je ze voltooit, zul je bonuspunten krijgen.";
             part13.text = "Je tijd is beperkt, dus denk snel, de hemelkaart zal je de weg wijzen.";
-            part14.text = "Hemelkaart legenda\n\n-Blauw: ruimteafval\n\n-Groen: Het ruimtestation\n\n-Rood: astroiden";
+            part14.text = "Hemelkaart legenda\n\n-Blauw: ruimteafval\n\n-Groen: Het ruimtestation\n\n-Rood: asteroïden";
             part15.text = "Dat was het voor de tutorial, ben je klaar voor het hoofdspel?";
             part15yes.text = "Klaar";
             part15no.text = "Niet klaar (herspeel instructies)";

@@ -76,7 +76,7 @@ public class LanguageSwitchRateGame : MonoBehaviour
             F1DropDown.options[2].text = "Overige";
             F1Next.text = "Volgende";
 
-            P2Title.text = "Beoordeel ons Spel!";
+            P2Title.text = "Beoordeel ons spel!";
             P2Learning.text = "Was het een goede leerervaring?";
             P2Finish.text = "Einde";
 
