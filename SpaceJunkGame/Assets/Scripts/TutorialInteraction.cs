@@ -10,6 +10,7 @@ public class TutorialInteraction : MonoBehaviour
     public GameObject intro1;
     public GameObject intro2;
     public GameObject intro3;
+    public GameObject intro3point1;
     public GameObject intro4;
     public GameObject intro5;
     public GameObject intro6;
@@ -85,6 +86,18 @@ public class TutorialInteraction : MonoBehaviour
         {
             intro3.SetActive(false);
             thirdIntro = false;
+            StopAllCoroutines();
+            intro3point1.SetActive(true);
+        }
+    }
+
+    bool threepointoneIntro = true;
+    public void SkipIntro3point1()
+    {
+        if (threepointoneIntro)
+        {
+            intro3point1.SetActive(false);
+            threepointoneIntro = false;
             StopAllCoroutines();
             intro4.SetActive(true);
         }
@@ -436,6 +449,9 @@ public class TutorialInteraction : MonoBehaviour
         intro3.SetActive(true);
         yield return new WaitForSeconds(5);
         intro3.SetActive(false);
+        intro3point1.SetActive(true);
+        yield return new WaitForSeconds(5);
+        intro3point1.SetActive(false);
         intro4.SetActive(true);
         yield return new WaitForSeconds(4);
         intro4.SetActive(false);
