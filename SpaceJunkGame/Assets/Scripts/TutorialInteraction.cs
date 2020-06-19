@@ -33,6 +33,8 @@ public class TutorialInteraction : MonoBehaviour
     public GameObject intro13;
     public GameObject intro14;
     public GameObject intro15;
+    public GameObject intro16;
+    public GameObject intro17;
     public GameObject astronautInteraction;
     public GameObject astronautAppear;
     public PlayerStats playerStats;
@@ -392,19 +394,6 @@ public class TutorialInteraction : MonoBehaviour
         }
     }
 
-    bool fifteenthIntro = true;
-    public void SkipIntro15()
-    {
-        if (fifteenthIntro)
-        {
-            intro15.SetActive(false);
-            fifteenthIntro = false;
-            astronautInteraction.SetActive(false);
-            StopAllCoroutines();
-            SceneManager.LoadScene("SelectLevel");
-        }
-    }
-
     public void NextScene()
     {
         SceneManager.LoadScene("SelectLevel");
@@ -576,10 +565,6 @@ public class TutorialInteraction : MonoBehaviour
         yield return new WaitForSeconds(5);
         intro14.SetActive(false);
         intro15.SetActive(true);
-        yield return new WaitForSeconds(4);
-        intro15.SetActive(false);
-        astronautInteraction.SetActive(false);
-        SceneManager.LoadScene("SelectLevel");
     }
 
     public void DetectInput()
@@ -632,5 +617,29 @@ public class TutorialInteraction : MonoBehaviour
     public void LaserShot()
     {
         laserHasBeenShot = true;
+    }
+
+    public void Ready()
+    {
+        intro15.SetActive(false);
+        intro16.SetActive(true);
+    }
+
+    public void Ready2()
+    {
+        intro16.SetActive(false);
+        SceneManager.LoadScene("SelectLevel");
+    }
+
+    public void NotReady()
+    {
+        intro15.SetActive(false);
+        intro17.SetActive(true);
+    }
+
+    public void NotReady2()
+    {
+        intro17.SetActive(false);
+        SceneManager.LoadScene("Tutorial");
     }
 }
