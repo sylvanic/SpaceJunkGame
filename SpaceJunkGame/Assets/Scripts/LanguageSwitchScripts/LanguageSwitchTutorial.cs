@@ -70,7 +70,7 @@ public class LanguageSwitchTutorial : MonoBehaviour
             part11point10.text = "This is the immunity upgrade. You're invincible from asteroids with his for a while.";
             part12.text = "Objectives and achievements will appear here. Completing these give you bonus points.";
             part13.text = "Time is also limited, so think fast while the map will show you the way.";
-            part14.text = "Minimap Legend:\n- Blue: Space trash.\n-Green: The space station.\n- Red: Asteroids.";
+            part14.text = "Minimap Indicator\n\n- Blue: Space trash\n\n-Green: The space station\n\n- Red: Asteroids";
             part15.text = "That is it for the tutorial, are you ready for the main game?";
             part15yes.text = "Ready";
             part15no.text = "Not Ready (replay tutorial)";
