@@ -6,15 +6,13 @@ using UnityEngine.SceneManagement;
 public class ObjectiveManager : MonoBehaviour
 {
     public Objective[] objective;
-    public static GUIStyle guiStyle = new GUIStyle();
-    //Font myFont = (Font)Resources.Load("Fonts/Oxanium-Regular SDF", typeof(Font));
 
     private void Awake()
     {
         objective = GetComponents<Objective>();
 
 
-        if (SceneManager.GetActiveScene().name == "Level_2" || SceneManager.GetActiveScene().name == "Level_3")
+        if (SceneManager.GetActiveScene().name == "GameTest" || SceneManager.GetActiveScene().name == "Level_2" || SceneManager.GetActiveScene().name == "Level_3")
         {
             PlayerStats.hitAmount = 0;
             PlayerStats.totalScore = 0;
@@ -24,12 +22,11 @@ public class ObjectiveManager : MonoBehaviour
 
     private void OnGUI()
     {
-        guiStyle.normal.textColor = Color.white;
-        guiStyle.fontSize = 25;
 
         foreach (var objective in objective)
         {
             objective.DrawHUD();
+
         }
     }
 
@@ -40,6 +37,7 @@ public class ObjectiveManager : MonoBehaviour
             if (objective.IsComplete())
             {
                 objective.Complete();
+                
             }
         }
     }
