@@ -33,6 +33,8 @@ public class TutorialInteraction : MonoBehaviour
     public GameObject intro13;
     public GameObject intro14;
     public GameObject intro15;
+    public GameObject intro16;
+    public GameObject intro17;
     public GameObject astronautInteraction;
     public GameObject astronautAppear;
     public PlayerStats playerStats;
