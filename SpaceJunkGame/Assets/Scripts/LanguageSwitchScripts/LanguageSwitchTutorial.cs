@@ -74,6 +74,7 @@ public class LanguageSwitchTutorial : MonoBehaviour
             part15.text = "That is it for the tutorial, are you ready for the main game?";
             part15yes.text = "Ready";
             part15no.text = "Not Ready (replay tutorial)";
+            part15no.fontSize = 12;
             part16.text = "Then good luck, and have fun!";
             part17.text = "Then we will go over this again.";
             Goal1.text = "Move your ship with the virtual joystick on your screen.";
@@ -114,6 +115,7 @@ public class LanguageSwitchTutorial : MonoBehaviour
             part15.text = "Dat was het voor de tutorial, ben je klaar voor het hoofdspel?";
             part15yes.text = "Klaar";
             part15no.text = "Niet klaar (herspeel instructies)";
+            part15no.fontSize = 15;
             part16.text = "Veel geluk, en veel speelplezier!";
             part17.text = "Dan zullen we weer overnieuw beginnen met deze instructie.";
             Goal1.text = "Beweeg je schip met het virtuele joystick.";
