@@ -1247,15 +1247,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5803922, g: 0.7137255, b: 0.8588236, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6315c45d517b5d44aa6cae8e716e977a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7df46a4d6c1cdac4f9cfe2f1dcb1ad79, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -3177,7 +3177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: edc0f7597c213684b99d77ac7f3944c9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 33c1594a5da52e14cafa29d1992b3023, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -3230,7 +3230,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5722397145215941135}
         m_MethodName: Confirmation
         m_Mode: 1
         m_Arguments:
@@ -4444,15 +4444,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.19607845, b: 0.31764707, a: 1}
+  m_Color: {r: 0.2509804, g: 0.5803922, b: 0.7529412, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6315c45d517b5d44aa6cae8e716e977a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: edc0f7597c213684b99d77ac7f3944c9, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -5673,15 +5673,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.19607845, b: 0.31764707, a: 1}
+  m_Color: {r: 0.252759, g: 0.58235085, b: 0.754717, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6315c45d517b5d44aa6cae8e716e977a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: edc0f7597c213684b99d77ac7f3944c9, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
