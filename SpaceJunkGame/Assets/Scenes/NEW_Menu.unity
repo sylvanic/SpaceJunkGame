@@ -4229,7 +4229,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.28235295, g: 0.77254903, b: 0.972549, a: 1}
     m_PressedColor: {r: 0.29803923, g: 0.24705882, b: 0.8509804, a: 1}
-    m_SelectedColor: {r: 0.29803923, g: 0.24705882, b: 0.8509804, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -6552,7 +6552,7 @@ RectTransform:
   m_GameObject: {fileID: 1416295945}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.95414, y: 0.95414, z: 0.95414}
   m_Children:
   - {fileID: 1664289004}
   m_Father: {fileID: 6653057}
@@ -6560,7 +6560,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 628, y: -352.5}
+  m_AnchoredPosition: {x: 595, y: -412}
   m_SizeDelta: {x: 591.6328, y: 197.32086}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1416295947
