@@ -11367,7 +11367,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Quit
+  m_text: 'QUIT
 
 '
   m_isRightToLeft: 0
@@ -11436,7 +11436,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 107.03262, z: 260.12244, w: 0}
+  m_margin: {x: -68.73498, y: 107.03262, z: 202.98119, w: 0}
   m_textInfo:
     textComponent: {fileID: 1795101075669182665}
     characterCount: 5

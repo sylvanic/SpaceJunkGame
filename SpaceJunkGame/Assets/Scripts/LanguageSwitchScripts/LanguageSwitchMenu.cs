@@ -40,7 +40,7 @@ public class LanguageSwitchMenu : MonoBehaviour
         {
             gameTitle.text = "Space Janitor";
             gameTitle.fontSize = 150;
-            startButton.text = "Start";
+            startButton.text = "START";
             writeYourName.text = "Write your name:";
             enterName.text = "Enter name...";
             Gender.text = "Gender:";
@@ -55,7 +55,7 @@ public class LanguageSwitchMenu : MonoBehaviour
             optionsButton.text = "Options";
             optionsButton.fontSize = 45;
             leaderboardButton.text = "Leaderboard";
-            quitButton.text = "Quit";
+            quitButton.text = "QUIT";
 
             leaderboard.text = "Leaderboard";
             playerLeaderboard.text = "PLAYER";
@@ -66,13 +66,13 @@ public class LanguageSwitchMenu : MonoBehaviour
             masterVolume.text = "Master Volume";
             sfxVolume.text = "SFX Volume";
             sfxVolume.fontSize = 60;
-            backButtonOptions.text = "Back";
+            backButtonOptions.text = "BACK";
         }
         else
         {
             gameTitle.text = "Ruimte Schoonmaker";
             gameTitle.fontSize = 100;
-            startButton.text = "Begin";
+            startButton.text = "BEGIN";
             writeYourName.text = "Schrijf je naam:";
             enterName.text = "Vul je naam in...";
             Gender.text = "Geslacht:";
@@ -87,7 +87,7 @@ public class LanguageSwitchMenu : MonoBehaviour
             optionsButton.text = "Instellingen";
             optionsButton.fontSize = 39;
             leaderboardButton.text = "Scorebord";
-            quitButton.text = "Afsluiten";
+            quitButton.text = "AFSLUITEN";
             quitButton.fontSize = 24.6f;
 
             leaderboard.text = "Scorebord";
@@ -100,7 +100,7 @@ public class LanguageSwitchMenu : MonoBehaviour
             masterVolume.text = "Hoofdvolume";
             sfxVolume.text = "Geluidseffectvolume";
             sfxVolume.fontSize = 42;
-            backButtonOptions.text = "Terug";
+            backButtonOptions.text = "TERUG";
         }
     }
 
