@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 8609672c4512a854a907a7c81e32e89d,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -11164,7 +11164,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Skip
+  m_Text: SKIP
 --- !u!222 &1837962252
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15332,7 +15332,7 @@ PrefabInstance:
     - target: {fileID: 5681993819051428137, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_text
-      value: Afsluiten
+      value: AFSLUITEN
       objectReference: {fileID: 0}
     - target: {fileID: 5681993819051428137, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -15446,6 +15446,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12800000, guid: 5e0617ff69747d7449119afc0aed81bc,
         type: 3}
+    - target: {fileID: 6166300212192025429, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_Text
+      value: DOELEN
+      objectReference: {fileID: 0}
     - target: {fileID: 6166300212305066140, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_Sprite
@@ -15533,6 +15538,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12800000, guid: 5e0617ff69747d7449119afc0aed81bc,
         type: 3}
+    - target: {fileID: 6166300212536317978, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_Text
+      value: UITDAGINGEN
+      objectReference: {fileID: 0}
     - target: {fileID: 6166300212536317980, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_IsActive
