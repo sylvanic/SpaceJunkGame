@@ -30,10 +30,10 @@ public class LanguageSwitchUI : MonoBehaviour
             Score.text = "Score: ";
             Score.fontSize = 34;
             GameTitle.text = "Space Janitor";
-            Quit.text = "Quit";
+            Quit.text = "QUIT";
             StorageCapacity.text = "Storage Capacity";
-            Objectives.text = "Objectives";
-            Challenges.text = "Challenges";
+            Objectives.text = "OBJECTIVES";
+            Challenges.text = "CHALLENGES";
             LaserTitle.text = "Laser";
 
             Confirm.text = "ALL progress will be LOST!";
@@ -47,10 +47,10 @@ public class LanguageSwitchUI : MonoBehaviour
             Score.text = "Punten: ";
             Score.fontSize = 30;
             GameTitle.text = "Ruimte Schoonmaker";
-            Quit.text = "Opgeven";
+            Quit.text = "OPGEVEN";
             StorageCapacity.text = "Opslagcapaciteit";
-            Objectives.text = "Doelen";
-            Challenges.text = "Uitdagingen";
+            Objectives.text = "DOELEN";
+            Challenges.text = "UITDAGINGEN";
             LaserTitle.text = "Laser";
             Confirm.text = "ALLE vooruitgang zal VERLOREN gaan!";
             ConfirmWarning.text = "Zeker dat U wilt stoppen?";

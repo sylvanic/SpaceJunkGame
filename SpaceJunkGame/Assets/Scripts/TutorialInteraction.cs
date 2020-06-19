@@ -10,6 +10,7 @@ public class TutorialInteraction : MonoBehaviour
     public GameObject intro1;
     public GameObject intro2;
     public GameObject intro3;
+    public GameObject intro3point1;
     public GameObject intro4;
     public GameObject intro5;
     public GameObject intro6;
@@ -32,6 +33,8 @@ public class TutorialInteraction : MonoBehaviour
     public GameObject intro13;
     public GameObject intro14;
     public GameObject intro15;
+    public GameObject intro16;
+    public GameObject intro17;
     public GameObject astronautInteraction;
     public GameObject astronautAppear;
     public PlayerStats playerStats;
@@ -85,6 +88,18 @@ public class TutorialInteraction : MonoBehaviour
         {
             intro3.SetActive(false);
             thirdIntro = false;
+            StopAllCoroutines();
+            intro3point1.SetActive(true);
+        }
+    }
+
+    bool threepointoneIntro = true;
+    public void SkipIntro3point1()
+    {
+        if (threepointoneIntro)
+        {
+            intro3point1.SetActive(false);
+            threepointoneIntro = false;
             StopAllCoroutines();
             intro4.SetActive(true);
         }
@@ -379,19 +394,6 @@ public class TutorialInteraction : MonoBehaviour
         }
     }
 
-    bool fifteenthIntro = true;
-    public void SkipIntro15()
-    {
-        if (fifteenthIntro)
-        {
-            intro15.SetActive(false);
-            fifteenthIntro = false;
-            astronautInteraction.SetActive(false);
-            StopAllCoroutines();
-            SceneManager.LoadScene("SelectLevel");
-        }
-    }
-
     public void NextScene()
     {
         SceneManager.LoadScene("SelectLevel");
@@ -436,6 +438,9 @@ public class TutorialInteraction : MonoBehaviour
         intro3.SetActive(true);
         yield return new WaitForSeconds(5);
         intro3.SetActive(false);
+        intro3point1.SetActive(true);
+        yield return new WaitForSeconds(5);
+        intro3point1.SetActive(false);
         intro4.SetActive(true);
         yield return new WaitForSeconds(4);
         intro4.SetActive(false);
@@ -560,10 +565,6 @@ public class TutorialInteraction : MonoBehaviour
         yield return new WaitForSeconds(5);
         intro14.SetActive(false);
         intro15.SetActive(true);
-        yield return new WaitForSeconds(4);
-        intro15.SetActive(false);
-        astronautInteraction.SetActive(false);
-        SceneManager.LoadScene("SelectLevel");
     }
 
     public void DetectInput()
@@ -616,5 +617,29 @@ public class TutorialInteraction : MonoBehaviour
     public void LaserShot()
     {
         laserHasBeenShot = true;
+    }
+
+    public void Ready()
+    {
+        intro15.SetActive(false);
+        intro16.SetActive(true);
+    }
+
+    public void Ready2()
+    {
+        intro16.SetActive(false);
+        SceneManager.LoadScene("SelectLevel");
+    }
+
+    public void NotReady()
+    {
+        intro15.SetActive(false);
+        intro17.SetActive(true);
+    }
+
+    public void NotReady2()
+    {
+        intro17.SetActive(false);
+        SceneManager.LoadScene("Tutorial");
     }
 }
