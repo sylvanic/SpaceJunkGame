@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public Projectile currentProjectile;
     public Projectile upgradedProjectile;
     private SoundManager soundManager;
+    private LaserCooldown_UI laserCooldown_UI;
 
     Transform myT;
 
@@ -25,12 +26,12 @@ public class PlayerController : MonoBehaviour
         currentProjectile = projectile;
         myT = transform;
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
+        laserCooldown_UI= GameObject.Find("UI_Canvas").GetComponent<LaserCooldown_UI>();
     }
     private void Update()
     {
         Turn();
-        Thrust();
-     
+        Thrust(); 
     }
 
 
@@ -75,13 +76,12 @@ public class PlayerController : MonoBehaviour
     void Turn()
     {
         float yaw = turnSpeed * Time.deltaTime * joystick.Horizontal;
-
         myT.Rotate(0, yaw, 0);
-
     }
 
     public void Shoot()
     {   
+            laserCooldown_UI.isTriggered=true;
             if(onCooldown == false)
             {
             soundManager.Shoot.Play();
