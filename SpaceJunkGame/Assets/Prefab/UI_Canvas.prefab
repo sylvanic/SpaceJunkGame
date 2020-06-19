@@ -3555,7 +3555,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Doelen
+  m_Text: DOELEN
 --- !u!1 &6166300212305066142
 GameObject:
   m_ObjectHideFlags: 0
@@ -3784,7 +3784,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Uitdagingen
+  m_Text: UITDAGINGEN
 --- !u!1 &6344046908629424840
 GameObject:
   m_ObjectHideFlags: 0
