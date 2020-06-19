@@ -111,7 +111,7 @@ public class LanguageSwitchTutorial : MonoBehaviour
             part11point10.text = "Dit is de immuniteitsupgrade. Hiermee wordt je voor een korte tijd onraakbaar door astroiden.";
             part12.text = "Hier staan je doelen en prestaties. Als je ze voltooit, zul je bonuspunten krijgen.";
             part13.text = "Je tijd is beperkt, dus denk snel, de hemelkaart zal je de weg wijzen.";
-            part14.text = "Hemelkaart legenda:\n-Blauw: ruimteafval.\n-Groen: Het ruimtestation.\n-Rood: astroiden.";
+            part14.text = "Hemelkaart legenda\n\n-Blauw: ruimteafval\n\n-Groen: Het ruimtestation\n\n-Rood: astroiden";
             part15.text = "Dat was het voor de tutorial, ben je klaar voor het hoofdspel?";
             part15yes.text = "Klaar";
             part15no.text = "Niet klaar (herspeel instructies)";
