@@ -7,6 +7,7 @@ public class LanguageSwitchTutorial : MonoBehaviour
     public Text part1;
     public Text part2;
     public Text part3;
+    public Text part3point1;
     public Text part4;
     public Text part5;
     public Text part6;
@@ -42,7 +43,8 @@ public class LanguageSwitchTutorial : MonoBehaviour
         {
             part1.text = "Greetings, traveller. Welcome to Space Janitor. My name is Astro and I'll be your instructor.";
             part2.text = "We have a serious problem on hand! Earth's orbit is being polluted by space junk!";
-            part3.text = "We need your help to clean up this mess. ";
+            part3.text = "It's your job to handle the situation and clean up this mess.";
+            part3point1.text = "If you know how to play already, please press the skip button, here.";
             part4.text = "Don't worry, I'll guide you through the tutorial.";
             part5.text = "Lets start with the basics. To control your spaceship, press this virtual joystick here.";
             part5.fontSize = 24;
@@ -77,7 +79,8 @@ public class LanguageSwitchTutorial : MonoBehaviour
         {
             part1.text = "Gegroet, reiziger. Welkom bij Ruimte Concierge. Mijn naam is Astro, en ik zal jou instructeur zijn.";
             part2.text = "We hebben een ernstig probleem! De baan van onze aarde wordt vervuild door ruimteafval!";
-            part3.text = "We hebben jou hulp nodig om deze vervuiling op te ruimen.";
+            part3.text = "Aan jou de taak om deze vervuiling op te ruimen.";
+            part3point1.text = "Als je al weet hoe je moet spelen, druk op deze skip knop.";
             part4.text = "Maak je geen zorgen, ik zal je leiden door deze les.";
             part5.text = "Laten we met het basis beginnen. Om je ruimteschip te bedienen, gebruik deze virtuele joystick.";
             part5.fontSize = 20;
