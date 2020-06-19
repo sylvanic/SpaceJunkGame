@@ -47,7 +47,7 @@ public class LanguageSwitchUI : MonoBehaviour
             Score.text = "Punten: ";
             Score.fontSize = 30;
             GameTitle.text = "Ruimte Schoonmaker";
-            Quit.text = "Opgeven";
+            Quit.text = "OPGEVEN";
             StorageCapacity.text = "Opslagcapaciteit";
             Objectives.text = "DOELEN";
             Challenges.text = "UITDAGINGEN";
