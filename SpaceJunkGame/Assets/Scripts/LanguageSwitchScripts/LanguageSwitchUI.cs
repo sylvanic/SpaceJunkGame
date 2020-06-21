@@ -20,6 +20,19 @@ public class LanguageSwitchUI : MonoBehaviour
     public TextMeshProUGUI ConfirmWarning;
     public TextMeshProUGUI ConfirmYes;
     public TextMeshProUGUI ConfirmNo;
+    [Space]
+    public Button Capa;
+    public Button Immun;
+    public Button Weapon;
+
+    public Sprite CapacityEng;
+    public Sprite CapacityDutch;
+
+    public Sprite ImmunityEng;
+    public Sprite ImmunityDutch;
+
+    public Sprite WeaponEng;
+    public Sprite WeaponDutch;
 
 
     private void Awake()
@@ -40,6 +53,10 @@ public class LanguageSwitchUI : MonoBehaviour
             ConfirmWarning.text = "Sure you want to quit?";
             ConfirmYes.text = "YES";
             ConfirmNo.text = "NO";
+
+            Capa.image.sprite = CapacityEng;
+            Immun.image.sprite = ImmunityEng;
+            Weapon.image.sprite = WeaponEng;
         }
         else
         {
@@ -56,6 +73,10 @@ public class LanguageSwitchUI : MonoBehaviour
             ConfirmWarning.text = "Zeker dat U wilt stoppen?";
             ConfirmYes.text = "JA";
             ConfirmNo.text = "NEE";
+
+            Capa.image.sprite = CapacityDutch;
+            Immun.image.sprite = ImmunityDutch;
+            Weapon.image.sprite = WeaponDutch;
         }
     }
 }
