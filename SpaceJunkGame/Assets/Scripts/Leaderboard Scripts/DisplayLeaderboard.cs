@@ -70,7 +70,7 @@ public class DisplayLeaderboard : MonoBehaviour
 
     private void CreatePlayersScoreTab(PlayersInfo playerResults, Transform container, List<Transform> transformList)
     {
-        float templateHeight = 30f;
+        float templateHeight = 50f;
         Transform scoreTab = Instantiate(playerTemplate, container);
         RectTransform scoreTabTransform = scoreTab.GetComponent<RectTransform>();
         scoreTabTransform.anchoredPosition = new Vector2(0, -templateHeight * transformList.Count);
