@@ -14,7 +14,6 @@ public class SaveInfo : MonoBehaviour
     {
         Save();
         Load();
-
     }
     
     private void Awake()
