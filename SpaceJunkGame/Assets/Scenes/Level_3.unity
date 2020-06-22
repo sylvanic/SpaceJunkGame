@@ -2811,6 +2811,11 @@ PrefabInstance:
       propertyPath: RocketEngine
       value: 
       objectReference: {fileID: 1646641045}
+    - target: {fileID: 4068224992584141242, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: TimerSound
+      value: 
+      objectReference: {fileID: 484017953}
     - target: {fileID: 4068224992584141243, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3086,6 +3091,12 @@ PrefabInstance:
 --- !u!82 &484017952 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 6431457598712121562, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+    type: 3}
+  m_PrefabInstance: {fileID: 484017951}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &484017953 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8196401795420498946, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
     type: 3}
   m_PrefabInstance: {fileID: 484017951}
   m_PrefabAsset: {fileID: 0}

@@ -50,7 +50,7 @@ public class CountdownTimer : MonoBehaviour
                 countdown.color = Color.red;
                 countdown.text = _currentCountdownValue.ToString();
                 countdown.fontSize += fontScale;
-                soundManager.Shoot.Play();
+                soundManager.TimerSound.Play();
             }
         }
 

@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 92ddd8623b07cc24b96d23bea348e992,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4691,6 +4691,11 @@ PrefabInstance:
       propertyPath: RocketEngine
       value: 
       objectReference: {fileID: 850889619}
+    - target: {fileID: 4068224992584141242, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: TimerSound
+      value: 
+      objectReference: {fileID: 1237114553}
     - target: {fileID: 4068224992584141243, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6206,6 +6211,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+--- !u!82 &1237114553 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8196401795420498946, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+    type: 3}
+  m_PrefabInstance: {fileID: 850889618}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1261293352
 PrefabInstance:
   m_ObjectHideFlags: 0
