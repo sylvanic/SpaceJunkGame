@@ -26,7 +26,9 @@ public class PlayerController : MonoBehaviour
         currentProjectile = projectile;
         myT = transform;
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
+        if(laserCooldown_UI!=null){
         laserCooldown_UI= GameObject.Find("UI_Canvas").GetComponent<LaserCooldown_UI>();
+        }
     }
     private void Update()
     {
