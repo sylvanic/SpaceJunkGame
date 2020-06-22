@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 87f618fb795243d459e0e7f59340586a,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2811,6 +2811,11 @@ PrefabInstance:
       propertyPath: RocketEngine
       value: 
       objectReference: {fileID: 1646641045}
+    - target: {fileID: 4068224992584141242, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: TimerSound
+      value: 
+      objectReference: {fileID: 484017953}
     - target: {fileID: 4068224992584141243, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3086,6 +3091,12 @@ PrefabInstance:
 --- !u!82 &484017952 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 6431457598712121562, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+    type: 3}
+  m_PrefabInstance: {fileID: 484017951}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &484017953 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8196401795420498946, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
     type: 3}
   m_PrefabInstance: {fileID: 484017951}
   m_PrefabAsset: {fileID: 0}
@@ -11386,6 +11397,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: GunUpgrade
+      objectReference: {fileID: 0}
+    - target: {fileID: 2063732744632923594, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2134777022655923242, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
