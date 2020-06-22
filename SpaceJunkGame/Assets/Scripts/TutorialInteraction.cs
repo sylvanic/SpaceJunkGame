@@ -442,6 +442,7 @@ public class TutorialInteraction : MonoBehaviour
 
     private IEnumerator StartIntro1()
     {
+        helpButton.SetActive(false);
         yield return new WaitForSeconds(1);
         astronautAppear.SetActive(true);
         yield return new WaitForSeconds(2);
@@ -586,7 +587,6 @@ public class TutorialInteraction : MonoBehaviour
         helpButton.SetActive(true);
         yield return new WaitForSeconds(5);
         intro14point1.SetActive(false);
-        helpButton.SetActive(false);
         intro15.SetActive(true);
     }
 
