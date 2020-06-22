@@ -962,7 +962,7 @@ PrefabInstance:
     - target: {fileID: 5357747680395809897, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6082087778038994667, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
         type: 3}
@@ -972,7 +972,7 @@ PrefabInstance:
     - target: {fileID: 6154235806678978188, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6720799646772329473, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
         type: 3}
@@ -4691,6 +4691,11 @@ PrefabInstance:
       propertyPath: RocketEngine
       value: 
       objectReference: {fileID: 850889619}
+    - target: {fileID: 4068224992584141242, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+        type: 3}
+      propertyPath: TimerSound
+      value: 
+      objectReference: {fileID: 1237114553}
     - target: {fileID: 4068224992584141243, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6206,6 +6211,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+--- !u!82 &1237114553 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8196401795420498946, guid: ae1dac6b6df6eaf4bad90c9ba46ce4c4,
+    type: 3}
+  m_PrefabInstance: {fileID: 850889618}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1261293352
 PrefabInstance:
   m_ObjectHideFlags: 0
