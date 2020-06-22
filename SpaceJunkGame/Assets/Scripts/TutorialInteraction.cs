@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEditor;
 
 public class TutorialInteraction : MonoBehaviour
 {
@@ -32,6 +33,7 @@ public class TutorialInteraction : MonoBehaviour
     public GameObject intro12;
     public GameObject intro13;
     public GameObject intro14;
+    public GameObject intro14point1;
     public GameObject intro15;
     public GameObject intro16;
     public GameObject intro17;
@@ -48,6 +50,7 @@ public class TutorialInteraction : MonoBehaviour
     public GameObject goal4;
     public GameObject goal5;
     public GameObject goal6;
+    public GameObject helpButton;
 
     bool intro2popup = false;
     bool intro3popup = false;
@@ -390,17 +393,32 @@ public class TutorialInteraction : MonoBehaviour
             intro14.SetActive(false);
             fourteenthIntro = false;
             StopAllCoroutines();
+            intro14point1.SetActive(true);
+            helpButton.SetActive(true);
+        }
+    }
+
+    bool fourteenpoint1Intro = true;
+    public void SkipIntro14point1()
+    {
+        if (fourteenpoint1Intro)
+        {
+            intro14point1.SetActive(false);
+            fourteenpoint1Intro = false;
+            StopAllCoroutines();
             intro15.SetActive(true);
         }
     }
 
     public void NextScene()
     {
+        helpButton.SetActive(false);
         SceneManager.LoadScene("SelectLevel");
     }
 
     public void GoToMainMenu()
     {
+        helpButton.SetActive(false);
         SceneManager.LoadScene("NEW_Menu");
     }
 
@@ -564,6 +582,11 @@ public class TutorialInteraction : MonoBehaviour
         intro14.SetActive(true);
         yield return new WaitForSeconds(5);
         intro14.SetActive(false);
+        intro14point1.SetActive(true);
+        helpButton.SetActive(true);
+        yield return new WaitForSeconds(5);
+        intro14point1.SetActive(false);
+        helpButton.SetActive(false);
         intro15.SetActive(true);
     }
 
