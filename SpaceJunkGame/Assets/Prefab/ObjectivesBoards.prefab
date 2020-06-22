@@ -2627,12 +2627,12 @@ MonoBehaviour:
   Capa: {fileID: 8606638223094086316}
   Immun: {fileID: 8606638222683339205}
   Weapon: {fileID: 8606638223903797494}
-  CapacityEng: {fileID: 21300000, guid: 90aed7e27befedb4ca902e55e169a839, type: 3}
-  CapacityDutch: {fileID: 21300000, guid: 95072169b3e44d943833671a6ee798f4, type: 3}
-  ImmunityEng: {fileID: 21300000, guid: 0edb198c418697947bc09e47d17d580e, type: 3}
-  ImmunityDutch: {fileID: 21300000, guid: 41dd3326cbd43974aa11192d242401ad, type: 3}
-  WeaponEng: {fileID: 21300000, guid: c7f4654c00d048a4e91e671502d0ba63, type: 3}
-  WeaponDutch: {fileID: 21300000, guid: 1fd81a479a3bdbb4b8782e658fb699d2, type: 3}
+  CapacityEng: {fileID: 21300000, guid: a9047a30b6aec76409aa61849f331ee2, type: 3}
+  CapacityDutch: {fileID: 21300000, guid: 37c8c5432dc0fc740ad6b42381472c48, type: 3}
+  ImmunityEng: {fileID: 21300000, guid: fb27992dbc5086840ab76227be4b797b, type: 3}
+  ImmunityDutch: {fileID: 21300000, guid: 12987e968e4d00540a276ccf36fc347b, type: 3}
+  WeaponEng: {fileID: 21300000, guid: ba41e074c8698d541b0e1a0a174054b5, type: 3}
+  WeaponDutch: {fileID: 21300000, guid: b1cd12c48e2e5ca4cabad8c62aa10707, type: 3}
 --- !u!1 &6565068981614104473
 GameObject:
   m_ObjectHideFlags: 0
@@ -5064,7 +5064,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3915890196991563939
 RectTransform:
   m_ObjectHideFlags: 0
