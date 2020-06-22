@@ -47,12 +47,14 @@ public class HitTask : Objective
     public override void Complete()
     {
         ResultScreens.checkChallengedCompleted = true;
-        guiStyle.normal.textColor = Color.black;
+        guiStyle.normal.textColor = Color.yellow;
+       
 
     }
 
     public override void DrawHUD()
     {
-        guiStyle.normal.textColor = Color.HSVToRGB(1f, 0.8f, 0.01568628f);
+        
+        GUI.Label(new Rect(1565, 455, 300, 100), string.Format(hitTaskTxt + "{0}/{1}", hits, requiredHits), guiStyle);
     }
 }
