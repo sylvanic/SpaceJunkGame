@@ -29,6 +29,7 @@ public class LanguageSwitchTutorial : MonoBehaviour
     public Text part12;
     public Text part13;
     public Text part14;
+    public Text part14point1;
     public Text part15;
     public Text part15yes;
     public Text part15no;
@@ -71,6 +72,7 @@ public class LanguageSwitchTutorial : MonoBehaviour
             part12.text = "Objectives and achievements will appear here. Completing these give you bonus points.";
             part13.text = "Time is also limited, so think fast while the map will show you the way.";
             part14.text = "Minimap Indicator\n\n- Blue: Space trash\n\n-Green: The space station\n\n- Red: Asteroids";
+            part14point1.text = "If you ever need help, press the ? here to read up on what I teached you here.";
             part15.text = "That is it for the tutorial, are you ready for the main game?";
             part15yes.text = "Ready";
             part15no.text = "Not Ready (replay tutorial)";
@@ -112,6 +114,7 @@ public class LanguageSwitchTutorial : MonoBehaviour
             part12.text = "Hier staan je doelen en prestaties. Als je ze voltooit, zul je bonuspunten krijgen.";
             part13.text = "Je tijd is beperkt, dus denk snel, de hemelkaart zal je de weg wijzen.";
             part14.text = "Hemelkaart legenda\n\n-Blauw: ruimteafval\n\n-Groen: Het ruimtestation\n\n-Rood: asteroïden";
+            part14point1.text = "Als je ooit hulp nodig hebt, druk op de ? om weer hulp te krijgen.";
             part15.text = "Dat was het voor de tutorial, ben je klaar voor het hoofdspel?";
             part15yes.text = "Klaar";
             part15no.text = "Niet klaar (herspeel instructies)";
