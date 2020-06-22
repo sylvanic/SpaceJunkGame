@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ProjectileUpgraded : Projectile
 {
+    public GameObject explosionShootPrefab;
     // Start is called before the first frame update
     private void Start()
     {
@@ -20,6 +21,7 @@ public class ProjectileUpgraded : Projectile
         if(other.gameObject.tag=="Asteroid")
         {
             other.gameObject.SetActive(false);
+            Instantiate(explosionShootPrefab, gameObject.transform.position, Quaternion.identity);
         }
     }
 }
