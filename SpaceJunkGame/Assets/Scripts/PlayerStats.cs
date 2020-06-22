@@ -26,6 +26,7 @@ public class PlayerStats : MonoBehaviour
 
 
     public GameObject explosionPrefab;
+    
 
     void Start()
     {
@@ -118,6 +119,7 @@ public class PlayerStats : MonoBehaviour
             Debug.Log("!!!!!!asteroid collision idk");
             other.gameObject.SetActive(false);
             StartCoroutine(MeshBlinking(3,.5f));
+            
         }
     }
 
