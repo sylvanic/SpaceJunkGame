@@ -4,12 +4,15 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using System.Security;
+using System.Threading;
 
 public class CountdownTimer : MonoBehaviour
 {
     // Start is called before the first frame update
     public float _currentCountdownValue;
     public TextMeshProUGUI _timerSeconds;
+    public TextMeshProUGUI countdown;
+    private int fontScale = 40;
     private SoundManager soundManager;
 
     public string SceneName;
@@ -19,6 +22,7 @@ public class CountdownTimer : MonoBehaviour
         // _timerSeconds = GetComponent<TextMeshProUGUI>();
         StartCoroutine(StartCountDown());
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
+
 
     }
 
@@ -39,7 +43,17 @@ public class CountdownTimer : MonoBehaviour
         {
             yield return new WaitForSeconds(1.0f);
             _currentCountdownValue--;
+
+            if(_currentCountdownValue <= 5 && _currentCountdownValue >= 1)
+            {
+                countdown.gameObject.SetActive(true);
+                countdown.color = Color.red;
+                countdown.text = _currentCountdownValue.ToString();
+                countdown.fontSize += fontScale;
+                soundManager.TimerSound.Play();
+            }
         }
+
         //CHANGE SCENE ONCE TIME IS UP
         Debug.Log("bruh moment #3");
         soundManager.TimerBuzzer.Play();

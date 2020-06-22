@@ -10,7 +10,7 @@ public class PickUpTask : Objective
 
     public static string pickUpTaskTxt;
 
-    private GUIStyle guiStyle = new GUIStyle();
+    public GUIStyle guiStyle = new GUIStyle();
 
     private void Awake()
     {
@@ -44,11 +44,11 @@ public class PickUpTask : Objective
 
     public override void Complete()
     {
-        guiStyle.normal.textColor = Color.black;
+        guiStyle.normal.textColor = Color.yellow;
     }
 
     public override void DrawHUD()
     {
-             GUI.Label(new Rect(1565, 285, 300, 100),string.Format(pickUpTaskTxt + "{0}/{1}", junk, requiredJunk), guiStyle);
+        GUI.Label(new Rect(1565, 285, 300, 100), string.Format(pickUpTaskTxt + "{0}/{1}", junk, requiredJunk), guiStyle);
     }
 }

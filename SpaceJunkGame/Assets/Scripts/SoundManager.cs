@@ -26,6 +26,7 @@ public class SoundManager : MonoBehaviour
     [Header("UI & HUD")]
     public AudioSource MinimapRadar;
     public AudioSource TimerBuzzer;
+    public AudioSource TimerSound;
     public AudioSource CapacityFull;
     public AudioSource ChallengeCompleted;
 
