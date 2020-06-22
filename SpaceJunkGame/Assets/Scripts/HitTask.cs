@@ -9,7 +9,7 @@ public class HitTask : Objective
 
     public static string hitTaskTxt;
 
-    public GUIStyle guiStyle = new GUIStyle();
+    private GUIStyle guiStyle = new GUIStyle();
 
     private void Awake()
     {
