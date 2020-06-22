@@ -9355,6 +9355,8 @@ GameObject:
   - component: {fileID: 6226893797725292508}
   - component: {fileID: 6294277499455553108}
   - component: {fileID: 8538113258669750937}
+  - component: {fileID: 2052049103569231133}
+  - component: {fileID: 2052049103569231132}
   m_Layer: 5
   m_Name: GameComplete
   m_TagString: Untagged
@@ -9362,6 +9364,31 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2052049103569231132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052049103569231131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aae0ef1bec3097e48bd58e0f0fa6f3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2052049103569231133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052049103569231131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c38de437879e9ca41a7fa431f072beb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playersName: {fileID: 1027420230}
 --- !u!114 &2336395566702494272
 MonoBehaviour:
   m_ObjectHideFlags: 0
