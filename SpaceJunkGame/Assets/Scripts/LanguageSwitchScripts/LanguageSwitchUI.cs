@@ -14,7 +14,10 @@ public class LanguageSwitchUI : MonoBehaviour
     public Text page2Text2;
     public Text page3Text1;
     public Text page3Text2;
-
+    public Text page4Text1;
+    public Text page4Text2;
+    public Text page5Text1;
+    public Text page5Text2;
     public Text StorageCapacity;
 
     public Text Objectives;
@@ -60,6 +63,10 @@ public class LanguageSwitchUI : MonoBehaviour
             page2Text2.text = "Avoid asteroids; they remove the trash you collected.";
             page3Text1.text = "To collect big space junk you must shoot them with your laser.";
             page3Text2.text = "Try doing all of this within the given amount of time, and get the highest score possible.";
+            page4Text1.text = "This is the booster upgrade. It will let you go faster with your ship.";
+            page4Text2.text = "This is the weapon upgrade. It will make your laser more powerful.";
+            page5Text1.text = "This is the capacity upgrade. With this, you can carry more junk.";
+            page5Text2.text = "This is the immunity upgrade. You're invincible from asteroids with his for a while.";
 
             Confirm.text = "ALL progress will be LOST!";
             ConfirmWarning.text = "Sure you want to quit?";
@@ -91,6 +98,10 @@ public class LanguageSwitchUI : MonoBehaviour
             page2Text2.text = "Vermijd asteroïden; ze verwijderen het afval dat je hebt verzamelt.";
             page3Text1.text = "Om grote ruimteafval te verzamelen moet je ze eerst schieten met je laser.";
             page3Text2.text = "Probeer dit allemaal te doen binnen de gegeven tijd, en probeer de hoogste score te krijgen.";
+            page4Text1.text = "Dit is de booster upgrade. Hiermee kan je sneller gaan met je schip.";
+            page4Text2.text = "Dit is de wapen upgrade. Hiermee is je laser krachtiger.";
+            page5Text1.text = "Dit is de capaciteitsupgrade. Hiermee kan je meer afval dragen.";
+            page5Text2.text = "Dit is de immuniteitsupgrade. Hiermee wordt je voor een korte tijd onraakbaar door asteroïden.";
 
             Capa.image.sprite = CapacityDutch;
             Immun.image.sprite = ImmunityDutch;
