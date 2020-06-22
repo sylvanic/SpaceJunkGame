@@ -6,6 +6,8 @@ public class Projectile : MonoBehaviour
 {
     protected float speed = 10;
 
+    public GameObject explosionShootPrefab;
+
 
     private void Start()
     {
@@ -24,6 +26,7 @@ public class Projectile : MonoBehaviour
             Debug.Log("asteroid hit with projectile");
             collision.gameObject.SetActive(false);
             Destroy(gameObject);
+            Instantiate(explosionShootPrefab, gameObject.transform.position, Quaternion.identity);
         }
         
     }
