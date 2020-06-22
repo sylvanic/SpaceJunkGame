@@ -10,7 +10,7 @@ public class SceneManagement : MonoBehaviour
 
     private void Awake()
     {
-        saveinfo = GameObject.FindGameObjectWithTag("SaveInfo").GetComponent<SaveInfo>();
+        //saveinfo = GameObject.FindGameObjectWithTag("SaveInfo").GetComponent<SaveInfo>();
     }
 
     public void ReturnToMainMenu()
