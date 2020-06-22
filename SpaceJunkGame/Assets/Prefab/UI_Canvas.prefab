@@ -2674,6 +2674,8 @@ MonoBehaviour:
   Score: {fileID: 4835060776673739856}
   GameTitle: {fileID: 4835060776518726001}
   Quit: {fileID: 5681993819051428137}
+  page1Text1: {fileID: 1424209945951804901}
+  page1Text2: {fileID: 583754227800001096}
   StorageCapacity: {fileID: 8526824554526226571}
   Objectives: {fileID: 6166300212192025429}
   Challenges: {fileID: 6166300212536317978}
