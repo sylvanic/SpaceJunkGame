@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class SaveName : MonoBehaviour
 {
-    public InputField playersName;
+    public TMP_InputField playersName;
 
     void Start()
     {
-        playersName = playersName.GetComponent<InputField>();
+        playersName = playersName.GetComponent<TMP_InputField>();
     }
 
     private void AddPlayerInfo(string name)

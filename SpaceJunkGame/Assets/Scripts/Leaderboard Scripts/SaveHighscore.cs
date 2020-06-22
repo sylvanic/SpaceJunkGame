@@ -6,17 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class SaveHighscore : MonoBehaviour
 {
-    public static int highscore;
+    //public static int highscore;
 
-    public int score1;
-    public int score2;  
+    //public int score1;
+    //public int score2;  
 
     void Awake()
     {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
-        if(sceneName == "EnterName")
+        if(sceneName == "EndScreen")
         {
             HighscoreCount();
         }       
@@ -32,8 +32,12 @@ public class SaveHighscore : MonoBehaviour
         ph2.scoreLevel2 = PlayerPrefs.GetInt("level2Results");
         Debug.Log(ph2.scoreLevel2 + " level 2 score");
 
+        PlayerScore3 ph3 = new PlayerScore3();
+        ph3.scoreLevel3 = PlayerPrefs.GetInt("level3Results");
+        Debug.Log(ph3.scoreLevel3 + " level 3 score");
+
         PlayerHighscore ph = new PlayerHighscore();
-        ph.highscore = ph1.scoreLevel1 + ph2.scoreLevel2;
+        ph.highscore = ph1.scoreLevel1 + ph2.scoreLevel2 + ph3.scoreLevel3;
 
         PlayerPrefs.SetInt("highscore", ph.highscore);
         PlayerPrefs.Save();
@@ -63,4 +67,9 @@ public class SaveHighscore : MonoBehaviour
         public int scoreLevel2;
     }
 
+    [System.Serializable]
+    private class PlayerScore3
+    {
+        public int scoreLevel3;
+    }
 }
