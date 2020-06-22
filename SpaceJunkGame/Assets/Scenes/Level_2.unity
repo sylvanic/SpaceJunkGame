@@ -5737,6 +5737,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SaveInfo
       objectReference: {fileID: 0}
+    - target: {fileID: 381822686647683902, guid: 2692f09ea5388d74c8664055e558fd05,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 381822686647683903, guid: 2692f09ea5388d74c8664055e558fd05,
         type: 3}
       propertyPath: m_LocalPosition.x

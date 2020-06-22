@@ -57,7 +57,7 @@ public class LanguageSwitchMenu : MonoBehaviour
             leaderboardButton.text = "Leaderboard";
             quitButton.text = "QUIT";
 
-            leaderboard.text = "Leaderboard";
+            //leaderboard.text = "Leaderboard";
             playerLeaderboard.text = "PLAYER";
             scoreLeaderboard.text = "SCORE";
             backButtonLeaderboard.text = "BACK";
@@ -90,7 +90,7 @@ public class LanguageSwitchMenu : MonoBehaviour
             quitButton.text = "AFSLUITEN";
             quitButton.fontSize = 24.6f;
 
-            leaderboard.text = "Scorebord";
+            //leaderboard.text = "LeaderboardPage";
             playerLeaderboard.text = "SPELER";
             scoreLeaderboard.text = "SCORE";
             backButtonLeaderboard.text = "TERUG";
