@@ -10,7 +10,7 @@ public class PickUpTask : Objective
 
     public static string pickUpTaskTxt;
 
-    private GUIStyle guiStyle = new GUIStyle();
+    public GUIStyle guiStyle = new GUIStyle();
 
     private void Awake()
     {
