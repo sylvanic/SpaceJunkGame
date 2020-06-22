@@ -49,6 +49,6 @@ public class PickUpTask : Objective
 
     public override void DrawHUD()
     {
-             GUI.Label(new Rect(1565, 285, 300, 100),string.Format(pickUpTaskTxt + "{0}/{1}", junk, requiredJunk), guiStyle);
+        guiStyle.normal.textColor = Color.HSVToRGB(1f, 0.8f, 0.01568628f);
     }
 }

@@ -53,6 +53,6 @@ public class HitTask : Objective
 
     public override void DrawHUD()
     {
-        GUI.Label(new Rect(1565, 455, 300, 100),string.Format(hitTaskTxt +"{0}/{1}", hits, requiredHits), guiStyle);
+        guiStyle.normal.textColor = Color.HSVToRGB(1f, 0.8f, 0.01568628f);
     }
 }

@@ -48,6 +48,6 @@ public class ScoreTask : Objective
 
     public override void DrawHUD()
     {
-        GUI.Label(new Rect(1565, 215, 300, 100),string.Format(scoreTaskTxt + "{0}/{1}", points, requiredPoints), guiStyle);
+        guiStyle.normal.textColor = Color.HSVToRGB(1f, 0.8f, 0.01568628f);
     }
 }
