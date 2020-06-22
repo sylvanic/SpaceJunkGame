@@ -40,6 +40,78 @@ public class ResultScreens : MonoBehaviour
             }
             else
             {
+                if(SceneManager.GetActiveScene().name == "Lvl1Cutscene")
+                {
+                    if (!PlayerPrefs.HasKey("level1Results"))
+                    {
+                        PlayerScore1 ps = new PlayerScore1();
+
+                        ps.score1 = 0;
+
+                        PlayerPrefs.SetInt("level1Results", ps.score1);
+                        PlayerPrefs.Save();
+                        Debug.Log(PlayerPrefs.GetInt("level1Results"));
+                    }
+                    else
+                    {
+                        PlayerScore1 ps = new PlayerScore1();
+
+                        ps.score1 = PlayerStats.currentScore;
+
+                        PlayerPrefs.SetInt("level1Results", ps.score1);
+                        PlayerPrefs.Save();
+                        Debug.Log(PlayerPrefs.GetInt("level1Results"));
+                    }
+                }
+
+                if (SceneManager.GetActiveScene().name == "Lvl2Cutscene")
+                {
+                    if (!PlayerPrefs.HasKey("level2Results"))
+                    {
+                        PlayerScore2 ps = new PlayerScore2();
+
+                        ps.score2 = 0;
+
+                        PlayerPrefs.SetInt("level2Results", ps.score2);
+                        PlayerPrefs.Save();
+                        Debug.Log(PlayerPrefs.GetInt("level2Results"));
+                    }
+                    else
+                    {
+                        PlayerScore2 ps = new PlayerScore2();
+
+                        ps.score2 = PlayerStats.currentScore;
+
+                        PlayerPrefs.SetInt("level2Results", ps.score2);
+                        PlayerPrefs.Save();
+                        Debug.Log(PlayerPrefs.GetInt("level2Results"));
+                    }
+                }
+
+                if (SceneManager.GetActiveScene().name == "Lvl3Cutscene")
+                {
+                    if (!PlayerPrefs.HasKey("level3Results"))
+                    {
+                        PlayerScore3 ps = new PlayerScore3();
+
+                        ps.score3 = 0;
+
+                        PlayerPrefs.SetInt("level3Results", ps.score3);
+                        PlayerPrefs.Save();
+                        Debug.Log(PlayerPrefs.GetInt("level3Results"));
+                    }
+                    else
+                    {
+                        PlayerScore3 ps = new PlayerScore3();
+
+                        ps.score3 = PlayerStats.currentScore;
+
+                        PlayerPrefs.SetInt("level3Results", ps.score3);
+                        PlayerPrefs.Save();
+                        Debug.Log(PlayerPrefs.GetInt("level3Results"));
+                    }
+                }
+
                 UpgradeBoard.SetActive(true);      /// Challenge Completed
                 MissionCompleted.SetActive(false);
             }
@@ -60,8 +132,8 @@ public class ResultScreens : MonoBehaviour
             }
 
         }
+        
 
-      
     }
 
     public void ShowEndScreen()
@@ -138,4 +210,36 @@ public class ResultScreens : MonoBehaviour
         //Debug.Log("currentUpgrade2" + currentUpgrade2);
     }
 
+    private class ScoreList1
+    {
+        public List<PlayerScore1> scoreList1;
+    }
+
+    [System.Serializable]
+    private class PlayerScore1
+    {
+        public int score1;
+    }
+
+    private class ScoreList2
+    {
+        public List<PlayerScore2> scoreList2;
+    }
+
+    [System.Serializable]
+    private class PlayerScore2
+    {
+        public int score2;
+    }
+
+    private class ScoreList3
+    {
+        public List<PlayerScore3> scoreList3;
+    }
+
+    [System.Serializable]
+    private class PlayerScore3
+    {
+        public int score3;
+    }
 }
