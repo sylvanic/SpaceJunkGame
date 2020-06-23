@@ -10373,6 +10373,16 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 4835060776485393996, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -435.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835060776485393996, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 226.21716
+      objectReference: {fileID: 0}
     - target: {fileID: 4835060776518726001, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_textInfo.characterCount
