@@ -6,40 +6,40 @@ using UnityEngine.SceneManagement;
 
 public class SaveHighscore : MonoBehaviour
 {
-    //public static int highscore;
+    public Button saveHighscore;
 
-    //public int score1;
-    //public int score2;  
-
-    void Awake()
+    void Start()
     {
-        Scene currentScene = SceneManager.GetActiveScene();
+        Button btn = saveHighscore.GetComponent<Button>();
+        btn.onClick.AddListener(HighscoreCount);
+
+        /*Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
         if(sceneName == "EndScreen")
         {
             HighscoreCount();
-        }       
+        } */      
     }
   
     public void HighscoreCount()
     {
         PlayerScore1 ph1 = new PlayerScore1();
-        ph1.scoreLevel1 = PlayerPrefs.GetInt("level1Results");
+        ph1.scoreLevel1 = PlayerPrefs.GetInt("ScoreLevel1");
         Debug.Log(ph1.scoreLevel1 + " level 1 score");
 
         PlayerScore2 ph2 = new PlayerScore2();
-        ph2.scoreLevel2 = PlayerPrefs.GetInt("level2Results");
+        ph2.scoreLevel2 = PlayerPrefs.GetInt("ScoreLevel2");
         Debug.Log(ph2.scoreLevel2 + " level 2 score");
 
         PlayerScore3 ph3 = new PlayerScore3();
-        ph3.scoreLevel3 = PlayerPrefs.GetInt("level3Results");
+        ph3.scoreLevel3 = PlayerPrefs.GetInt("ScoreLevel3");
         Debug.Log(ph3.scoreLevel3 + " level 3 score");
 
         PlayerHighscore ph = new PlayerHighscore();
         ph.highscore = ph1.scoreLevel1 + ph2.scoreLevel2 + ph3.scoreLevel3;
 
-        PlayerPrefs.SetInt("highscore", ph.highscore);
+        PlayerPrefs.SetInt("Highscore", ph.highscore);
         PlayerPrefs.Save();
         Debug.Log(ph.highscore + " the overall");
     }

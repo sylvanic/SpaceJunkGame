@@ -9,7 +9,6 @@ public class SaveInfo : MonoBehaviour
 {
     public static SaveInfo Instance;
 
-
     private void Update()
     {
         Save();
@@ -26,7 +25,7 @@ public class SaveInfo : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        DontDestroyOnLoad(this);
+        DontDestroyOnLoad(this);       
     }
 
     private void Save()
@@ -35,7 +34,6 @@ public class SaveInfo : MonoBehaviour
         saveData.scoreLevel1 = PlayerPrefs.GetInt("ScoreLevel1");
         saveData.scoreLevel2 = PlayerPrefs.GetInt("ScoreLevel2");
         saveData.scoreLevel3 = PlayerPrefs.GetInt("ScoreLevel3");
-
         saveData.highscore = saveData.scoreLevel1 + saveData.scoreLevel2 + saveData.scoreLevel3;
 
         PlayerPrefs.SetInt("Highscore", saveData.highscore);
@@ -53,7 +51,7 @@ public class SaveInfo : MonoBehaviour
         saveData.HasCapacity2 = PlayerPrefs.GetInt("HasCapacity2");
         saveData.HasShield2 = PlayerPrefs.GetInt("HasShield2");
 
-        saveData.playerName = PlayerPrefs.GetString("PlayerName");
+        saveData.playerName = PlayerPrefs.GetString("PlayerName");       
         saveData.playerGender = PlayerPrefs.GetString("PlayerGender");
         saveData.playerAge = PlayerPrefs.GetString("PlayerAge");
 
@@ -89,5 +87,4 @@ public class SaveInfo : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
     }
-
 }
