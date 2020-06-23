@@ -29,6 +29,8 @@ public class HelpMenu : MonoBehaviour
         MenuPage3.SetActive(false);
         MenuPage4.SetActive(false);
         MenuPage5.SetActive(false);
+        Time.timeScale = 1;
+
     }
 
     public void OpenMenu()
@@ -36,6 +38,7 @@ public class HelpMenu : MonoBehaviour
         HintButton.SetActive(false);
         CloseButton.SetActive(true);
         MenuPage1.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void GoToPage1fromPage2()
