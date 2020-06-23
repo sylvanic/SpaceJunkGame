@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 87f618fb795243d459e0e7f59340586a,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -10092,6 +10092,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 2325407433003069381, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2402086305968774709, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
@@ -10296,7 +10301,7 @@ PrefabInstance:
     - target: {fileID: 4042349142523306772, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4176812161660233689, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -10306,7 +10311,7 @@ PrefabInstance:
     - target: {fileID: 4211866271716968833, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4417643319610505377, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -10322,6 +10327,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835060776485393996, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -435.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835060776485393996, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 226.21716
       objectReference: {fileID: 0}
     - target: {fileID: 4835060776518726001, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -10627,7 +10642,7 @@ PrefabInstance:
     - target: {fileID: 5142004200576882937, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 5373964627778423475, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -10739,7 +10754,7 @@ PrefabInstance:
     - target: {fileID: 6323260191348214051, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6653072479512599953, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -10775,6 +10790,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ShieldUpgrade
+      objectReference: {fileID: 0}
+    - target: {fileID: 6970319788210109532, guid: 4014270d7aeede2468a46e07131c24fe,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7042775205148058549, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
