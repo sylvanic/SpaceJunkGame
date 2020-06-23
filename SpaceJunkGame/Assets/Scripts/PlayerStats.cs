@@ -113,7 +113,8 @@ public class PlayerStats : MonoBehaviour
 
     public void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == "Asteroid")
-        { 
+        {
+            hitAmount++;
             soundManager.AsteroidCrash.Play();
             capacity--;
             Debug.Log("!!!!!!asteroid collision idk");
