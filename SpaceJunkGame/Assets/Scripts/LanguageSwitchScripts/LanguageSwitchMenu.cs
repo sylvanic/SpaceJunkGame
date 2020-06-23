@@ -64,6 +64,7 @@ public class LanguageSwitchMenu : MonoBehaviour
 
             options.text = "Options";
             masterVolume.text = "Master Volume";
+            masterVolume.fontSize = 60;
             sfxVolume.text = "SFX Volume";
             sfxVolume.fontSize = 60;
             backButtonOptions.text = "BACK";
@@ -88,7 +89,7 @@ public class LanguageSwitchMenu : MonoBehaviour
             optionsButton.fontSize = 39;
             leaderboardButton.text = "Scorebord";
             quitButton.text = "AFSLUITEN";
-            quitButton.fontSize = 24.6f;
+            quitButton.fontSize = 45;
 
             //leaderboard.text = "LeaderboardPage";
             playerLeaderboard.text = "SPELER";
@@ -98,6 +99,7 @@ public class LanguageSwitchMenu : MonoBehaviour
             options.text = "Instellingen";
             options.fontSize = 77;
             masterVolume.text = "Hoofdvolume";
+            masterVolume.fontSize = 42;
             sfxVolume.text = "Geluidseffectvolume";
             sfxVolume.fontSize = 42;
             backButtonOptions.text = "TERUG";

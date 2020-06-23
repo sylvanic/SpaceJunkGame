@@ -39,4 +39,8 @@ public class SceneManagement : MonoBehaviour
     {
         SceneManager.LoadScene("SelectLevel");
     }
+
+    public void LeaderBoard(){
+        SceneManager.LoadScene("Leaderboard");
+    }
 }
