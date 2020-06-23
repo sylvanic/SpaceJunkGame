@@ -38,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndScreen.unity
     guid: 882acc16f799784499e6380bf62dbc67
+  - enabled: 1
+    path: Assets/Scenes/Username.unity
+    guid: acdb54e6cc203c14cab457df56a50293
+  - enabled: 1
+    path: Assets/Scenes/Leaderboard.unity
+    guid: a2eee97d5866e0049b12d208407388a7
   m_configObjects: {}

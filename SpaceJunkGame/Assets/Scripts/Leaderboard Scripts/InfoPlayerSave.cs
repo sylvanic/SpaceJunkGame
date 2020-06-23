@@ -12,20 +12,20 @@ public class InfoPlayerSave : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-        
-        if(sceneName == "Leaderboard")
+
+        if (sceneName == "Leaderboard")
         {
             SavePlayerInfo();
-        }        
+        }
     }
 
     public void SavePlayerInfo()
     {
         PlayersInfo saveData = new PlayersInfo();
 
-        saveData.username = DisplayPlayerName.playerUsername;
+        saveData.username = PlayerPrefs.GetString("PlayerName");
         Debug.Log(saveData.username);
-        saveData.highscore = PlayerPrefs.GetInt("highscore");
+        saveData.highscore = PlayerPrefs.GetInt("Highscore");
         Debug.Log(saveData.highscore);
 
         string jsonInfo = PlayerPrefs.GetString("info");

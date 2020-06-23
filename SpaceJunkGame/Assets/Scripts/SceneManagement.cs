@@ -10,7 +10,7 @@ public class SceneManagement : MonoBehaviour
 
     private void Awake()
     {
-        //saveinfo = GameObject.FindGameObjectWithTag("SaveInfo").GetComponent<SaveInfo>();
+        saveinfo = GameObject.FindGameObjectWithTag("SaveInfo").GetComponent<SaveInfo>();
     }
 
     public void ReturnToMainMenu()
@@ -18,6 +18,16 @@ public class SceneManagement : MonoBehaviour
         saveinfo.ResetSaves();
         Time.timeScale = 1;
         SceneManager.LoadScene("NEW_Menu");
+    }
+
+    public void BackMainMenu()
+    {
+        SceneManager.LoadScene("NEW_Menu");
+    }
+
+    public void EnterUsernameScene()
+    {
+        SceneManager.LoadScene("Username");
     }
 
     public void IntroFamiliarityYes()

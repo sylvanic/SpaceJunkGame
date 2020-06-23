@@ -9,7 +9,7 @@ public class ScoreTask : Objective
 
     public static string scoreTaskTxt;
 
-    public GUIStyle guiStyle = new GUIStyle();
+    private GUIStyle guiStyle = new GUIStyle();
 
     private void Awake()
     {

@@ -8,6 +8,8 @@ public class LanguageSwitchUI : MonoBehaviour
     public TextMeshProUGUI Score;
     public TextMeshProUGUI GameTitle;
     public TextMeshProUGUI Quit;
+    public Text page1Text1;
+    public Text page1Text2;
 
     public Text StorageCapacity;
 
@@ -48,6 +50,8 @@ public class LanguageSwitchUI : MonoBehaviour
             Objectives.text = "OBJECTIVES";
             Challenges.text = "CHALLENGES";
             LaserTitle.text = "Laser";
+            page1Text1.text = "Use the directional pad on your screen to move.";
+            page1Text2.text = "Press the Laser button to shoot your laser.";
 
             Confirm.text = "ALL progress will be LOST!";
             ConfirmWarning.text = "Sure you want to quit?";
@@ -73,6 +77,8 @@ public class LanguageSwitchUI : MonoBehaviour
             ConfirmWarning.text = "Zeker dat U wilt stoppen?";
             ConfirmYes.text = "JA";
             ConfirmNo.text = "NEE";
+            page1Text1.text = "Gebruik de joystick op het scherm om te bewegen.";
+            page1Text2.text = "Druk de Laser knop om je laser te schieten.";
 
             Capa.image.sprite = CapacityDutch;
             Immun.image.sprite = ImmunityDutch;
