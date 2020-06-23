@@ -4322,18 +4322,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7392810264076962464, guid: 5de952ec78b3c4042b7175099707b129,
           type: 3}
-        m_MethodName: CancelInvoke
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 7392810264076962464, guid: 5de952ec78b3c4042b7175099707b129,
-          type: 3}
         m_MethodName: Confirmation
         m_Mode: 1
         m_Arguments:
@@ -4343,6 +4331,17 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3321605304534672691}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &6166300211138422500
 GameObject:

@@ -22,6 +22,7 @@ public class HelpMenu : MonoBehaviour
     {
         exitButton.SetActive(true);
         MenuPage1.SetActive(true);
+        Time.timeScale = 0;
     }
 
     public void GoToPage1fromPage2()

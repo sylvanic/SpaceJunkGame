@@ -11,7 +11,7 @@ public class LanguageSwitchEndScoreboard : MonoBehaviour
     public TextMeshProUGUI Level3;
     public TextMeshProUGUI TotalScore;
     public TextMeshProUGUI Replay;
-    public TextMeshProUGUI Menu;
+    public TextMeshProUGUI Username;
     public TextMeshProUGUI Rate;
 
     private void Awake()
@@ -24,7 +24,7 @@ public class LanguageSwitchEndScoreboard : MonoBehaviour
             Level3.text = "LEVEL 3:";
             TotalScore.text = "TOTAL SCORE";
             Replay.text = "REPLAY";
-            Menu.text = "MENU";
+            Username.text = "USERNAME";
             Rate.text = "RATE GAME";
         }
         else
@@ -35,7 +35,7 @@ public class LanguageSwitchEndScoreboard : MonoBehaviour
             Level3.text = "NIVEAU 3:";
             TotalScore.text = "TOTALE PUNTEN";
             Replay.text = "OPNIEUW";
-            Menu.text = "MENU";
+            Username.text = "GEBRUIKERSNAAM";
             Rate.text = "BEOORDEEL SPEL";
         }
     }
