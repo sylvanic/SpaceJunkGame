@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ProjectileUpgraded : Projectile
 {
-    public GameObject explosionShootPrefab;
+    //public GameObject explosionShootPrefabs;
     // Start is called before the first frame update
     private void Start()
     {

@@ -6,12 +6,12 @@ public class Projectile : MonoBehaviour
 {
     protected float speed = 10;
 
-    public GameObject explosionShootPrefab;
+    [SerializeField]protected GameObject explosionShootPrefab;
 
 
     private void Start()
     {
-
+      
     }
     void Update()
     {
