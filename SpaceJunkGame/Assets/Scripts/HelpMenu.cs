@@ -16,6 +16,7 @@ public class HelpMenu : MonoBehaviour
         MenuPage1.SetActive(false);
         MenuPage2.SetActive(false);
         MenuPage3.SetActive(false);
+        Time.timeScale = 1;
     }
 
     public void OpenMenu()
