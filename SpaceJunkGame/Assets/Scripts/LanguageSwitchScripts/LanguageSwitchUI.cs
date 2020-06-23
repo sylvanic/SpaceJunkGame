@@ -88,10 +88,7 @@ public class LanguageSwitchUI : MonoBehaviour
             Objectives.text = "DOELEN";
             Challenges.text = "UITDAGINGEN";
             LaserTitle.text = "Laser";
-            Confirm.text = "ALLE vooruitgang zal VERLOREN gaan!";
-            ConfirmWarning.text = "Zeker dat U wilt stoppen?";
-            ConfirmYes.text = "JA";
-            ConfirmNo.text = "NEE";
+
             page1Text1.text = "Gebruik de joystick op het scherm om te bewegen.";
             page1Text2.text = "Druk de Laser knop om je laser te schieten.";
             page2Text1.text = "Verzamel ruimteafval en stort ze bij de ruimtestation.";
@@ -102,6 +99,11 @@ public class LanguageSwitchUI : MonoBehaviour
             page4Text2.text = "Dit is de wapen upgrade. Hiermee is je laser krachtiger.";
             page5Text1.text = "Dit is de capaciteitsupgrade. Hiermee kan je meer afval dragen.";
             page5Text2.text = "Dit is de immuniteitsupgrade. Hiermee wordt je voor een korte tijd onraakbaar door asteroïden.";
+
+            Confirm.text = "ALLE vooruitgang zal VERLOREN gaan!";
+            ConfirmWarning.text = "Zeker dat U wilt stoppen?";
+            ConfirmYes.text = "JA";
+            ConfirmNo.text = "NEE";
 
             Capa.image.sprite = CapacityDutch;
             Immun.image.sprite = ImmunityDutch;
