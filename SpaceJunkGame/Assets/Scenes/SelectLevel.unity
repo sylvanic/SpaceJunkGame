@@ -1771,6 +1771,10 @@ MonoBehaviour:
   lvl2: {fileID: 2892660908360942237}
   lvl3: {fileID: 2892660908447813585}
   Back: {fileID: 2821423756782235532}
+  Confirm: {fileID: 1435507550}
+  ConfirmWarning: {fileID: 1546335201}
+  ConfirmYes: {fileID: 229516465}
+  ConfirmNo: {fileID: 702941195}
 --- !u!4 &1707387136
 Transform:
   m_ObjectHideFlags: 0
