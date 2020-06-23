@@ -6,7 +6,7 @@ public class Projectile : MonoBehaviour
 {
     protected float speed = 10;
 
-    protected GameObject explosionShootPrefab;
+    public GameObject explosionShootPrefab;
 
 
     private void Start()
