@@ -7926,6 +7926,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 30
+--- !u!114 &1851145737 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7280654716220653431, guid: d8589cf502eab4549a1fc94a9353896f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2078443526}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851145734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e374541d506d7249ab105af27490ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1856658735
 GameObject:
   m_ObjectHideFlags: 0
@@ -8202,9 +8214,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1185793543}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1851145737}
+        m_MethodName: LeaderBoard
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
