@@ -23,5 +23,11 @@ public class ProjectileUpgraded : Projectile
             other.gameObject.SetActive(false);
             Instantiate(explosionShootPrefab, gameObject.transform.position, Quaternion.identity);
         }
+        if(other.tag=="bigTrash")
+        {
+            other.GetComponent<TrashDestruction>().BigTrashDeath();
+            Destroy(gameObject);
+            Debug.Log("idk");
+        }
     }
 }
