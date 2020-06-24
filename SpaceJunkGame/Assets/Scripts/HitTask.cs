@@ -55,6 +55,6 @@ public class HitTask : Objective
     public override void DrawHUD()
     {
         
-        GUI.Label(new Rect(1600, 455, 300, 100), string.Format(hitTaskTxt + "{0}/{1}", hits, requiredHits), guiStyle);
+        GUI.Label(new Rect(1580, 455, 300, 100), string.Format(hitTaskTxt + "{0}/{1}", hits, requiredHits), guiStyle);
     }
 }

@@ -122,7 +122,7 @@ public class LevelFinishIntro3 : MonoBehaviour
         yield return new WaitForSeconds(0);
         PlayerPrefs.SetInt("ScoreLevel3", PlayerStats.totalScore);
 
-        if (PlayerStats.totalScore > 450)
+        if (PlayerStats.totalScore >= 450)
         {
             MissionComplete.SetActive(true);
         }
