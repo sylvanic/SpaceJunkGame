@@ -32,7 +32,7 @@ public class ResultScreens : MonoBehaviour
     {
         Debug.Log("clicked");
 
-        if (PlayerStats.totalScore > levelScoreMinimum)    /// Mission Completed
+        if (PlayerStats.totalScore >= levelScoreMinimum)    /// Mission Completed
         {
             if (checkChallengedCompleted == false)
             {

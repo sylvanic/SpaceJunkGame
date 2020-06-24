@@ -56,6 +56,6 @@ public class ScoreTask : Objective
 
     public override void DrawHUD()
     {
-        GUI.Label(new Rect(1600, 215, 300, 100), string.Format(scoreTaskTxt + "{0}/{1}", points, requiredPoints), guiStyle);
+        GUI.Label(new Rect(1580, 215, 300, 100), string.Format(scoreTaskTxt + "{0}/{1}", points, requiredPoints), guiStyle);
     }
 }
