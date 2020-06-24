@@ -9,7 +9,7 @@ public class ScoreTask : Objective
 
     public static string scoreTaskTxt;
 
-    private GUIStyle guiStyle = new GUIStyle();
+    public GUIStyle guiStyle = new GUIStyle();
 
     private void Awake()
     {
@@ -48,6 +48,6 @@ public class ScoreTask : Objective
 
     public override void DrawHUD()
     {
-        GUI.Label(new Rect(1565, 215, 300, 100), string.Format(scoreTaskTxt + "{0}/{1}", points, requiredPoints), guiStyle);
+        GUI.Label(new Rect(1600, 215, 300, 100), string.Format(scoreTaskTxt + "{0}/{1}", points, requiredPoints), guiStyle);
     }
 }
