@@ -24,7 +24,7 @@ public class LanguageSwitchEndScoreboard : MonoBehaviour
             Level3.text = "LEVEL 3:";
             TotalScore.text = "TOTAL SCORE";
             Replay.text = "REPLAY";
-            Username.text = "USERNAME";
+            Username.text = "NEXT";
             Rate.text = "RATE GAME";
         }
         else
@@ -35,7 +35,7 @@ public class LanguageSwitchEndScoreboard : MonoBehaviour
             Level3.text = "NIVEAU 3:";
             TotalScore.text = "TOTALE PUNTEN";
             Replay.text = "OPNIEUW";
-            Username.text = "GEBRUIKERSNAAM";
+            Username.text = "VOLGENDE";
             Rate.text = "BEOORDEEL SPEL";
         }
     }
