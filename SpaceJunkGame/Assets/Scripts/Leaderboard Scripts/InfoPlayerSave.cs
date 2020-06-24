@@ -10,12 +10,20 @@ public class InfoPlayerSave : MonoBehaviour
     public static InfoPlayerSave instance;
 
     public TMP_InputField inputName;
-    public Button[] genderButtons;
-    public Button[] ageButtons;
 
     private string playerName;
     public string gender;
     public string ageGroup;
+
+    private Button selectedAgeButton;
+    private Button selectedGenderButton;
+
+    private Color male, female, other;
+    private Color child, teen, adult;
+
+    public Color ageSelected = Color.blue;
+    public Color genderSelected = Color.blue;
+    private Color deselected = Color.white;
 
     public Button saveInfo;
     public Button cancelInfo;
@@ -25,21 +33,10 @@ public class InfoPlayerSave : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
+        
         if (sceneName == "EndScreen")
         {
             inputName = inputName.GetComponent<TMP_InputField>();
-
-            for (int i = 0; i < genderButtons.Length; i++)
-            {
-                int closureIndex = i;
-                genderButtons[closureIndex].onClick.AddListener(() => GenderOnClick(closureIndex));
-            }
-
-            for (int i = 0; i < ageButtons.Length; i++)
-            {
-                int closureIndex = i;
-                ageButtons[closureIndex].onClick.AddListener(() => AgeOnClick(closureIndex));
-            }
 
             Button save = saveInfo.GetComponent<Button>();
             save.onClick.AddListener(SavePlayerInfo);
@@ -47,6 +44,7 @@ public class InfoPlayerSave : MonoBehaviour
             Button cancel = cancelInfo.GetComponent<Button>();
             cancel.onClick.AddListener(CancelSave);
         }
+        
     }
 
     public void SavePlayerInfo()
@@ -93,48 +91,87 @@ public class InfoPlayerSave : MonoBehaviour
         }                
     }
 
-    public void GenderOnClick(int buttonIndex)
+    public void GenderSelected(Button button)
     {
-        Debug.Log("You have clicked the button #" + buttonIndex, genderButtons[buttonIndex]);
-
-        switch (buttonIndex)
+        if (selectedGenderButton == button)
         {
-            case 0:
-                gender = "Male";
-                break;
-            case 1:
-                gender = "Female";
-                break;
-            case 2:
-                gender = "Other";
-                break;
-
+            button.GetComponent<Image>().color = deselected;
+            selectedGenderButton = null;
         }
-        Debug.Log(gender);
+        else
+        {
+            if (selectedGenderButton != null)
+            {
+                selectedGenderButton.GetComponent<Image>().color = deselected;
+            }
+            button.GetComponent<Image>().color = genderSelected;
+            selectedGenderButton = button;
+        }
+
+        male = GameObject.Find("OptMale").GetComponent<Image>().color;
+        female = GameObject.Find("OptFemale").GetComponent<Image>().color;
+        other = GameObject.Find("OptOther").GetComponent<Image>().color;
+
+        if (male == Color.blue)
+        {
+            gender = "male";
+        }
+        else if (female == Color.blue)
+        {
+            gender = "female";
+        }
+        else if (other == Color.blue)
+        {
+            gender = "other";
+        }
+
+        if (male == deselected && female == deselected && other == deselected)
+        {
+            gender = "";
+        }
     }
 
-    public void AgeOnClick(int buttonIndex)
+    public void AgeGroupSelected(Button button)
     {
-        Debug.Log("You have clicked the button #" + buttonIndex, ageButtons[buttonIndex]);
-
-
-        switch (buttonIndex)
+        if (selectedAgeButton == button)
         {
-            case 0:
-                ageGroup = "Child";
-                break;
-            case 1:
-                ageGroup = "Teen";
-                break;
-            case 2:
-                ageGroup = "Adult";
-                break;
-
+            button.GetComponent<Image>().color = deselected;
+            selectedAgeButton = null;
         }
-        Debug.Log(ageGroup);
-    }
+        else
+        {
+            if (selectedAgeButton != null)
+            {
+                selectedAgeButton.GetComponent<Image>().color = deselected;
+            }
+            button.GetComponent<Image>().color = ageSelected;
+            selectedAgeButton = button;
+        }
 
-    public void CancelSave()
+        child = GameObject.Find("OptChild").GetComponent<Image>().color;
+        teen = GameObject.Find("OptTeen").GetComponent<Image>().color;
+        adult = GameObject.Find("OptAdult").GetComponent<Image>().color;
+
+        if (child == Color.blue)
+        {
+            ageGroup = "child";
+        }
+        else if (teen == Color.blue)
+        {
+            ageGroup = "teen";
+        }
+        else if (adult == Color.blue)
+        {
+            ageGroup = "adult";
+        }
+
+        if (child == deselected && teen == deselected && adult == deselected)
+        {
+            ageGroup = "";
+        }
+    }
+    
+        public void CancelSave()
     {
         SceneManager.LoadScene("NEW_Menu");
     }
