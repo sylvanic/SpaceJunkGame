@@ -49,6 +49,7 @@ public class HitTask : Objective
         ResultScreens.checkChallengedCompleted = true;
         guiStyle.normal.textColor = Color.yellow;
        
+
     }
 
     public override void DrawHUD()

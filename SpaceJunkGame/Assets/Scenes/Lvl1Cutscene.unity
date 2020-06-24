@@ -8986,7 +8986,7 @@ PrefabInstance:
     - target: {fileID: 1592220705245768690, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
       propertyPath: TwoStar
-      value: 45
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1592220705245768690, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
