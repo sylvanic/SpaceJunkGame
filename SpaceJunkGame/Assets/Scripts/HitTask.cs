@@ -9,7 +9,7 @@ public class HitTask : Objective
 
     public static string hitTaskTxt;
 
-    public GUIStyle guiStyle = new GUIStyle();
+    private GUIStyle guiStyle = new GUIStyle();
 
     private void Awake()
     {
@@ -49,11 +49,12 @@ public class HitTask : Objective
         ResultScreens.checkChallengedCompleted = true;
         guiStyle.normal.textColor = Color.yellow;
        
+
     }
 
     public override void DrawHUD()
     {
         
-        GUI.Label(new Rect(1600, 455, 300, 100), string.Format(hitTaskTxt + "{0}/{1}", hits, requiredHits), guiStyle);
+        GUI.Label(new Rect(1565, 455, 300, 100), string.Format(hitTaskTxt + "{0}/{1}", hits, requiredHits), guiStyle);
     }
 }

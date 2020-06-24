@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 87f618fb795243d459e0e7f59340586a,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -9798,11 +9798,6 @@ PrefabInstance:
       propertyPath: requiredHits
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 3302201509618151350, guid: 401260bd9a904ea4899d0fb6f399ef1c,
-        type: 3}
-      propertyPath: requiredHits
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 3381678843432021343, guid: 401260bd9a904ea4899d0fb6f399ef1c,
         type: 3}
       propertyPath: requiredJunk
@@ -9811,7 +9806,7 @@ PrefabInstance:
     - target: {fileID: 6825701820986408687, guid: 401260bd9a904ea4899d0fb6f399ef1c,
         type: 3}
       propertyPath: requiredPoints
-      value: 450
+      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 401260bd9a904ea4899d0fb6f399ef1c, type: 3}
@@ -10135,7 +10130,7 @@ PrefabInstance:
     - target: {fileID: 2233434919850610049, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 2325407433003069381, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -10220,7 +10215,7 @@ PrefabInstance:
     - target: {fileID: 2879532231285853419, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2996361840443888979, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -10376,7 +10371,7 @@ PrefabInstance:
     - target: {fileID: 4835060775815284113, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4835060776485393996, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -10662,7 +10657,7 @@ PrefabInstance:
     - target: {fileID: 4835060777783661918, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4835060777783661918, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -10682,7 +10677,7 @@ PrefabInstance:
     - target: {fileID: 4835060777783661918, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_text
-      value: 100
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 4971039836845099204, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -10692,7 +10687,7 @@ PrefabInstance:
     - target: {fileID: 5142004200576882937, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 5373964627778423475, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -10944,7 +10939,7 @@ PrefabInstance:
     - target: {fileID: 8526824553880951359, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8526824554064107305, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -11024,7 +11019,7 @@ PrefabInstance:
     - target: {fileID: 8945482277728289681, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: _currentCountdownValue
-      value: 100
+      value: 120
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7451647513806273386, guid: 4014270d7aeede2468a46e07131c24fe, type: 3}
@@ -11527,11 +11522,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7512747434010336998, guid: b26b36c611d37224db03770363ebf072,
         type: 3}
-    - target: {fileID: 4405583657123958212, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
-        type: 3}
-      propertyPath: maxCapacity
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 4405583657123958218, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
         type: 3}
       propertyPath: m_IsTrigger

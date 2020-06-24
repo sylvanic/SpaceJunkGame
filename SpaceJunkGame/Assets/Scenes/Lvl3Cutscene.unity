@@ -1015,26 +1015,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1592220705245768690, guid: 821d46f7cddd408459a7eb31aeb83f30,
-        type: 3}
-      propertyPath: OneStar
-      value: 450
-      objectReference: {fileID: 0}
-    - target: {fileID: 1592220705245768690, guid: 821d46f7cddd408459a7eb31aeb83f30,
-        type: 3}
-      propertyPath: TwoStar
-      value: 480
-      objectReference: {fileID: 0}
-    - target: {fileID: 1592220705245768690, guid: 821d46f7cddd408459a7eb31aeb83f30,
-        type: 3}
-      propertyPath: ThreeStar
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 2045394895396224062, guid: 821d46f7cddd408459a7eb31aeb83f30,
-        type: 3}
-      propertyPath: levelScoreMinimum
-      value: 450
-      objectReference: {fileID: 0}
     - target: {fileID: 2089105054531907385, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
