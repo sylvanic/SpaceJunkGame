@@ -10145,7 +10145,7 @@ PrefabInstance:
     - target: {fileID: 2233434919850610049, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2325407433003069381, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -10195,7 +10195,7 @@ PrefabInstance:
     - target: {fileID: 2879532231285853419, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2996361840443888979, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -10286,7 +10286,7 @@ PrefabInstance:
     - target: {fileID: 3702949769798162112, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3702949769798162112, guid: 4014270d7aeede2468a46e07131c24fe,
         type: 3}
@@ -11546,7 +11546,7 @@ PrefabInstance:
     - target: {fileID: 4405583657123958219, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
         type: 3}
       propertyPath: cooldownTime
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4405583657335406348, guid: 13bc4a2592f18db468f8451a2e2fb6a4,
         type: 3}
