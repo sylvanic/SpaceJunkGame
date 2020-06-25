@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ScoreTask : Objective
@@ -8,12 +9,8 @@ public class ScoreTask : Objective
     public int requiredPoints;
 
     public static string scoreTaskTxt;
-    
 
-    public GUIStyle guiStyle = new GUIStyle();
-
-    
-
+    public TextMeshProUGUI scoreTask;
 
     private void Awake()
     {
@@ -25,16 +22,11 @@ public class ScoreTask : Objective
         {
             scoreTaskTxt = "Verzamel punten: ";
         }
-
-        guiStyle.normal.textColor = Color.white;
-        guiStyle.fontSize = 25;
-        
-
-
     }
 
     private void Update()
     {
+        scoreTask.text = string.Format(scoreTaskTxt + "{0}/{1}", points, requiredPoints);
         points = PlayerStats.totalScore;
 
         if (points >= requiredPoints)
@@ -50,12 +42,6 @@ public class ScoreTask : Objective
 
     public override void Complete()
     {
-        guiStyle.normal.textColor = Color.yellow;
-        
-    }
-
-    public override void DrawHUD()
-    {
-        GUI.Label(new Rect(1595, 340, 300, 100), string.Format(scoreTaskTxt + "{0}/{1}", points, requiredPoints), guiStyle);
+        scoreTask.color = Color.yellow;  
     }
 }

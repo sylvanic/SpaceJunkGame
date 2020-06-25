@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PickUpTask : Objective
@@ -10,7 +11,7 @@ public class PickUpTask : Objective
 
     public static string pickUpTaskTxt;
 
-    public GUIStyle guiStyle = new GUIStyle();
+    public TextMeshProUGUI pickUpTask;
 
     private void Awake()
     {
@@ -22,19 +23,18 @@ public class PickUpTask : Objective
         {
             pickUpTaskTxt = "Verzamel afval: ";
         }
-
-        guiStyle.normal.textColor = Color.white;
-        guiStyle.fontSize = 25;
     }
 
     private void Update()
     {
+        pickUpTask.text = string.Format(pickUpTaskTxt + "{0}/{1}", junk, requiredJunk);
         junk = Pickable.junkAmount;
 
         if (junk >= requiredJunk)
         {
             junk = requiredJunk;
         }
+
     }
 
     public override bool IsComplete()
@@ -44,11 +44,7 @@ public class PickUpTask : Objective
 
     public override void Complete()
     {
-        guiStyle.normal.textColor = Color.yellow;
+        pickUpTask.color = Color.yellow;
     }
 
-    public override void DrawHUD()
-    {
-        GUI.Label(new Rect(1595, 380, 300, 100), string.Format(pickUpTaskTxt + "{0}/{1}", junk, requiredJunk), guiStyle);
-    }
 }
