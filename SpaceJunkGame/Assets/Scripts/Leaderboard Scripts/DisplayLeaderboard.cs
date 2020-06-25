@@ -67,11 +67,6 @@ public class DisplayLeaderboard : MonoBehaviour
         }        
     }
 
-    void Update()
-    {
-        //DailyTime();
-    }
-
     private void CreatePlayersScoreTab(PlayersInfo playerResults, Transform container, List<Transform> transformList)
     {
         float templateHeight = 50f;
@@ -150,56 +145,6 @@ public class DisplayLeaderboard : MonoBehaviour
         PlayerPrefs.SetString("GameInfo", clearedList);
         PlayerPrefs.Save();
     }
-
-    /*public void DailyTime()
-    {
-        timer -= Time.deltaTime;
-
-        string hours = ((int)timer / 3600).ToString();
-        string minutes = Mathf.Floor((timer % 3600)/60).ToString();
-        string seconds = (timer % 60).ToString("f0");
-
-        time.text = hours + ":" + minutes + ":" + seconds;
-
-        if (timer <= 0)
-        {
-            Scene currentScene = SceneManager.GetActiveScene();
-            string sceneName = currentScene.name;
-
-            if(sceneName == "Main Menu")
-            {
-                DeleteAllPlayerPrefs();
-                timer = 3600f;
-                SceneManager.LoadScene(0);
-                if (panel == true)
-                {
-                    panel.SetActive(true);
-                }
-                else if (panel == false)
-                {
-                    panel.SetActive(false);
-                }
-                Debug.Log("A refresh has been made!");
-            }
-
-            if(sceneName == "Leaderboard")
-            {
-                DeleteAllPlayerPrefs();
-                timer = 3600f;
-                SceneManager.LoadScene(4);
-                if (panel == true)
-                {
-                    panel.SetActive(true);
-                }
-                else if (panel == false)
-                {
-                    panel.SetActive(false);
-                }
-                Debug.Log("A refresh has been made!");
-            }
-            
-        }
-    }*/
 
     public void DeleteAllPlayerPrefs()
     {

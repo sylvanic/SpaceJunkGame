@@ -26,12 +26,6 @@ public class DailyLeaderboard : MonoBehaviour
         }
 
         timeText = timeText.GetComponent<TMP_Text>();
-
-        /*if (!IsTimeUpdated())
-        {
-            lastUpdateList = (ulong)DateTime.Now.Ticks;
-            PlayerPrefs.SetString("SaveTime", lastUpdateList.ToString());
-        } */
     }
 
     void Update()
@@ -44,7 +38,6 @@ public class DailyLeaderboard : MonoBehaviour
                 PlayerPrefs.SetString("SaveTime", lastUpdateList.ToString());
                 PlayerPrefs.DeleteKey("info");
                 File.Delete(Application.dataPath + "/info.csv");
-                //SceneManager.LoadScene("Leaderboard");
                 Debug.Log("Updated time is saved!");
                 return;
             }
