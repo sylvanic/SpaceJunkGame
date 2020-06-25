@@ -12,17 +12,17 @@ public class SceneManagement : MonoBehaviour
     private void Awake()
     {
         saveinfo = GameObject.FindGameObjectWithTag("SaveInfo").GetComponent<SaveInfo>();
-        File.WriteAllText(Application.dataPath + "/info.csv", "");
-        Debug.Log(".csv file created!");       
+        //File.WriteAllText(Application.dataPath + "/info.csv", "");
+        //Debug.Log(".csv file created!");  
+        if (!File.Exists(Application.dataPath + "/info.csv"))
+        {
+            //File.WriteAllText(Application.dataPath + "/info.csv", "");
+            Debug.Log("The deleted info.csv has been created again!");
+        }
     }
 
     void Update()
-    {
-        if(!File.Exists(Application.dataPath + "/info.csv"))
-        {
-            File.WriteAllText(Application.dataPath + "/info.csv", "");
-            Debug.Log("The deleted info.csv has been created again!");
-        }
+    {        
     }
 
     public void ReturnToMainMenu()

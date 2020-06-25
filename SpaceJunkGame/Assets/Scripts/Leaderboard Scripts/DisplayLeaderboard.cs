@@ -22,17 +22,18 @@ public class DisplayLeaderboard : MonoBehaviour
         PlayerPrefs.GetInt("info", 0);
         PlayerPrefs.GetInt("SaveTime", 0);
 
-        if (PlayerPrefs.HasKey("info"))
+        if (PlayerPrefs.HasKey("info") || File.Exists(Application.dataPath + "/info.csv"))
         {
             scoreContainer = transform.Find("Tab");
             playerTemplate = scoreContainer.Find("SecondTab");
 
             playerTemplate.gameObject.SetActive(false);
 
-            string jsonString = PlayerPrefs.GetString("info");
-            //string jsonString = File.ReadAllText(Application.dataPath + "/info.csv");
-            Info list = JsonUtility.FromJson<Info>(jsonString);
-            Debug.Log(PlayerPrefs.GetString("info"));
+            //string jsonString = PlayerPrefs.GetString("info");
+            string jsonCSV = File.ReadAllText(Application.dataPath + "/info.csv");
+            Info list = JsonUtility.FromJson<Info>(jsonCSV);
+            //Debug.Log(PlayerPrefs.GetString("info"));
+            Debug.Log(File.ReadAllText(Application.dataPath + "/info.csv"));
 
             //Sort out the score
             for (int i = 0; i < list.playersInfoList.Count; i++)

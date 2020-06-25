@@ -33,7 +33,6 @@ public class InfoPlayerSave : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-
         
         if (sceneName == "EndScreen")
         {
@@ -44,6 +43,8 @@ public class InfoPlayerSave : MonoBehaviour
 
             Button cancel = cancelInfo.GetComponent<Button>();
             cancel.onClick.AddListener(CancelSave);
+
+            File.WriteAllText(Application.dataPath + "/info.csv", "");
         }
         
     }
