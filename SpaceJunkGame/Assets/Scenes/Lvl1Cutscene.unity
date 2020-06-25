@@ -9098,6 +9098,21 @@ PrefabInstance:
       propertyPath: m_text
       value: Kies eerst een upgrade!
       objectReference: {fileID: 0}
+    - target: {fileID: 2854113420684800670, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: OneStar
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2854113420684800670, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: TwoStar
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2854113420684800670, guid: 821d46f7cddd408459a7eb31aeb83f30,
+        type: 3}
+      propertyPath: ThreeStar
+      value: 65
+      objectReference: {fileID: 0}
     - target: {fileID: 3027703410890904477, guid: 821d46f7cddd408459a7eb31aeb83f30,
         type: 3}
       propertyPath: m_textInfo.characterCount
