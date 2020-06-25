@@ -21,7 +21,9 @@ public class LanguageSwitchLeaderboard : MonoBehaviour
             leaderboard.text = "LEADERBOARD";
             back.text = "BACK";
             reset.text = "Leaderboard will reset in:";
+            reset.fontSize = 48;
             resetleaderboard.text = "Reset Leaderboard";
+            resetleaderboard.fontSize = 22;
         }
         else
         {
