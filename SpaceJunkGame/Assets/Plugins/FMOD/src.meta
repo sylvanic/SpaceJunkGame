@@ -1,9 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<<< HEAD:SpaceJunkGame/Assets/Plugins/FMOD/src.meta
 <<<<<<< HEAD:SpaceJunkGame/Assets/engpics.meta
 guid: 6f10bddf5c70a9848b92d9e77120964a
 =======
 guid: a51e9887d3e0b804f9746544d4b90d51
 >>>>>>> origin/Radina:SpaceJunkGame/Assets/Plugins/FMOD/src.meta
+========
+guid: e4d85eb945aad4440961438a88f47c0e
+>>>>>>>> master:SpaceJunkGame/Assets/Animation - Interaction/FMOD/src.meta
+=======
+guid: a51e9887d3e0b804f9746544d4b90d51
+>>>>>>> master
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
