@@ -14,14 +14,14 @@ public class EndResult : MonoBehaviour
 
     void Awake()
     {
-        Scene currentScene = SceneManager.GetActiveScene();
+        /*Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
         if (sceneName == "EndScreen")
         {           
             File.WriteAllText(Application.dataPath + "/info.csv", "");
             Debug.Log(".csv file created!");
-        }
+        }*/
     }
 
     private void Start()

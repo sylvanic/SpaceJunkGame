@@ -59,6 +59,7 @@ public class SceneManagement : MonoBehaviour
         PlayerPrefs.DeleteKey("ScoreLevel2");
         PlayerPrefs.DeleteKey("ScoreLevel3");
         PlayerPrefs.DeleteKey("Highscore");
+        PlayerPrefs.DeleteKey("info");
         File.Delete(Application.dataPath + "/info.csv");
         File.Delete(Application.dataPath + "/GameInfo.csv");
         SceneManager.LoadScene("Leaderboard");

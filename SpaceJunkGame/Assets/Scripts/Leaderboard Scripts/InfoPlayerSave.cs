@@ -59,9 +59,8 @@ public class InfoPlayerSave : MonoBehaviour
             saveData.gender = gender;
             saveData.age = ageGroup;
 
-            //string jsonInfo = PlayerPrefs.GetString("info");
-            string jsonInfoCSV = File.ReadAllText(Application.dataPath + "/info.csv");
-            Info information = JsonUtility.FromJson<Info>(jsonInfoCSV);
+            string jsonInfo = PlayerPrefs.GetString("info");                        
+            Info information = JsonUtility.FromJson<Info>(jsonInfo);
 
             if (information == null)
             {
@@ -73,8 +72,10 @@ public class InfoPlayerSave : MonoBehaviour
 
             information.playersInfoList.Add(saveData);
 
-            string jsonAll = JsonUtility.ToJson(information);
+            string jsonAll = JsonUtility.ToJson(information);           
             File.WriteAllText(Application.dataPath + "/info.csv", jsonAll);
+            PlayerPrefs.SetString("info", jsonAll);
+            PlayerPrefs.Save();
 
             SceneManager.LoadScene("Leaderboard");
         } else {
@@ -174,15 +175,15 @@ public class InfoPlayerSave : MonoBehaviour
     public void CancelSave()
     { 
         SceneManager.LoadScene("NEW_Menu");
-        File.Delete(Application.dataPath + "/info.csv");
-        Debug.Log("The CSV file was deleted, test leaderboard scene if there is no null");
+        //File.Delete(Application.dataPath + "/info.csv");
+        Debug.Log("Thecsv file didn't save anything, test leaderboard scene if there is no null");
     }
 
     private class Info
     {
         public List<PlayersInfo> playersInfoList;
     }
-
+   
     [System.Serializable]
     private class PlayersInfo
     {
@@ -190,5 +191,5 @@ public class InfoPlayerSave : MonoBehaviour
         public int highscore;
         public string gender;
         public string age;
-    }
+    }   
 }

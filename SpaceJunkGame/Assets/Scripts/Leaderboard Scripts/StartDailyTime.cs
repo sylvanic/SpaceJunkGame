@@ -36,6 +36,7 @@ public class StartDailyTime : MonoBehaviour
                 PlayerPrefs.DeleteKey("ScoreLevel3");
                 PlayerPrefs.DeleteKey("Highscore");
                 PlayerPrefs.DeleteKey("GameInfo");
+                PlayerPrefs.DeleteKey("info");
                 //SceneManager.LoadScene("NEW_Menu");
                 Debug.Log("Updated time is saved!");
                 return;
