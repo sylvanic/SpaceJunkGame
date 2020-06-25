@@ -8,20 +8,17 @@ using System.IO;
 
 public class DisplayLeaderboard : MonoBehaviour
 {
-    //private float timer = 3600f;
-    //public Text time;
-
     private Transform scoreContainer;
     private Transform playerTemplate;
     public GameObject panel;
 
     private List<Transform> playerScoreTransformList;
-
+    
     void Start()
     {
         PlayerPrefs.GetInt("info", 0);
         PlayerPrefs.GetInt("SaveTime", 0);
-
+        
         if (PlayerPrefs.HasKey("info") || File.Exists(Application.dataPath + "/info.csv"))
         {
             scoreContainer = transform.Find("Tab");
@@ -30,10 +27,9 @@ public class DisplayLeaderboard : MonoBehaviour
             playerTemplate.gameObject.SetActive(false);
 
             //string jsonString = PlayerPrefs.GetString("info");
-            string jsonCSV = File.ReadAllText(Application.dataPath + "/info.csv");
-            Info list = JsonUtility.FromJson<Info>(jsonCSV);
-            //Debug.Log(PlayerPrefs.GetString("info"));
-            Debug.Log(File.ReadAllText(Application.dataPath + "/info.csv"));
+            string jsonRead = File.ReadAllText(Application.dataPath + "/info.csv");
+            Info list = JsonUtility.FromJson<Info>(jsonRead);
+            Debug.Log(PlayerPrefs.GetString("info"));
 
             //Sort out the score
             for (int i = 0; i < list.playersInfoList.Count; i++)
@@ -64,7 +60,7 @@ public class DisplayLeaderboard : MonoBehaviour
             {
                 CreatePlayersScoreTab(playerResults, scoreContainer, playerScoreTransformList);
             }
-        }        
+        } 
     }
 
     private void CreatePlayersScoreTab(PlayersInfo playerResults, Transform container, List<Transform> transformList)

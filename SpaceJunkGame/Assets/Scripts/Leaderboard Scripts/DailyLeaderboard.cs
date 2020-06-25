@@ -9,7 +9,7 @@ using TMPro;
 
 public class DailyLeaderboard : MonoBehaviour
 {
-    static private float msToWait = 86400000.0f;
+    static private float msToWait = 420000.0f;//86400000.0f
 
     private ulong lastUpdateList;
     public TMP_Text timeText;
@@ -38,6 +38,12 @@ public class DailyLeaderboard : MonoBehaviour
                 PlayerPrefs.SetString("SaveTime", lastUpdateList.ToString());
                 PlayerPrefs.DeleteKey("info");
                 File.Delete(Application.dataPath + "/info.csv");
+                PlayerPrefs.DeleteKey("ScoreLevel1");
+                PlayerPrefs.DeleteKey("ScoreLevel2");
+                PlayerPrefs.DeleteKey("ScoreLevel3");
+                PlayerPrefs.DeleteKey("Highscore");
+                PlayerPrefs.DeleteKey("GameInfo");
+                SceneManager.LoadScene("Leaderboard");
                 Debug.Log("Updated time is saved!");
                 return;
             }
