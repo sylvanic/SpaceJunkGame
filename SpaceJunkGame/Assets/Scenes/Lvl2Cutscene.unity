@@ -3044,7 +3044,7 @@ PrefabInstance:
     - target: {fileID: 1132828832926703857, guid: d8589cf502eab4549a1fc94a9353896f,
         type: 3}
       propertyPath: time
-      value: 129
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 2398397611047895669, guid: d8589cf502eab4549a1fc94a9353896f,
         type: 3}
@@ -9323,8 +9323,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: -40}
-  m_SizeDelta: {x: 450, y: 200}
+  m_AnchoredPosition: {x: -3, y: -53}
+  m_SizeDelta: {x: 349.57605, y: 185.66022}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1749843715911224659
 GameObject:
@@ -9373,10 +9373,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0a080c976c6ca1049bf4b7492bedd2e2, type: 3}
-    m_FontSize: 36
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -9951,7 +9951,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0a080c976c6ca1049bf4b7492bedd2e2, type: 3}
-    m_FontSize: 36
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
@@ -9980,8 +9980,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -349, y: -197}
-  m_SizeDelta: {x: 426.1809, y: 200.05768}
+  m_AnchoredPosition: {x: -347, y: -197.4}
+  m_SizeDelta: {x: 352.8553, y: 200.78592}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1749843716447765259
 CanvasRenderer:
@@ -10864,10 +10864,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0a080c976c6ca1049bf4b7492bedd2e2, type: 3}
-    m_FontSize: 36
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -10893,8 +10893,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -347, y: -182}
-  m_SizeDelta: {x: 450, y: 200}
+  m_AnchoredPosition: {x: -356, y: -204}
+  m_SizeDelta: {x: 317.63452, y: 226.71442}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1749843717157684637
 PrefabInstance:

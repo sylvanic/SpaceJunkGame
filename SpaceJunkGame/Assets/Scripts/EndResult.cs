@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.IO;
+using UnityEngine.SceneManagement;
 
 public class EndResult : MonoBehaviour
 {
@@ -9,6 +11,18 @@ public class EndResult : MonoBehaviour
     public TextMeshProUGUI lvl2score;
     public TextMeshProUGUI lvl3score;
     public TextMeshProUGUI totalScore;
+
+    void Awake()
+    {
+        /*Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+
+        if (sceneName == "EndScreen")
+        {           
+            File.WriteAllText(Application.dataPath + "/info.csv", "");
+            Debug.Log(".csv file created!");
+        }*/
+    }
 
     private void Start()
     {

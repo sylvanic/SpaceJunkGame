@@ -688,7 +688,7 @@ PrefabInstance:
     - target: {fileID: 1132828832926703857, guid: d8589cf502eab4549a1fc94a9353896f,
         type: 3}
       propertyPath: time
-      value: 120
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 2398397611047895669, guid: d8589cf502eab4549a1fc94a9353896f,
         type: 3}
@@ -3699,7 +3699,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0a080c976c6ca1049bf4b7492bedd2e2, type: 3}
-    m_FontSize: 41
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -3944,7 +3944,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0a080c976c6ca1049bf4b7492bedd2e2, type: 3}
-    m_FontSize: 48
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -7284,7 +7284,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0a080c976c6ca1049bf4b7492bedd2e2, type: 3}
-    m_FontSize: 48
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -7585,7 +7585,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -350, y: -189}
+  m_AnchoredPosition: {x: -350, y: -202}
   m_SizeDelta: {x: 400, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1774426971

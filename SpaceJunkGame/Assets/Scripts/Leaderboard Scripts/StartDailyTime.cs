@@ -23,18 +23,21 @@ public class StartDailyTime : MonoBehaviour
         else
         {            
             lastUpdateList = ulong.Parse(PlayerPrefs.GetString("SaveTime"));
-        }      
-    }
+        }
 
-    void Update()
-    {
         if (!PlayerPrefs.HasKey("SaveTime") || PlayerPrefs.HasKey("SaveTime"))
         {
             if (IsTimeUpdated())
             {
                 lastUpdateList = (ulong)DateTime.Now.Ticks;
-                PlayerPrefs.SetString("SaveTime", lastUpdateList.ToString());                
-                //SceneManager.LoadScene("Leaderboard");
+                PlayerPrefs.SetString("SaveTime", lastUpdateList.ToString());
+                PlayerPrefs.DeleteKey("ScoreLevel1");
+                PlayerPrefs.DeleteKey("ScoreLevel2");
+                PlayerPrefs.DeleteKey("ScoreLevel3");
+                PlayerPrefs.DeleteKey("Highscore");
+                PlayerPrefs.DeleteKey("GameInfo");
+                PlayerPrefs.DeleteKey("info");
+                //SceneManager.LoadScene("NEW_Menu");
                 Debug.Log("Updated time is saved!");
                 return;
             }
@@ -54,6 +57,11 @@ public class StartDailyTime : MonoBehaviour
             r += (secondsLeft % 60).ToString("00");
             //Debug.Log(r);
         }
+    }
+
+    void Update()
+    {
+        
     }
 
     private bool IsTimeUpdated()

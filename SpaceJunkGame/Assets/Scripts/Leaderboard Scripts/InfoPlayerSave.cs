@@ -33,7 +33,6 @@ public class InfoPlayerSave : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-
         
         if (sceneName == "EndScreen")
         {
@@ -44,15 +43,14 @@ public class InfoPlayerSave : MonoBehaviour
 
             Button cancel = cancelInfo.GetComponent<Button>();
             cancel.onClick.AddListener(CancelSave);
-        }
-        
+        }       
     }
 
     public void SavePlayerInfo()
     {
         PlayersInfo saveData = new PlayersInfo();
 
-        if(!string.IsNullOrEmpty(inputName.text)){
+        if (!string.IsNullOrEmpty(inputName.text)){
 
             saveData.username = inputName.text;
             Debug.Log(saveData.username);
@@ -61,8 +59,7 @@ public class InfoPlayerSave : MonoBehaviour
             saveData.gender = gender;
             saveData.age = ageGroup;
 
-            string jsonInfo = PlayerPrefs.GetString("info");
-            string jsonInfoCSV = File.ReadAllText(Application.dataPath + "/info.csv");
+            string jsonInfo = PlayerPrefs.GetString("info");                        
             Info information = JsonUtility.FromJson<Info>(jsonInfo);
 
             if (information == null)
@@ -75,13 +72,14 @@ public class InfoPlayerSave : MonoBehaviour
 
             information.playersInfoList.Add(saveData);
 
-            string jsonAll = JsonUtility.ToJson(information);
+            string jsonAll = JsonUtility.ToJson(information);           
             File.WriteAllText(Application.dataPath + "/info.csv", jsonAll);
             PlayerPrefs.SetString("info", jsonAll);
             PlayerPrefs.Save();
 
             SceneManager.LoadScene("Leaderboard");
-        } else {            
+        } else {
+           
             if (saveData.username == "")
             {
                 inputName.GetComponent<Outline>().enabled = true;                
@@ -174,16 +172,18 @@ public class InfoPlayerSave : MonoBehaviour
         }
     }
     
-        public void CancelSave()
-    {
+    public void CancelSave()
+    { 
         SceneManager.LoadScene("NEW_Menu");
+        //File.Delete(Application.dataPath + "/info.csv");
+        Debug.Log("Thecsv file didn't save anything, test leaderboard scene if there is no null");
     }
 
     private class Info
     {
         public List<PlayersInfo> playersInfoList;
     }
-
+   
     [System.Serializable]
     private class PlayersInfo
     {
@@ -191,5 +191,5 @@ public class InfoPlayerSave : MonoBehaviour
         public int highscore;
         public string gender;
         public string age;
-    }
+    }   
 }

@@ -12,16 +12,13 @@ public class SceneManagement : MonoBehaviour
     private void Awake()
     {
         saveinfo = GameObject.FindGameObjectWithTag("SaveInfo").GetComponent<SaveInfo>();
-        File.WriteAllText(Application.dataPath + "/info.csv", "");
-        Debug.Log(".csv file created!");       
-    }
 
-    void Update()
-    {
-        if(!File.Exists(Application.dataPath + "/info.csv"))
+        if (!File.Exists(Application.dataPath + "/info.csv"))
+        {                      
+            Debug.Log("The .csv file doesn't exist at the moment.");
+        } else
         {
-            File.WriteAllText(Application.dataPath + "/info.csv", "");
-            Debug.Log("The deleted info.csv has been created again!");
+            Debug.Log("The .csv file has been created.");
         }
     }
 
@@ -52,14 +49,19 @@ public class SceneManagement : MonoBehaviour
         SceneManager.LoadScene("SelectLevel");
     }
 
-    public void LeaderBoard(){
+    public void LeaderBoard(){       
         SceneManager.LoadScene("Leaderboard");
     }
 
     public void ResetLeaderboard()
     {
+        PlayerPrefs.DeleteKey("ScoreLevel1");
+        PlayerPrefs.DeleteKey("ScoreLevel2");
+        PlayerPrefs.DeleteKey("ScoreLevel3");
+        PlayerPrefs.DeleteKey("Highscore");
         PlayerPrefs.DeleteKey("info");
         File.Delete(Application.dataPath + "/info.csv");
+        File.Delete(Application.dataPath + "/GameInfo.csv");
         SceneManager.LoadScene("Leaderboard");
     }
 

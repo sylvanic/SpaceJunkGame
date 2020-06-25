@@ -8,20 +8,17 @@ using System.IO;
 
 public class DisplayLeaderboard : MonoBehaviour
 {
-    //private float timer = 3600f;
-    //public Text time;
-
     private Transform scoreContainer;
     private Transform playerTemplate;
     public GameObject panel;
 
     private List<Transform> playerScoreTransformList;
-
+    
     void Start()
     {
         PlayerPrefs.GetInt("info", 0);
         PlayerPrefs.GetInt("SaveTime", 0);
-
+        
         if (PlayerPrefs.HasKey("info"))
         {
             scoreContainer = transform.Find("Tab");
@@ -30,7 +27,7 @@ public class DisplayLeaderboard : MonoBehaviour
             playerTemplate.gameObject.SetActive(false);
 
             string jsonString = PlayerPrefs.GetString("info");
-            //string jsonString = File.ReadAllText(Application.dataPath + "/info.csv");
+            //string jsonRead = File.ReadAllText(Application.dataPath + "/info.csv");
             Info list = JsonUtility.FromJson<Info>(jsonString);
             Debug.Log(PlayerPrefs.GetString("info"));
 
@@ -63,12 +60,7 @@ public class DisplayLeaderboard : MonoBehaviour
             {
                 CreatePlayersScoreTab(playerResults, scoreContainer, playerScoreTransformList);
             }
-        }        
-    }
-
-    void Update()
-    {
-        //DailyTime();
+        } 
     }
 
     private void CreatePlayersScoreTab(PlayersInfo playerResults, Transform container, List<Transform> transformList)
@@ -149,56 +141,6 @@ public class DisplayLeaderboard : MonoBehaviour
         PlayerPrefs.SetString("GameInfo", clearedList);
         PlayerPrefs.Save();
     }
-
-    /*public void DailyTime()
-    {
-        timer -= Time.deltaTime;
-
-        string hours = ((int)timer / 3600).ToString();
-        string minutes = Mathf.Floor((timer % 3600)/60).ToString();
-        string seconds = (timer % 60).ToString("f0");
-
-        time.text = hours + ":" + minutes + ":" + seconds;
-
-        if (timer <= 0)
-        {
-            Scene currentScene = SceneManager.GetActiveScene();
-            string sceneName = currentScene.name;
-
-            if(sceneName == "Main Menu")
-            {
-                DeleteAllPlayerPrefs();
-                timer = 3600f;
-                SceneManager.LoadScene(0);
-                if (panel == true)
-                {
-                    panel.SetActive(true);
-                }
-                else if (panel == false)
-                {
-                    panel.SetActive(false);
-                }
-                Debug.Log("A refresh has been made!");
-            }
-
-            if(sceneName == "Leaderboard")
-            {
-                DeleteAllPlayerPrefs();
-                timer = 3600f;
-                SceneManager.LoadScene(4);
-                if (panel == true)
-                {
-                    panel.SetActive(true);
-                }
-                else if (panel == false)
-                {
-                    panel.SetActive(false);
-                }
-                Debug.Log("A refresh has been made!");
-            }
-            
-        }
-    }*/
 
     public void DeleteAllPlayerPrefs()
     {

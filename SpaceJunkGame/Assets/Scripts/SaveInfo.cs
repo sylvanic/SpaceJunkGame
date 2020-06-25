@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.IO;
 
 public class SaveInfo : MonoBehaviour
 {
@@ -59,6 +60,8 @@ public class SaveInfo : MonoBehaviour
 
         //Convert to Json
         string jsonData = JsonUtility.ToJson(saveData);
+        //Save in .CSV file
+        File.WriteAllText(Application.dataPath + "/GameInfo.csv", jsonData);
         //Save Json string
         PlayerPrefs.SetString("GameInfo", jsonData);
         PlayerPrefs.Save();
@@ -74,7 +77,11 @@ public class SaveInfo : MonoBehaviour
 
     public void ResetSaves()
     {
-        PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteKey("ScoreLevel1");
+        PlayerPrefs.DeleteKey("ScoreLevel2");
+        PlayerPrefs.DeleteKey("ScoreLevel2");
+        PlayerPrefs.DeleteKey("Highscore");
+        PlayerPrefs.DeleteKey("GameInfo");
         ResultScreens.currentUpgrade = null;
         ResultScreens.currentUpgrade2 = null;
     }
