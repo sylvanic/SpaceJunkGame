@@ -17,6 +17,7 @@ public class LevelFinishIntro3 : MonoBehaviour
     public GameObject text9;
     public GameObject MissionComplete;
     public GameObject MissionFailed;
+    public GameObject RateBtn;
     public GameObject junkAnim;
     public GameObject junkSkipped;
     float time;
@@ -125,10 +126,12 @@ public class LevelFinishIntro3 : MonoBehaviour
         if (PlayerStats.totalScore >= 450)
         {
             MissionComplete.SetActive(true);
+            RateBtn.SetActive(false);
         }
         else
         {
             MissionFailed.SetActive(true);
+            RateBtn.SetActive(true);
         }
     }
 

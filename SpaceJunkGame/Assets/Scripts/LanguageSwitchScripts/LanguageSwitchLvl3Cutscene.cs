@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class LanguageSwitchLvl3Cutscene : MonoBehaviour
@@ -12,6 +13,7 @@ public class LanguageSwitchLvl3Cutscene : MonoBehaviour
     public Text part7;
     public Text part8;
     public Text part9;
+    public TextMeshProUGUI RateBtn;
 
     private void Awake()
     {
@@ -26,6 +28,10 @@ public class LanguageSwitchLvl3Cutscene : MonoBehaviour
             part7.text = "This is still stopping us from going further into space. In there future, this number will only grow, to the point that we won't be able to contain it anymore.";
             part8.text = "There is not much ordinary people can do to help, other than being aware of this issue.";
             part9.text = "Thank you for playing Space Janitor, and we hope we have made you aware of this problem.";
+
+            RateBtn.text = "RATE GAME";
+
+            
         }
         else
         {
@@ -38,6 +44,8 @@ public class LanguageSwitchLvl3Cutscene : MonoBehaviour
             part7.text = "Dit houdt ons alsnog tegen om verder de ruimte in te gaan. In de toekomst zal dit nummer groter worden, tot het punt dat het niet meer beheersbaar is.";
             part8.text = "Er is niet veel wat normale mensen kunnen doen, anders dan over dit onderwerp bekend zijn.";
             part9.text = "Dank je wel voor het spelen van Ruimte Schoonmaker, we hopen dat we je meer bewust hebben gemaakt van dit probleem.";
+
+            RateBtn.text = "BEOORDEEL SPEL";
         }
     }
 }
