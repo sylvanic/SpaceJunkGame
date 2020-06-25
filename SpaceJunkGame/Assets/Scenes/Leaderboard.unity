@@ -482,7 +482,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -862, y: -193}
+  m_AnchoredPosition: {x: -842, y: -193}
   m_SizeDelta: {x: 400, y: 167.15382}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &274910333
@@ -1301,7 +1301,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -856.857, y: 111.74891}
+  m_AnchoredPosition: {x: -836.85706, y: 111.74891}
   m_SizeDelta: {x: 450, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1309045933
@@ -1323,7 +1323,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Leaderboard will resets in:'
+  m_text: 'Leaderboard will reset in:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1fa0659de5708504d8cc39e2ea26e2e3, type: 2}
   m_sharedMaterial: {fileID: -8018162707225744622, guid: 1fa0659de5708504d8cc39e2ea26e2e3,
@@ -1393,7 +1393,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1309045933}
-    characterCount: 27
+    characterCount: 26
     spriteCount: 0
     spaceCount: 3
     wordCount: 4
@@ -1586,7 +1586,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -858, y: -27}
+  m_AnchoredPosition: {x: -838.00006, y: -27}
   m_SizeDelta: {x: 450, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1423553298
@@ -1660,7 +1660,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -864.8575, y: -26.22487}
+  m_AnchoredPosition: {x: -844.85754, y: -26.22487}
   m_SizeDelta: {x: 300, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1661579925
@@ -3012,7 +3012,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a139f0d6bfaf6845a0727ab2d58e6d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeText: {fileID: 1661579925}
 --- !u!114 &2336395566702494272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3084,7 +3083,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -3341,7 +3340,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 50.3, y: 14}
+  m_AnchoredPosition: {x: 50.30005, y: 14}
   m_SizeDelta: {x: -711.21484, y: 27.935547}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6294277499455553108
