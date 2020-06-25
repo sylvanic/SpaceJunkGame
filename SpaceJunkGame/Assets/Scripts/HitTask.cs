@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class HitTask : Objective
@@ -9,7 +10,7 @@ public class HitTask : Objective
 
     public static string hitTaskTxt;
 
-    public GUIStyle guiStyle = new GUIStyle();
+    public TextMeshProUGUI hitTask;
 
     private void Awake()
     {
@@ -21,14 +22,11 @@ public class HitTask : Objective
         {
             hitTaskTxt = "Word door een asteroid\ngeraakt: ";
         }
-
-        guiStyle.normal.textColor = Color.white;
-        guiStyle.fontSize = 25;
-
     }
 
     private void Update()
     {
+        hitTask.text = string.Format(hitTaskTxt + "{0}/{1}", hits, requiredHits);
         hits = PlayerStats.hitAmount;
 
         if (hits >= requiredHits)
@@ -47,14 +45,6 @@ public class HitTask : Objective
     public override void Complete()
     {
         ResultScreens.checkChallengedCompleted = true;
-        guiStyle.normal.textColor = Color.yellow;
-       
-
-    }
-
-    public override void DrawHUD()
-    {
-        
-        GUI.Label(new Rect(1595, 590, 300, 100), string.Format(hitTaskTxt + "{0}/{1}", hits, requiredHits), guiStyle);
+        hitTask.color = Color.yellow;
     }
 }
