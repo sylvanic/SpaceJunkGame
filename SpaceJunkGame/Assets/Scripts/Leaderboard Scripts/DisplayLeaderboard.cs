@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.IO;
 
 public class DisplayLeaderboard : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class DisplayLeaderboard : MonoBehaviour
     void Start()
     {
         PlayerPrefs.GetInt("info", 0);
+        PlayerPrefs.GetInt("SaveTime", 0);
 
         if (PlayerPrefs.HasKey("info"))
         {
@@ -28,6 +30,7 @@ public class DisplayLeaderboard : MonoBehaviour
             playerTemplate.gameObject.SetActive(false);
 
             string jsonString = PlayerPrefs.GetString("info");
+            //string jsonString = File.ReadAllText(Application.dataPath + "/info.csv");
             Info list = JsonUtility.FromJson<Info>(jsonString);
             Debug.Log(PlayerPrefs.GetString("info"));
 

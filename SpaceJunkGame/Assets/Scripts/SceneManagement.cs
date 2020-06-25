@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.IO;
 
 public class SceneManagement : MonoBehaviour
 {
@@ -11,6 +12,17 @@ public class SceneManagement : MonoBehaviour
     private void Awake()
     {
         saveinfo = GameObject.FindGameObjectWithTag("SaveInfo").GetComponent<SaveInfo>();
+        File.WriteAllText(Application.dataPath + "/info.csv", "");
+        Debug.Log(".csv file created!");       
+    }
+
+    void Update()
+    {
+        if(!File.Exists(Application.dataPath + "/info.csv"))
+        {
+            File.WriteAllText(Application.dataPath + "/info.csv", "");
+            Debug.Log("The deleted info.csv has been created again!");
+        }
     }
 
     public void ReturnToMainMenu()
@@ -42,5 +54,17 @@ public class SceneManagement : MonoBehaviour
 
     public void LeaderBoard(){
         SceneManager.LoadScene("Leaderboard");
+    }
+
+    public void ResetLeaderboard()
+    {
+        PlayerPrefs.DeleteKey("info");
+        File.Delete(Application.dataPath + "/info.csv");
+        SceneManager.LoadScene("Leaderboard");
+    }
+
+    public void StartIntro()
+    {
+        SceneManager.LoadScene("Intro");
     }
 }

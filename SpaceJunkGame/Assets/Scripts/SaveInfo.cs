@@ -9,6 +9,8 @@ public class SaveInfo : MonoBehaviour
 {
     public static SaveInfo Instance;
 
+    private ulong lastUpdateList;
+
     private void Update()
     {
         Save();
@@ -53,7 +55,7 @@ public class SaveInfo : MonoBehaviour
 
         saveData.playerName = PlayerPrefs.GetString("PlayerName");       
         saveData.playerGender = PlayerPrefs.GetString("PlayerGender");
-        saveData.playerAge = PlayerPrefs.GetString("PlayerAge");
+        saveData.playerAge = PlayerPrefs.GetString("PlayerAge");     
 
         //Convert to Json
         string jsonData = JsonUtility.ToJson(saveData);
