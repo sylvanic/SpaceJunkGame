@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.IO;
 
 public class InfoPlayerSave : MonoBehaviour
 {
@@ -61,6 +62,7 @@ public class InfoPlayerSave : MonoBehaviour
             saveData.age = ageGroup;
 
             string jsonInfo = PlayerPrefs.GetString("info");
+            string jsonInfoCSV = File.ReadAllText(Application.dataPath + "/info.csv");
             Info information = JsonUtility.FromJson<Info>(jsonInfo);
 
             if (information == null)
@@ -74,6 +76,7 @@ public class InfoPlayerSave : MonoBehaviour
             information.playersInfoList.Add(saveData);
 
             string jsonAll = JsonUtility.ToJson(information);
+            File.WriteAllText(Application.dataPath + "/info.csv", jsonAll);
             PlayerPrefs.SetString("info", jsonAll);
             PlayerPrefs.Save();
 
