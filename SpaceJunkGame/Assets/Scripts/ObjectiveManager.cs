@@ -20,16 +20,6 @@ public class ObjectiveManager : MonoBehaviour
         }
     }
 
-    private void OnGUI()
-    {
-
-        foreach (var objective in objective)
-        {
-            objective.DrawHUD();
-
-        }
-    }
-
     private void Update()
     {
         foreach (var objective in objective)
